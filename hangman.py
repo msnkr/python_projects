@@ -7,35 +7,30 @@ words = ['rainbow', 'computer', 'science', 'programming',
          'python', 'mathematics', 'player', 'condition',
          'reverse', 'water', 'board', 'geeks']
 
-
 word = random.choice(words)
-guesses = ''
 turns = 12
 
+guesses = ''
 while turns > 0:
-    failed = 0
-
+    fail = 0
     for char in word:
         if char in guesses:
             print(char)
-
         else:
             print('_')
-            failed += 1
+            fail += 1
 
-    if failed == 0:
-        print('You Win! ')
-        print(f'The word is: {word}.')
-        break
+    if fail == 0:
+        print('You Lose')
 
-    guess = input('Guess a character: ')
+    guess = input('Guess the word: ')
     guesses += guess
 
     if guess not in word:
         turns -= 1
-
-        print('Wrong')
-        print(f'You have {turns} guesses left! ')
+        print('Try again! ')
+        print(f'You have {turns} turns left...')
 
         if turns == 0:
-            print('You lose! ')
+            print('Fail')
+            print(word)
