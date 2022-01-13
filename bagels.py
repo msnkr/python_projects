@@ -30,9 +30,9 @@ def main():
                 print(f'The correct answer is: {format(secretNum)}')
 
             print('Do you want to play again? (Y/N)')
-            if not input('> ').lower().startswith('y'):
-                break
-            print('Thanks for playing.')
+        if not input('> ').lower().startswith('y'):
+            break
+    print('Thanks for playing.')
 
 
 def getSecretNum():
@@ -43,6 +43,7 @@ def getSecretNum():
     for i in range(num_digits):
         secretNum += str(numbers[i])
         return secretNum
+    print(secretNum)
 
 
 def getClues(guess, secretNum):
