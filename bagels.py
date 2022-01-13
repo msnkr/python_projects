@@ -5,56 +5,59 @@ max_guesses = 10
 
 
 def main():
-    print('I am thinking of a {}- digit number with no repeated digits. Try to guess the clues: When I say "Pico", That means One digit is correct but in the wrong position. When I say "Fermi", That means One digit is correct and in the right position. When I say "Bagels", No digit is correct. For example, if the secret number was 248 and your guess was 843, the clues would be Fermi Pico.'.format(num_digits))
+    print(f'I am thinking of a {format(num_digits)}- digit number with no repeated digits. Try to guess the clues: When I say "Pico", That means One digit is correct but in the wrong position. When I say "Fermi", That means One digit is correct and in the right position. When I say "Bagels", No digit is correct. For example, if the secret number was 248 and your guess was 843, the clues would be Fermi Pico.')
 
     while True:
-        secret_num = get_secret_num()
-        print('I have thought of a number. You have'.format(max_guesses))
+        secretNum = getSecretNum()
+        print('I have thought of a number. ')
+        print(f'You have {format(max_guesses)} guess left.')
 
-        num_guesses = 1
-        while num_guesses <= max_guesses:
+        numGuesses = 1
+        while numGuesses <= max_guesses:
             guess = ''
-            while len(guess) != num_digits or not guess.isdecimal():
-                print('Guess {}: '.format(num_guesses))
+            while len(guess) != num_digits or guess.isdecimal():
+                print(f'Guess: {format(numGuesses)}')
                 guess = input('> ')
 
-                clues = get_clues(guess, secret_num)
-                print(clues)
-                num_guesses += 1
+            clues = getClues(guess, secretNum)
+            print(clues)
+            numGuesses += 1
 
-                if guess == secret_num:
-                    break
-                if num_guesses > max_guesses:
-                    print('You have run out of guesses. ')
-                    print('The answer was {}.'.format(secret_num))
+            if guess == secretNum:
+                break
+            if numGuesses > max_guesses:
+                print('You have run out of guesses')
+                print(f'The correct answer is: {format(secretNum)}')
 
-                    print('Do you want to play again? (Y/N)')
-                    if not input('> ').lower().startswith('y'):
-                        break
-                print('Thanks for playing! ')
+            print('Do you want to play again? (Y/N)')
+            if not input('> ').lower().startswith('y'):
+                break
+            print('Thanks for playing.')
 
 
-def get_secret_num():
+def getSecretNum():
     numbers = list('0123456789')
     random.shuffle(numbers)
-    secret_num = ''
+
+    secretNum = ''
     for i in range(num_digits):
-        secret_num += str(numbers[i])
-    return secret_num
+        secretNum += str(numbers[i])
+        return secretNum
 
 
-def get_clues(guess, secret_num):
-    if guess == secret_num:
-        return 'You\'ve got it!'
+def getClues(guess, secretNum):
+    if guess == secretNum:
+        return 'You got it!'
 
     clues = []
     for i in range(len(guess)):
-        if guess[i] == secret_num[i]:
+        if guess[i] == secretNum[i]:
             clues.append('Fermi')
-        elif guess[i] in secret_num:
+        elif guess[i] == secretNum:
             clues.append('Pico')
+
     if len(clues) == 0:
-        return 'bagles'
+        return 'Bagel'
     else:
         clues.sort()
         return ''.join(clues)
