@@ -19,16 +19,19 @@ def main():
                 guess = input('> ')
 
                 clues = get_clues(guess, secret_num)
+                print(clues)
+                num_guesses += 1
+
                 if guess == secret_num:
                     break
                 if num_guesses > max_guesses:
                     print('You have run out of guesses. ')
                     print('The answer was {}.'.format(secret_num))
 
-            print('Do you want to play again? (Y/N)')
-            if not input('> ').lower().startswith('y'):
-                break
-            print('Thanks for playing! ')
+                    print('Do you want to play again? (Y/N)')
+                    if not input('> ').lower().startswith('y'):
+                        break
+                print('Thanks for playing! ')
 
 
 def get_secret_num():
@@ -52,9 +55,9 @@ def get_clues(guess, secret_num):
             clues.append('Pico')
     if len(clues) == 0:
         return 'bagles'
-
-    clues.sort()
-    return ''.join(clues)
+    else:
+        clues.sort()
+        return ''.join(clues)
 
 
 if __name__ == '__main__':
