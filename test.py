@@ -42,3 +42,16 @@
 
 # print(3 * 3 + 3 / 3 - 3)
 # print(3 * (3 + 3) / 3 - 3)
+
+height = int(input('What is your height?: '))
+
+if height >= 120:
+    age = int(input('How old are you?: '))
+    if age <= 12:
+        print('$5.')
+    elif age > 12 < 18:
+        print('$7.')
+    else:
+        print('$12.')
+else:
+    print('You are not tall enough to ride this attraction. ')
