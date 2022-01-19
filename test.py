@@ -44,14 +44,27 @@
 # print(3 * (3 + 3) / 3 - 3)
 
 height = int(input('What is your height?: '))
+price = 0
 
 if height >= 120:
     age = int(input('How old are you?: '))
     if age <= 12:
-        print('$5.')
-    elif age > 12 < 18:
-        print('$7.')
+        price += 5
+    elif age < 18:
+        price += 7
+    elif age >= 45 and age <= 55:
+        price == 0
     else:
-        print('$12.')
+        price += 12
+    wants_photo = input('Do you want a photo?: y/n ')
+    if wants_photo == 'y':
+        price += 3
+
+    print(f'${price}')
 else:
     print('You are not tall enough to ride this attraction. ')
+
+# remember!!! 9 > 3 and 5 < 9
+# if age is 45 then
+# if age < 18:
+#   print('Free') etc
