@@ -69,17 +69,22 @@
 # if age < 18:
 #   print('Free') etc
 
+# import random 
+
+# # rand_int = random.randint(0, 5)
+# # print(rand_int)
+
+# rand_float = random.random() * 5
+# print(round(rand_float,2))
+
 import random
 
-# random_num = random.randint(1, 5)
-# random_flo = random.random()
+heads = 1
+tails = 0
 
-# random5 = random.random() * 5
-# print(random5)
+choice = random.randint(0, 1)
 
-heads_tails = random.randint(0, 1)
-
-if heads_tails == 1:
+if choice == 1:
     print('Heads')
-else:
+elif choice == 0:
     print('Tails')
