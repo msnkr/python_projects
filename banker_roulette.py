@@ -6,3 +6,8 @@ names = names_string.split(", ")
 #Write your code below this line 👇
 import random
 
+convert_to_num = len(names)
+
+rand_name = random.randint(0, convert_to_num -1)
+
+print(f'{names[rand_name]} will pay for dinner.')
