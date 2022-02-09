@@ -8,12 +8,10 @@ position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
+position1 = int(position[0])
+position2 = int(position[1])
 
-
-
-
-
-
+row1.insert(position1, 'x')
 #Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
