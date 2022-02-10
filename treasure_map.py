@@ -11,7 +11,11 @@ position = input("Where do you want to put the treasure? ")
 position1 = int(position[0])
 position2 = int(position[1])
 
-row1.insert(position1, 'x')
+
+row_pos = map[position2-1]
+row_pos[position1-1] = 'X '
+
+
 #Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
