@@ -29,27 +29,30 @@ scissors = '''
 import random
 
 
-answer = input('What do you chose? 0 for Rock, 1 for Paper, 2 for Scissors. ')
-
-if answer == 0:
-    answer = rock
-elif answer == 1:
-    answer = paper
-elif answer == 2:
-    answer = scissors
-
-com_choice = [rock, paper, scissors]
-random_choice = random.choice(com_choice)
+answer = int(input('What do you chose? 0 for Rock, 1 for Paper, 2 for Scissors. '))
+computer_choice = random.randint(0, 2)
 
 
-print(answer)
-print()
-print()
-print()
-print()
-print(random_choice)
+if answer >= 3 or answer < 0:
+    print('You chose an invalid number. You Lose!')
+else:
+    game_images = [rock, paper, scissors]
 
-# if answer == random_choice:
-#     print(f'You chose \n {answer}! ')
-#     print(f'computer chose \n {random_choice}! ')
-#     print('Draw!')
+    print('You chose:')
+    print(game_images[answer])
+
+    print('Computer chose:')
+    print(game_images[computer_choice])
+
+    if answer > computer_choice:
+        print('You Win!')
+    elif computer_choice == answer:
+        print('It\'s a Draw!')
+    elif answer == 0 and computer_choice == 1:
+        print('You Lose!')
+    elif computer_choice == 2 and answer == 0:
+        print('You Win!')
+    elif computer_choice == 2 and answer == 1:
+        print('You Lose!')
+    elif computer_choice == 0 and answer == 2:
+        print('You Lose!')
