@@ -77,14 +77,14 @@
 # rand_float = random.random() * 5
 # print(round(rand_float,2))
 
-import random
+# import random
 
-heads = 1
-tails = 0
+# heads = 1
+# tails = 0
 
-choice = random.randint(0, 1)
+# choice = random.randint(0, 1)
 
-if choice == 1:
-    print('Heads')
-elif choice == 0:
-    print('Tails')
+# if choice == 1:
+#     print('Heads')
+# elif choice == 0:
+#     print('Tails')
