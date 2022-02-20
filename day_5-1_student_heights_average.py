@@ -7,8 +7,16 @@ for n in range(0, len(student_heights)):
 
 #Write your code below this row 👇
 total_students = 0
+total_height = 0
 
-for num in student_heights:
-    num += total_students
+for students in student_heights:
+  total_students += 1
 
-print(total_students)
+for height in student_heights:
+  total_height += height
+
+print(f'The average height of students is: {round(total_height / total_students)}')
+
+################## using sum and len ###########################
+
+# print(f'The average height os students is: {round(sum(student_heights)/len(student_heights))}')
