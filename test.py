@@ -88,3 +88,8 @@
 #     print('Heads')
 # elif choice == 0:
 #     print('Tails')
+
+total = 0
+for number in range(1, 101):
+    total += number
+print(total)
