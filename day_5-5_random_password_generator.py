@@ -17,24 +17,18 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
 
-rand_letters = ''
+pass_var = ''
 for item in range(0, nr_letters):
-    rand_letters += random.choice(letters)
+    pass_var += random.choice(letters)
 
 
-rand_symbols = ''
 for item in range(0, nr_symbols):
-    rand_symbols += random.choice(symbols)
+    pass_var += random.choice(symbols)
 
-rand_int = ''
 for item in range(0, nr_numbers):
-    rand_int += random.choice(numbers)
+    pass_var += random.choice(numbers)
 
-pssword = rand_letters + rand_symbols + rand_int
 
-new_pass = ''
-for item in pssword:
-    new_pass += random.choice(pssword)
+new_pass = ''.join(random.sample(pass_var, len(pass_var)))
 
-print(f'Your password is: {len(pssword)} {pssword}')
-print(f'Your password is: {len(new_pass)} {new_pass}')
+print(f'Your password is {len(new_pass)} letters! \n{new_pass}')
