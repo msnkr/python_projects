@@ -89,7 +89,13 @@
 # elif choice == 0:
 #     print('Tails')
 
-total = 0
-for number in range(1, 101):
-    total += number
-print(total)
+# total = 0
+# for number in range(1, 101):
+#     total += number
+# print(total)
+
+
+def hello_world(greeting, name):
+    print(greeting, name)
+
+hello_world('Hello', 'Mikyle')
