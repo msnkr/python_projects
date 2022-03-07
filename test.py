@@ -95,7 +95,13 @@
 # print(total)
 
 
-def hello_world(greeting, name):
-    print(greeting, name)
+# def hello_world(greeting, name):
+#     print(greeting, name)
 
-hello_world('Hello', 'Mikyle')
+# hello_world('Hello', 'Mikyle')
+
+x = 0
+
+while x < 10:
+    print(x)
+    x+=1
