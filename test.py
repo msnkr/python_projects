@@ -108,3 +108,21 @@
 #     if x == 5:
 #         print('Your at 5')
 # print('Done')
+
+# lst = ['a', 'b', 'b', 'c', 'd', 'e', 'e', 'e', 'f', 'g']
+# print(lst)
+
+# for item in range(len(lst)):
+#     letter = lst[item]
+#     if letter == 'e':
+#         lst[item] = 'changed'
+
+# print(lst)
+
+phones = ['samsung', 'huawei', 'iPhone', 'LG']
+
+for item in range(len(phones)):
+    if phones[item] == 'iPhone':
+        phones[item] = 'motorola'
+
+print(phones)
