@@ -119,10 +119,18 @@
 
 # print(lst)
 
-phones = ['samsung', 'huawei', 'iPhone', 'LG']
+# phones = ['samsung', 'huawei', 'iPhone', 'LG']
 
-for item in range(len(phones)):
-    if phones[item] == 'iPhone':
-        phones[item] = 'motorola'
+# for item in range(len(phones)):
+#     if phones[item] == 'iPhone':
+#         phones[item] = 'motorola'
 
-print(phones)
+# print(phones)
+
+
+# lst = ['a', 'b', 'c', 'c', 'd', 'e', 'f', 'f']
+
+# for item in range(len(lst)):
+#     if lst[item] == 'd':
+#         lst[item] = 'changed'
+# print(lst)
