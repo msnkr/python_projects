@@ -100,14 +100,14 @@
 
 # hello_world('Hello', 'Mikyle')
 
-x = 0
+# x = 0
 
-while x < 10:
-    print(x)
-    x+=1
-    if x == 5:
-        print('Your at 5')
-print('Done')
+# while x < 10:
+#     print(x)
+#     x+=1
+#     if x == 5:
+#         print('Your at 5')
+# print('Done')
 
 # lst = ['a', 'b', 'b', 'c', 'd', 'e', 'e', 'e', 'f', 'g']
 # print(lst)
@@ -134,3 +134,10 @@ print('Done')
 #     if lst[item] == 'd':
 #         lst[item] = 'changed'
 # print(lst)
+
+def greet():
+    print('Hello')
+    print('Mikyle')
+    print('How are you? ')
+
+greet()
