@@ -135,9 +135,21 @@
 #         lst[item] = 'changed'
 # print(lst)
 
-def greet():
-    print('Hello')
-    print('Mikyle')
-    print('How are you? ')
+# def greet(name):
+#     print(f'Hello {name}')
+#     print(f'How are you, {name}? ')
 
-greet()
+# greet('Mikyle')
+
+# Keyword arguments
+# def greet_with(name, location):
+#     print(f'Hello {name}.')
+#     print(f'What is it like in {location}? ')
+
+# # This is a keyword argument => Name and location
+# greet_with(location='Johannesburg', name='Mikyle')
+
+
+num = 5
+if num % 1 == 0 and num % num != 0:
+    print('prime')
