@@ -150,6 +150,6 @@
 # greet_with(location='Johannesburg', name='Mikyle')
 
 
-num = 5
-if num % 1 == 0 and num % 2 != 0:
-    print('prime')
+# num = 5
+# if num % 1 == 0 and num % 2 != 0:
+#     print('prime')
