@@ -1,6 +1,6 @@
 import caesar_cipher_art
 
-alphabet = ['a', 'b', 'c', 'd', 'r', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
 #TODO-1: Import and print the logo from art.py when the program starts.
@@ -17,7 +17,7 @@ def caesar(direction, text, shift):
         if direction == 'encode':
             cipher_text += alphabet[item + shift]
         elif direction == 'decode':
-            cipher_text += alphabet[item - shift]
+            cipher_text += alphabet[item - shift] 
     print(f'the {direction}d text is {cipher_text}. ')
 
 
