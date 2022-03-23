@@ -154,5 +154,7 @@
 # if num % 1 == 0 and num % 2 != 0:
 #     print('prime')
 
-lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-print(lst[(0+27) % len(lst)]) 
+# lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# print(lst[(0+27) % len(lst)]) 
+
+print(9%26)
