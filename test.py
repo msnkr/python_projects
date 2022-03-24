@@ -109,6 +109,39 @@
 #         print('Your at 5')
 # print('Done')
 
+# lst = ['apples', 'bananas', 'grapes']
+
+# should_contine = True
+# while should_contine:
+#     for item in lst:
+#         print(item)
+#         if item == 'bananas':
+#             print('Stop here')
+#             should_contine = False
+
+# lst = ['a', 'b', 'b', 'c', 'd', 'e', 'e', 'e', 'f', 'g']
+# letters = ''
+            
+# should_continue = True
+# while should_continue:
+#     for i in lst:
+#         if i == 'f':
+#             should_continue = False
+#             letters += '. F is supposed to be here. '
+#             break
+#         else:
+#             letters += i
+
+
+# print(letters)
+
+# num = 0
+
+# while num < 10:
+#     num += 1
+#     print(num)
+
+
 # lst = ['a', 'b', 'b', 'c', 'd', 'e', 'e', 'e', 'f', 'g']
 # print(lst)
 
@@ -154,7 +187,23 @@
 # if num % 1 == 0 and num % 2 != 0:
 #     print('prime')
 
-# lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-# print(lst[(0+27) % len(lst)]) 
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# print(alphabet[(0+27) % len(alphabet)]) 
 
-print(9%26)
+# print(9%26)
+
+direction = input('Encode or Decode? ')
+text = input('Enter your text.')
+shift = int(input('Shift amount. '))
+
+def caesar(direction, text, shift):
+    empty_var = ''
+    for char in text:
+        if char in alphabet:
+            position = alphabet.index(char)
+            new_position = position + shift
+            empty_var += new_position
+
+    print(empty_var)
+
+caesar(direction, text, shift)
