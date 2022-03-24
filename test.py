@@ -190,20 +190,32 @@
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 # print(alphabet[(0+27) % len(alphabet)]) 
 
-# print(9%26)
-
-direction = input('Encode or Decode? ')
-text = input('Enter your text.')
-shift = int(input('Shift amount. '))
 
 def caesar(direction, text, shift):
     empty_var = ''
-    for char in text:
-        if char in alphabet:
-            position = alphabet.index(char)
-            new_position = position + shift
-            empty_var += new_position
+    for number in text:
+        if number in alphabet:
+            if direction == 'decode':
+                position = alphabet.index(number) - shift
+            else:
+                position = alphabet.index(number) + shift
+            new_item = alphabet[position]
+            empty_var += new_item
+        else:
+            empty_var += number
+    print(f'Your {direction}d word is: {empty_var}')
 
-    print(empty_var)
 
-caesar(direction, text, shift)
+should_contine = True
+while should_contine:
+    direction = input('Encode or Decode? \n')
+    text = input('Enter your text \n')
+    shift = int(input('Shift amount \n'))
+
+
+    caesar(direction, text, shift)
+
+    answer = input('Continue? Y/N \n').lower()
+    if answer == 'n':
+        should_contine = False
+        print('Goodbye')
