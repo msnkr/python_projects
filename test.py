@@ -187,35 +187,63 @@
 # if num % 1 == 0 and num % 2 != 0:
 #     print('prime')
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-# print(alphabet[(0+27) % len(alphabet)]) 
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# # print(alphabet[(0+27) % len(alphabet)]) 
 
 
-def caesar(direction, text, shift):
-    empty_var = ''
-    for number in text:
-        if number in alphabet:
-            if direction == 'decode':
-                position = alphabet.index(number) - shift
-            else:
-                position = alphabet.index(number) + shift
-            new_item = alphabet[position]
-            empty_var += new_item
-        else:
-            empty_var += number
-    print(f'Your {direction}d word is: {empty_var}')
+# def caesar(direction, text, shift):
+#     empty_var = ''
+#     for number in text:
+#         if number in alphabet:
+#             if direction == 'decode':
+#                 position = alphabet.index(number) - shift
+#             else:
+#                 position = alphabet.index(number) + shift
+#             new_item = alphabet[position]
+#             empty_var += new_item
+#         else:
+#             empty_var += number
+#     print(f'Your {direction}d word is: {empty_var}')
 
 
-should_contine = True
-while should_contine:
-    direction = input('Encode or Decode? \n')
-    text = input('Enter your text \n')
-    shift = int(input('Shift amount \n'))
+# should_contine = True
+# while should_contine:
+#     direction = input('Encode or Decode? \n')
+#     text = input('Enter your text \n')
+#     shift = int(input('Shift amount \n'))
 
 
-    caesar(direction, text, shift)
+#     caesar(direction, text, shift)
 
-    answer = input('Continue? Y/N \n').lower()
-    if answer == 'n':
-        should_contine = False
-        print('Goodbye')
+#     answer = input('Continue? Y/N \n').lower()
+#     if answer == 'n':
+#         should_contine = False
+#         print('Goodbye')
+
+
+# Dictionaries
+programming_dictionary = {
+    "Bug": "An error in a program that prevents the program from running as expected.", 
+    "Function": "A piece of code that you can easily call over and over again."
+    }
+
+# Retrieving items in dictionary 
+# print(programming_dictionary['Function'])
+
+# Adding new item to dictionary
+programming_dictionary['Loop'] = 'The action of doing something over and over again.'
+
+
+# Creating and wiping dictionary 
+new_dictionary = {}
+
+# Edit existing or create a new item in dictionary
+programming_dictionary['Bug'] = 'A moth in your computer.'
+# print(programming_dictionary['Bug'])
+
+
+# Loop through key value in dictionary
+for key in programming_dictionary:
+    print(f'{key}: {programming_dictionary[key]}')
+
+    #This selects each key and value from dictionary
