@@ -46,6 +46,9 @@
 # height = int(input('What is your height?: '))
 # price = 0
 
+# Greater than >
+# Less than <
+
 # if height >= 120:
 #     age = int(input('How old are you?: '))
 #     if age <= 12:
@@ -222,28 +225,28 @@
 
 
 # Dictionaries
-programming_dictionary = {
-    "Bug": "An error in a program that prevents the program from running as expected.", 
-    "Function": "A piece of code that you can easily call over and over again."
-    }
+# programming_dictionary = {
+#     "Bug": "An error in a program that prevents the program from running as expected.", 
+#     "Function": "A piece of code that you can easily call over and over again."
+#     }
 
 # Retrieving items in dictionary 
 # print(programming_dictionary['Function'])
 
 # Adding new item to dictionary
-programming_dictionary['Loop'] = 'The action of doing something over and over again.'
+# programming_dictionary['Loop'] = 'The action of doing something over and over again.'
 
 
 # Creating and wiping dictionary 
-new_dictionary = {}
+# new_dictionary = {}
 
 # Edit existing or create a new item in dictionary
-programming_dictionary['Bug'] = 'A moth in your computer.'
+# programming_dictionary['Bug'] = 'A moth in your computer.'
 # print(programming_dictionary['Bug'])
 
 
 # Loop through key value in dictionary
-for key in programming_dictionary:
-    print(f'{key}: {programming_dictionary[key]}')
+# for key in programming_dictionary:
+#     print(f'{key}: {programming_dictionary[key]}')
 
     #This selects each key and value from dictionary
