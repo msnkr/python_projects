@@ -250,3 +250,44 @@
 #     print(f'{key}: {programming_dictionary[key]}')
 
     #This selects each key and value from dictionary
+
+
+# Nesting 
+# capitals = {
+#     'France': 'Paris',
+#     'Germany': 'Berlin'
+# }
+
+# Nesting a list in a dictionary
+# travel_log = {
+#     'France': ['Paris', 'Lille', 'Dijon'],
+#     'Germany': ['Berlin', 'Hamburg', 'Stuttgart']
+# }
+
+# Nest dictionary in a dictionary
+# travel_log = {
+#     'France': {
+#         'cities_visited': ['Paris', 'Lille', 'Dijon'],
+#         'total_visits': 12
+#         },
+#     'Germany': {'cities_visited': ['Germany', 'Hamburg', 'Stuttgart'], 'times_visited': 12}
+# }
+
+# print(travel_log['Germany'])
+
+# Nesting dictionary in a list
+
+travel_log = [
+    {
+        'country': 'France',
+        'cities_visited': ['Paris', 'Lille', 'Dijon'],
+        'times_visited': 12
+    },
+    {
+    'country': 'Germany',
+    'cities_visited': ['Berlin', 'Hamburg', 'Stuttgart'],
+    'times_visited': 14
+    }
+]
+
+print(travel_log[1]['country'])
