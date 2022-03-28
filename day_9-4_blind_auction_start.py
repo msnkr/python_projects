@@ -14,16 +14,16 @@ logo = '''
 import os
 print(logo)
 
+bidders = []
+
 bid_again = True
 while bid_again:
-    os.system('clear')
-    bidders = []
     name = input('What is your name? ')
     bid = int(input('What is your bid? $'))
     
     current_bid = {
         'name': name,
-        'bid': bid,
+        'bid': bid
     }
 
     bidders.append(current_bid)
@@ -31,5 +31,8 @@ while bid_again:
     if play_again == 'n':
         bid_again = False
 
+        
+    os.system('clear')
 
-print(bidders)
+       
+print(bidders[0])
