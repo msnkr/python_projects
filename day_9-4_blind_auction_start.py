@@ -14,27 +14,27 @@ logo = '''
 import os
 print(logo)
 
-bidders = []
+bidders = {}
 
 bid_again = True
 while bid_again:
     name = input('What is your name? ')
     bid = int(input('What is your bid? $'))
-    current_bid = {
-        'name': name,
-        'bid': bid
-    }
-    bidders.append(current_bid)
+
+    bidders[name] = bid
 
     play_again = input('Would you like to bid again? Y/N \n')
     if play_again == 'n':
         bid_again = False
-
-        winner = []  
-        for key in bidders:
-            winner.append(key['bid'])
-
-        print(f'The winner is with ${max(winner)}')
+        
+        highest_bid = 0
+        winner = ''
+        for bidder in bidders:
+            bid_amount = bidders[bidder]
+            if bid_amount > highest_bid:
+                highest_bid = bid_amount
+            winner = bidder
+        print(f'The winner is {winner} with the bid of {highest_bid}')        
     else:
         os.system('clear')
 
