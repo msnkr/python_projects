@@ -30,5 +30,10 @@ while bid_again:
     if play_again == 'n':
         bid_again = False
         
-        print(bidders[0]['bid'])
-                
+        print(bidders)
+
+        # for value in bidders:
+            # print(f"{value['name']}'s price is ${value['bid']}. ")
+            # print(value)
+            # print(winner)
+        
