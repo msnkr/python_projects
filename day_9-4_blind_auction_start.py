@@ -29,11 +29,16 @@ while bid_again:
     play_again = input('Would you like to bid again? Y/N \n')
     if play_again == 'n':
         bid_again = False
-        
-        print(bidders)
 
-        # for value in bidders:
-            # print(f"{value['name']}'s price is ${value['bid']}. ")
-            # print(value)
-            # print(winner)
+        winner = []  
+        for key in bidders:
+            winner.append(key['bid'])
+
+        print(f'The winner is with ${max(winner)}')
+    else:
+        os.system('clear')
+
+            
+
+        
         
