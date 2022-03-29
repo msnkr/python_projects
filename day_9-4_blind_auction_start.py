@@ -33,7 +33,7 @@ while bid_again:
             bid_amount = bidders[bidder]
             if bid_amount > highest_bid:
                 highest_bid = bid_amount
-            winner = bidder
+                winner = bidder
         print(f'The winner is {winner} with the bid of {highest_bid}')        
     else:
         os.system('clear')
