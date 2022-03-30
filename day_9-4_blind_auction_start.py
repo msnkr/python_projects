@@ -14,29 +14,33 @@ logo = '''
 import os
 print(logo)
 
-
-bidders = {}
-should_contine = True
-
+# Create a function
 def calculate(bidders):
+# If loop to loop through values in dictionary
     highest_bid = 0
-    name_of_bidder = ''
+    bidder_name = ''
     for value in bidders:
+        # Find highest value and name
         if bidders[value] > highest_bid:
             highest_bid = bidders[value]
-            name_of_bidder = value
+            bidder_name = value
+    print(bidder_name, highest_bid)
 
-    print(f'The highest bidder is {name_of_bidder} with the bid of ${highest_bid}.')     
 
-    
+# Create a while loop
+should_contine = True
 while should_contine:
-    name = input('What is your name?: ')
-    bid = int(input('What is your bid?: $'))
-    bidders[name] = bid
+    # Get input
+    bidders = {}
+    name = input('Name: ')
+    bid = int(input('Bid: $'))
 
-    play_again = input('Would anyone else like to bid?: Y/N \n').lower()
+    # Add input to dictionary
+    bidders[name] = bid
+    play_again = input('Bid again?: ')
     if play_again == 'n':
         should_contine = False
         calculate(bidders)
+
 
       
