@@ -14,31 +14,29 @@ logo = '''
 import os
 print(logo)
 
+
 bidders = {}
+should_contine = True
 
-bid_again = True
-while bid_again:
-    name = input('What is your name? ')
-    bid = int(input('What is your bid? $'))
+def calculate(bidders):
+    highest_bid = 0
+    name_of_bidder = ''
+    for value in bidders:
+        if bidders[value] > highest_bid:
+            highest_bid = bidders[value]
+            name_of_bidder = value
 
+    print(f'The highest bidder is {name_of_bidder} with the bid of ${highest_bid}.')     
+
+    
+while should_contine:
+    name = input('What is your name?: ')
+    bid = int(input('What is your bid?: $'))
     bidders[name] = bid
 
-    play_again = input('Would you like to bid again? Y/N \n')
+    play_again = input('Would anyone else like to bid?: Y/N \n').lower()
     if play_again == 'n':
-        bid_again = False
-        
-        highest_bid = 0
-        winner = ''
-        for bidder in bidders:
-            bid_amount = bidders[bidder]
-            if bid_amount > highest_bid:
-                highest_bid = bid_amount
-                winner = bidder
-        print(f'The winner is {winner} with the bid of {highest_bid}')        
-    else:
-        os.system('clear')
+        should_contine = False
+        calculate(bidders)
 
-            
-
-        
-        
+      

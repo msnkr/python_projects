@@ -277,17 +277,43 @@
 
 # Nesting dictionary in a list
 
-travel_log = [
-    {
-        'country': 'France',
-        'cities_visited': ['Paris', 'Lille', 'Dijon'],
-        'times_visited': 12
-    },
-    {
-    'country': 'Germany',
-    'cities_visited': ['Berlin', 'Hamburg', 'Stuttgart'],
-    'times_visited': 14
-    }
-]
+# travel_log = [
+#     {
+#         'country': 'France',
+#         'cities_visited': ['Paris', 'Lille', 'Dijon'],
+#         'times_visited': 12
+#     },
+#     {
+#     'country': 'Germany',
+#     'cities_visited': ['Berlin', 'Hamburg', 'Stuttgart'],
+#     'times_visited': 14
+#     }
+# ]
 
-print(travel_log[1]['country'])
+# print(travel_log[1]['country'])
+
+should_continue = True
+bio = {}
+
+
+def calculate(bid):
+    oldest = 0
+    name_of_oldest = ''
+    for key in bio:
+        if bio[key] > oldest:
+            oldest = bio[key]
+            name_of_oldest = key
+
+    print(f'The oldest person is {name_of_oldest} at age: {oldest}')
+
+
+while should_continue:
+    name = input('What is yor name?: ')
+    age = int(input('How old are you?: '))
+
+    bio[name] = age
+
+    go_again = input('Do you want to go again? Y/N \n').lower()
+    if go_again == 'n':
+        should_continue = False
+        calculate(bio)
