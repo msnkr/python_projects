@@ -292,28 +292,37 @@
 
 # print(travel_log[1]['country'])
 
-should_continue = True
-bio = {}
+# should_continue = True
+# bio = {}
 
 
-def calculate(bid):
-    oldest = 0
-    name_of_oldest = ''
-    for key in bio:
-        if bio[key] > oldest:
-            oldest = bio[key]
-            name_of_oldest = key
+# def calculate(bid):
+#     oldest = 0
+#     name_of_oldest = ''
+#     for key in bio:
+#         if bio[key] > oldest:
+#             oldest = bio[key]
+#             name_of_oldest = key
 
-    print(f'The oldest person is {name_of_oldest} at age: {oldest}')
+#     print(f'The oldest person is {name_of_oldest} at age: {oldest}')
 
 
-while should_continue:
-    name = input('What is yor name?: ')
-    age = int(input('How old are you?: '))
+# while should_continue:
+#     name = input('What is yor name?: ')
+#     age = int(input('How old are you?: '))
 
-    bio[name] = age
+#     bio[name] = age
 
-    go_again = input('Do you want to go again? Y/N \n').lower()
-    if go_again == 'n':
-        should_continue = False
-        calculate(bio)
+#     go_again = input('Do you want to go again? Y/N \n').lower()
+#     if go_again == 'n':
+#         should_continue = False
+#         calculate(bio)
+
+
+# Functions with outputs
+def format_name(f_name, l_name):
+    f_name = f_name.title()
+    l_name = l_name.title()
+    return f'{f_name} {l_name}'
+
+print(format_name('mikyle', 'kruger'))
