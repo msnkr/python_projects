@@ -320,9 +320,18 @@
 
 
 # Functions with outputs
-def format_name(f_name, l_name):
-    f_name = f_name.title()
-    l_name = l_name.title()
-    return f'{f_name} {l_name}'
+# def format_name(f_name, l_name):
+#     f_name = f_name.title()
+#     l_name = l_name.title()
+#     return f'{f_name} {l_name}'
 
-print(format_name('mikyle', 'kruger'))
+# print(format_name('mikyle', 'kruger'))
+
+lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+new_dict = {}
+
+for num in range(len(lst)):
+    for letter in lst[num]:
+        new_dict[num] = letter
+
+print(new_dict)
