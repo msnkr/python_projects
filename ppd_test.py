@@ -5,9 +5,10 @@ import os
 output = os.system('/usr/bin/powerprofilesctl get')
 
 print(output)
-# if output == 'balanced':
-#     print('')
-# elif output == 'power saver':
-#     print('')
-# elif output == 'performance':
-#     print('')
+
+#if output == 'balanced':
+#     print('Hi, Balanced')
+#elif output == 'power-saver':
+#     print('Hi, Power Saver')
+#elif output == 'performance':
+#     print('Hi, Performace')
