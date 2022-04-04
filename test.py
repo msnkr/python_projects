@@ -336,12 +336,30 @@
 
 # print(new_dict)
 
-lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
-for item in range(len(lst)):
-    letter = lst[item]
-    if letter == 'c':
-        lst[item] = 'Changed'
-        
-print(lst)
+# for item in range(len(lst)):
+#     letter = lst[item]
+#     if letter == 'c':
+#         lst[item] = 'Changed'
+
+# print(lst)
+
+birthday_dict = {
+    'mikyle': '26 October',
+    'kashia': '17 November',
+    'lara': '26 February',
+}
+
+add_name = ''
+add_birthdate = ''
+should_contine = True
+while should_contine:
+    check_name = input('What is the name of the person?: ')
+    for name in birthday_dict:
+        if check_name == name:
+            print(birthday_dict[name])
+        elif check_name != name:
+            print('That name doesn\'t exist')
+
