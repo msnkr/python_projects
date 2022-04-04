@@ -352,14 +352,3 @@ birthday_dict = {
     'lara': '26 February',
 }
 
-add_name = ''
-add_birthdate = ''
-should_contine = True
-while should_contine:
-    check_name = input('What is the name of the person?: ')
-    for name in birthday_dict:
-        if check_name == name:
-            print(birthday_dict[name])
-        elif check_name != name:
-            print('That name doesn\'t exist')
-
