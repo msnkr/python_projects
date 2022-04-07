@@ -325,22 +325,22 @@
 
 # print(format_name('mikyle', 'kruger'))
 
-f_name = input('What is your first name? ')
-l_name = input('What is your last name? ')
+# f_name = input('What is your first name? ')
+# l_name = input('What is your last name? ')
 
-def format_name(f_name, l_name):
-    # Docstring is to give your function an explanation of what it does.
-    """
-    Takes first name and last name input and returns title case. 
-    If no first or last name, return none
-    """
-    if f_name == '' and l_name == '':
-        # This will return None
-        return 'Nothing was added'
-    return f'{f_name.title()} {l_name.title()}'
+# def format_name(f_name, l_name):
+#     # Docstring is to give your function an explanation of what it does.
+#     """
+#     Takes first name and last name input and returns title case. 
+#     If no first or last name, return none
+#     """
+#     if f_name == '' and l_name == '':
+#         # This will return None
+#         return 'Nothing was added'
+#     return f'{f_name.title()} {l_name.title()}'
 
 # Must use print statement else it won't return anything. 
-print(format_name(f_name, l_name))
+# print(format_name(f_name, l_name))
 
 # lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 # new_dict = {}
