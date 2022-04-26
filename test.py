@@ -390,20 +390,3 @@ operators = {
     '/': divide
 }    
 
-should_contine = True
-while should_contine:
-    number1 = int(input('What is the first number?: '))
-    for operator in operators:
-        print(operator)
-
-    symbol = input('Select a operator: ')
-    number2 = int(input('What is the second number?: '))
-
-    answer = operators[symbol]
-    print(f'{number1} {symbol} {number2} = {answer(number1, number2)}')
-
-
-    continue_answer = input('Do you want to go again? Y/N: ').lower()
-    if continue_answer == 'n':
-        should_contine = False
-        print('Goodbye! ')
