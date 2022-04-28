@@ -390,3 +390,27 @@ operators = {
     '/': divide
 }    
 
+
+def calculate():
+    should_continue = True
+    number1 = int(input('Enter the first number: '))
+    while should_continue:
+        for item in operators:
+            print(item)
+        symbol = input('Enter a operator: ')
+        number2 = int(input('Enter the next number: '))
+        operator = operators[symbol]
+        answer = operator(number1, number2)
+        print(f'{number1} {symbol} {number2} = {answer}')
+
+        go_again = input('Would you like to continue? (Y) or start again? (N) or "blank" to exit?: \n').lower()
+        if go_again == 'y':
+            number1 = answer
+        elif go_again == 'n':
+            should_continue = False
+            calculate()
+        else:
+            should_continue = False
+            print('Bye-Bye!')
+
+calculate()
