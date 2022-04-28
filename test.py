@@ -393,24 +393,25 @@ operators = {
 
 def calculate():
     should_continue = True
+
     number1 = int(input('Enter the first number: '))
     while should_continue:
         for item in operators:
             print(item)
-        symbol = input('Enter a operator: ')
-        number2 = int(input('Enter the next number: '))
-        operator = operators[symbol]
-        answer = operator(number1, number2)
-        print(f'{number1} {symbol} {number2} = {answer}')
+        symbol = input('Which operator would you like to use?: ')
+        number2 = int(input('Enter the second number: '))
 
-        go_again = input('Would you like to continue? (Y) or start again? (N) or "blank" to exit?: \n').lower()
+        calculation = operators[symbol]
+        answser = calculation(number1, number2)
+        print(answser)
+        go_again = input(f'Continue with {answser}? Y. Start again? N. E to exit.').lower()
         if go_again == 'y':
-            number1 = answer
+            number1 = answser
         elif go_again == 'n':
             should_continue = False
             calculate()
         else:
             should_continue = False
-            print('Bye-Bye!')
+            print('Goodbye')
 
 calculate()
