@@ -367,51 +367,58 @@
 #     'lara': '26 February',
 # }
 
-def add(n1, n2):
-    return n1 + n2
+# def add(n1, n2):
+#     return n1 + n2
 
 
-def subtract(n1, n2):
-    return n1 - n2
+# def subtract(n1, n2):
+#     return n1 - n2
 
 
-def multiply(n1, n2):
-    return n1 * n2
+# def multiply(n1, n2):
+#     return n1 * n2
 
 
-def divide(n1, n2):
-    return n1 / n2
+# def divide(n1, n2):
+#     return n1 / n2
 
 
-operators = {
-    '+': add,
-    '-': subtract,
-    '*': multiply,
-    '/': divide
-}    
+# operators = {
+#     '+': add,
+#     '-': subtract,
+#     '*': multiply,
+#     '/': divide
+# }    
 
 
-def calculate():
-    should_continue = True
+# def calculate():
+#     should_continue = True
 
-    number1 = int(input('Enter the first number: '))
-    while should_continue:
-        for item in operators:
-            print(item)
-        symbol = input('Which operator would you like to use?: ')
-        number2 = int(input('Enter the second number: '))
+#     number1 = int(input('Enter the first number: '))
+#     while should_continue:
+#         for item in operators:
+#             print(item)
+#         symbol = input('Which operator would you like to use?: ')
+#         number2 = int(input('Enter the second number: '))
 
-        calculation = operators[symbol]
-        answser = calculation(number1, number2)
-        print(answser)
-        go_again = input(f'Continue with {answser}? Y. Start again? N. E to exit.').lower()
-        if go_again == 'y':
-            number1 = answser
-        elif go_again == 'n':
-            should_continue = False
-            calculate()
-        else:
-            should_continue = False
-            print('Goodbye')
+#         calculation = operators[symbol]
+#         answser = calculation(number1, number2)
+#         print(answser)
+#         go_again = input(f'Continue with {answser}? Y. Start again? N. E to exit.').lower()
+#         if go_again == 'y':
+#             number1 = answser
+#         elif go_again == 'n':
+#             should_continue = False
+#             calculate()
+#         else:
+#             should_continue = False
+#             print('Goodbye')
 
-calculate()
+# calculate()
+
+lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+for item in range(len(lst)):
+    letter = lst[item]
+    if letter == 'g':
+        lst[item] = 'changed'
+print(lst)
