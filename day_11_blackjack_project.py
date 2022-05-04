@@ -59,6 +59,8 @@
 
 #Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
 
+import random
+
 logo = """
 .------.            _     _            _    _            _    
 |A_  _ |.          | |   | |          | |  (_)          | |   
@@ -70,3 +72,21 @@ logo = """
       `------'                           |__/           
 """
 
+cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
+my_cards = []
+computer_cards = []
+
+
+def deal_card():
+      turns = 1
+      while turns >= 0:
+            draw_card = random.choice(cards)
+            my_cards.append(draw_card)
+            draw_card = random.choice(cards)
+            computer_cards.append(draw_card)
+            turns -= 1
+
+deal_card()
+if sum(my_cards) >= 21 or sum(computer_cards) >= 21:
+      print('Winner')
