@@ -367,58 +367,74 @@
 #     'lara': '26 February',
 # }
 
-# def add(n1, n2):
-#     return n1 + n2
 
+# def add(num1, num2):
+#     return num1 + num2
 
-# def subtract(n1, n2):
-#     return n1 - n2
+# def subtract(num1, num2):
+#     return num1 - num2
 
+# def divide(num1, num2):
+#     return num1 / num2
 
-# def multiply(n1, n2):
-#     return n1 * n2
+# def multiply(num1, num2):
+#     return num1 * num2
 
-
-# def divide(n1, n2):
-#     return n1 / n2
-
-
-# operators = {
+# symbol_operators = {
 #     '+': add,
 #     '-': subtract,
-#     '*': multiply,
-#     '/': divide
-# }    
+#     '/': divide,
+#     '*': multiply
+# }
+
 
 
 # def calculate():
+#     num1 = int(input('What is the first number?: '))
 #     should_continue = True
 
-#     number1 = int(input('Enter the first number: '))
 #     while should_continue:
-#         for item in operators:
+#         for item in symbol_operators:
 #             print(item)
-#         symbol = input('Which operator would you like to use?: ')
-#         number2 = int(input('Enter the second number: '))
+#         operators = input('Choose your operator: ')
+#         num2 = int(input('What is the next number?: '))
 
-#         calculation = operators[symbol]
-#         answser = calculation(number1, number2)
-#         print(answser)
-#         go_again = input(f'Continue with {answser}? Y. Start again? N. E to exit.').lower()
+#         operator = symbol_operators[operators]
+#         answer = operator(num1, num2)
+
+#         print(f'{num1} {operators} {num2} = {answer}')
+#         go_again = input(f'Would you like to continue from {answer}? Or start again? Or Exit?: ')
+
 #         if go_again == 'y':
-#             number1 = answser
+#             num1 = answer
+#             should_continue = True
 #         elif go_again == 'n':
 #             should_continue = False
 #             calculate()
 #         else:
 #             should_continue = False
-#             print('Goodbye')
+#             print('Goodbye!')
 
 # calculate()
 
-lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-for item in range(len(lst)):
-    letter = lst[item]
-    if letter == 'g':
-        lst[item] = 'changed'
-print(lst)
+
+# lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# new_lst = []
+
+# for item in lst:
+#     if item == 'c':
+#         new_lst.append('changed')
+#     new_lst.append(item)
+
+# print(new_lst)
+
+# lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+# for item in range(len(lst)):
+#     letter = lst[item]   
+#     if letter == 'c':
+#         lst[item] = 'changed'    
+
+
+# print(lst)
+
