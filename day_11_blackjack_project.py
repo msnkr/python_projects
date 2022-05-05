@@ -77,16 +77,31 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 my_cards = []
 computer_cards = []
 
+def calculate_score(my_cards, computer_cards):
+      my_score = sum(my_cards)
+      computer_score = sum(computer_cards)
+      print(my_score)
+      print(computer_score)
 
-def deal_card():
-      turns = 1
+      if my_cards[0] == 11 and my_cards[1] == 10 or my_cards[0] == 10 and my_cards[1] == 11:
+            print('You got Blackjack')
+      elif my_score >= 22 and my_cards[0] == 11 or my_cards[1] == 11:
+            my_score -= 10
+      if computer_cards[0] == 11 and computer_cards[1] == 10 or my_cards[0] == 10 and computer_cards[1] == 11:
+            print('Computer got Blackjack')
+      elif computer_score >= 22 and computer_cards[0] == 11 or computer_cards[1] == 11:
+            computer_score -= 10
+      print(my_score)
+      print(computer_score)
+
+turns = 1      
+def deal_card(turns):
       while turns >= 0:
             draw_card = random.choice(cards)
             my_cards.append(draw_card)
             draw_card = random.choice(cards)
             computer_cards.append(draw_card)
             turns -= 1
+      calculate_score(my_cards, computer_cards)
 
-deal_card()
-if sum(my_cards) >= 21 or sum(computer_cards) >= 21:
-      print('Winner')
+deal_card(turns)
