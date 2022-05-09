@@ -82,8 +82,6 @@ def calculate_score(my_cards, computer_cards):
       pass
 
 
-
-
 def deal_card():
       return random.choice(cards)
 
