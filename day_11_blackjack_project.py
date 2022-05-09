@@ -76,17 +76,23 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 my_cards = []
 computer_cards = []
+turns = 1
+
+def calculate_score(my_cards, computer_cards):
+      pass
+
+
 
 
 def deal_card():
-      turns = 1
-      while turns >= 0:
-            draw_card = random.choice(cards)
-            my_cards.append(draw_card)
-            draw_card = random.choice(cards)
-            computer_cards.append(draw_card)
-            turns -= 1
+      return random.choice(cards)
 
-deal_card()
-if sum(my_cards) >= 21 or sum(computer_cards) >= 21:
-      print('Winner')
+
+while turns >= 0:
+      card = deal_card()
+      my_cards.append(card)
+      card = deal_card()
+      computer_cards.append(card)
+      turns -= 1
+
+calculate_score(my_cards, computer_cards)
