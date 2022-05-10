@@ -72,25 +72,49 @@ logo = """
       `------'                           |__/           
 """
 
-cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 my_cards = []
 computer_cards = []
-turns = 1
+turns = 2
+
+
+def deal_cards(turns):
+      cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+      while turns > 0:
+            turn = random.choice(cards)
+            my_cards.append(turn)      
+            turn = random.choice(cards)
+            computer_cards.append(turn)
+            turns -= 1
+
 
 def calculate_score(my_cards, computer_cards):
-      pass
+      my_score = sum(my_cards)
+      computer_score = sum(computer_cards)
+
+      if my_score == 21:
+            print('You Win')
+      elif computer_score == 21:
+            print('Computer Wins')
+      if my_cards[0] == 10 and my_cards[1] == 11 or my_cards[0] == 11 and my_cards[1] == 10: 
+            print('You got a Blackjack')
+      elif computer_cards[0] == 10 and computer_cards[1] == 11 or computer_cards[0] == 11 and computer_cards[1] == 10:
+            print('Computer got a blackjack')
+
+      if my_score == 22 and my_cards[0] == 11 or my_cards[1] == 11:
+            my_score - 10
+      elif computer_score == 22 and computer_cards[0] == 11 or computer_cards[1] == 11:
+            computer_score - 10
+
+      print(my_cards)
+      print(my_score)
+      print()
+      print(computer_cards)
+      print(computer_score)
 
 
-def deal_card():
-      return random.choice(cards)
 
 
-while turns >= 0:
-      card = deal_card()
-      my_cards.append(card)
-      card = deal_card()
-      computer_cards.append(card)
-      turns -= 1
 
+deal_cards(turns)
 calculate_score(my_cards, computer_cards)
