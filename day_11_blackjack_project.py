@@ -61,7 +61,7 @@
 
 import random
 
-logo = """
+logo = """card_score
 .------.            _     _            _    _            _    
 |A_  _ |.          | |   | |          | |  (_)          | |   
 |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
@@ -76,45 +76,35 @@ logo = """
 my_cards = []
 computer_cards = []
 turns = 2
+score = 0
 
 
 def deal_cards(turns):
       cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
       while turns > 0:
-            turn = random.choice(cards)
-            my_cards.append(turn)      
-            turn = random.choice(cards)
-            computer_cards.append(turn)
+            my_cards.append(random.choice(cards))
+            computer_cards.append(random.choice(cards))
             turns -= 1
+      calculate_score(card_score)
 
-
-def calculate_score(my_cards, computer_cards):
-      my_score = sum(my_cards)
-      computer_score = sum(computer_cards)
-
-      if my_score == 21:
-            print('You Win')
-      elif computer_score == 21:
-            print('Computer Wins')
-      if my_cards[0] == 10 and my_cards[1] == 11 or my_cards[0] == 11 and my_cards[1] == 10: 
-            print('You got a Blackjack')
-      elif computer_cards[0] == 10 and computer_cards[1] == 11 or computer_cards[0] == 11 and computer_cards[1] == 10:
-            print('Computer got a blackjack')
-
-      if my_score == 22 and my_cards[0] == 11 or my_cards[1] == 11:
-            my_score - 10
-      elif computer_score == 22 and computer_cards[0] == 11 or computer_cards[1] == 11:
-            computer_score - 10
-
-      print(my_cards)
-      print(my_score)
-      print()
-      print(computer_cards)
-      print(computer_score)
-
-
-
-
+def calculate_score(card_score):
+      score = sum(card_score)
+      if score == 21:
+            return 0
+      for item in card_score:
+            if score > 21 and item == 11:
+                  print('11 becomes a 1 ')
+                  card_score.remove(11)
+                  card_score.append(1)
+            elif score > 21:
+                  return 1
+      return card_score
 
 deal_cards(turns)
-calculate_score(my_cards, computer_cards)
+print(calculate_score(my_cards))
+
+
+if calculate_score(my_cards) == 0:
+      print('You Win')
+elif calculate_score(my_cards) == 1:
+      print('You Lose!')
