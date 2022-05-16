@@ -72,39 +72,3 @@ logo = """
       `------'                           |__/           
 """
 
-
-print(logo)
-my_cards = []
-computer_cards = []
-turns = 2
-
-def calculate_score(cards_lst):
-      if cards_lst[0] == 10 and cards_lst[1] == 11 or cards_lst[0] == 11 and cards_lst[1] == 10:
-            return 0
-      for item in cards_lst:
-            if sum(cards_lst) > 21 and item == 11:
-                  cards_lst.remove(11)
-                  cards_lst.append(1)
-            elif sum(cards_lst) > 21:
-                  return 1
-      print(cards_lst)
-      return sum(cards_lst)
-
-
-def deal_cards():
-      cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-      card = random.choice(cards)
-      return card
-
-
-while turns > 0:
-      my_cards.append(deal_cards())
-      computer_cards.append(deal_cards())
-      turns -= 1
-
-if calculate_score(my_cards) < 21:
-      draw_again = input('Do you want to draw another card?: Y/N ').lower()
-      if draw_again == 'y':
-            turns + 1
-      else:
-            calculate_score(computer_cards)
