@@ -61,7 +61,7 @@
 
 import random
 
-logo = """card_score
+logo = """
 .------.            _     _            _    _            _    
 |A_  _ |.          | |   | |          | |  (_)          | |   
 |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
@@ -73,38 +73,38 @@ logo = """card_score
 """
 
 
+print(logo)
 my_cards = []
 computer_cards = []
 turns = 2
-score = 0
 
-
-def deal_cards(turns):
-      cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-      while turns > 0:
-            my_cards.append(random.choice(cards))
-            computer_cards.append(random.choice(cards))
-            turns -= 1
-      calculate_score(card_score)
-
-def calculate_score(card_score):
-      score = sum(card_score)
-      if score == 21:
+def calculate_score(cards_lst):
+      if cards_lst[0] == 10 and cards_lst[1] == 11 or cards_lst[0] == 11 and cards_lst[1] == 10:
             return 0
-      for item in card_score:
-            if score > 21 and item == 11:
-                  print('11 becomes a 1 ')
-                  card_score.remove(11)
-                  card_score.append(1)
-            elif score > 21:
+      for item in cards_lst:
+            if sum(cards_lst) > 21 and item == 11:
+                  cards_lst.remove(11)
+                  cards_lst.append(1)
+            elif sum(cards_lst) > 21:
                   return 1
-      return card_score
-
-deal_cards(turns)
-print(calculate_score(my_cards))
+      print(cards_lst)
+      return sum(cards_lst)
 
 
-if calculate_score(my_cards) == 0:
-      print('You Win')
-elif calculate_score(my_cards) == 1:
-      print('You Lose!')
+def deal_cards():
+      cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+      card = random.choice(cards)
+      return card
+
+
+while turns > 0:
+      my_cards.append(deal_cards())
+      computer_cards.append(deal_cards())
+      turns -= 1
+
+if calculate_score(my_cards) < 21:
+      draw_again = input('Do you want to draw another card?: Y/N ').lower()
+      if draw_again == 'y':
+            turns + 1
+      else:
+            calculate_score(computer_cards)
