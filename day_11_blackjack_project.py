@@ -79,11 +79,6 @@ computer_cards = []
 def deal_card():
       return random.choice(cards)
 
-my_cards.append(deal_card())
-my_cards.append(deal_card())
-computer_cards.append(deal_card())
-computer_cards.append(deal_card())
-
 
 def calculate_score(cards_lst):
       if cards_lst[0] == 10 and cards_lst[1] == 11 or cards_lst[0] == 11 and cards_lst[1] == 10:
@@ -93,6 +88,6 @@ def calculate_score(cards_lst):
                   if card == 11:
                         cards_lst.remove(11)
                         cards_lst.append(1)
-      return sum(cards_lst)
-
-continue_game = True
+                  else:
+                        print('Game Over')
+      print(sum(cards_lst))
