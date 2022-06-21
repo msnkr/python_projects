@@ -91,3 +91,23 @@ def calculate_score(cards_lst):
                   else:
                         print('Game Over')
       print(sum(cards_lst))
+      return sum(cards_lst)
+
+my_cards.append(deal_card())
+my_cards.append(deal_card())
+computer_cards.append(deal_card())
+computer_cards.append(deal_card())
+
+calculate_score(my_cards)
+
+
+should_continue = True
+while should_continue:
+      go_again = input('Do you want to draw another card?:')
+      if go_again == 'y':
+            my_cards.append(deal_card())
+            calculate_score(my_cards)
+      else:
+            calculate_score(my_cards)
+
+
