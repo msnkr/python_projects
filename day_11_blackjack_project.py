@@ -71,34 +71,28 @@ logo = """
       |  \/ K|                            _/ |                
       `------'                           |__/           
 """
+print(logo)
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 my_cards = []
 computer_cards = []
 
-def calculate_score(lst):
-      if lst[0] == 10 and lst[1] == 11 or lst[0] == 11 and lst[1] == 10:
-            return 0
-      if sum(lst) > 21:
-            for item in lst:
-                  if item == 11:
-                        lst.remove(11)
-                        lst.append(1)
-      return sum(lst)
-
-
 def deal_card():
       return random.choice(cards)
-      
-      
+
 my_cards.append(deal_card())
 my_cards.append(deal_card())
 computer_cards.append(deal_card())
 computer_cards.append(deal_card())
-print(my_cards)
-print(computer_cards)
 
 
-if calculate_score(my_cards) == 0 or calculate_score(computer_cards) > 21:
-      print('You Win')
-elif calculate_score(my_cards) > 21 or calculate_score(computer_cards) == 0:
-      print('You Lose')
+def calculate_score(cards_lst):
+      if cards_lst[0] == 10 and cards_lst[1] == 11 or cards_lst[0] == 11 and cards_lst[1] == 10:
+            return 0
+      if sum(cards_lst) > 21:
+            for card in cards_lst:
+                  if card == 11:
+                        cards_lst.remove(11)
+                        cards_lst.append(1)
+      return sum(cards_lst)
+
+continue_game = True
