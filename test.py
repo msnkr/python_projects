@@ -469,29 +469,29 @@
 
 # get_name()
 
-# def calculate_age(name_age):
-#     oldest_name = ''
-#     oldest_age = 0
 
-#     for item in name_age:
-#         if name_age[item] > oldest_age:
-#             oldest_age = name_age[item]
-#             oldest_name = item
+# def calculate_age(new_dict):
+#     new_age = 0
+#     new_name = ''
 
-#     print(f'{oldest_name.capitalize()} is {oldest_age} years old. ')
+#     for item in new_dict:
+#         if new_dict[item] > new_age:
+#             new_age = new_dict[item]
+#             new_name = item
+#     print(f'The eldest is {new_name.capitalize()} at {new_age} ')
 
-
-
-# name_age = {}
+# # empty dictionary 
+# my_dict = {}
 # should_contine = True
 # while should_contine:
-#     name = input('Enter their name: ')
-#     age = int(input('Enter their age: '))
-#     name_age[name] = age
-
+#     # input name and age
+#     name = input('What is the name: ') 
+#     age = int(input('How old are they?: '))
+#     # save to dictionary
+#     my_dict[name] = age
+#     # ask if theres more names 
 #     go_again = input('Would you like to add another entry?: ')
 #     if go_again == 'n':
-#         calculate_age(name_age)
+#         calculate_age(my_dict)
 #         should_contine = False
-
-
+#     # if not then calculate the eldest 
