@@ -495,3 +495,7 @@
 #         calculate_age(my_dict)
 #         should_contine = False
 #     # if not then calculate the eldest 
+
+
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
