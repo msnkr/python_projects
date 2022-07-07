@@ -440,31 +440,31 @@
 
 
 
-def get_name():
-    birthdays_dict = {}
-    birthday_name = ''
-    birday_age = 0
-    should_continue = True
+# def get_name():
+#     birthdays_dict = {}
+#     birthday_name = ''
+#     birday_age = 0
+#     should_continue = True
 
 
-    while should_continue:
-        name = input('What is their name?: ')
-        age = int(input('What is their age?: '))
-        birthdays_dict[name] = age
+#     while should_continue:
+#         name = input('What is their name?: ')
+#         age = int(input('What is their age?: '))
+#         birthdays_dict[name] = age
 
-        another_name = input('Do you want to add another person?: Start again send "s": \n')
-        if another_name == 'n':
-            should_continue = False
+#         another_name = input('Do you want to add another person?: Start again send "s": \n')
+#         if another_name == 'n':
+#             should_continue = False
 
-            for item in birthdays_dict:
-                bday_age = birthdays_dict[item]
-                if birday_age < bday_age:
-                    birday_age = bday_age
-                    birthday_name = item
-            print(f'{birthday_name} is the eldest at {birday_age} years old!')
+#             for item in birthdays_dict:
+#                 bday_age = birthdays_dict[item]
+#                 if birday_age < bday_age:
+#                     birday_age = bday_age
+#                     birthday_name = item
+#             print(f'{birthday_name} is the eldest at {birday_age} years old!')
 
-        elif another_name == 's':
-            should_continue = False
-            get_name()
+#         elif another_name == 's':
+#             should_continue = False
+#             get_name()
 
-get_name()
+# get_name()
