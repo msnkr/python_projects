@@ -468,3 +468,31 @@
 #             get_name()
 
 # get_name()
+
+def calculate_age(name_age):
+    oldest_name = ''
+    oldest_age = 0
+
+    for item in name_age:
+        if name_age[item] > oldest_age:
+            oldest_age = name_age[item]
+            oldest_name = item
+
+    print(f'{oldest_name} is {oldest_age} years old. ')
+
+
+
+name_age = {}
+should_contine = True
+while should_contine:
+    name = input('Enter their name: ')
+    age = int(input('Enter their age: '))
+    name_age[name] = age
+
+    go_again = input('Would you like to add another entry?: ')
+    if go_again == 'n':
+        for item in name_age:
+            calculate_age(name_age)
+            should_contine = False
+
+
