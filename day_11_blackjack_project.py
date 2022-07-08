@@ -79,35 +79,16 @@ computer_cards = []
 def deal_card():
       return random.choice(cards)
 
+my_cards.append(deal_card())
+my_cards.append(deal_card())
 
-def calculate_score(cards_lst):
-      if cards_lst[0] == 10 and cards_lst[1] == 11 or cards_lst[0] == 11 and cards_lst[1] == 10:
+
+def calculate_score(lst):
+      if lst[0] == 10 and lst[1] == 11 or lst[1] == 10 and lst[0] == 11:
             return 0
-      if sum(cards_lst) > 21:
-            for card in cards_lst:
-                  if card == 11:
-                        cards_lst.remove(11)
-                        cards_lst.append(1)
-                  else:
-                        print('Game Over')
-      print(sum(cards_lst))
-      return sum(cards_lst)
+      if sum(lst) > 21 and lst[0] == 11 or lst[1] == 11:
+            return 1
+      return sum(lst)
 
-my_cards.append(deal_card())
-my_cards.append(deal_card())
-computer_cards.append(deal_card())
-computer_cards.append(deal_card())
-
-calculate_score(my_cards)
-
-
-should_continue = True
-while should_continue:
-      go_again = input('Do you want to draw another card?:')
-      if go_again == 'y':
-            my_cards.append(deal_card())
-            calculate_score(my_cards)
-      else:
-            calculate_score(my_cards)
-
-
+if calculate_score(my_cards) != 1:
+      go_again = 
