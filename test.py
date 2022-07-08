@@ -499,3 +499,12 @@
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
+for letter in range(len(alphabet)):
+    # returns individual numbers 
+    item = alphabet[letter]
+    # prints the actual letters of each number 
+    if item == 'd':
+        alphabet[letter] = 'changed'
+        # alphabet and number change  
+
+print(alphabet)
