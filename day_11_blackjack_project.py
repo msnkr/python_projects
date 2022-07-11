@@ -73,54 +73,54 @@ logo = """
 """
 print(logo)
 
-
-def calculate_score(lst):
-      if lst[0] == 10 and lst[1] == 11 or lst[1] == 10 and lst[0] == 11:
-            print('game over')
-            return 0
-      if sum(lst) > 21 and lst[0] == 11 or lst[1] == 11:
-            return 1
-      if sum(lst) > 22:
-            return 1
-      return sum(lst)
-
-
-def deal_card():
-      return random.choice(cards)
-
-
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 my_cards = []
 computer_cards = []
 
-my_cards.append(deal_card())
-my_cards.append(deal_card())
-calculate_score(my_cards)
+def deal_card():
+      return random.choice(cards)
 
+my_cards.append(deal_card())
+my_cards.append(deal_card())
+computer_cards.append(deal_card())
+computer_cards.append(deal_card())
+
+def calculate_score(my_list):
+      if my_list[0] == 11 or my_list[1] == 11 and sum(my_list) > 21:
+            my_list.remove(11)
+            my_list.append(1)
+      elif my_list[0] == 10 and my_list[1] == 11 or my_list[1] == 10 and my_list[0] == 11:
+            return 0 
+      elif sum(my_list) > 21:
+            return 1
+      else:
+            return sum(my_list)
 
 
 should_continue = True
 while should_continue:
       print(sum(my_cards))
+
       if calculate_score(my_cards) == 0:
-            print('Blackjack')
-      elif calculate_score(my_cards) == 1:
-            print('You lose!')
-      go_again = input('Would you like to draw another card?: ')
-      if go_again == 'y':
-            my_cards.append(deal_card())
-            calculate_score(my_cards)
-      else:
-            user_score = sum(my_cards)
+            print('Blackjack. You Win.')
             should_continue = False
-
-      print('Computers Turn')
-      computer_cards.append(deal_card())
-      computer_cards.append(deal_card())
-      if sum(computer_cards) > 17:
-            print(f'Computer Score {(calculate_score(computer_cards)}')
+      elif calculate_score(my_cards) == 1:
+            print('You Lose.')
+            should_continue = False
       else:
-            computer_cards.append(deal_card())
-      
-
-
+            go_again = input('Would You like to try draw again?: ')
+            if go_again == 'y':
+                  my_cards.append(deal_card())
+                  calculate_score(my_cards)
+            else:
+                  should_continue = False
+      print('Computers Turn')
+      if calculate_score(computer_cards) == 0:
+            print('BlackJack. Computer Wins')
+            should_continue = False
+      elif calculate_score(computer_cards) == 1:
+            print('Computer Loses.')
+            should_continue = False
+      else:
+            if sum(computer_cards) > 17:
+                  computer_cards.append(deal_card())
