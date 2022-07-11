@@ -95,32 +95,3 @@ def calculate_score(my_list):
             return 1
       else:
             return sum(my_list)
-
-
-should_continue = True
-while should_continue:
-      print(sum(my_cards))
-
-      if calculate_score(my_cards) == 0:
-            print('Blackjack. You Win.')
-            should_continue = False
-      elif calculate_score(my_cards) == 1:
-            print('You Lose.')
-            should_continue = False
-      else:
-            go_again = input('Would You like to try draw again?: ')
-            if go_again == 'y':
-                  my_cards.append(deal_card())
-                  calculate_score(my_cards)
-            else:
-                  should_continue = False
-      print('Computers Turn')
-      if calculate_score(computer_cards) == 0:
-            print('BlackJack. Computer Wins')
-            should_continue = False
-      elif calculate_score(computer_cards) == 1:
-            print('Computer Loses.')
-            should_continue = False
-      else:
-            if sum(computer_cards) > 17:
-                  computer_cards.append(deal_card())
