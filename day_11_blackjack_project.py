@@ -77,13 +77,6 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 my_cards = []
 computer_cards = []
 
-def deal_card():
-      return random.choice(cards)
-
-my_cards.append(deal_card())
-my_cards.append(deal_card())
-computer_cards.append(deal_card())
-computer_cards.append(deal_card())
 
 def calculate_score(my_list):
       if my_list[0] == 11 or my_list[1] == 11 and sum(my_list) > 21:
@@ -95,3 +88,16 @@ def calculate_score(my_list):
             return 1
       else:
             return sum(my_list)
+
+
+def deal_card():
+      return random.choice(cards)
+
+
+my_cards.append(deal_card())
+my_cards.append(deal_card())
+computer_cards.append(deal_card())
+computer_cards.append(deal_card())
+
+
+
