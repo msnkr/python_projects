@@ -100,43 +100,45 @@ my_cards.append(deal_card())
 computer_cards.append(deal_card())
 computer_cards.append(deal_card())
 
-should_continue = True
-while should_continue:
-      print(f'Your cards: {my_cards}. Your score: {calculate_score(my_cards)}')
-      print(f'Computers first card: {computer_cards[0]}')
-      if calculate_score(my_cards) == 1:
-            print('You Lose')
-            exit()
-      elif calculate_score(my_cards) == 0:
-            print('BlackJack. You win')
-            exit()
+# should_continue = True
+# while should_continue:
+#       print(f'Your cards: {my_cards}. Your score: {calculate_score(my_cards)}')
+#       print(f'Computers first card: {computer_cards[0]}')
+#       if calculate_score(my_cards) == 1:
+#             print('You Lose')
+#             exit()
+#       elif calculate_score(my_cards) == 0:
+#             print('BlackJack. You win')
+#             exit()
 
-      draw_again = input('Would you like to draw another card? ')
-      if draw_again == 'y':
-            my_cards.append(deal_card())
-      else:
-            should_continue = False
+#       draw_again = input('Would you like to draw another card? ')
+#       if draw_again == 'y':
+#             my_cards.append(deal_card())
+#       else:
+#             should_continue = False
 
 
-computer_chances = True
-while computer_chances:
-      if calculate_score(computer_cards) > 17:
-            computer_cards.append(deal_card())
-      elif calculate_score(computer_cards) == 1:
-            print('Computer Loses')
-            computer_chances = False
-      elif calculate_score(computer_cards) == 0:
-            print('Computer Wins')
-            computer_chances = False
-      else:
-            computer_chances = False
+# computer_chances = True
+# while computer_chances:
+#       if calculate_score(computer_cards) > 17:
+#             computer_cards.append(deal_card())
+#       elif calculate_score(computer_cards) == 1:
+#             print('Computer Loses')
+#             computer_chances = False
+#       elif calculate_score(computer_cards) == 0:
+#             print('Computer Wins')
+#             computer_chances = False
+#       else:
+#             computer_chances = False
 
       
 
-if calculate_score(my_cards) > calculate_score(computer_cards):
-      print('You Win')
-else:
-      print('You Lose')
+# if calculate_score(my_cards) > calculate_score(computer_cards):
+#       print('You Win')
+# else:
+#       print('You Lose')
 
-print(f'Your cards: {my_cards}. Total Score: {calculate_score(my_cards)}')
-print(f'Computer cards: {computer_cards}. Total Score: {calculate_score(computer_cards)}')
+# print(f'Your cards: {my_cards}. Total Score: {calculate_score(my_cards)}')
+# print(f'Computer cards: {computer_cards}. Total Score: {calculate_score(computer_cards)}')
+
+print(my_cards)
