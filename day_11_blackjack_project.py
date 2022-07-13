@@ -117,13 +117,19 @@ while should_continue:
       else:
             should_continue = False
 
+computer_chances = True
+while computer_chances:
+      if calculate_score(computer_cards) > 17:
+            computer_cards.append(deal_card())
+      elif calculate_score(computer_cards) == 1:
+            print('Computer Loses')
+            computer_chances = False
+      elif calculate_score(computer_cards) == 0:
+            print('Computer Wins')
+            computer_chances = False
+      else:
+            computer_chances = False
 
-if calculate_score(computer_cards) > 17:
-      computer_cards.append(deal_card())
-elif calculate_score(computer_cards) == 1:
-      print('Computer Loses')
-elif calculate_score(computer_cards) == 0:
-      print('Computer Wins')
       
 
 if calculate_score(my_cards) > calculate_score(computer_cards):
