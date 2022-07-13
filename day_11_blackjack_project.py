@@ -117,6 +117,7 @@ while should_continue:
       else:
             should_continue = False
 
+
 computer_chances = True
 while computer_chances:
       if calculate_score(computer_cards) > 17:
