@@ -78,56 +78,15 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 my_cards = []
 computer_cards = []
 
+
 def deal_cards():
       return random.choice(cards)
 
-
 def calculate_score(cards_list):
-      if cards_list[0] == 10 and cards_list[1] == 11 or cards_list[1] == 10 and cards_list[0] == 11:
+      if cards_list[0] == 0 and cards_list[1] == 11 or cards_list[1] == 0 and cards_list[0] == 11:
             return 0
       elif sum(cards_list) > 21 and cards_list[0] == 11 or cards_list[1] == 11:
             cards_list.remove(11)
             cards_list.append(1)
       else:
             return sum(cards_list)
-
-my_cards.append(deal_cards())
-my_cards.append(deal_cards())
-
-computer_cards.append(deal_cards())
-computer_cards.append(deal_cards())
-
-
-should_continue = True
-while should_continue:
-      print(f'{my_cards}: {calculate_score(my_cards)}')
-      print(f'The computers first card is: {computer_cards[0]}')
-      print(calculate_score(computer_cards))
-      if calculate_score(my_cards) > 21:
-            print('You Lose')
-            exit()
-      elif calculate_score(my_cards) == 0:
-            print('You Win. Blackjack!')
-            exit()
-
-      draw_again = input('Would You like another card?: ')
-      if draw_again == 'y':
-            my_cards.append(deal_cards())
-      else:
-            should_continue = False
-
-
-if calculate_score(my_cards) == calculate_score(computer_cards):
-      print('Its a draw!')
-elif calculate_score(computer_cards) > 21:
-      print('You Win')
-      print(calculate_score(my_cards))
-      print(calculate_score(computer_cards))
-elif calculate_score(my_cards) > calculate_score(computer_cards):
-      print('You Win')
-      print(calculate_score(my_cards))
-      print(calculate_score(computer_cards))
-else:
-      print('You Lose')
-      print(calculate_score(my_cards))
-      print(calculate_score(computer_cards))
