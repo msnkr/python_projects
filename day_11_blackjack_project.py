@@ -83,10 +83,26 @@ def deal_cards():
       return random.choice(cards)
 
 def calculate_score(cards_list):
-      if cards_list[0] == 0 and cards_list[1] == 11 or cards_list[1] == 0 and cards_list[0] == 11:
+      if cards_list[0] == 10 and cards_list[1] == 11 or cards_list[1] == 0 and cards_list[0] == 11:
             return 0
       elif sum(cards_list) > 21 and cards_list[0] == 11 or cards_list[1] == 11:
             cards_list.remove(11)
             cards_list.append(1)
       else:
             return sum(cards_list)
+
+my_cards.append(deal_cards())
+my_cards.append(deal_cards())
+
+draw_cards = True
+while draw_cards:
+      if calculate_score(my_cards) > 21:
+            print('You Lose!')
+            draw_cards = False
+            exit()
+      elif calculate_score(my_cards) == 0:
+            print('You Win. Blackjack')
+            draw_cards = False
+            exit()
+
+            
