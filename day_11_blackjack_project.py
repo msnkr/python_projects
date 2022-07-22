@@ -104,9 +104,6 @@ should_continue = True
 while should_continue:
       print(calculate_score(my_cards))
       # print(f'The computers first card is: {computer_cards[0]}')
-      print(calculate_score(computer_cards))
-      if calculate_score(computer_cards) > 17:
-            computer_cards.append(deal_cards())
       draw_again = input('Would you like to draw again?: ')
       if draw_again == 'y':
             my_cards.append(deal_cards())
