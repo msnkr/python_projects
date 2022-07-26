@@ -97,3 +97,43 @@ my_cards.append(deal_cards())
 my_cards.append(deal_cards())
 computer_cards.append(deal_cards())
 computer_cards.append(deal_cards())
+
+should_continue =True
+while should_continue:
+      print(calculate_score(my_cards))
+      print(f'Computers first card is: {computer_cards[0]}')
+      if calculate_score(my_cards) == 0:
+            print('You Win. Blackjack.')
+            should_continue = False
+            exit()
+      elif calculate_score(my_cards) == 1:
+            print('You Lose. Over 21.')
+            should_continue = False
+            exit()
+      else:
+            go_again = input('Do you want to go again?: ')
+            if go_again == 'y':
+                  my_cards.append(deal_cards())
+                  calculate_score(my_cards)
+            else:
+                  should_continue = False
+
+
+computer_continue = True
+while computer_continue:
+      if sum(computer_cards) < 17:
+            computer_cards.append(deal_cards())
+      else:
+            computer_continue = False
+
+
+if sum(my_cards) == sum(computer_cards):
+      print('It\'s a draw!')
+elif calculate_score(computer_cards) == 0:
+      print('You Lose. Computer Blackjack.')
+elif calculate_score(computer_cards) == 1:
+      print('You Win. Computer drew over 21')
+elif sum(my_cards) > sum(computer_cards):
+      print(f'You Win. Your score is: {calculate_score(my_cards)}. Computer score is: {calculate_score(computer_cards)}')
+else:
+      print(f'You Lose. Computers score is: {calculate_score(computer_cards)}. Your score is: {calculate_score(my_cards)}')
