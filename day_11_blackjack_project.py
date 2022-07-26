@@ -97,27 +97,3 @@ my_cards.append(deal_cards())
 my_cards.append(deal_cards())
 computer_cards.append(deal_cards())
 computer_cards.append(deal_cards())
-calculate_score(my_cards)
-
-
-should_continue = True
-while should_continue:
-      print(calculate_score(my_cards))
-      # print(f'The computers first card is: {computer_cards[0]}')
-      draw_again = input('Would you like to draw again?: ')
-      if draw_again == 'y':
-            my_cards.append(deal_cards())
-            calculate_score(my_cards)
-            if calculate_score(my_cards) == 0:
-                  print('You Won. Blackjack!')
-                  should_continue = False
-            elif calculate_score(my_cards) == 1:
-                  print('You Lose. You drew over 21.')
-                  should_continue = False
-            else:
-                  calculate_score(my_cards)
-      else:
-            should_continue = False
-
-
-print(computer_cards)
