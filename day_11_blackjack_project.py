@@ -111,7 +111,7 @@ while should_continue:
             should_continue = False
             exit()
       else:
-            go_again = input('Do you want to go again?: ')
+            go_again = input('Do you want to go again?: ').lower()
             if go_again == 'y':
                   my_cards.append(deal_cards())
                   calculate_score(my_cards)
