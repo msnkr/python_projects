@@ -497,14 +497,56 @@
 #     # if not then calculate the eldest 
 
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
-for letter in range(len(alphabet)):
-    # returns individual numbers 
-    item = alphabet[letter]
-    # prints the actual letters of each number 
-    if item == 'd':
-        alphabet[letter] = 'changed'
-        # alphabet and number change  
+# for letter in range(len(alphabet)):
+#     # returns individual numbers 
+#     item = alphabet[letter]
+#     # prints the actual letters of each number 
+#     if item == 'd':
+#         alphabet[letter] = 'changed'
+#         # alphabet and number change  
 
-print(alphabet)
+# print(alphabet)
+
+################################################################################################################################################################
+
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# for item in alphabet:
+#     print(item, end=' ')
+    #End removes the escape character and replaces it with ' ' or /. You can put anything to replace the escape character
+
+# seperator replaces the escape character too 
+# print('19', '12', '1990', sep='/')
+
+# Merge Dictionaries 
+# name1 = {
+#     'kelly': 23,
+#     'Raju': 22,
+#     'Derrick': 24,
+#     'John': 19
+# }
+
+# name2 = {
+#     'Ravi': 25,
+#     'Mpho': 22
+# }
+
+# # Method 1
+# # print(name1 | name2)
+
+# #Method 2
+# name = {**name1, **name2 }
+# print(name)
+
+# Caldender with Python
+# import calendar
+
+# month = calendar.month(2022, 8)
+# print(month)
+
+# Get Current time with python 
+# from datetime import datetime
+
+# time_now = datetime.now().strftime('%H:%M:%S')
+# print('The current time is ' + time_now)
