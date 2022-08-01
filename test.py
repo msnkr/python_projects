@@ -550,3 +550,18 @@
 
 # time_now = datetime.now().strftime('%H:%M:%S')
 # print('The current time is ' + time_now)
+
+# Sort a list in descending order 
+# list = [2, 7, 5, 4, 3, 6, 1]
+# list.sort(reverse=True)
+# # You can't use the sort method to create a new object. Sort is strictly a list method
+
+# print(list)
+
+
+#Swapping variables 
+# x, y = 20, 30
+# x, y = y, x
+# print(x, y)
+
+
