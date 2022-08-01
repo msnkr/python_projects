@@ -91,24 +91,13 @@ for _ in range(2):
 def calculate_score(cards_list):
       if sum(cards_list) == 21:
             return 0 
-      elif 11 in cards_list and sum(cards_list) > 21:
+      elif sum(cards_list) > 21 and 11 in cards_list:
             cards_list.remove(11)
             cards_list.append(1)
             return sum(cards_list)
       else:
             return sum(cards_list)
 
-if calculate_score(my_cards) == 0:
-      print('You Got a BlackJack')
-elif calculate_score(computer_cards) == 0:
-      print('Computer Got a Blackjack')
 
-
-if calculate_score(my_cards) > 21:
-      print('You Lose. You went over 21')
-elif calculate_score(computer_cards) > 21:
-      print('You Win. Computer went over 21')
-
-
-
-
+print(calculate_score(my_cards))
+print(calculate_score(computer_cards))
