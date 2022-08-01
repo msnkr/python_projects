@@ -565,3 +565,15 @@
 # print(x, y)
 
 
+# Count how many items in a list 
+# names = ['mikyle', 'kashia', 'lara', 'marcus', 'lara', 'simone', 'lara']
+
+# count = 0
+
+# for item in names:
+#     if item == 'lara':
+#         count += 1
+
+# print(f'The name appears {count} times.')
+
+
