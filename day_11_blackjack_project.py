@@ -97,7 +97,3 @@ def calculate_score(cards_list):
             return sum(cards_list)
       else:
             return sum(cards_list)
-
-
-print(calculate_score(my_cards))
-print(calculate_score(computer_cards))
