@@ -72,28 +72,33 @@ logo = """
       |  \/ K|                            _/ |                
       `------'                           |__/           
 """
-print(logo)
+# print(logo)
 
-cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
 my_cards = []
 computer_cards = []
 
 
-def deal_cards():
+def deal_card():
+      cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
       return random.choice(cards)
 
 
 for _ in range(2):
-      my_cards.append(deal_cards())
-      computer_cards.append(deal_cards())
+      my_cards.append(deal_card())
+      computer_cards.append(deal_card())
 
 
-def calculate_score(cards_list):
-      if sum(cards_list) == 21:
-            return 0 
-      elif sum(cards_list) > 21 and 11 in cards_list:
-            cards_list.remove(11)
-            cards_list.append(1)
-            return sum(cards_list)
+def calculate_score(cards):
+      if len(cards) == 2 and sum(cards) == 21:
+            return 0
+      elif sum(cards) > 21 and 11 in cards:
+            cards.remove(11)
+            cards.append(1)
+            return sum(cards)
       else:
-            return sum(cards_list)
+            return sum(cards)
+
+my_score = calculate_score(my_cards)
+computer_score = calculate_score(computer_cards)
+
