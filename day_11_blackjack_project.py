@@ -129,26 +129,20 @@ computer_score = calculate_score(computer_cards)
 
 
 is_game_over = False
-if user_score == 0 or computer_score == 0 or user_score > 21:
-      is_game_over = True
-
-#Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
-
-draw_again = True
-while draw_again:
-      my_score = sum(user_cards)
-      print(my_score)
-      print(f'Computers first card is: {computer_cards[0]}.')
-      if input('Do you want to draw again?: ') == 'y':
-            user_cards.append(deal_card())
-            calculate_score(user_cards)
+while not is_game_over:
+      if user_score == 0 or computer_score == 0 or user_score > 21:
+            is_game_over = True
+      #Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
       else:
-            draw_again = False
-            #Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
-            computer_turn = True
-            while computer_turn:
-                  if computer_score < 17:
-                        computer_cards.append(deal_card())
-                        computer_score = sum(computer_cards)
-                  else:
-                        computer_turn = False
+            print(user_score)
+            print(computer_score)
+            if input('Would you like to draw again?: ') == 'y':
+                  user_cards.append(deal_card())
+                  user_score = calculate_score(user_cards)
+            else:
+                  is_game_over = True
+
+#Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
+while computer_score != 0 and computer_score < 17:
+      computer_cards.append(deal_card())
+      computer_score = calculate_score(computer_cards)          
