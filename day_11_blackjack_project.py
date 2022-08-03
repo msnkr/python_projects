@@ -60,7 +60,7 @@
 #Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
 
 import random
-import sys
+import os
 
 logo = """
 .------.            _     _            _    _            _    
@@ -72,33 +72,83 @@ logo = """
       |  \/ K|                            _/ |                
       `------'                           |__/           
 """
-# print(logo)
+
+def play_game():
+      """Play Blackjack"""
+      print(logo)
 
 
-my_cards = []
-computer_cards = []
+      my_cards = []
+      computer_cards = []
 
 
-def deal_card():
-      cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-      return random.choice(cards)
+      def compare(my_score, computer_score):
+            """Compare the scores of the user and computer"""
+            if my_score == computer_score:
+                  return 'It\'s a Draw. '
+            elif my_score == 0:
+                  return 'You Win with Blackjack.'
+            elif computer_score == 0:
+                  return 'You Lose. Ccomputer Wins with Blackjack. '
+            elif computer_score > 21:
+                  return 'You Win. Computer drew over 21. '
+            elif my_score > 21:
+                  return 'You Lose. You drew over 21. '
+            elif my_score > computer_score:
+                  return 'You Win. You got a higher score. '
+            else:
+                  return 'You Lose. Computer got a higher score. '
+            
 
 
-for _ in range(2):
-      my_cards.append(deal_card())
-      computer_cards.append(deal_card())
+      def deal_card():
+            """Return a random card"""
+            cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+            return random.choice(cards)
 
 
-def calculate_score(cards):
-      if len(cards) == 2 and sum(cards) == 21:
-            return 0
-      elif sum(cards) > 21 and 11 in cards:
-            cards.remove(11)
-            cards.append(1)
-            return sum(cards)
-      else:
-            return sum(cards)
+      for _ in range(2):
+            my_cards.append(deal_card())
+            computer_cards.append(deal_card())
 
-my_score = calculate_score(my_cards)
-computer_score = calculate_score(computer_cards)
 
+      def calculate_score(cards):
+            if len(cards) == 2 and sum(cards) == 21:
+                  return 0
+            elif sum(cards) > 21 and 11 in cards:
+                  cards.remove(11)
+                  cards.append(1)
+                  return sum(cards)
+            else:
+                  return sum(cards)
+
+
+      is_game_over = False
+      while not is_game_over:
+            my_score = calculate_score(my_cards)
+            computer_score = calculate_score(computer_cards)
+            print(f'Your cards are: {my_cards}. Total Score: {my_score}')
+            print(f'The computers first card is: {computer_cards[0]}')
+            if my_score == 0 or computer_score == 0 or my_score > 21:
+                  is_game_over = True
+            else:
+                  go_again = input('Do you want to draw another card? ')
+                  if go_again == 'y':
+                        my_cards.append(deal_card())
+                        my_score = sum(my_cards)
+                  else:
+                        is_game_over = True
+
+
+      while computer_score < 17 and computer_score != 0:
+            computer_cards.append(deal_card())
+            computer_score = calculate_score(computer_cards)
+
+      print(my_score)
+      print(computer_score)
+      print(compare(my_score, computer_score))
+
+play_again = input('Do you want to play blackjack: ')
+while play_again == 'y':
+      os.system('cls')
+      play_game()
