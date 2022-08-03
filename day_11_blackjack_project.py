@@ -73,6 +73,25 @@ logo = """
       `------'                           |__/           
 """
 
+#Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
+def compare(user_score, computer_score):
+      if user_score > 21:
+            return 'You Lose. Over 21'
+      elif computer_score > 21:
+            return 'You Win. Over 21'
+      elif user_score == 0:
+            return 'You Win. Blackjack'
+      elif computer_score == 0:
+            return 'You Lose. Blackjack'
+      elif computer_score == user_score:
+            return 'It\'s a draw!'
+      elif user_score > computer_score:
+            return 'You Win. Score is higher'
+      else:
+            return 'You Lose. Score is higher'
+      
+
+
 #Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
 #11 is the Ace.
 
@@ -100,16 +119,19 @@ def calculate_score(cards):
       elif sum(cards) > 21 and 11 in cards:
             cards.remove(11)
             cards.append(1)
-            return sum(cards)
       else:
             return sum(cards)
 
 
 #Hint 9: Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21, then the game ends.
-if calculate_score(user_cards) == 0 or calculate_score(computer_cards) == 0 or calculate_score(user_cards) > 21:
-            print('You Lose')
-            draw_again = False
-            
+user_score = calculate_score(user_cards)
+computer_score = calculate_score(computer_cards)
+
+
+is_game_over = False
+if user_score == 0 or computer_score == 0 or user_score > 21:
+      is_game_over = True
+
 #Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
 
 draw_again = True
@@ -122,5 +144,11 @@ while draw_again:
             calculate_score(user_cards)
       else:
             draw_again = False
-
-
+            #Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
+            computer_turn = True
+            while computer_turn:
+                  if computer_score < 17:
+                        computer_cards.append(deal_card())
+                        computer_score = sum(computer_cards)
+                  else:
+                        computer_turn = False
