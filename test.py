@@ -582,6 +582,26 @@ import random
 user_cards = []
 computer_cards = []
 
+
+#Hint 13: Create a function called compare() and pass in the user_score and computer_score. If the computer and user both have the same score, then it's a draw. If the computer has a blackjack (0), then the user loses. If the user has a blackjack (0), then the user wins. If the user_score is over 21, then the user loses. If the computer_score is over 21, then the computer loses. If none of the above, then the player with the highest score wins.
+def compare(user_score, computer_score):
+    if user_score == computer_score:
+        print('It\'s a draw.')
+    elif user_score == 0:
+        print('You win with a Blackjack.')
+    elif computer_score == 0:
+        print('You Lose. Computer got Blackjack.')
+    elif computer_score > 21:
+        print('You Win. Computer drew over 21.')
+    elif user_score > 21:
+        print('You Lose. You drew over 21.')
+    elif user_score > computer_score:
+        print('You Win. You drew higher.')
+    else:
+        print('You Lose. Computer drew higher.')
+
+
+
 def calculate_score(cards):
     """return score of cards"""
     if sum(cards) == 21 and len(cards) == 2:
@@ -626,3 +646,6 @@ while not is_game_over:
 while computer_score != 0 and computer_score < 17:
     computer_cards.append(deal_card())
     computer_score = calculate_score(computer_cards)
+
+
+compare(user_score, computer_score)
