@@ -577,10 +577,7 @@
 # print(f'The name appears {count} times.')
 
 import random
-
-
-user_cards = []
-computer_cards = []
+import os
 
 
 #Hint 13: Create a function called compare() and pass in the user_score and computer_score. If the computer and user both have the same score, then it's a draw. If the computer has a blackjack (0), then the user loses. If the user has a blackjack (0), then the user wins. If the user_score is over 21, then the user loses. If the computer_score is over 21, then the computer loses. If none of the above, then the player with the highest score wins.
@@ -591,10 +588,10 @@ def compare(user_score, computer_score):
         print('You win with a Blackjack.')
     elif computer_score == 0:
         print('You Lose. Computer got Blackjack.')
-    elif computer_score > 21:
-        print('You Win. Computer drew over 21.')
     elif user_score > 21:
         print('You Lose. You drew over 21.')
+    elif computer_score > 21:
+        print('You Win. Computer drew over 21.')
     elif user_score > computer_score:
         print('You Win. You drew higher.')
     else:
@@ -619,33 +616,43 @@ def deal_card():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     return random.choice(cards)
 
-for _ in range(2):
-    user_cards.append(deal_card())
-    computer_cards.append(deal_card())
 
+def play_game():
+    user_cards = []
+    computer_cards = []
 
-
-is_game_over = False
-while not is_game_over:
-    user_score = calculate_score(user_cards)
-    computer_score = calculate_score(computer_cards)
-    print(f'User cards: {user_cards}. Total score: {user_score}')
-    print(f'Computer first card: {computer_cards[0]}')
-    # Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21, then the game ends.
-    if user_score > 21 or user_score == 0 or computer_score == 0:
-        is_game_over = True
-    #Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
-    elif input('Do you want to draw another card?: ') == 'y':
+    for _ in range(2):
         user_cards.append(deal_card())
+        computer_cards.append(deal_card())
+
+
+
+    is_game_over = False
+    while not is_game_over:
         user_score = calculate_score(user_cards)
-    else:
-        is_game_over = True
+        computer_score = calculate_score(computer_cards)
+        print(f'User cards: {user_cards}. Total score: {user_score}')
+        print(f'Computer first card: {computer_cards[0]}')
+        # Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21, then the game ends.
+        if user_score > 21 or user_score == 0 or computer_score == 0:
+            is_game_over = True
+        #Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
+        elif input('Do you want to draw another card?: ') == 'y':
+            user_cards.append(deal_card())
+            user_score = calculate_score(user_cards)
+        else:
+            is_game_over = True
 
 
-#Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
-while computer_score != 0 and computer_score < 17:
-    computer_cards.append(deal_card())
-    computer_score = calculate_score(computer_cards)
+    #Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
+    while computer_score != 0 and computer_score < 17:
+        computer_cards.append(deal_card())
+        computer_score = calculate_score(computer_cards)
 
 
-compare(user_score, computer_score)
+    compare(user_score, computer_score)
+    if input('Do you want to play a game of Blackjack?: ') == 'y':
+        os.system('cls')
+        play_game()
+
+play_game()
