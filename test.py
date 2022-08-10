@@ -699,11 +699,14 @@
 
 ####################################scope#######################################
 
-enemies = 1
+# enemies = 1
 
-def inside_enemies():
-    enemies = 2
-    print(f'How many enemies?: {enemies}')
+# def inside_enemies():
+#     enemies = 2
+#     print(f'How many enemies?: {enemies}')
 
-inside_enemies()
-print(f'How many enemies now?: {enemies}')
+# inside_enemies()
+# print(f'How many enemies now?: {enemies}')
+
+
+#####################
