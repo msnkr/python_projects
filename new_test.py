@@ -717,6 +717,12 @@ turns = 10
 def new_turns():
     return turns - 1
 
+while turns != 0:
+    turns = new_turns()
 
-turns = new_turns()
-print(turns)
+    if turns == 0:
+        print('It is now 0')
+    else:
+        print(turns)
+
+    
