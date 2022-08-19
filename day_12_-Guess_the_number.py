@@ -120,9 +120,21 @@ def set_difficulty():
 
 turns = set_difficulty()
 answer = random.randint(1, 100)
+guess = 0
 
+
+
+while turns != 0:
+print(f'The answer is {answer}.')
 guess = int(input('What is your guess?: '))
-compare(answer, guess, turns)
+turns = compare(answer, guess, turns)
+
+if turns == 0:
+  print('You Lose. You are out of turns')
+else:
+  print('Guess again')
+
+
 
 
 
