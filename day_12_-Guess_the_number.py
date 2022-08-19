@@ -124,16 +124,13 @@ guess = 0
 
 
 
-while turns != 0:
-print(f'The answer is {answer}.')
-guess = int(input('What is your guess?: '))
-turns = compare(answer, guess, turns)
+while guess != answer:
+  print(f'The answer is {answer}.')
+  guess = int(input('What is your guess?: '))
+  turns = compare(answer, guess, turns)
 
-if turns == 0:
-  print('You Lose. You are out of turns')
-else:
-  print('Guess again')
 
+print('You Win')
 
 
 
