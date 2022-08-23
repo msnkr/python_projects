@@ -107,7 +107,7 @@ def compare(answer, guess, turns):
     print('You are too high.')
     return turns -1
   else:
-    print('You are correct. Well Done.')
+    print('You are correct. Well Done. You win.')
 
 
 def set_difficulty():
@@ -117,21 +117,30 @@ def set_difficulty():
   else:
     return HARD_LEVEL_TURNS
 
-
-turns = set_difficulty()
-answer = random.randint(1, 100)
-guess = 0
-
-
-
-while guess != answer:
-  print(f'The answer is {answer}.')
-  guess = int(input('What is your guess?: '))
-  turns = compare(answer, guess, turns)
+def game():
+  turns = set_difficulty()
+  answer = random.randint(1, 100)
+  guess = 0
 
 
-print('You Win')
 
+  while guess != answer:
+    print(f'You have {turns} turns left. ')
+    guess = int(input('What is your guess?: '))
+    turns = compare(answer, guess, turns)
+
+    if turns == 0:
+      print('You have run out of turns. ou Lose.')
+      break
+    elif guess != answer:
+      print('Try again!')
+
+
+  if input('Do you want to play again?: ') == 'y':
+    game()
+
+game()
+  
 
 
 
