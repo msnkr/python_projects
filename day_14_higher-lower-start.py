@@ -323,9 +323,16 @@ data = [
 
 import random
 
-
 def compare(answer):
-    final_answer = ''
+    correct_answer = ''
+    if followers1 > followers2:
+        correct_answer = followers1
+    else:
+        correct_answer = followers2
+    if answer == 'a':
+        return a
+    else:
+        return b
 
 
 data_list = []
@@ -333,23 +340,25 @@ for item in range(len(data)):
     data_list.append(item)
     random_data = random.choice(data_list)
     
-name = data[random_data]['name']
-followers = data[random_data]['follower_count']
-description = data[random_data]['description']
-country = data[random_data]['country']
+name1 = data[random_data]['name']
+followers1 = data[random_data]['follower_count']
+description1 = data[random_data]['description']
+country1 = data[random_data]['country']
 
 print(logo)
-question_a = print(f'Who has a higher follower count?: {name}, A {description} from {country}.')
+print('Who has a higher follower count?:')
+question_a = print(f'{name1}, A {description1} from {country1}.')
 print(vs)
 
 for item in range(len(data)):
     data_list.append(item)
     random_data = random.choice(data_list)
     
-name = data[random_data]['name']
-followers = data[random_data]['follower_count']
-description = data[random_data]['description']
-country = data[random_data]['country']
-question_b = print(f'{name}, A {description} from {country}.')
+name2 = data[random_data]['name']
+followers2 = data[random_data]['follower_count']
+description2 = data[random_data]['description']
+country2 = data[random_data]['country']
+question_b = print(f'{name2}, A {description2} from {country2}.')
 
-answer = input('A or B?: ')
+answer = input('A or B?: ').lower()
+final_answer = compare(answer)
