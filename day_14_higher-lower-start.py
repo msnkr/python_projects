@@ -323,11 +323,33 @@ data = [
 
 import random
 
-list_of_items = []
+
+def compare(answer):
+    final_answer = ''
+
+
+data_list = []
 for item in range(len(data)):
-    list_of_items.append(item)
+    data_list.append(item)
+    random_data = random.choice(data_list)
+    
+name = data[random_data]['name']
+followers = data[random_data]['follower_count']
+description = data[random_data]['description']
+country = data[random_data]['country']
 
-random_item = random.choice(list_of_items)
-print(data[random_item]['name'], data[random_item]['follower_count'], data[random_item]['description'], data[random_item]['country'])
+print(logo)
+question_a = print(f'Who has a higher follower count?: {name}, A {description} from {country}.')
+print(vs)
 
+for item in range(len(data)):
+    data_list.append(item)
+    random_data = random.choice(data_list)
+    
+name = data[random_data]['name']
+followers = data[random_data]['follower_count']
+description = data[random_data]['description']
+country = data[random_data]['country']
+question_b = print(f'{name}, A {description} from {country}.')
 
+answer = input('A or B?: ')
