@@ -324,9 +324,15 @@ data = [
 import random
 
 
-def compare():
-    pass
 
+def compare(person_a, person_b):
+    followers = ''
+    if person_a['follower_count'] > person_b['follower_count']:
+        followers = person_a['follower_count'] 
+    else:
+        followers = person_b['follower_count']
+    return followers
+    
 
 def get_random():
     random_person = random.choice(list_of_items)
@@ -340,4 +346,3 @@ for item in range(len(data)):
 person_a = get_random()
 person_b = get_random()
 
-print(f"{person_a['name']}, A {person_a['description']} from {person_a['country']}")
