@@ -323,42 +323,21 @@ data = [
 
 import random
 
-def compare(answer):
-    correct_answer = ''
-    if followers1 > followers2:
-        correct_answer = followers1
-    else:
-        correct_answer = followers2
-    if answer == 'a':
-        return a
-    else:
-        return b
+
+def compare():
+    pass
 
 
-data_list = []
+def get_random():
+    random_person = random.choice(list_of_items)
+    return data[random_person]
+
+
+list_of_items = []
 for item in range(len(data)):
-    data_list.append(item)
-    random_data = random.choice(data_list)
-    
-name1 = data[random_data]['name']
-followers1 = data[random_data]['follower_count']
-description1 = data[random_data]['description']
-country1 = data[random_data]['country']
+    list_of_items.append(item)
 
-print(logo)
-print('Who has a higher follower count?:')
-question_a = print(f'{name1}, A {description1} from {country1}.')
-print(vs)
+person_a = get_random()
+person_b = get_random()
 
-for item in range(len(data)):
-    data_list.append(item)
-    random_data = random.choice(data_list)
-    
-name2 = data[random_data]['name']
-followers2 = data[random_data]['follower_count']
-description2 = data[random_data]['description']
-country2 = data[random_data]['country']
-question_b = print(f'{name2}, A {description2} from {country2}.')
-
-answer = input('A or B?: ').lower()
-final_answer = compare(answer)
+print(f"{person_a['name']}, A {person_a['description']} from {person_a['country']}")
