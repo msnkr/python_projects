@@ -324,10 +324,15 @@ data = [
 import random
 
 
+def compare(answer, person_a, person_b):
+    winner = ''
+    if person_a['follower_count'] > person_b['follower_count']:
+        winner = person_a
+        return winner
+    else:
+        winner = person_b
+        return winner
 
-def compare():
-    pass
-    
 
 def get_random():
     random_person = random.choice(list_of_items)
@@ -341,4 +346,14 @@ for item in range(len(data)):
 person_a = get_random()
 person_b = get_random()
 
-print(person_a)
+
+print(logo)
+print('Who has a higher follower base?: ')
+print(f"{person_a['name']}. A {person_a['description']} from {person_a['country']}")
+print(vs)
+print(f"{person_b['name']}. A {person_b['description']} from {person_b['country']}")
+
+answer = input('A or B').lower()
+
+
+
