@@ -322,16 +322,25 @@ data = [
 ]
 
 import random
+import os
 
 
-def compare(answer, person_a, person_b):
-    winner = ''
-    if person_a['follower_count'] > person_b['follower_count']:
-        winner = person_a
-        return winner
+def question_winner():
+    if answer == 'a' and compare(person_a, person_b) == person_a:
+        return 'You Win'
+    elif answer == 'a' and compare(person_a, person_b) == person_b:
+        return 'You Lose'
+    elif answer == 'b' and compare(person_a, person_b) == person_a:
+        return 'You Lose'
     else:
-        winner = person_b
-        return winner
+        return 'You Win'
+
+
+def compare(person_a, person_b):
+    if person_a['follower_count'] > person_b['follower_count']:
+        return person_a
+    else:
+        return person_b
 
 
 def get_random():
@@ -343,17 +352,34 @@ list_of_items = []
 for item in range(len(data)):
     list_of_items.append(item)
 
-person_a = get_random()
-person_b = get_random()
+
+go_again = True
+count = 0
+
+while go_again != False:
+    list_of_items = []
+    for item in range(len(data)):
+        list_of_items.append(item)
+
+    person_a = get_random()
+    person_b = get_random()
+
+    print(logo)
+    print('Who has a higher follower base?: ')
+    print(f"{person_a['name']}. A {person_a['description']} from {person_a['country']}")
+    print(vs)
+    print(f"{person_b['name']}. A {person_b['description']} from {person_b['country']}")
+
+    answer = input('A or B: ').lower()
+    os.system('clear')
 
 
-print(logo)
-print('Who has a higher follower base?: ')
-print(f"{person_a['name']}. A {person_a['description']} from {person_a['country']}")
-print(vs)
-print(f"{person_b['name']}. A {person_b['description']} from {person_b['country']}")
-
-answer = input('A or B').lower()
+    if question_winner() == 'You Win':
+        count += 1
+        print(f'You Win. Your score is {count}')
+    else:
+        print(f'You Lose. Your score is {count}.')
+        go_again = False
 
 
 
