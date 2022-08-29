@@ -371,7 +371,7 @@ while go_again != False:
     print(f"{person_b['name']}. A {person_b['description']} from {person_b['country']}")
 
     answer = input('A or B: ').lower()
-    os.system('clear')
+    os.system('cls')
 
 
     if question_winner() == 'You Win':
