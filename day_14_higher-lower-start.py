@@ -326,7 +326,10 @@ import os
 
 
 def compare(person_a, person_b):
-    pass
+    if person_a['follower_count'] > person_b['follower_count']:
+        return person_a
+    else:
+        return person_b
 
 
 def get_random():
@@ -339,7 +342,37 @@ for item in range(len(data)):
     list_of_items.append(item)
 
 
-print(logo)
-print(get_random())
-print(vs)
-print(get_random())
+person_a = get_random()
+person_b = get_random()
+
+
+count = 0
+should_continue = True
+while should_continue:
+    print(logo)
+    print('Who has a higher follower count?: ')
+    print(f"A: {person_a['name']}. A {person_a['description']} from {person_a['country']}")
+    print(vs)
+    print(f"B: {person_b['name']}. A {person_b['description']} from {person_b['country']}")
+    print(f'Your current score is {count}.')
+    answer = input('A or B: ').lower()
+
+
+    winner = compare(person_a, person_b)
+    if winner == person_a and answer == 'a':
+        count += 1
+        person_b = get_random()
+        os.system('cls')
+    elif winner == person_a and answer == 'b':
+        print(f'You Lose. Your score is {count}.')
+        should_continue = False
+    elif winner == person_b and answer == 'a':
+        print(f'You Lose. Your score is {count}.')
+        should_continue = False
+    else:
+        count += 1
+        person_a = person_b
+        person_b = get_random()
+        os.system('cls')
+
+
