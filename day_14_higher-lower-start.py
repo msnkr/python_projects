@@ -363,6 +363,7 @@ while should_continue:
     if answer == 'a' and winner == person_a:
         print('You are correct.')
         count += 1
+        person_a = person_b
         person_b = get_random_name()
         os.system('clear')
     elif answer == 'a' and winner == person_b:
