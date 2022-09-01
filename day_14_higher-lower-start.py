@@ -351,6 +351,8 @@ count = 0
 
 should_continue = True
 while should_continue:
+    if person_a == person_b:
+        person_b == get_random_name()
     print(logo)
     print(f'Your score is {count}')
     print('Who has a higher follower count?: ')
