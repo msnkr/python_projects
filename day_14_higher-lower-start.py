@@ -321,58 +321,61 @@ data = [
     }
 ]
 
+
 import random
 import os
 
 
-def compare(person_a, person_b):
+def compare_score(person_a, person_b):
+    #Compare the follower count and return the winner
     if person_a['follower_count'] > person_b['follower_count']:
         return person_a
     else:
         return person_b
 
 
-def get_random():
-    random_person = random.choice(list_of_items)
-    return data[random_person]
+def get_random_name():
+    #Return a random person from the data list
+    name = random.choice(data_list)
+    return data[name]
 
 
-list_of_items = []
-for item in range(len(data)):
-    list_of_items.append(item)
+data_list = []
+for person in range(len(data)):
+    data_list.append(person)
 
 
-person_a = get_random()
-person_b = get_random()
-
-
+person_a = get_random_name()
+person_b = get_random_name()
 count = 0
+
 should_continue = True
 while should_continue:
     print(logo)
+    print(f'Your score is {count}')
     print('Who has a higher follower count?: ')
-    print(f"A: {person_a['name']}. A {person_a['description']} from {person_a['country']}")
+    print(f"A: {person_a['name']}. A {person_a['description']} from {person_a['country']}. ")
     print(vs)
-    print(f"B: {person_b['name']}. A {person_b['description']} from {person_b['country']}")
-    print(f'Your current score is {count}.')
+    print(f"B: {person_b['name']}. A {person_b['description']} from {person_b['country']}. ")
     answer = input('A or B: ').lower()
+    winner = compare_score(person_a, person_b)
 
-
-    winner = compare(person_a, person_b)
-    if winner == person_a and answer == 'a':
+    if answer == 'a' and winner == person_a:
+        print('You are correct.')
         count += 1
-        person_b = get_random()
-        os.system('cls')
-    elif winner == person_a and answer == 'b':
-        print(f'You Lose. Your score is {count}.')
+        person_b = get_random_name()
+        os.system('clear')
+    elif answer == 'a' and winner == person_b:
+        print(f'You Lose. Your score is: {count}')
         should_continue = False
-    elif winner == person_b and answer == 'a':
-        print(f'You Lose. Your score is {count}.')
+    elif answer == 'b' and winner == person_a:
+        print(f'You Lose. Your score is: {count}')
         should_continue = False
     else:
+        print('You are correct.')
         count += 1
         person_a = person_b
-        person_b = get_random()
-        os.system('cls')
+        person_b = get_random_name()
+        os.system('clear')
 
 
