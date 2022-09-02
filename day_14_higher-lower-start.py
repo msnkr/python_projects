@@ -327,7 +327,7 @@ import os
 
 
 def compare_score(person_a, person_b):
-    #Compare the follower count and return the winner
+    """Compare the follower count and return the winner"""
     if person_a['follower_count'] > person_b['follower_count']:
         return person_a
     else:
@@ -335,14 +335,8 @@ def compare_score(person_a, person_b):
 
 
 def get_random_name():
-    #Return a random person from the data list
-    name = random.choice(data_list)
-    return data[name]
-
-
-data_list = []
-for person in range(len(data)):
-    data_list.append(person)
+    """Return a random person from data"""
+    return random.choice(data)
 
 
 person_a = get_random_name()
