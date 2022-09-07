@@ -31,14 +31,17 @@ resources = {
 }
 
 
-
-def check_resources(answer):
+# If the resources are sufficiaent, Prompt the user for coins. Quaters == .25c, Dimes == .10c, Nickels == .5c and Pennies == .1c
+    # Find a way to extract the info you need. Coins will equal 0 and every add with add to coins
+    # Make a function that checks the coins
+def check_monies():
     pass
 
 
 # If prompt is off then quit the program
     #While prompt doesn't equal off:
 answer = ''
+monies = 0
 while answer != 'off':
     # Ask user what they would like
     answer = input('What would you like to order?: Espresso/Latte/Capuccino ')
@@ -48,9 +51,9 @@ while answer != 'off':
         print(f'Milk: {resources["milk"]}')
         print(f'Cofee: {resources["coffee"]}')
 
-# If the resources are sufficiaent, Prompt the user for coins. Quaters == .25c, Dimes == .10c, Nickels == .5c and Pennies == .1c
-    # Find a way to extract the info you need. Coins will equal 0 and every add with add to coins
-    # Make a function that checks the resources.
+    check_monies()
+
+
 # Check if the money is suffiecient, If not return the coins and start again, if its exact then its fine, if coins are over then return change.
     # If price > coffee, return not sufficient. If price == coffee, proceed, else price - coins, return price.
 # If resources are sufficient and money is suffiectn then the resources reqiured should be subtracted from the resources. 
