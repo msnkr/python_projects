@@ -30,26 +30,44 @@ resources = {
     "coffee": 100,
 }
 
+def pay_now(cost):
+    quaters = int(input('How many qauters?: '))
+    for item in range(quaters + 1):
+        quaters = item * 0.25
 
-# If the resources are sufficiaent, Prompt the user for coins. Quaters == .25c, Dimes == .10c, Nickels == .5c and Pennies == .1c
-    # Find a way to extract the info you need. Coins will equal 0 and every add with add to coins
-    # Make a function that checks the coins
+    dimes = int(input('How many dimes?: '))
+    for item in range(dimes + 1):
+        dimes = item * 0.10
 
-# If prompt is off then quit the program
-    #While prompt doesn't equal off:
-answer = ''
-monies = 0
-while answer != 'off':
-    # Ask user what they would like
-    answer = input('What would you like to order?: Espresso/Latte/Capuccino: ')
-    # If prompt is report then show available resources and money
-    if answer == 'report':
-        for item in resources:
-            print(f'{item}: {resources[item]}')
+    nickels = int(input('How many nickels?: '))
+    for item in range(nickels + 1):
+        nickels = item * 0.5
+
+    pennies = int(input('How many pennies?: '))
+    for item in range(pennies + 1):
+        pennies = item * 0.1
+
+    return f"quaters{quaters} dimes{dimes} + nickels{nickels} + pennies{pennies}"
 
 
-# Check if the money is suffiecient, If not return the coins and start again, if its exact then its fine, if coins are over then return change.
-    # If price > coffee, return not sufficient. If price == coffee, proceed, else price - coins, return price.
-# If resources are sufficient and money is suffiectn then the resources reqiured should be subtracted from the resources. 
-    # Maybe add resources to a new dictionary
-# When Done. The program should say enjoy your {drink}
+def is_enough(my_drink):
+    my_drink = MENU[my_drink]
+    drink_resources = my_drink['ingredients']
+    
+    if my_drink != 'espresso':
+        drink_milk = drink_resources['milk']
+        drink_water = drink_resources['water']
+        drink_coffee = drink_resources['coffee']
+    
+    if drink_coffee < resources['coffee'] and drink_milk < resources['milk'] and drink_water < resources['water']:
+        return my_drink['cost']
+
+
+my_drink = input('What do you want to drink?: Espresso/Latte/Capaccino ')
+
+if my_drink == 'report':
+    for _ in resources:
+        print(f'The current resources are: {_}: {resources[_]}')
+
+cost = is_enough(my_drink)
+print(pay_now(cost))
