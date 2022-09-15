@@ -30,55 +30,41 @@ resources = {
     "coffee": 100,
 }
 
-def pay_now(cost):
-    quaters = int(input('How many qauters?: '))
-    for item in range(quaters + 1):
-        quaters = item * 0.25
+
+def check_resources(my_drink):
+    drink_ingredients = MENU[my_drink]
+    ingredients = drink_ingredients['ingredients']
+    milk = ingredients['milk']
+    cofee = ingredients['coffee']
+    water = ingredients['water']
+
+    resources_water = resources['water']
+    resoures_milk = resources['milk']
+    resources_coffee = resources['coffee']
+
+    if milk < resoures_milk and cofee < resources_coffee and water < resources_water:
+        return True
+
+
+def check_money():
+    quaters = int(input('How many quaters?: '))
     dimes = int(input('How many dimes?: '))
-    for item in range(dimes + 1):
-        dimes = item * 0.10
     nickels = int(input('How many nickels?: '))
-    for item in range(nickels + 1):
-        nickels = item * 0.05
     pennies = int(input('How many pennies?: '))
-    for item in range(pennies + 1):
-        pennies = item * 0.01
+
+    for quater in range(quaters + 1):
+        quater = quaters * 0.25
+    for dime in range(dimes + 1):
+        dimes = dime * 0.10
+    for nickel in range(nickels + 1):
+        nickels = nickel * 0.05
+    for pennie in range(pennies + 1):
+        pennies = pennie * 0.01
 
     total = quaters + dimes + nickels + pennies
-    if cost > total:
-        return f'There is not enough money. Returned {round(total, 2)}c'
-    elif cost < total:
-        return f'Here is your change {round(total - cost, 2)}'
-    else:
-        return 'No change.'
-
-
-def is_enough(my_drink):
-    my_drink = MENU[my_drink]
-    drink_resources = my_drink['ingredients']
     
-    if my_drink != 'espresso':
-        drink_milk = drink_resources['milk']
-        drink_water = drink_resources['water']
-        drink_coffee = drink_resources['coffee']
 
-    if drink_coffee < resources['coffee'] and drink_milk < resources['milk'] and drink_water < resources['water']:
-        return my_drink['cost']
-    else:
-        return False
-
-
-
-not_off = False
-while not_off != True:
-    my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino ')
-    if my_drink == 'off':
-        not_off = True
-    elif my_drink == 'report':
-        for _ in resources:
-            print(f'The current resources are: {_}: {resources[_]}')
-    else:
-        if is_enough(my_drink) != False:
-            cost = is_enough(my_drink)
-            print(pay_now(cost))
-            
+my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino?: ')
+resources_ok = check_resources(my_drink)
+if check_resources(my_drink) == True:
+    print(check_money())
