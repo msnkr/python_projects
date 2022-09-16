@@ -34,18 +34,21 @@ resources = {
 def check_resources(my_drink):
     drink_ingredients = MENU[my_drink]
     ingredients = drink_ingredients['ingredients']
-    milk = ingredients['milk']
-    cofee = ingredients['coffee']
-    water = ingredients['water']
+    if my_drink == 'espresso':
+        milk = 0
+    else:
+        milk = ingredients['milk']
+        coffee = ingredients['coffee']
+        water = ingredients['water']
 
     resources_water = resources['water']
     resoures_milk = resources['milk']
     resources_coffee = resources['coffee']
 
-    if milk < resoures_milk and cofee < resources_coffee and water < resources_water:
+    if milk < resoures_milk and coffee < resources_coffee and water < resources_water:
         new_milk = milk - resoures_milk
         new_water = water - resources_water
-        new_coffee = cofee - resources_coffee
+        new_coffee = coffee - resources_coffee
 
         resources['milk'] = new_milk
         resources['coffee'] = new_coffee
@@ -90,10 +93,13 @@ def check_money():
 flag = True
 while flag == True:
     my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino?: ')
-    resources_ok = check_resources(my_drink)    
     if my_drink == 'off':
         flag = False
+    elif my_drink == 'report':
+        for resource in resources:
+            print(f'{resource}: {resources[resource] }')
     else:
+        resources_ok = check_resources(my_drink)    
         if resources_ok == True:
             check_money()
         else:
