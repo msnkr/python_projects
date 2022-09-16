@@ -86,10 +86,15 @@ def check_money():
         return False
         
 
-my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino?: ')
-resources_ok = check_resources(my_drink)
-if resources_ok == True:
-    total = MENU[my_drink]['cost']
-    check_money()
-    print(total)
-    print(resources)
+
+flag = True
+while flag == True:
+    my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino?: ')
+    resources_ok = check_resources(my_drink)    
+    if my_drink == 'off':
+        flag = False
+    else:
+        if resources_ok == True:
+            check_money()
+        else:
+            flag = False
