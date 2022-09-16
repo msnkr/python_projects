@@ -43,7 +43,17 @@ def check_resources(my_drink):
     resources_coffee = resources['coffee']
 
     if milk < resoures_milk and cofee < resources_coffee and water < resources_water:
+        new_milk = milk - resoures_milk
+        new_water = water - resources_water
+        new_coffee = cofee - resources_coffee
+
+        resources['milk'] = new_milk
+        resources['coffee'] = new_coffee
+        resources['water'] = new_water
         return True
+    else:
+        print('Not enough resources')
+        return False
 
 
 def check_money():
@@ -62,9 +72,24 @@ def check_money():
         pennies = pennie * 0.01
 
     total = quaters + dimes + nickels + pennies
-    
+    cost_price = MENU[my_drink]['cost']
+    if total > cost_price:
+        change = total - cost_price
+        print('Making your drink. ')
+        print(f'Your change is: ${change}')
+        print(f'Enjoy your {my_drink}')
+        return True
+    elif total == cost_price:
+        print('Making your drink. ')
+        return True
+    else:
+        return False
+        
 
 my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino?: ')
 resources_ok = check_resources(my_drink)
-if check_resources(my_drink) == True:
-    print(check_money())
+if resources_ok == True:
+    total = MENU[my_drink]['cost']
+    check_money()
+    print(total)
+    print(resources)
