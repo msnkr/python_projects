@@ -31,76 +31,42 @@ resources = {
 }
 
 
-def check_resources(my_drink):
-    drink_ingredients = MENU[my_drink]
-    ingredients = drink_ingredients['ingredients']
-    if my_drink == 'espresso':
-        milk = 0
-    else:
-        milk = ingredients['milk']
-        coffee = ingredients['coffee']
-        water = ingredients['water']
+def check_resources(drink):
+    drink = MENU[drink]
+    drink_resources = drink['ingredients']
 
-    resources_water = resources['water']
-    resoures_milk = resources['milk']
-    resources_coffee = resources['coffee']
+    milk_resources = resources['milk']
+    coffee_resources = resources['coffee']
+    water_resources = resources['water']
 
-    if milk < resoures_milk and coffee < resources_coffee and water < resources_water:
-        new_milk = milk - resoures_milk
-        new_water = water - resources_water
-        new_coffee = coffee - resources_coffee
+    milk = drink_resources['milk']
+    coffee = drink_resources['coffee']
+    water = drink_resources['water']
 
-        resources['milk'] = new_milk
-        resources['coffee'] = new_coffee
-        resources['water'] = new_water
-        return True
-    else:
-        print('Not enough resources')
+    if milk_resources <= milk:
+        print('Sorry. There is not enough Milk')
         return False
-
-
-def check_money():
-    quaters = int(input('How many quaters?: '))
-    dimes = int(input('How many dimes?: '))
-    nickels = int(input('How many nickels?: '))
-    pennies = int(input('How many pennies?: '))
-
-    for quater in range(quaters + 1):
-        quater = quaters * 0.25
-    for dime in range(dimes + 1):
-        dimes = dime * 0.10
-    for nickel in range(nickels + 1):
-        nickels = nickel * 0.05
-    for pennie in range(pennies + 1):
-        pennies = pennie * 0.01
-
-    total = quaters + dimes + nickels + pennies
-    cost_price = MENU[my_drink]['cost']
-    if total > cost_price:
-        change = total - cost_price
-        print('Making your drink. ')
-        print(f'Your change is: ${change}')
-        print(f'Enjoy your {my_drink}')
-        return True
-    elif total == cost_price:
-        print('Making your drink. ')
-        return True
-    else:
+    elif water_resources <= water:
+        print('Sorry. There is not enough Water')
         return False
-        
+    elif coffee_resources <= coffee:
+        print('Sorry. There is not enough Coffee')
+        return False
+    else:
+        resources['milk'] = milk_resources - milk
+        resources['coffee'] = coffee_resources - coffee
+        resources['water'] = water_resources - water
+        return True
 
 
 flag = True
 while flag == True:
-    my_drink = input('What do you want to drink?: Espresso/Latte/Cappuccino?: ')
-    if my_drink == 'off':
-        flag = False
-    elif my_drink == 'report':
+    drink = input('What do you want to drink?: Latte/Espresso/Cappuccino: ')
+    if drink == 'report':
         for resource in resources:
-            print(f'{resource}: {resources[resource] }')
+            print(f'{resource}: {resources[resource]}')
+    elif drink == 'off':
+        flag = False
     else:
-        resources_ok = check_resources(my_drink)    
-        if resources_ok == True:
-            check_money()
-        else:
-            flag = False
+        drink = check_resources(drink)
+        
