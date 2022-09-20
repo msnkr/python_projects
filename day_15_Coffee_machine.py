@@ -32,6 +32,7 @@ resources = {
 
 
 def check_resources(drink):
+    """ Get input resources and return true if resources sufficient """
     drink = MENU[drink]
     drink_resources = drink['ingredients']
 
@@ -60,18 +61,13 @@ def check_resources(drink):
 
 
 def money(cost):
+    """ Get cost of drink, ask for money and return true if money is sufficient """
     print('Please insert coins. ')
-    quaters = int(input('How many quaters?: '))
-    dimes = int(input('How many dimes?: '))
-    nickels = int(input('How many nickels?: '))
-    pennies = int(input('How many pennies?: '))
-
-    total_quaters = quaters * 0.25
-    total_dimes = dimes * 0.1
-    total_nickels = nickels * 0.05
-    total_pennies = pennies * 0.01
+    total = int(input('How many quaters?: ')) * 0.25
+    total += int(input('How many dimes?: ')) * 0.1
+    total += int(input('How many nickels?: ')) * 0.05
+    total += int(input('How many pennies?: ')) * 0.01
     
-    total = total_quaters + total_dimes + total_nickels + total_pennies
     if total > cost:
         change = total - cost
         print(f'Your change is ${round(change, 2)}')
@@ -100,6 +96,7 @@ while flag == True:
             MENU['espresso']['ingredients']['milk'] = 0
         cost = MENU[drink]['cost']
         drink = check_resources(drink)
-        if drink == True:
+        if drink:
+            print(f'The item cost is: ${cost}')
             if money(cost) ==  True:
                 print(f'Enjoy your {my_drink.capitalize()}')
