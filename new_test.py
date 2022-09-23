@@ -712,17 +712,57 @@
 # ####################
 
 
-turns = 10
+# turns = 10
 
-def new_turns():
-    return turns - 1
+# def new_turns():
+#     return turns - 1
 
-while turns != 0:
-    turns = new_turns()
+# while turns != 0:
+#     turns = new_turns()
 
-    if turns == 0:
-        print('It is now 0')
-    else:
-        print(turns)
+#     if turns == 0:
+#         print('It is now 0')
+#     else:
+#         print(turns)
 
     
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __str__(self):
+#         return f'{self.name} {self.age}'
+
+# x = Person('John', 36)
+# y = Person('Lara', 16)
+# print(x)
+# print(y)
+
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
+
+#   def myfunc(self):
+#     print("Hello my name is " + self.name)
+
+# p1 = Person("John", 36)
+# print(p1)
+# p1.myfunc()
+
+class Person:
+    def __init__(mysillyobject, name, age):
+        mysillyobject.name = name
+        mysillyobject.age = age
+
+    def myfunc(abc):
+        print(f'My name is {abc.name}')
+
+p1 = Person('john', 36)
+p1.myfunc()
+p1.name = 'Mikyle'
+p1.age = 40
+print(p1.name)
+print(p1.age)
