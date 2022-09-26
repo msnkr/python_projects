@@ -20,12 +20,15 @@
 
 # my_screen.exitonclick()
 
-from prettytable import PrettyTable
+# from prettytable import PrettyTable
 
-table = PrettyTable()
+# table = PrettyTable()
 
-table.add_column('Pokemon Name', ['Pikachu', 'Squirtle', 'Charmander'])
-table.add_column('Type', ['Electricity', 'Water', 'Fire'])
-table.border = False
+# table.add_column('Pokemon Name', ['Pikachu', 'Squirtle', 'Charmander'])
+# table.add_column('Type', ['Electricity', 'Water', 'Fire'])
+# table.align = 'c'
+# table.border = False
 
-print(table)
+# print(table)
+
+print(541*21)
