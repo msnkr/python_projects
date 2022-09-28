@@ -2,24 +2,21 @@ from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-profit = 0
-flag = True
+money_machine = MoneyMachine()
+coffee_maker = CoffeeMaker()
+menu = Menu()
 
-while flag:
-    menu = Menu().get_items()
-    choice = input(f'What do you want to drink?: \n{menu} ')
-    if choice == 'report':
-        CoffeeMaker().report()
-        print(profit)
-    elif choice == 'off':
-        flag = False 
+is_on = True
+while is_on:
+    options = menu.get_items()
+    choice = input(f'What would you like to drink? {options}: ')
+    if choice == 'off':
+        is_on = False
+    elif choice == 'report':
+        coffee_maker.report()
+        money_machine.report()
     else:
-        drink = Menu().find_drink(choice)
-        cost = drink.cost
-        if CoffeeMaker().is_resource_sufficient(drink):
-            if MoneyMachine().make_payment(cost):
-                profit += cost
-                CoffeeMaker().make_coffee(drink)
-
-
-
+        drink = menu.find_drink(choice)
+        if coffee_maker.is_resource_sufficient(drink):
+            if money_machine.make_payment(drink.cost):
+                coffee_maker.make_coffee(drink)
