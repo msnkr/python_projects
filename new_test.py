@@ -752,17 +752,42 @@
 # print(p1)
 # p1.myfunc()
 
-class Person:
-    def __init__(mysillyobject, name, age):
-        mysillyobject.name = name
-        mysillyobject.age = age
+# class Person:
+#     def __init__(mysillyobject, name, age):
+#         mysillyobject.name = name
+#         mysillyobject.age = age
 
-    def myfunc(abc):
-        print(f'My name is {abc.name}')
+#     def myfunc(abc):
+#         print(f'My name is {abc.name}')
 
-p1 = Person('john', 36)
-p1.myfunc()
-p1.name = 'Mikyle'
-p1.age = 40
-print(p1.name)
-print(p1.age)
+# p1 = Person('john', 36)
+# p1.myfunc()
+# p1.name = 'Mikyle'
+# p1.age = 40
+# print(p1.name)
+# print(p1.age)
+
+
+class User:
+    def __init__(self, user_id, username):
+        self.user_id = user_id
+        self.username = username
+        self.followers = 0
+        self.following = 0
+
+
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
+
+# user_1 = User('001', 'mikyle')
+# user_2 = User('002', 'Lara')
+# print(user_1.followers)
+# print(user_2.user_id)
+
+user_1 = User('001', 'mikyle')
+user_2 = User('002', 'Lara')
+
+user_1.follow(user_2)
+print(f'{user_1.username} is following {user_1.following} user.')
+print(f'{user_2.username} is being followed by {user_2.followers} user.')
