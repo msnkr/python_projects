@@ -785,9 +785,45 @@ class User:
 # print(user_1.followers)
 # print(user_2.user_id)
 
-user_1 = User('001', 'mikyle')
-user_2 = User('002', 'Lara')
+# user_1 = User('001', 'mikyle')
+# user_2 = User('002', 'Lara')
 
-user_1.follow(user_2)
-print(f'{user_1.username} is following {user_1.following} user.')
-print(f'{user_2.username} is being followed by {user_2.followers} user.')
+# user_1.follow(user_2)
+# print(f'{user_1.username} is following {user_1.following} user.')
+# print(f'{user_2.username} is being followed by {user_2.followers} user.')
+
+
+class CarBluePrint:
+    
+    def __init__(self, make, color):
+        self.make = make
+        self.color = color
+        self.speed = 0
+
+
+    def start(self):
+        self.speed += 60
+
+
+    def stop(self):
+        self.speed = 0
+
+
+    def PrintMakeAndColor(self):
+        print(f'{self.make}: {self.color} : {self.speed}')
+
+
+toyota = CarBluePrint('toyota', 'white')
+# toyota.start()
+# print(toyota.speed)
+
+# toyota.stop()
+# print(toyota.speed)
+
+vw = CarBluePrint('Volkswagen', 'red')
+# vw.start()
+# print(vw.speed)
+# vw.stop()
+# print(vw.speed)
+
+vw.PrintMakeAndColor()
