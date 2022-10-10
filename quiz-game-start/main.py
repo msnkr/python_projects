@@ -7,10 +7,9 @@ for item in question_data:
     new_question = Question(item['question'], item['correct_answer'])
     question_bank.append(new_question)
 
+question = QuizBrain(question_bank)
+while question.still_has_questions():
+    question.next_question()
 
-quiz = QuizBrain(question_bank)
-while quiz.still_has_questions():
-    quiz.next_question()
-
-print('The quiz is done.')
-print(f'Your total score is: {quiz.score}/{quiz.question_number} ')
+print('You have completed the quiz.')
+print(f'Your final score is {question.score}/{question.question_number}')
