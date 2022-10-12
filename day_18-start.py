@@ -4,7 +4,7 @@ timmy = Turtle()
 timmy.color('MediumVioletRed')
 
 
-timmy.speed(7)
+# timmy.speed(5)
 # for _ in range(4):
 #     timmy.dot(20, 'SlateBlue')
 #     timmy.forward(200)
@@ -28,8 +28,6 @@ import random
 
 colors = ['red', 'green', 'purple', 'yellow', 'black', 'SlateBlue', 'MediumVioletRed', 'orange', 'salmon']
 timmy.pendown()
-
-angle = 360 / sides
 
 
 screen = Screen()
