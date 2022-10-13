@@ -1,10 +1,12 @@
 from turtle import Turtle, Screen
-
-timmy = Turtle()
-timmy.color('MediumVioletRed')
+import random
 
 
-timmy.speed(0)
+# timmy = Turtle()
+# timmy.color('MediumVioletRed')
+
+
+# timmy.speed(0)
 # for _ in range(4):
 #     timmy.dot(20, 'SlateBlue')
 #     timmy.forward(200)
@@ -23,7 +25,6 @@ timmy.speed(0)
 # timmy.hideturtle()
 
 
-import random
 
 
 # colors = ['red', 'green', 'purple', 'yellow', 'black', 'SlateBlue', 'MediumVioletRed', 'orange', 'salmon']
@@ -41,22 +42,57 @@ import random
 #     draw(sides)
 
 
-timmy.pendown()
-timmy.hideturtle()
-timmy.pensize(10)
-random_heading = [0, 90, 180, 270]
-colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
+# timmy.pendown()
+# timmy.hideturtle()
+# timmy.pensize(10)
+# random_heading = [0, 90, 180, 270]
+# colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
 
-for _ in range(500):
-    timmy.color(random.choice(colors))
-    timmy.forward(30)
-    timmy.setheading(random.choice(random_heading))
+# for _ in range(500):
+#     timmy.color(random.choice(colors))
+#     timmy.forward(30)
+#     timmy.setheading(random.choice(random_heading))
     
 
 
+# screen = Screen()
+# screen.exitonclick()
 
 
+
+class RandomWalk:
+    
+    def __init__(self):
+        self.timmy = Turtle()
+        self.colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
+
+
+    def random_walk(self, number):
+        destination = [0, 90, 180, 270]
+        for _ in range(number):
+            self.timmy.hideturtle()
+            self.timmy.pensize(15)
+            self.timmy.pencolor(random.choice(self.colors))
+            self.timmy.forward(30)
+            self.timmy.setheading(random.choice(destination))
+
+
+    def call_diagrams(self):
+        for sides in range(3, 11):
+            self.draw_diagrams(sides)
+
+    
+    def draw_diagrams(self, sides):
+        self.timmy.color(random.choice(self.colors))
+        angle = 360 / sides
+        for _ in range(sides):
+            self.timmy.forward(100)
+            self.timmy.right(angle)
+
+
+# RandomWalk().call_diagrams()
+RandomWalk().random_walk(100)
 
 screen = Screen()
-screen.screensize(canvwidth=300, canvheight=300)
 screen.exitonclick()
+        
