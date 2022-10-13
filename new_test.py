@@ -793,6 +793,27 @@
 # print(f'{user_2.username} is being followed by {user_2.followers} user.')
 
 
+# class UserDatabase:
+
+#     def __init__(self, username, age, pay):
+#         self.username = username
+#         self.age = age
+#         self.pay = pay
+
+
+#     def deduct(self):
+#         taxes = self.pay / 18 * 100 # This is wrong but whatevs
+#         return taxes
+
+
+#     def __str__(self):
+#         return f'Name: {self.username.capitalize()} | Age: {self.age} | Pay: {self.deduct()}'
+
+
+# user = UserDatabase('mikyle', 30, 50000)
+# print(user)
+
+
 # class CarBluePrint:
     
 #     def __init__(self, make, color):
