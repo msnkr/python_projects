@@ -4,7 +4,7 @@ timmy = Turtle()
 timmy.color('MediumVioletRed')
 
 
-timmy.speed(5)
+timmy.speed(0)
 # for _ in range(4):
 #     timmy.dot(20, 'SlateBlue')
 #     timmy.forward(200)
@@ -45,18 +45,15 @@ timmy.pendown()
 timmy.hideturtle()
 timmy.pensize(10)
 random_heading = [0, 90, 180, 270]
-colors = ['SlateBlue', 'MediumVioletRed', 'DeepPink', 'OrangeRed', 'Gold', 'Tan', 'Khaki', 'Chartreuse', 'Cyan', 'DodgerBlue', 'Blue', 'DimGray', 'Gainsboro']
+colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
 
-def draw(side):
-    for _ in range(side):
-        timmy.color(random.choice(colors))
-        timmy.forward(25)
-        timmy.setheading(random.choice(random_heading))
-        
-
+for _ in range(500):
+    timmy.color(random.choice(colors))
+    timmy.forward(30)
+    timmy.setheading(random.choice(random_heading))
     
-for side in range(100):
-    draw(side)
+
+
 
 
 
