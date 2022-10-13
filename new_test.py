@@ -768,17 +768,17 @@
 # print(p1.age)
 
 
-class User:
-    def __init__(self, user_id, username):
-        self.user_id = user_id
-        self.username = username
-        self.followers = 0
-        self.following = 0
+# class User:
+#     def __init__(self, user_id, username):
+#         self.user_id = user_id
+#         self.username = username
+#         self.followers = 0
+#         self.following = 0
 
 
-    def follow(self, user):
-        user.followers += 1
-        self.following += 1
+#     def follow(self, user):
+#         user.followers += 1
+#         self.following += 1
 
 # user_1 = User('001', 'mikyle')
 # user_2 = User('002', 'Lara')
@@ -793,37 +793,45 @@ class User:
 # print(f'{user_2.username} is being followed by {user_2.followers} user.')
 
 
-class CarBluePrint:
+# class CarBluePrint:
     
-    def __init__(self, make, color):
-        self.make = make
-        self.color = color
-        self.speed = 0
+#     def __init__(self, make, color):
+#         self.make = make
+#         self.color = color
+#         self.speed = 0
 
 
-    def start(self):
-        self.speed += 60
+#     def start(self):
+#         self.speed += 60
 
 
-    def stop(self):
-        self.speed = 0
+#     def stop(self):
+#         self.speed = 0
 
 
-    def PrintMakeAndColor(self):
-        print(f'{self.make}: {self.color} : {self.speed}')
+#     def PrintMakeAndColor(self):
+#         print(f'{self.make}: {self.color} : {self.speed}')
 
 
-toyota = CarBluePrint('toyota', 'white')
+# toyota = CarBluePrint('toyota', 'white')
 # toyota.start()
 # print(toyota.speed)
 
 # toyota.stop()
 # print(toyota.speed)
 
-vw = CarBluePrint('Volkswagen', 'red')
+# vw = CarBluePrint('Volkswagen', 'red')
 # vw.start()
 # print(vw.speed)
 # vw.stop()
 # print(vw.speed)
 
-vw.PrintMakeAndColor()
+# vw.PrintMakeAndColor()
+
+# from turtle import Screen
+# from day_18_start import RandomWalk
+
+# diagrams = RandomWalk()
+# diagrams.call_diagrams()
+# my_screen = Screen()
+# my_screen.exitonclick()

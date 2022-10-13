@@ -89,10 +89,11 @@ class RandomWalk:
             self.timmy.forward(100)
             self.timmy.right(angle)
 
-
-# RandomWalk().call_diagrams()
-RandomWalk().random_walk(100)
-
-screen = Screen()
-screen.exitonclick()
+   
         
+# RandomWalk().call_diagrams()
+# RandomWalk().random_walk(100)
+# screen = Screen()
+# screen.exitonclick()
+
+
