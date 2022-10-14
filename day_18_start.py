@@ -65,6 +65,7 @@ class RandomWalk:
     def __init__(self):
         self.timmy = Turtle()
         self.colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
+        self.timmy.speed(0) 
 
 
     def random_walk(self, number):
@@ -92,8 +93,8 @@ class RandomWalk:
    
         
 # RandomWalk().call_diagrams()
-# RandomWalk().random_walk(100)
-# screen = Screen()
-# screen.exitonclick()
+RandomWalk().random_walk(100)
+screen = Screen()
+screen.exitonclick()
 
 

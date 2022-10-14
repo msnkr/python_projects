@@ -854,5 +854,6 @@
 
 # diagrams = RandomWalk()
 # diagrams.call_diagrams()
+# diagrams.random_walk(150)
 # my_screen = Screen()
 # my_screen.exitonclick()
