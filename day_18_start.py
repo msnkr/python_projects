@@ -42,18 +42,28 @@ import random
 #     draw(sides)
 
 
+# timmy = Turtle()
+# Screen().colormode(255)
+
+
+def random_colors():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return tuple((r, g, b))
+
+
 # timmy.pendown()
 # timmy.hideturtle()
 # timmy.pensize(10)
 # random_heading = [0, 90, 180, 270]
-# colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
+# colors = random_colors()
 
 # for _ in range(500):
-#     timmy.color(random.choice(colors))
+#     timmy.color(random_colors())
 #     timmy.forward(30)
 #     timmy.setheading(random.choice(random_heading))
     
-
 
 # screen = Screen()
 # screen.exitonclick()
@@ -64,16 +74,19 @@ class RandomWalk:
     
     def __init__(self):
         self.timmy = Turtle()
-        self.colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
-        self.timmy.speed(0) 
+        self.timmy.speed(0)
+        self.screen = Screen()
+        self.screen.colormode(255)
 
 
     def random_walk(self, number):
         destination = [0, 90, 180, 270]
+
         for _ in range(number):
+            color = self.random_colors()
             self.timmy.hideturtle()
             self.timmy.pensize(15)
-            self.timmy.pencolor(random.choice(self.colors))
+            self.timmy.pencolor(color)
             self.timmy.forward(30)
             self.timmy.setheading(random.choice(destination))
 
@@ -84,7 +97,7 @@ class RandomWalk:
 
     
     def draw_diagrams(self, sides):
-        self.timmy.color(random.choice(self.colors))
+        self.timmy.color(self.random_colors())
         angle = 360 / sides
         for _ in range(sides):
             self.timmy.forward(100)
@@ -99,28 +112,41 @@ class RandomWalk:
         new_position = -350
         self.timmy.speed(0)
         self.timmy.setx(-400)
-        for _ in range(8):
+        for _ in range(15):
             for _ in range(11):
-                self.timmy.dot(15, random.choice(self.colors))
+                self.timmy.dot(15, self.random_colors())
                 self.timmy.forward(70)
-                self.timmy.dot(15, random.choice(self.colors))
+                self.timmy.dot(15, self.random_colors())
                 
             self.timmy.setx(-400)
             new_position += 50
             self.timmy.sety(new_position)
 
-        
+
+    def random_colors(self):
+        self.r = random.randint(0, 255)
+        self.g = random.randint(0, 255)
+        self.b = random.randint(0, 255)
+        color = (self.r, self.g, self.b)
+        return color
+
+
+    def draw_spirograph(self, gap):
+        for _ in range(int(360 / gap)):
+            self.timmy.color(random_colors())
+            th = self.timmy.heading()
+            self.timmy.circle(100)
+            self.timmy.setheading(th + gap)
+    
+
 # RandomWalk().call_diagrams()
 # RandomWalk().random_walk(100)
-RandomWalk().famous_painting()
+# RandomWalk().famous_painting()
 
 
-
-
-
+RandomWalk().draw_spirograph(5)
 
 
 screen = Screen()
 screen.exitonclick()
-
 
