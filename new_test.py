@@ -857,3 +857,28 @@
 # diagrams.random_walk(150)
 # my_screen = Screen()
 # my_screen.exitonclick()
+
+
+class User:
+
+    def __init__(self, username):
+        self.username = username
+        self.followers = 0
+        self.following = 0
+
+
+    def follow(self, username):
+        self.following += 1
+        username.followers += 1
+
+
+user_1 = User('mikyle')
+user_2 = User('lara')
+
+user_1.follow(user_2)
+
+
+print(user_1.followers)
+print(user_1.following)
+print(user_2.followers)
+print(user_2.following)

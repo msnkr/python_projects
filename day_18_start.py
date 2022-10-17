@@ -92,8 +92,8 @@ class RandomWalk:
 
    
         
-# RandomWalk().call_diagrams()
-RandomWalk().random_walk(100)
+RandomWalk().call_diagrams()
+# RandomWalk().random_walk(100)
 screen = Screen()
 screen.exitonclick()
 
