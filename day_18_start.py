@@ -95,25 +95,17 @@ class RandomWalk:
         self.timmy.hideturtle()
         self.timmy.penup()
 
-        self.timmy.setx(-400)
         self.timmy.sety(-350)
-
         new_position = -350
         self.timmy.speed(0)
+        self.timmy.setx(-400)
         for _ in range(8):
             for _ in range(11):
                 self.timmy.dot(15, random.choice(self.colors))
                 self.timmy.forward(70)
                 self.timmy.dot(15, random.choice(self.colors))
-
-            new_position += 50
-            self.timmy.sety(new_position)
-            self.timmy.setheading(0)
-            for _ in range(11):
-                self.timmy.dot(15, random.choice(self.colors))
-                self.timmy.backward(70)
-                self.timmy.dot(15, random.choice(self.colors))
-
+                
+            self.timmy.setx(-400)
             new_position += 50
             self.timmy.sety(new_position)
 
