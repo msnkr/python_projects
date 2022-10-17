@@ -869,7 +869,11 @@ class User:
 
     def follow(self, username):
         self.following += 1
-        username.followers += 1
+        username.followers += 1 # If it was self.followers then the user would follow themself
+
+    
+    def __str__(self):
+        return f'{self.username} is following {self.following} users and being followed by {self.followers}'
 
 
 user_1 = User('mikyle')
@@ -877,8 +881,5 @@ user_2 = User('lara')
 
 user_1.follow(user_2)
 
-
-print(user_1.followers)
-print(user_1.following)
-print(user_2.followers)
-print(user_2.following)
+print(user_1)
+print(user_2)
