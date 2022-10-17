@@ -93,7 +93,7 @@ class RandomWalk:
    
         
 # RandomWalk().call_diagrams()
-RandomWalk().random_walk(100)
+# RandomWalk().random_walk(100)
 
 
 # colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
@@ -115,6 +115,8 @@ RandomWalk().random_walk(100)
     
 
 screen = Screen()
+RandomWalk().random_walk(1000)
+
 screen.exitonclick()
 
 
