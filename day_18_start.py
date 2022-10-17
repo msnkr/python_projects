@@ -60,40 +60,66 @@ import random
 
 
 
-class RandomWalk:
+# class RandomWalk:
     
-    def __init__(self):
-        self.timmy = Turtle()
-        self.colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
-        self.timmy.speed(0) 
+#     def __init__(self):
+#         self.timmy = Turtle()
+#         self.colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
+#         self.timmy.speed(0) 
 
 
-    def random_walk(self, number):
-        destination = [0, 90, 180, 270]
-        for _ in range(number):
-            self.timmy.hideturtle()
-            self.timmy.pensize(15)
-            self.timmy.pencolor(random.choice(self.colors))
-            self.timmy.forward(30)
-            self.timmy.setheading(random.choice(destination))
+#     def random_walk(self, number):
+#         destination = [0, 90, 180, 270]
+#         for _ in range(number):
+#             self.timmy.hideturtle()
+#             self.timmy.pensize(15)
+#             self.timmy.pencolor(random.choice(self.colors))
+#             self.timmy.forward(30)
+#             self.timmy.setheading(random.choice(destination))
 
 
-    def call_diagrams(self):
-        for sides in range(3, 11):
-            self.draw_diagrams(sides)
+#     def call_diagrams(self):
+#         for sides in range(3, 11):
+#             self.draw_diagrams(sides)
 
     
-    def draw_diagrams(self, sides):
-        self.timmy.color(random.choice(self.colors))
-        angle = 360 / sides
-        for _ in range(sides):
-            self.timmy.forward(100)
-            self.timmy.right(angle)
+#     def draw_diagrams(self, sides):
+#         self.timmy.color(random.choice(self.colors))
+#         angle = 360 / sides
+#         for _ in range(sides):
+#             self.timmy.forward(100)
+#             self.timmy.right(angle)
 
    
         
-RandomWalk().call_diagrams()
+# RandomWalk().call_diagrams()
 # RandomWalk().random_walk(100)
+
+
+colors = ['#083836', '#66D37E', '#C6E872', '#FBFFA3', '#E1FFB1', '#C7F2A4', '#B6E388', '#B6E388']
+timmy = Turtle()
+timmy.penup()  
+timmy.setx(-400)
+timmy.sety(-350)
+print(timmy.position())
+
+for _ in range(16):
+    timmy.forward(50)
+    timmy.dot(20, random.choice(colors))
+
+timmy.sety(-300)
+timmy.setheading(180)
+for _ in range(16):
+    timmy.forward(50)
+    timmy.dot(20, random.choice(colors))
+
+timmy.sety(-250)
+timmy.setheading(0)
+
+for _ in range(16):
+    timmy.forward(50)
+    timmy.dot(20, random.choice(colors))
+
 screen = Screen()
 screen.exitonclick()
 

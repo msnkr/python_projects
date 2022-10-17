@@ -859,27 +859,27 @@
 # my_screen.exitonclick()
 
 
-class User:
+# class User:
 
-    def __init__(self, username):
-        self.username = username
-        self.followers = 0
-        self.following = 0
+#     def __init__(self, username):
+#         self.username = username
+#         self.followers = 0
+#         self.following = 0
 
 
-    def follow(self, username):
-        self.following += 1
-        username.followers += 1 # If it was self.followers then the user would follow themself
+#     def follow(self, username):
+#         self.following += 1
+#         username.followers += 1 # If it was self.followers then the user would follow themselves
 
     
-    def __str__(self):
-        return f'{self.username} is following {self.following} users and being followed by {self.followers}'
+#     def __str__(self):
+#         return f'{self.username} is following {self.following} users and being followed by {self.followers}'
 
 
-user_1 = User('mikyle')
-user_2 = User('lara')
+# user_1 = User('mikyle')
+# user_2 = User('lara')
 
-user_1.follow(user_2)
+# user_1.follow(user_2)
 
-print(user_1)
-print(user_2)
+# print(user_1)
+# print(user_2)
