@@ -142,11 +142,8 @@ class RandomWalk:
 # RandomWalk().call_diagrams()
 # RandomWalk().random_walk(100)
 # RandomWalk().famous_painting()
-
-
 RandomWalk().draw_spirograph(5)
 
 
-screen = Screen()
-screen.exitonclick()
-
+Turtle().speed(0)
+Screen().exitonclick()
