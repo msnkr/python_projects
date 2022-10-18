@@ -883,3 +883,8 @@
 
 # print(user_1)
 # print(user_2)
+
+from turtle import Turtle, Screen
+
+tim = Turtle()
+
