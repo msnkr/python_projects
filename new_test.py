@@ -885,6 +885,29 @@
 # print(user_2)
 
 from turtle import Turtle, Screen
+import random
+
+
+def random_colors():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    colors = (r, g, b)
+    return colors
+
 
 tim = Turtle()
+tim.speed(7)
+Screen().colormode(255)
 
+
+def draw(gap):
+    angle = int(360 / gap)
+    for _ in range(angle):
+        tim.color(random_colors())
+        tim.circle(50)
+        tim.setheading(tim.heading() + gap)
+
+draw(10)
+
+Screen().exitonclick()
