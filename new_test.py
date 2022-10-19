@@ -913,35 +913,57 @@
 # Screen().exitonclick()
 
 
-from turtle import Turtle, Screen
+# from turtle import Turtle, Screen
 
-tim = Turtle()
-screen = Screen()
+# tim = Turtle()
+# screen = Screen()
 
-def w():
-    tim.setheading(90)
-    tim.forward(50)
-
-
-def a():
-    tim.setheading(180)
-    tim.forward(50)
+# def w():
+#     tim.setheading(90)
+#     tim.forward(50)
 
 
-def s():
-    tim.setheading(270)
-    tim.forward(50)
+# def a():
+#     tim.setheading(180)
+#     tim.forward(50)
 
 
-def d():
-    tim.setheading(0)
-    tim.forward(50)
+# def s():
+#     tim.setheading(270)
+#     tim.forward(50)
 
 
-screen.onkeypress(a, 'a')
-screen.onkeypress(w, 'w')
-screen.onkeypress(d, 'd')
-screen.onkeypress(s, 's')
+# def d():
+#     tim.setheading(0)
+#     tim.forward(50)
 
-screen.listen()
-screen.exitonclick()
+
+# screen.onkeypress(a, 'a')
+# screen.onkeypress(w, 'w')
+# screen.onkeypress(d, 'd')
+# screen.onkeypress(s, 's')
+
+# screen.listen()
+# screen.exitonclick()
+
+
+# Higher order functions
+
+def add(n1, n2):
+    return n1 + n2
+
+def subtract(n1, n2):
+    return n1 - n2
+
+def multiply(n1, n2):
+    return n1 * n2
+
+def divide(n1, n2):
+    return n1 / n2
+
+def calculate(n1, n2, func):
+    return func(n1, n2)
+
+
+result = calculate(5, 5, subtract)
+print(result)
