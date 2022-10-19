@@ -884,30 +884,64 @@
 # print(user_1)
 # print(user_2)
 
+# from turtle import Turtle, Screen
+# import random
+
+
+# def random_colors():
+#     r = random.randint(0, 255)
+#     g = random.randint(0, 255)
+#     b = random.randint(0, 255)
+#     colors = (r, g, b)
+#     return colors
+
+
+# tim = Turtle()
+# tim.speed(7)
+# Screen().colormode(255)
+
+
+# def draw(gap):
+#     angle = int(360 / gap)
+#     for _ in range(angle):
+#         tim.color(random_colors())
+#         tim.circle(50)
+#         tim.setheading(tim.heading() + gap)
+
+# draw(10)
+
+# Screen().exitonclick()
+
+
 from turtle import Turtle, Screen
-import random
-
-
-def random_colors():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    colors = (r, g, b)
-    return colors
-
 
 tim = Turtle()
-tim.speed(7)
-Screen().colormode(255)
+screen = Screen()
+
+def w():
+    tim.setheading(90)
+    tim.forward(50)
 
 
-def draw(gap):
-    angle = int(360 / gap)
-    for _ in range(angle):
-        tim.color(random_colors())
-        tim.circle(50)
-        tim.setheading(tim.heading() + gap)
+def a():
+    tim.setheading(180)
+    tim.forward(50)
 
-draw(10)
 
-Screen().exitonclick()
+def s():
+    tim.setheading(270)
+    tim.forward(50)
+
+
+def d():
+    tim.setheading(0)
+    tim.forward(50)
+
+
+screen.onkeypress(a, 'a')
+screen.onkeypress(w, 'w')
+screen.onkeypress(d, 'd')
+screen.onkeypress(s, 's')
+
+screen.listen()
+screen.exitonclick()
