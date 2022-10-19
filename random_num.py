@@ -16,7 +16,7 @@ def get_numbers():
 
 
 def save_numbers():
-    with open('new_doc.txt', 'w') as f:
+    with open('4.txt', 'w') as f:
         for num in random_numbers:
             f.write(f'{num}\n')
 
