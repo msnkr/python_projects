@@ -949,21 +949,52 @@
 
 # Higher order functions
 
-def add(n1, n2):
-    return n1 + n2
+# def add(n1, n2):
+#     return n1 + n2
 
-def subtract(n1, n2):
-    return n1 - n2
+# def subtract(n1, n2):
+#     return n1 - n2
 
-def multiply(n1, n2):
-    return n1 * n2
+# def multiply(n1, n2):
+#     return n1 * n2
 
-def divide(n1, n2):
-    return n1 / n2
+# def divide(n1, n2):
+#     return n1 / n2
 
-def calculate(n1, n2, func):
-    return func(n1, n2)
+# def calculate(n1, n2, func):
+#     return func(n1, n2)
 
 
-result = calculate(5, 5, subtract)
-print(result)
+# result = calculate(5, 5, subtract)
+# print(result)
+
+
+from turtle import Turtle, Screen
+import random
+
+
+screen = Screen()
+colors = ['red', 'yellow', 'orange', 'green', 'blue', 'purple']
+y_pos = -300
+all_turtles = []
+start_race = False
+
+
+for turtle_num in range(6):
+    y_pos += 50
+    tim = Turtle(shape='turtle')
+    tim.penup()
+    tim.goto(-460, y_pos)
+    tim.color(colors[turtle_num])
+    all_turtles.append(tim)
+
+for turtle in all_turtles:
+    start_race = True
+    while start_race:
+        tim.forward(random.randint(0,10))
+
+
+
+screen.exitonclick()
+
+
