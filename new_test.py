@@ -975,23 +975,17 @@ import random
 
 screen = Screen()
 colors = ['red', 'yellow', 'orange', 'green', 'blue', 'purple']
-y_pos = -300
 all_turtles = []
-start_race = False
+y_pos = -200
 
-
-for turtle_num in range(6):
+for x in range(6):
+    new_turtle = Turtle(shape='turtle')
+    new_turtle.penup()
+    new_turtle.color(colors[x])
+    new_turtle.goto(-460, y_pos)
     y_pos += 50
-    tim = Turtle(shape='turtle')
-    tim.penup()
-    tim.goto(-460, y_pos)
-    tim.color(colors[turtle_num])
-    all_turtles.append(tim)
+    all_turtles.append(new_turtle)
 
-for turtle in all_turtles:
-    start_race = True
-    while start_race:
-        tim.forward(random.randint(0,10))
 
 
 
