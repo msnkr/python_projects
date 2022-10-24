@@ -12,5 +12,4 @@ for x in x_position:
     snake.goto(x, 0)
 
 
-
 screen.exitonclick()
