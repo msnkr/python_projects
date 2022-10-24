@@ -975,18 +975,6 @@ import random
 
 screen = Screen()
 colors = ['red', 'yellow', 'orange', 'green', 'blue', 'purple']
-all_turtles = []
-y_pos = -200
-
-for x in range(6):
-    new_turtle = Turtle(shape='turtle')
-    new_turtle.penup()
-    new_turtle.color(colors[x])
-    new_turtle.goto(-460, y_pos)
-    y_pos += 50
-    all_turtles.append(new_turtle)
-
-
 
 
 screen.exitonclick()
