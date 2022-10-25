@@ -969,35 +969,49 @@
 # print(result)
 
 
-from turtle import Turtle, Screen
-import random
+# from turtle import Turtle, Screen
+# import random
 
+
+# screen = Screen()
+# colors = ['red', 'yellow', 'orange', 'green', 'blue', 'purple']
+# y_positions = [-100, -50, -0, 50, 100, 150]
+# turtles = []
+
+# for x in range(6):
+#     turtle = Turtle(shape='turtle')
+#     turtle.speed(0)
+#     turtle.penup()
+#     turtle.color(colors[x])
+#     turtle.goto(-460, y_positions[x])
+#     turtles.append(turtle)
+
+# race_on = True
+# while race_on:
+#     for turtle in turtles:
+#         random_speed = random.randint(0, 10)
+#         turtle.forward(random_speed)
+
+#         if turtle.xcor() > 460:
+#             winner = turtle.pencolor()
+#             print(f'{winner}')
+#             race_on = False
+
+# screen.exitonclick()
+
+
+from turtle import Turtle, Screen
 
 screen = Screen()
-colors = ['red', 'yellow', 'orange', 'green', 'blue', 'purple']
-y_positions = [-100, -50, -0, 50, 100, 150]
-turtles = []
+screen.bgcolor('black')
+screen.title('This is your snake game')
+coordinates = [0, -20, -40]
 
-for x in range(6):
-    turtle = Turtle(shape='turtle')
-    turtle.penup()
-    turtle.color(colors[x])
-    turtle.goto(-380, y_positions[x])
-    turtles.append(turtle)
-
-is_race_on = True
-while is_race_on:
-    for turtle in turtles:
-        random_speed = random.randint(0, 10)
-        turtle.forward(random_speed)
-
-        if turtle.xcor() > 400:
-            winner = turtle.pencolor()
-            print(f'The winning turtle is: {winner}')
-            is_race_on = False
-
+for x in coordinates:
+    snake = Turtle(shape='square')
+    snake.color('white')
+    snake.goto(x, 0)
 
 
 screen.exitonclick()
-
 
