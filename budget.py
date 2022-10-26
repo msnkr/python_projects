@@ -1,0 +1,25 @@
+budget = {}
+
+
+def budget_input():
+    name = input('Name: ').lower()
+    money = int(input('Amount: '))
+    budget[name] = money
+
+
+start = True
+while start:
+    budget_input()
+    go_again = input('Add Another Amount: (Y/N) ')
+    if go_again == 'n':
+        break
+
+total = 0
+for x in budget:
+    total += budget[x]
+    
+print(f'Your total amount is: {total}')
+add_salary = input('Do you want to deduct it from your salary?: (Y/N) ')
+salary = int(input('What is your salary?: '))
+total = salary - total
+print(f'Your total take home is: {total}')

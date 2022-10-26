@@ -1005,12 +1005,12 @@ from turtle import Turtle, Screen
 screen = Screen()
 screen.bgcolor('black')
 screen.title('This is your snake game')
-coordinates = [0, -20, -40]
+coordinates = [(0, 0), (-20, 0), (-40, 0)]
 
 for x in coordinates:
     snake = Turtle(shape='square')
     snake.color('white')
-    snake.goto(x, 0)
+    snake.goto(coordinates)
 
 
 screen.exitonclick()
