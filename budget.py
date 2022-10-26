@@ -1,34 +1,46 @@
+from prettytable import PrettyTable
+from prettytable.colortable import ColorTable
+
+x = PrettyTable()
+# x = ColorTable(theme=Themes.OCEAN)
+x.field_names = ['Name:', 'Money:']
+
+
 budget = {}
-
-
 def budget_input():
     name = input('Name: ').lower()
     money = int(input('Amount: '))
     budget[name] = money
 
 
-
-start = True
-while start:
+go_again = True
+while go_again:
     budget_input()
-    go_again = input('Add Another Amount: (Y/N) ')
-    if go_again == 'n':
+    answer = input('Add Another?: ')
+    if answer == 'y':
+        budget_input()
+    elif answer == 'l':
+        for item in budget:
+            x.add_row([item, budget[item]])
+            print(x)
+    else:
         break
-    elif go_again == 'l':
-        for name in budget:
-            print(f'You currently have \n\t{name}')
 
 total = 0
-for x in budget:
-    total += budget[x]
+for item in budget:
+    total += budget[item]
+    x.add_row([item, budget[item]])
 
-print(f'Your total amount is: {total}')
-add_salary = input('Do you want to deduct it from your salary?: (Y/N) ')
-if add_salary == 'y':
-    salary = int(input('What is your salary?: '))
-    total = salary - total
-    print(f'Your total take home is: {total}')
+print(x)
 
-with open('budget.txt', 'w') as f:
-    for item in budget:
-        f.write(f'{item}: {budget[item]}\n')
+# print(f'Your total bills amount to: {total}')
+# add_salary = input('Do you want to deduct it from your salary?: (Y/N) ')
+# if add_salary == 'y':
+#     salary = int(input('What is your salary?: '))
+#     total = salary - total
+#     print(f'Your total take home is: {total}')
+
+
+# with open('budget.txt', 'w') as f:
+#     for item in budget:
+#         f.write()
