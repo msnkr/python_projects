@@ -24,6 +24,11 @@ for x in budget:
 
 print(f'Your total amount is: {total}')
 add_salary = input('Do you want to deduct it from your salary?: (Y/N) ')
-salary = int(input('What is your salary?: '))
-total = salary - total
-print(f'Your total take home is: {total}')
+if add_salary == 'y':
+    salary = int(input('What is your salary?: '))
+    total = salary - total
+    print(f'Your total take home is: {total}')
+
+with open('budget.txt', 'w') as f:
+    for item in budget:
+        f.write(f'{item}: {budget[item]}\n')
