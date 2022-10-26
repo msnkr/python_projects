@@ -8,7 +8,7 @@ x.field_names = ['Name:', 'Money:']
 
 budget = {}
 def budget_input():
-    name = input('Name: ').lower()
+    name = input('Name: ').capitalize()
     money = int(input('Amount: '))
     budget[name] = money
 
