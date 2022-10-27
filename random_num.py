@@ -1,7 +1,7 @@
 import random
 
 area_code = '+27'
-operator_num = ['84', '78', '76', '71', '73', '81', '61', '82', '72', '79', '63', '60']
+operator_num = ['84', '78', '76', '71', '73', '81', '61', '82', '72', '79', '63', '60', '83']
 random_numbers = []
 
 how_many = int(input('How many?: '))
@@ -16,7 +16,7 @@ def get_numbers():
 
 
 def save_numbers():
-    with open('4.txt', 'w') as f:
+    with open('onlyMtn.txt', 'w') as f:
         for num in random_numbers:
             f.write(f'{num}\n')
 
