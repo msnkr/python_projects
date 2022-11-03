@@ -1000,18 +1000,44 @@
 # screen.exitonclick()
 
 
-from turtle import Turtle, Screen
+# from turtle import Turtle, Screen
 
-screen = Screen()
-screen.bgcolor('black')
-screen.title('This is your snake game')
-coordinates = [(0, 0), (-20, 0), (-40, 0)]
+# screen = Screen()
+# screen.bgcolor('black')
+# screen.title('This is your snake game')
+# coordinates = [(0, 0), (-20, 0), (-40, 0)]
 
-for x in coordinates:
-    snake = Turtle(shape='square')
-    snake.color('white')
-    snake.goto(coordinates)
+# for x in coordinates:
+#     snake = Turtle(shape='square')
+#     snake.color('white')
+#     snake.goto(coordinates)
 
 
-screen.exitonclick()
+# screen.exitonclick()
 
+
+# Class inheritance
+# class Animal:
+#     def __init__(self):
+#         self.eyes = 2
+
+#     def breath(self):
+#         print('Inhale and exhale')
+
+
+# class Fish(Animal):
+#     def __init__(self):
+#         super().__init__()
+
+    
+#     def breath(self):
+#         super().breath()
+#         print('Under water')
+
+
+#     def swim(self):
+#         print('Swims underwater')
+
+
+# nemo = Fish()
+# nemo.breath()
