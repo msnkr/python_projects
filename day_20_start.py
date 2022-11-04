@@ -14,7 +14,6 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 score = Score()
-score.add_score()
 
 screen.listen()
 screen.onkey(snake.up, 'Up')

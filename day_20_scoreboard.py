@@ -1,7 +1,6 @@
 from turtle import Turtle
 
 
-SCORE = 0
 class Score(Turtle):
     
     def __init__(self):
@@ -11,10 +10,14 @@ class Score(Turtle):
         self.speed(0)
         self.setposition(x=0, y=380)
         self.color('white')
+        self.SCORE = 0
+        self.write(arg=f'Score: {self.SCORE}', align='center', font=('Arial', 12, 'normal'))
+
+
 
     
     def add_score(self):
-        global SCORE
         self.clear()
-        SCORE += 1
-        self.write(arg=f'Score: {SCORE}', align='center', font=('Arial', 12, 'normal'))
+        self.SCORE += 1
+        self.write(arg=f'Score: {self.SCORE}', align='center', font=('Arial', 12, 'normal'))
+
