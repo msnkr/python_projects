@@ -1041,3 +1041,8 @@
 
 # nemo = Fish()
 # nemo.breath()
+
+
+my_list = ['a', 'b', 'c', 'd', 'e', 'f']
+
+print(my_list[0:1:-1])
