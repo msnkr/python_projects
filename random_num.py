@@ -7,7 +7,8 @@ area_code = '+27'
 operator_num = ['84', '78', '76', '71', '73', '74', '64', '62', '81', '61', '82', '72', '79', '63', '60', '83']
 random_numbers = []
 
-how_many = screen.textinput(title='NumberGen', prompt=int('How Many Numbers?: '))
+how_many = screen.textinput(title='NumberGen', prompt='How Many Numbers?: ')
+how_many = int(how_many)
 name_file = screen.textinput(title='NumberGen', prompt='What to name the file?: ')
 # work with net
 
