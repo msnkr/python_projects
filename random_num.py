@@ -1,11 +1,14 @@
 import random
+from turtle import Screen
 
+
+screen = Screen()
 area_code = '+27'
 operator_num = ['84', '78', '76', '71', '73', '74', '64', '62', '81', '61', '82', '72', '79', '63', '60', '83']
 random_numbers = []
 
-how_many = int(input('How many?: '))
-name_file = input('What to name the file?: ')
+how_many = screen.textinput(title='NumberGen', prompt=int('How Many Numbers?: '))
+name_file = screen.textinput(title='NumberGen', prompt='What to name the file?: ')
 # work with net
 
 def get_numbers():
