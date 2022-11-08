@@ -1,10 +1,11 @@
 import random
 
 area_code = '+27'
-operator_num = ['84', '78', '76', '71', '73', '81', '61', '82', '72', '79', '63', '60', '83']
+operator_num = ['84', '78', '76', '71', '73', '74', '64', '62', '81', '61', '82', '72', '79', '63', '60', '83']
 random_numbers = []
 
 how_many = int(input('How many?: '))
+name_file = input('What to name the file?: ')
 # work with net
 
 def get_numbers():
@@ -16,7 +17,7 @@ def get_numbers():
 
 
 def save_numbers():
-    with open('onlyMtn.txt', 'w') as f:
+    with open(f'{name_file}.txt', 'w') as f:
         for num in random_numbers:
             f.write(f'{num}\n')
 
