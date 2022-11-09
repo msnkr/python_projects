@@ -63,5 +63,9 @@ while True:
 
             save_numbers(values[1])
             break
-
+    else:
+        sg.Popup('Incorrect Password')
+        break
+        new_window.close()
+    
 window.close()
