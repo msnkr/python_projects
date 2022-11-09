@@ -41,7 +41,7 @@ while True:
         for _ in range(value):
             get_numbers()
 
-    save_numbers(values[1] -1)
+    save_numbers(values[1])
     break
 
 
