@@ -2,7 +2,7 @@ import random
 import PySimpleGUI as sg
 
 
-sg.theme('DarkAmber')
+sg.theme('DarkGrey12')
 area_code = '+27'
 operator_num = ['84', '78', '76', '71', '73', '74', '64', '62', '81', '61', '82', '72', '79', '63', '60', '83']
 random_numbers = []
