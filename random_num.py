@@ -34,7 +34,10 @@ while True:
     event, values = new_window.read()
     if event == sg.WIN_CLOSED:
         break
-    elif values[0] == random_pass and event == 'Submit':
+    elif values[0] != random_pass and event == 'Submit':
+        sg.Popup('Incorrect Password')
+        break
+    else:
         new_window.close()
         how_many = 'How Many Numbers?: '
         name_file = 'File Name: '
@@ -60,12 +63,6 @@ while True:
                 for _ in range(value):
                     get_numbers()
 
-
             save_numbers(values[1])
             break
-    else:
-        sg.Popup('Incorrect Password')
-        break
-        new_window.close()
-    
-window.close()
+        window.close()
