@@ -22,33 +22,46 @@ def save_numbers(file):
             f.write(f'{num}\n')
 
 
-how_many = 'How Many Numbers?: '
-name_file = 'File Name: '
-
-layout = [
-    [sg.Text(how_many)],
+random_pass = '456'
+new_layout = [
+    [sg.Text('Enter The Password: ')],
     [sg.InputText()],
-    [sg.Text(name_file)],
-    [sg.InputText()],
-    [sg.Button('Submit'), sg.Button('Cancel')],
+    [sg.Button('Submit')]
 ]
 
-window = sg.Window('Bleggh', layout, size=(300, 150))
+new_window = sg.Window('Bleggh', new_layout)
 while True:
-    event, values = window.read()
-    if event == sg.WIN_CLOSED or event == 'Cancel':
+    event, values = new_window.read()
+    if event == sg.WIN_CLOSED:
         break
-    elif values[0] == '' or values[1] == '':
-        sg.Popup('You didn\'t enter anything.\n \t \t Exiting...')
-        break
-    elif event == 'Submit':
-        value = int(values[0])
-        for _ in range(value):
-            get_numbers()
+    elif values[0] == random_pass and event == 'Submit':
+        new_window.close()
+        how_many = 'How Many Numbers?: '
+        name_file = 'File Name: '
+
+        function_layout = [
+            [sg.Text(how_many)],
+            [sg.InputText()],
+            [sg.Text(name_file)],
+            [sg.InputText()],
+            [sg.Button('Submit'), sg.Button('Cancel')],
+        ]
+
+        window = sg.Window('Bleggh', function_layout, size=(300, 150))
+        while True:
+            event, values = window.read()
+            if event == sg.WIN_CLOSED or event == 'Cancel':
+                break
+            elif values[0] == '' or values[1] == '':
+                sg.Popup('You didn\'t enter anything.\n \t \t Exiting...')
+                break
+            elif event == 'Submit':
+                value = int(values[0])
+                for _ in range(value):
+                    get_numbers()
 
 
-    save_numbers(values[1])
-    break
-
+            save_numbers(values[1])
+            break
 
 window.close()
