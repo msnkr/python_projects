@@ -30,18 +30,19 @@ layout = [
     [sg.Text(name_file), sg.InputText()],
     [sg.Button('Submit'), sg.Button('Cancel')],
 ]
+
 window = sg.Window('Bleggh', layout)
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel':
-        quit()
+        break
     elif event == 'Submit':
         value = int(values[0])
         for _ in range(value):
             get_numbers()
 
-    save_numbers(values[1])
-    quit()
+    save_numbers(values[1] -1)
+    break
 
 
 window.close()
