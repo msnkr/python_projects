@@ -23,15 +23,17 @@ def save_numbers(file):
 
 
 how_many = 'How Many Numbers?: '
-name_file = 'What to name the file?: '
+name_file = 'File Name: '
 
 layout = [
-    [sg.Text(how_many), sg.InputText()],
-    [sg.Text(name_file), sg.InputText()],
+    [sg.Text(how_many)],
+    [sg.InputText()],
+    [sg.Text(name_file)],
+    [sg.InputText()],
     [sg.Button('Submit'), sg.Button('Cancel')],
 ]
 
-window = sg.Window('Bleggh', layout)
+window = sg.Window('Bleggh', layout, size=(300, 150))
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel':
