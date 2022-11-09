@@ -39,9 +39,13 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Cancel':
         break
     elif event == 'Submit':
-        value = int(values[0])
-        for _ in range(value):
-            get_numbers()
+        if values[0] == '' or values[1] == '':
+            sg.Popup('You didn\'t enter anything.\n \t Exiting...')
+        else:
+            value = int(values[0])
+            for _ in range(value):
+                get_numbers()
+
 
     save_numbers(values[1])
     break
