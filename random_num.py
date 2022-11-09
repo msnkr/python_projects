@@ -38,13 +38,13 @@ while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel':
         break
+    elif values[0] == '' or values[1] == '':
+        sg.Popup('You didn\'t enter anything.\n \t \t Exiting...')
+        break
     elif event == 'Submit':
-        if values[0] == '' or values[1] == '':
-            sg.Popup('You didn\'t enter anything.\n \t Exiting...')
-        else:
-            value = int(values[0])
-            for _ in range(value):
-                get_numbers()
+        value = int(values[0])
+        for _ in range(value):
+            get_numbers()
 
 
     save_numbers(values[1])
