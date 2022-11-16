@@ -14,12 +14,14 @@ car = CarManager()
 
 game_is_on = True
 while game_is_on:
-    car.car_move()
     time.sleep(0.1)
     screen.update()
 
+    car.create_car()
+    car.move_cars()
     screen.listen()
     screen.onkeypress(timmy.move_up, 'Up')
 
+    
 
 screen.exitonclick()
