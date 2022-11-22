@@ -11,7 +11,6 @@ screen.tracer(0)
 
 timmy = Player()
 car = CarManager()
-car_positions = []
 
 game_is_on = True
 while game_is_on:
@@ -24,9 +23,8 @@ while game_is_on:
     screen.onkeypress(timmy.move_up, 'Up')
 
     for x in car.cars_list:
-        first_car = x[0]
-        if first_car.xcor() == 0:
-            break
+        if timmy.distance(x) < 15:
+            game_is_on = False
 
 
 screen.exitonclick()
