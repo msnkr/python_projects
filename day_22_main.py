@@ -27,4 +27,6 @@ while game_is_on:
             game_is_on = False
 
 
+
+
 screen.exitonclick()

@@ -19,3 +19,9 @@ class Player(Turtle):
 
     def move_up(self):
         self.forward(MOVE_DISTANCE)
+        self.increase_level()
+    
+
+    def increase_level(self):
+        if self.ycor() > FINISH_LINE_Y:
+            print('Over linw')
