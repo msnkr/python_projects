@@ -2,7 +2,7 @@ import time
 from turtle import Screen
 from day_22_player import Player
 from day_22_car_manager import CarManager
-# from day_22_scoreboard import Scoreboard
+from day_22_scoreboard import Scoreboard
 
 
 screen = Screen()
@@ -11,10 +11,12 @@ screen.tracer(0)
 
 timmy = Player()
 car = CarManager()
+score = Scoreboard()
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    score.current_level()
+    time.sleep(timmy.move_increment)
     screen.update()
     car.create_car()
     car.move_cars()
@@ -24,8 +26,12 @@ while game_is_on:
 
     for x in car.cars_list:
         if timmy.distance(x) < 15:
+            score.game_over()
             game_is_on = False
-
+        
+    if timmy.ycor() > timmy.FINISH_LINE_Y:
+        timmy.increase_level()
+        score.rewrite_level()
 
 
 
