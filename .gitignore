@@ -8360,3 +8360,6 @@
 .venv/share/man/man1/mutagen-pony.1
 .venv/share/man/man1/yt-dlp.1
 .venv/share/zsh/site-functions/_yt-dlp
+__pycache__/day_22_car_manager.cpython-39.pyc
+__pycache__/day_22_player.cpython-39.pyc
+__pycache__/day_22_scoreboard.cpython-39.pyc

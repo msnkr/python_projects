@@ -6,7 +6,7 @@ from day_22_scoreboard import Scoreboard
 
 
 screen = Screen()
-screen.setup(width=600, height=600)
+screen.setup()
 screen.tracer(0)
 
 timmy = Player()
