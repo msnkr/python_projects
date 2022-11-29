@@ -16,7 +16,7 @@ score = Scoreboard()
 game_is_on = True
 while game_is_on:
     score.current_level()
-    time.sleep(timmy.move_increment)
+    time.sleep(0.1)
     screen.update()
     car.create_car()
     car.move_cars()
@@ -28,11 +28,10 @@ while game_is_on:
         if timmy.distance(x) < 15:
             score.game_over()
             game_is_on = False
-        
-    if timmy.ycor() > timmy.FINISH_LINE_Y:
-        timmy.increase_level()
-        score.rewrite_level()
-
+    
+    if timmy.turtle_still_going():
+        timmy.go_to_start()
+        car.level_up()
 
 
 screen.exitonclick()
