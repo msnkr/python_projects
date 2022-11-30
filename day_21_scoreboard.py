@@ -16,8 +16,6 @@ class Scoreboard(Turtle):
         self.clear()
         self.goto(-150, 300)
         self.write(self.left_score, align='center', font=('Hack', 24, 'normal'))
-        self.goto(150, 300)
-        self.write(self.right_score, align='center', font=('Hack', 24, 'normal'))
 
 
     def left_point(self):
