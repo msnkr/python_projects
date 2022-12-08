@@ -14,18 +14,21 @@ class Score(Turtle):
         self.setposition(x=0, y=420)
         self.color('white')
         self.SCORE = 0
+        self.high_score = 0
         self.update_score()
 
 
     def update_score(self):
-        self.write(arg=f'Score: {self.SCORE}', align=ALIGNMENT, font=FONT)
+        self.clear()
+        self.write(arg=f'Score: {self.SCORE}. High score: {self.high_score}', align=ALIGNMENT, font=FONT)
 
 
-    def game_over(self):
-        self.setposition(x=0, y=0)
-        self.write(arg=f'GAME OVER: {self.SCORE}', align=ALIGNMENT, font=FONT)
+    def reset(self):
+        if self.SCORE > self.high_score:
+            self.high_score = self.SCORE
+        self.SCORE = 0
+        self.update_score()
 
-    
     def add_score(self):
         self.clear()
         self.SCORE += 1
