@@ -18,6 +18,10 @@
 # non_duplicates = []
 
 # def check_dupliacates(list_items):
+#     """Loop through items in list
+#     if item not in new list then append
+#     if there is an append that means there is a duplicate
+#     """
 #     for item in list_items:
 #         if item not in non_duplicates:
 #             non_duplicates.append(item)
@@ -32,4 +36,36 @@
 
 
 ##############################################################################################
-# Day 3. 
+# Day 3. Write a a function that that takes a dictionary with student names and if they're in school. Must return the number of studetns in school. 
+
+# register = {'Michael':'yes','John': 'no', 'Peter':'yes', 'Mary': 'yes'}
+# COUNT = 0
+
+# def register_check(random_dict):
+#     """Take a dcitionary with studnt names and attendance. Return a number of how many kids are in school"""
+#     global COUNT
+#     for item in random_dict:
+#         if random_dict[item] == 'yes':
+#             COUNT += 1
+#     print(COUNT)
+
+# register_check(register)
+
+# Extra Challenge
+# Lower Case Names - Retun tuple of all lower case names in alphabetical descending order
+
+ 
+# names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"]
+# lower_names = []
+
+# for name in names:
+#     if name == name.lower():
+#         lower_names.append(name)
+
+# tuple_names = tuple(lower_names)
+# print(tuple_names)
+
+
+##############################################################################################
+
+    
