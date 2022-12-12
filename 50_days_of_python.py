@@ -34,7 +34,6 @@
 # if check != False:
 #     print('There are no duplicates')
 
-
 ##############################################################################################
 # Day 3. Write a a function that that takes a dictionary with student names and if they're in school. Must return the number of studetns in school. 
 
@@ -54,7 +53,7 @@
 # Extra Challenge
 # Lower Case Names - Retun tuple of all lower case names in alphabetical descending order
 
- 
+
 # names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"]
 # lower_names = []
 
@@ -65,7 +64,40 @@
 # tuple_names = tuple(lower_names)
 # print(tuple_names)
 
+##############################################################################################
+# Day 4. Write a function called only_floats that takes 2 arguments. Return two if both are floats or zero is none are floats
+
+# def only_floats(a, b):
+#     """Take two arguments. If they are not int, then they are floats. Return 1"""
+#     count = 0
+#     if a != int(a):
+#         count += 1  
+#     if b != int(b):
+#         count += 1
+#     return count
+
+# print(only_floats(1.3, 1.6))
+
+# Extra Challenge
+# Index of the longest word. Write a function that takes a list of strings and returns 1 for each word over 4 characters.
+
+# words1 = ["Hate", "remorse", "vengeance"]
+# words2 = ["Love", "Hate"]
+
+# def words_index(words_list):
+#     """
+#     Loop over everyword in the list. If the word is longer than 4, count must plus 1. Return total of count. 
+#     """
+#     word_count = 0
+#     count = 0
+#     for word in words_list:
+#         for i in word:
+#             word_count += 1
+#         if word_count > 4:
+#             count += 1
+#         word_count  = 0
+#     return count
+
+# print(words_index(words2))
 
 ##############################################################################################
-
-    
