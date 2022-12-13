@@ -103,6 +103,34 @@
 ##############################################################################################
 # Day 5. Write a function asking for price of item and discount. Return price after discount.
 
-def my_discount():
-    """Input price of item, input the discount. Calculate price after discount"""
-    pass
+# def my_discount():
+#     """Input price of item, input the discount. Calculate price after discount"""
+#     price = int(input('What is the price of the item?: '))
+#     discount = int(input('What is the discount?: '))
+#     total_price = (price / 100 * discount) - price
+#     print(total_price)
+
+# my_discount()
+
+# Extra Challenge
+# Tuple of student sex. Count how many males and females in a list. Return a list of tuples.
+
+# students = ['Male', 'Female', 'female', 'male', 'male', 'male','female', 'male', 'Female', 'Male', 'Female', 'Male', 'female']
+# student_count = []
+# male = 0
+# female = 0
+# for student in students:
+#     if student.lower() == 'male':
+#         male += 1
+#         male_tuple = ('Male', male)
+#     else:
+#         female += 1
+#         female_tuple = ('Female', female)
+
+# student_count.append(male_tuple)
+# student_count.append(female_tuple)
+
+# print(student_count)
+
+##############################################################################################
+# Day 6
