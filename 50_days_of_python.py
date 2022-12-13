@@ -101,3 +101,8 @@
 # print(words_index(words2))
 
 ##############################################################################################
+# Day 5. Write a function asking for price of item and discount. Return price after discount.
+
+def my_discount():
+    """Input price of item, input the discount. Calculate price after discount"""
+    pass
