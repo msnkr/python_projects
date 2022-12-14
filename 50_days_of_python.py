@@ -160,16 +160,31 @@
 # zeroed(a_list)
 
 ##############################################################################################
-
 #Day 7. String Range. Write a function that takes a single argument and returns a string range seperated by dots
 
-def string_range(i):
-    """
-    Make a for loop and create a range from argument. Use f-string to return number with dot.
-    """
-    string_item = ''
-    for item in range(i):
-       string_item += f'{item}.'
-    print(string_item)
+# def string_range(i):
+#     """
+#     Make a for loop and create a range from argument. Use f-string to return number with dot.
+#     """
+#     string_item = ''
+#     for item in range(i):
+#        string_item += f'{item}.'
+#     print(string_item)
 
-string_range(7)
+# string_range(7)
+
+# Extra Challenge
+# Dictionary of names. Given a list of names, return all names that start with the letter S and how many times that name is in the list. Return a dictionary.
+
+names = ['Joseph','Nathan', 'Sasha', 'Kelly', 'Muhammad', 'Jabulani', 'Sera', 'Patel', 'Sera']
+count = 0
+name_dict = {}
+
+for name in names:
+    if name.startswith('S'):
+        count += 1
+        name_dict[name] = count
+
+[print(name_dict)]
+
+
