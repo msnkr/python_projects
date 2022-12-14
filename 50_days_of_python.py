@@ -133,4 +133,13 @@
 # print(student_count)
 
 ##############################################################################################
-# Day 6
+# Day 6. Username generator. Write a function that asks for a email address and returns everything before the "a" symbol. 
+
+# def username_generator():
+#     """Ask for email. Split email into list items. Select first item on list"""
+#     email = input('What is your email address?: ')
+#     new_email = email.split('@')
+#     print(f'Your username is {new_email[0]}')
+
+
+# username_generator()
