@@ -143,3 +143,33 @@
 
 
 # username_generator()
+
+# Extra Challenge
+# Zeroed. Create a function that takes a list as an argument. The first and last item on the list should be zero
+
+# a_list = [2, 5, 7, 8, 9]
+
+# def zeroed(a_list):
+#     """
+#     Replace first and last item with 0
+#     """
+#     a_list[0] = 0   
+#     a_list[-1] = 0  
+#     print(a_list)
+
+# zeroed(a_list)
+
+##############################################################################################
+
+#Day 7. String Range. Write a function that takes a single argument and returns a string range seperated by dots
+
+def string_range(i):
+    """
+    Make a for loop and create a range from argument. Use f-string to return number with dot.
+    """
+    string_item = ''
+    for item in range(i):
+       string_item += f'{item}.'
+    print(string_item)
+
+string_range(7)
