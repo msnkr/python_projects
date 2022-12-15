@@ -9,5 +9,7 @@ with open('./Day 25/weather_data.csv')as data:
     temperature_list = []
     for row in weather:
         temp_items = row[1]
-        temperature_list.append(new_temp)
-    print(temperature_list)
+        temperature_list.append(temp_items)
+
+    
+print(temperature_list[1:])

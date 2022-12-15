@@ -184,7 +184,3 @@ for name in names:
     if name.startswith('S'):
         count += 1
         name_dict[name] = count
-
-[print(name_dict)]
-
-
