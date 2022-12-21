@@ -4,12 +4,12 @@
 
 import csv
 
-with open('./Day 25/weather_data.csv')as data:
+with open('./weather_data.csv')as data:
     weather = csv.reader(data)
     temperature_list = []
     for row in weather:
-        temp_items = row[1]
-        temperature_list.append(temp_items)
+        if row[1] != 'temp':
+            temperature_list.append(int(row[1]))
 
     
-print(temperature_list[1:])
+print(temperature_list)
