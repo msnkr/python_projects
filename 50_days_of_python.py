@@ -176,14 +176,50 @@
 # Extra Challenge
 # Dictionary of names. Given a list of names, return all names that start with the letter S and how many times that name is in the list. Return a dictionary.
 
-names = ['Joseph','Nathan', 'Sasha', 'Kelly', 'Muhammad', 'Jabulani', 'Sera', 'Patel', 'Sera']
-count = 0
-name_dict = {}
+# names = ['Joseph','Nathan', 'Sasha', 'Kelly', 'Muhammad', 'Jabulani', 'Sera', 'Patel', 'Sera']
+# count = 0
+# name_dict = {}
 
-for name in names:
-    if name.startswith('S'):
-        count += 1
-        name_dict[name] = count
+# for name in names:
+#     if name.startswith('S'):
+#         count += 1
+#         name_dict[name] = count
 
     
-print(name_dict)
+# print(name_dict)
+
+##############################################################################################
+# Day 8. Create a function called Odd Even that takes a list as a parameter, return the difference between the largest even number and the lowest odd number.
+
+# numbers = [1,2,4,6]
+
+# def odd_even(a_list):
+#     """
+#     Store the highest even number and the lowest odd number and minus them from eachother.
+#     """
+#     highest_even = 0
+#     lowest_ood = 100
+#     for number in a_list:
+#         if number % 2 == 0 and number > highest_even:
+#             highest_even = number
+#         if number % 2 != 0 and number < lowest_ood:
+#             lowest_ood = number
+
+#     new_number = highest_even - lowest_ood
+#     print(new_number)
+    
+# odd_even(numbers)
+
+# Extra Challenge
+# Create a function called prime_numbers. Use a single integer as am argument. Return a list of all prime numbers upto that argument
+
+def prime_numbers(number):
+    """
+   Get a range of all numbers to your argement. Append to list if number is divided by one and itself 
+    """
+    for num in range(1, number + 1):
+        if num / 1 and num / num:
+            print(num)
+
+prime_numbers(11)
+# Day 7 Extra Challenge
