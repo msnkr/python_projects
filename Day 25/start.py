@@ -16,4 +16,19 @@
 import pandas
 
 data = pandas.read_csv('./Day 25/weather_data.csv')
-print(data['temp'])
+# print(data['temp'])
+
+# Data Frame
+# data_dict = data.to_dict()
+# print(data_dict)
+
+# Series
+# temp_list = data['temp'].to_list()
+# print(temp_list)
+
+temp_list = data['temp'].to_list()
+# Pandas class mean returns average of data. It does len and sum foir you already
+# print(data['temp'].mean())
+
+# Returns highest number in the series
+print(data['temp'].max())
