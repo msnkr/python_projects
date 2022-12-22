@@ -1,3 +1,9 @@
+# REDO 
+# Day 7 Extra Challenge
+##############################################################################################
+##############################################################################################
+
+
 # Day 2. Convert strings to integers
 # convert_add = ['1', '3', '5']
 # new_list = []
@@ -215,11 +221,12 @@
 
 def prime_numbers(number):
     """
-   Get a range of all numbers to your argement. Append to list if number is divided by one and itself 
+   Get a range of all numbers to your argement. Append to list if number is divided by one and itself only
     """
+    num_list = []
     for num in range(1, number + 1):
-        if num / 1 and num / num:
-            print(num)
+        if num / 1 and num % 2 != 0:
+            num_list.append(num)
 
+    print(num_list)
 prime_numbers(11)
-# Day 7 Extra Challenge
