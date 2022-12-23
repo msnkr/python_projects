@@ -253,6 +253,6 @@
 
 def zeroes_last(a_list):
     """
-    
+    loop through each item in the list, 
     """
     pass
