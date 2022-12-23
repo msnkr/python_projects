@@ -262,6 +262,6 @@ def zeroes_last(a_list):
     if 0 not in a_list:
         print(sorted(a_list))
     else:
-        pass        
+        pass
 
 zeroes_last(list_2)
