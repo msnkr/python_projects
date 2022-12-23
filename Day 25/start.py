@@ -46,12 +46,17 @@ import pandas
 # print(monday.temp * 1.8 + 32)
 
 # Create a dataframe from scratch
-data_dict = {
-    'students': ['Lara','Kashia', 'Mikyle' ],
-    'Score': [88, 87, 5]
-}
+# data_dict = {
+#     'students': ['Lara','Kashia', 'Mikyle' ],
+#     'Score': [88, 87, 5]
+# }
 
-data = pandas.DataFrame(data_dict)
-data.to_csv('./Day 25/new_data.csv')
+# data = pandas.DataFrame(data_dict)
+# data.to_csv('./Day 25/new_data.csv')
 
-print(data)
+# print(data)
+
+# Squirel data
+data = pandas.read_csv('./Day 25/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
+fur_color = data['Primary Fur Color']
+
