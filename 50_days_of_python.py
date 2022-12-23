@@ -251,8 +251,17 @@
 # Extra Challenge
 # Zeroes to the end. Write a function called zeroes_last that takes a list as an argument, If the list has 0, it will move them to the front of the list and maintain the order of the rest of the numbers. If theres no zeroes, it will reorder the list in ascendng order.
 
+
+list_1 = [2, 1, 4, 7, 6]
+list_2 = [1, 4, 6, 0, 7, 0, 9]
+
 def zeroes_last(a_list):
     """
-    loop through each item in the list, 
+    loop through each item in the list, if theres no 0 then sort the list. If there is a zero, create a new list and add the zeros first. 
     """
-    pass
+    if 0 not in a_list:
+        print(sorted(a_list))
+    else:
+        pass        
+
+zeroes_last(list_2)
