@@ -219,14 +219,40 @@
 # Extra Challenge
 # Create a function called prime_numbers. Use a single integer as am argument. Return a list of all prime numbers upto that argument
 
-def prime_numbers(number):
-    """
-   Get a range of all numbers to your argement. Append to list if number is divided by one and itself only
-    """
-    num_list = []
-    for num in range(1, number + 1):
-        if num / 1 and num % 2 != 0:
-            num_list.append(num)
+# def prime_numbers(number):
+#     """
+#    Get a range of all numbers to your argement. Append to list if number is divided by one and itself only
+#     """
+#     num_list = []
+#     for num in range(1, number + 1):
+#         if num / 1 and num % 2 != 0:
+#             num_list.append(num)
 
-    print(num_list)
-prime_numbers(11)
+#     print(num_list)
+# prime_numbers(11)
+
+##############################################################################################
+# Day 9. Create a function called biggest odd that takes a string of numbers and returns the nbiggest odd on the list.
+
+# number_string = '23569'
+# def biggest_odd(numbers):
+#     """
+#     Convert string to integers. Create empty variable. Loop through the string of numbers and if the current number is bigger than the others, overwrit the variable.
+#     """
+#     biggest_num = 0
+#     for item in number_string:
+#         current_num = int(item)
+#         if current_num > biggest_num:
+#             biggest_num = current_num
+
+#     print(biggest_num)
+# biggest_odd(number_string)
+
+# Extra Challenge
+# Zeroes to the end. Write a function called zeroes_last that takes a list as an argument, If the list has 0, it will move them to the front of the list and maintain the order of the rest of the numbers. If theres no zeroes, it will reorder the list in ascendng order.
+
+def zeroes_last(a_list):
+    """
+    
+    """
+    pass
