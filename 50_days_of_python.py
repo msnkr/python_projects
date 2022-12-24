@@ -252,16 +252,42 @@
 # Zeroes to the end. Write a function called zeroes_last that takes a list as an argument, If the list has 0, it will move them to the front of the list and maintain the order of the rest of the numbers. If theres no zeroes, it will reorder the list in ascendng order.
 
 
-list_1 = [2, 1, 4, 7, 6]
-list_2 = [1, 4, 6, 0, 7, 0, 9]
+# list_1 = [2, 1, 4, 7, 6]
+# list_2 = [1, 4, 6, 0, 7, 0, 9]
 
-def zeroes_last(a_list):
-    """
-    loop through each item in the list, if theres no 0 then sort the list. If there is a zero, create a new list and add the zeros first. 
-    """
-    if 0 not in a_list:
-        print(sorted(a_list))
-    else:
-        pass
+# def zeroes_last(a_list):
+#     """
+#     loop through each item in the list, if theres no 0 then sort the list. If there is a zero, create a new list and add the zeros last and reverse the new list.
+#     """
+#     new_list = []
+#     if 0 not in a_list:
+#         print(sorted(a_list))
+#     else:
+#         for i in a_list:
+#             if i == 0:
+#                 new_list.append(i)
+#             else:
+#                 new_list.insert(-0, i)
+#     print(new_list[::-1])
 
-zeroes_last(list_2)
+# zeroes_last(list_2)
+
+##############################################################################################
+# Day 10. Write a fuction called hide password that takes a input and returns * and the length of password
+
+# def hide_password():
+#     """
+#     ask for input, return * with len function and count
+#     """
+#     password = input('Password: ')
+#     password_hash = ''
+#     for i in range(len(password)):
+#         password_hash += '*'
+
+#     print(password_hash)   
+#     print(len(password_hash))
+
+# hide_password()
+
+# Extra Challenge.
+# 
