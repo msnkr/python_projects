@@ -59,4 +59,28 @@ import pandas
 # Squirel data
 data = pandas.read_csv('./Day 25/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
 fur_color = data['Primary Fur Color']
+fur_colors = ['Gray', 'Cinnamon', 'Black']
 
+color_list = []
+count_list = []
+def check_fur_colors(item):
+    '''
+    Check fur colors. If color == True, then append count to the count list.
+    '''
+    color_list.append(item)
+    color = fur_color == item
+    count = 0
+    for x in color:
+        if x == True:
+            count += 1
+    count_list.append(count)
+
+for color in fur_colors:
+    check_fur_colors(color)
+
+data_dict = {
+    'Colors': color_list,
+    'Count': count_list
+}
+data = pandas.DataFrame(data_dict)
+data.to_csv('./Day 25/my_squirrel_data.csv')
