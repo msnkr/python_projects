@@ -33,16 +33,15 @@ while game_on:
             if row == answer:
                 # 3. Create new turtle object to write data to map
                 turtle = Turtle()
-                turtle.hideturtle()
+                turtle.speed(1)
                 turtle.penup()
-                turtle.speed(4)
                 # 4. Turtle goto location on map
                 turtle.goto(float(states.x), float(states.y))
                 turtle.write(f'{answer}', align='center', font=('Arial', 10, 'normal'))
                 is_correct += 1
+                turtle.hideturtle()
 
 
 screen.exitonclick()
 
-# Fix if answer is there
 # Fix that name moves to goto
