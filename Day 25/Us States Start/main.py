@@ -25,17 +25,16 @@ turtle = Turtle(shape=image)
 game_on = True
 while game_on:
     answer = screen.textinput(title='Guess the States', prompt='Name another State: ').capitalize()
-    # 1. Find answer in row
-    states = data[data.state == answer]
-    states_x = states.x
-    states_y = states.y
-
-    # turtle = Turtle(shape='square')
-    # turtle.goto(states_x, states_y)
-    print(f'{states_x}')
-
-# 3. Get x and Y coordinates from csv
-# turtle goto with x and y coordinates
+    # 1. Find answer in row.
+    states = data[data['state'] == answer]
+    # 3. Create new turtle object to write data to map
+    turtle = Turtle()
+    turtle.hideturtle()
+    turtle.penup()
+    turtle.speed(4)
+    # 4. Turtle goto location on map
+    turtle.goto(float(states.x), float(states.y))
+    turtle.write(f'{answer}', align='center', font=('Arial', 10, 'normal'))
 
 
 screen.exitonclick()
