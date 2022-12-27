@@ -23,18 +23,26 @@ turtle = Turtle(shape=image)
 
 # 2. Create new text.
 game_on = True
+is_correct = 0
 while game_on:
-    answer = screen.textinput(title='Guess the States', prompt='Name another State: ').capitalize()
-    # 1. Find answer in row.
-    states = data[data['state'] == answer]
-    # 3. Create new turtle object to write data to map
-    turtle = Turtle()
-    turtle.hideturtle()
-    turtle.penup()
-    turtle.speed(4)
-    # 4. Turtle goto location on map
-    turtle.goto(float(states.x), float(states.y))
-    turtle.write(f'{answer}', align='center', font=('Arial', 10, 'normal'))
+    answer = screen.textinput(title='Guess the States', prompt=f'Name another State: ({is_correct}/50)').title()
+    if answer != '':
+        # 1. Find answer in row.
+        states = data[data['state'] == answer]
+        for row in data.state:
+            if row == answer:
+                # 3. Create new turtle object to write data to map
+                turtle = Turtle()
+                turtle.hideturtle()
+                turtle.penup()
+                turtle.speed(4)
+                # 4. Turtle goto location on map
+                turtle.goto(float(states.x), float(states.y))
+                turtle.write(f'{answer}', align='center', font=('Arial', 10, 'normal'))
+                is_correct += 1
 
 
 screen.exitonclick()
+
+# Fix if answer is there
+# Fix that name moves to goto
