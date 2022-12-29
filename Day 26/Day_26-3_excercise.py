@@ -8,11 +8,8 @@ with open('./Day 26/file1.txt')as f1:
 with open('./Day 26/file2.txt')as f2:
     data2 = f2.read().splitlines()
     
-result1 = [int(num) for num in data1]
-result2 = [int(num) for num in data2]
+result = [int(num) for num in data1 if num in data2]
 
-
-result =[num for num in result1 if num in result2]
 # Write your code above 👆
 
 
