@@ -30,11 +30,7 @@ while is_correct != 50:
     # 1. Find answer in row.
     states = data[data['state'] == answer]
     if answer == 'Exit':
-        to_guess = []
-        for row in data.state:
-            if row not in guessed_states:
-                to_guess.append(row)
-
+        to_guess = [row for row in data.state if row not in guessed_states]
         df = pandas.DataFrame(to_guess)
         df.to_csv('./Day 25/Us States Start/to_guess.csv')
         break

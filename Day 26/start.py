@@ -37,6 +37,18 @@
 # names_list = [name for name in names if len(name) < 5]
 # print(names_list)
 
-names = ['Mikyle', 'Lara', 'Marcus', 'Selene', 'Kash', 'Angelica']
-names_list = [name.upper() for name in names if len(name) > 5]
-print(names_list)
+# names = ['Mikyle', 'Lara', 'Marcus', 'Selene', 'Kash', 'Angelica']
+# names_list = [name.upper() for name in names if len(name) > 5]
+# print(names_list)
+
+# Dictionary Comprehension
+import random
+names = ['Mikyle', 'Kashia', 'Lara', 'Marcus', 'Selene', 'Kash', 'Angelica']
+
+# student_dict = {key:value for item in dict}
+student_dict = {student:random.randint(1, 100) for student in names}
+print(student_dict)
+
+# passed_students = {new_key:new_value for (key:value) in dict.items() if test}
+
+
