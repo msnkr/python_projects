@@ -2,10 +2,20 @@
 # Get list of items as int.
 # If list 1 already in list 2, don't copy items
 
+with open('./Day 26/file1.txt')as f1:
+    data1 = f1.read().splitlines()
+    
+with open('./Day 26/file2.txt')as f2:
+    data2 = f2.read().splitlines()
+    
+result1 = [int(num) for num in data1]
+result2 = [int(num) for num in data2]
 
+
+result =[num for num in result1 if num in result2]
 # Write your code above 👆
 
 
-# print(result)
+print(result)
 
 
