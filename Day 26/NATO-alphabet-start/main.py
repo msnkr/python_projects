@@ -13,12 +13,11 @@ while game:
     # Get the input into a variable.
     # Convert each letter in variable into a list using split or splitlines.
 
-    user_input = list(input('Enter Word: ').upper())
-    if user_input == ['E', 'X', 'I', 'T']:
+    user_input = input('Enter Word: ').upper()
+    if user_input == 'EXIT':
         break
 
     # Loop thorough each item in the variable list to print out the letters associated with the dictionary
-    # nato_output = [new_item for word in user_input]
 
     nato_words = [nato_dict[letter] for letter in user_input]
     print(nato_words)
