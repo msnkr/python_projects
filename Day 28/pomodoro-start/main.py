@@ -7,14 +7,15 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Josefin Sans"
-WORK_MIN = 1
-SHORT_BREAK_MIN = 5
-LONG_BREAK_MIN = 20
+WORK_MIN = 25 * 60
+SHORT_BREAK_MIN = 5 * 60
+LONG_BREAK_MIN = 20 * 60
+reps = 0
 # ---------------------------- TIMER RESET ------------------------------- # 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
-    count_down(5)
+    count_down(WORK_MIN)
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def count_down(count):
@@ -22,7 +23,7 @@ def count_down(count):
     count_seconds = count % 60
     if count_seconds < 10:
         count_seconds = f'0{count_seconds}'
-        
+
     canvas.itemconfig(timer_text, text=f'{count_minutes}:{count_seconds}')
     if count > 0:
         window.after(1000, count_down, count - 1)
