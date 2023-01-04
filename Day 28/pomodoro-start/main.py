@@ -7,15 +7,23 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Josefin Sans"
-WORK_MIN = 25 * 60
-SHORT_BREAK_MIN = 5 * 60
-LONG_BREAK_MIN = 20 * 60
-reps = 0
+WORK_MIN = 25
+SHORT_BREAK_MIN = 5
+LONG_BREAK_MIN = 20
+reps = 1
 # ---------------------------- TIMER RESET ------------------------------- # 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
-    count_down(WORK_MIN)
+    global reps
+    work_seconds = WORK_MIN * 60
+    short_break = SHORT_BREAK_MIN * 60
+    long_break = LONG_BREAK_MIN * 60
+
+    if reps == 1 or reps == 3 or reps == 5 or reps == 7:
+        count_down(10)
+    else:
+        count_down(5)
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def count_down(count):
