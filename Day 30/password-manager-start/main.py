@@ -13,20 +13,18 @@ FONT = ('Iosveka', 12, 'bold')
 
 def search_function():
     try:
+        website = website_entry.get()   
         data_item = 'Day 30/password-manager-start/data.json'
         with open(data_item, 'r')as data:
-            json_data = json.load(data)
-            website = website_entry.get()
+            json_data = json.load(data)         
     except FileNotFoundError:
-        messagebox.showerror(message='There is no data file. ')
-        
+        messagebox.showerror(message='There is no data file. ')  
     else:
-        try:
-            if json_data[website]:
-                email = json_data[website]['email']
-                password = json_data[website]['password']
-                messagebox.showinfo(message=f'{website}\n{email}\n{password}')
-        except KeyError:
+        if website in json_data:
+            email = json_data[website]['email']
+            password = json_data[website]['password']
+            messagebox.showinfo(message=f'{website}\n{email}\n{password}')
+        else:
             messagebox.showerror(message='There is no password for this website.')
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
