@@ -43,15 +43,21 @@ def save():
     if len(web_data) == 0 or len(password_data) == 0:
         messagebox.showinfo(title='One of your fields are empty.', message='Don\'t leave any empty fields.')
     else:
-        # Read old data
-        with open('Day 30/password-manager-start/data.json', 'r')as data:
-            data_file = json.load(data)
-        # Update the old data with items in data dict
+        # Try read the old file
+        try:
+            # Read old data
+            with open('Day 30/password-manager-start/data.json', 'r')as data:
+                data_file = json.load(data)
+        # IF file not found, create a new file with current data dictionary
+        except FileNotFoundError:
+            with open('Day 30/password-manager-start/data.json', 'w')as data:
+                json.dump(data_dict, data, indent=4)
+        # Else there is a file, just append the new file and write it.
+        else:
+            # Update the old data with items in data dict
             data_file.update(data_dict)
-
-        # Write all data again
-        with open('Day 30/password-manager-start/data.json', 'w')as data:
-            json.dump(data_file, data, indent=4)
+            with open('Day 30/password-manager-start/data.json', 'w')as data:
+                json.dump(data_file, data, indent=4)
 
         website_entry.delete(0, END)
         password_entry.delete(0, END)
