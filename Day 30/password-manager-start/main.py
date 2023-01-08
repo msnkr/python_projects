@@ -9,6 +9,26 @@ import pyperclip
 WHITE = 'white'
 FONT = ('Iosveka', 12, 'bold')
 
+# ---------------------------- SEARCH FUNCTION ------------------------------- #
+
+def search_function():
+    try:
+        data_item = 'Day 30/password-manager-start/data.json'
+        with open(data_item, 'r')as data:
+            json_data = json.load(data)
+            website = website_entry.get()
+    except FileNotFoundError:
+        messagebox.showerror(message='There is no data file. ')
+        
+    else:
+        try:
+            if json_data[website]:
+                email = json_data[website]['email']
+                password = json_data[website]['password']
+                messagebox.showinfo(message=f'{website}\n{email}\n{password}')
+        except KeyError:
+            messagebox.showerror(message='There is no password for this website.')
+
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 def generate_password():
@@ -89,7 +109,7 @@ password.grid(column=0, row=4)
 # Entry
 website_entry = Entry()
 website_entry.focus()
-website_entry.grid(column=1, row=2, columnspan=3, sticky='EW')
+website_entry.grid(column=1, row=2, sticky='EW')
 
 email_username_entry = Entry()
 email_username_entry.insert(0, 'RandomEmail@gmail.com')
@@ -104,5 +124,8 @@ generate_pass_button.grid(column=2, row=4, sticky='EW')
 
 add_button = Button(text='Add', bg=WHITE, font=('Iosveka', 8), width=36, command=save)
 add_button.grid(column=1, row=5, columnspan=4, sticky='EW')
+
+search_button = Button(text='Search', bg=WHITE, font=('Iosveka', 8), command=search_function)
+search_button.grid(column=2, row=2, sticky='EW')
 
 window.mainloop()
