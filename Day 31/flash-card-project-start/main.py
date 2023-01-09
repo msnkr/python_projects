@@ -10,13 +10,13 @@ window = Tk()
 window.title('Flashy')
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
-canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
+canvas = Canvas(width=1000, height=800, highlightthickness=0, bg=BACKGROUND_COLOR)
 canvas_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/card_front.png'))
-canvas.create_image(600, 100, image=canvas_img)
+canvas.create_image(550, 400, image=canvas_img)
 
 # Canvas Text
-# french_word = canvas.create_text(525, 300, text='French', font=FONT1)
-# french = canvas.create_text(525, 500, text='Word', font=FONT2)
+french_word = canvas.create_text(550, 250, text='French', font=FONT1)
+french = canvas.create_text(550, 450, text='Word', font=FONT2)
 canvas.grid(column=1, row=1)
 
 
