@@ -15,7 +15,7 @@
     
 import pandas
 
-# data = pandas.read_csv('./Day 25/weather_data.csv')
+data = pandas.read_csv('./Day 25/weather_data.csv')
 # print(data['temp'])
 
 # Data Frame
@@ -38,7 +38,7 @@ import pandas
 # print(data.condition)
 
 # Get data in row
-# print(data[data.day == 'Monday'])
+print(data[data.day == 'Monday'])
 # print(data[data.temp == data.temp.max()])
 
 # monday = data[data.day == 'Monday']
