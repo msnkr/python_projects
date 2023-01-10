@@ -10,25 +10,22 @@ window = Tk()
 window.title('Flashy')
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
-canvas = Canvas(width=1000, height=800, highlightthickness=0, bg=BACKGROUND_COLOR)
+canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
 canvas_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/card_front.png'))
-canvas.create_image(550, 400, image=canvas_img)
+canvas.create_image(400, 263, image=canvas_img)
 
 # Canvas Text
-french_word = canvas.create_text(550, 250, text='French', font=FONT1)
-french = canvas.create_text(550, 450, text='Word', font=FONT2)
-canvas.grid(column=1, row=1)
-
+canvas.create_text(400, 150, text='Title', font=FONT1)
+canvas.create_text(400, 263, text='Word', font=FONT2)
+canvas.grid(column=0, row=0, columnspan=2)
 
 # Buttons
 wrong_button_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/wrong.png'))
 wrong_button = Button(image=wrong_button_img, highlightthickness=0, bg=BACKGROUND_COLOR, padx=5, pady=5)
-wrong_button.grid(column=1, row=2)
+wrong_button.grid(column=0, row=1)
 
 right_button_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/right.png'))
 right_button = Button(image=right_button_img, highlightthickness=0, bg=BACKGROUND_COLOR, padx=5, pady=5)
-right_button.grid(column=2, row=2)
-
+right_button.grid(column=1, row=1)
 
 window.mainloop()
-
