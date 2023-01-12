@@ -1043,6 +1043,16 @@
 # nemo.breath()
 
 
-my_list = ['a', 'b', 'c', 'd', 'e', 'f']
+# my_list = ['a', 'b', 'c', 'd', 'e', 'f']
 
-print(my_list[0:1:-1])
+# print(my_list[0:1:-1])
+
+#### PANDAS ####
+import pandas
+
+pd = pandas.read_csv('2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
+# moans = pd[pd['Moans'] == True]
+# print(len(moans))
+
+running = pd[pd['Running'] == False]
+print(len(running))
