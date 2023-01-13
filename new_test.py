@@ -1050,9 +1050,5 @@
 #### PANDAS ####
 import pandas
 
-pd = pandas.read_csv('2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
-# moans = pd[pd['Moans'] == True]
-# print(len(moans))
-
-running = pd[pd['Running'] == False]
-print(len(running))
+pd = pandas.read_csv('python_projects/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
+running = pd[pd.Running]
