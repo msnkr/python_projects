@@ -1048,7 +1048,37 @@
 # print(my_list[0:1:-1])
 
 #### PANDAS ####
+# import pandas
+
+# gray = 0
+# black = 0
+# cinnamon = 0
+
+# pd = pandas.read_csv('python_projects/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
+# for row in pd['Tail twitches']:
+#     if row == True:
+#         s_id = pd['Primary Fur Color']
+        
+# for row in s_id:
+#     if row == 'Gray':
+#         gray += 1
+#     elif row == 'Black':
+#         black += 1
+#     else:
+#         cinnamon += 1
+
+# print(f'Gray: {gray} \nBlack: {black} \nCinnamon: {cinnamon}')
+# print(pd.columns)
+
 import pandas
 
-pd = pandas.read_csv('python_projects/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
-running = pd[pd.Running]
+
+pd = pandas.read_csv('python_projects/Day 25/Us States Start/50_states.csv')
+
+
+guess = input('Guess a state: ').title()
+for row in pd.state:
+    if guess == row:
+        state = pd[pd.state == guess]
+        state_x = state.x
+        state_y = state.y
