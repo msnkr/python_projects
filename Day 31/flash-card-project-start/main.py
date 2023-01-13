@@ -8,10 +8,7 @@ from random import choice
 
 pd = pandas.read_csv('Day 31/flash-card-project-start/data/french_words.csv')
 
-french_list = pd['French'].to_list()
-random_word = choice(french_list)
 
-print(pd[random_word])
 ################## CANVAS #####################
 
 # BACKGROUND_COLOR = "#B1DDC6"
