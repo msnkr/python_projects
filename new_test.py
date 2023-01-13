@@ -1073,12 +1073,17 @@
 import pandas
 
 
-pd = pandas.read_csv('python_projects/Day 25/Us States Start/50_states.csv')
+pd = pandas.read_csv('Day 25/Us States Start/50_states.csv')
 
 
 guess = input('Guess a state: ').title()
 for row in pd.state:
     if guess == row:
         state = pd[pd.state == guess]
+
         state_x = state.x
         state_y = state.y
+
+print(state)
+print(state_x)
+print(state_y)
