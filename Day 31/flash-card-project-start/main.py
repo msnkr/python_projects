@@ -8,6 +8,9 @@ from random import choice
 
 pd = pandas.read_csv('Day 31/flash-card-project-start/data/french_words.csv')
 
+word = choice(pd.French)
+english_word = 
+
 
 ################## CANVAS #####################
 
