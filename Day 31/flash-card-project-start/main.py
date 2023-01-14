@@ -3,25 +3,33 @@ from PIL import Image, ImageTk
 import pandas
 from random import choice
 
+################## REMOVE CARD FROM LIST #####################
+
+
 
 ################## BACK OF THE CARD #####################
 
-def back_card(english_word):
+def back_card():
    canvas.itemconfig(canvas_image, image=back_image)
    canvas.itemconfigure(card_title, text='English', fill='white')
-   canvas.itemconfigure(card_word, text=english_word, fill='white')
-   canvas.after_cancel(x)
+   canvas.itemconfigure(card_word, text=current_card['English'], fill='white')
+
 
 ################## RANDOM DATA #####################
 
 def generate_card():
+    global current_card, flip_timer
+    window.after_cancel(flip_timer)
     current_card = choice(new_dict)
-    canvas.itemconfigure(card_title, text='French')
-    canvas.itemconfigure(card_word, text=current_card['French'])
-    english_word = current_card['English']
-    canvas.after(3000, back_card, english_word)
+    canvas.itemconfigure(card_title, text='French', fill='black')
+    canvas.itemconfigure(card_word, text=current_card['French'], fill='black')
+    canvas.itemconfig(canvas_image, image=canvas_img)
+    flip_timer = window.after(3000, back_card)
 
 
+
+
+current_card = {}
 pd = pandas.read_csv('Day 31/flash-card-project-start/data/french_words.csv')
 new_dict = pd.to_dict(orient='records')
 
@@ -35,6 +43,9 @@ FONT2 = ('Arial', 60, 'bold')
 window = Tk()
 window.title('Flashy')
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
+flip_timer = window.after(3000, back_card)
+
+
 
 canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
 canvas_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/card_front.png'))
