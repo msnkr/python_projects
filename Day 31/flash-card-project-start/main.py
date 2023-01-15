@@ -6,6 +6,7 @@ from random import choice
 ################## REMOVE CARD FROM LIST #####################
 
 def remove_word(current_card):
+    # Dont know the card
     pass
 
 ################## BACK OF THE CARD #####################
@@ -25,7 +26,8 @@ def generate_card():
     canvas.itemconfigure(card_word, text=current_card['French'], fill='black')
     canvas.itemconfig(canvas_image, image=canvas_img)
     flip_timer = window.after(3000, back_card)
-
+    # We know the card
+    
 
 current_card = {}
 pd = pandas.read_csv('Day 31/flash-card-project-start/data/french_words.csv')
