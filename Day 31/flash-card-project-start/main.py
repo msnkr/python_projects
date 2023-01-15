@@ -5,7 +5,8 @@ from random import choice
 
 ################## REMOVE CARD FROM LIST #####################
 
-
+def remove_word(current_card):
+    pass
 
 ################## BACK OF THE CARD #####################
 
@@ -13,7 +14,6 @@ def back_card():
    canvas.itemconfig(canvas_image, image=back_image)
    canvas.itemconfigure(card_title, text='English', fill='white')
    canvas.itemconfigure(card_word, text=current_card['English'], fill='white')
-
 
 ################## RANDOM DATA #####################
 
@@ -25,8 +25,6 @@ def generate_card():
     canvas.itemconfigure(card_word, text=current_card['French'], fill='black')
     canvas.itemconfig(canvas_image, image=canvas_img)
     flip_timer = window.after(3000, back_card)
-
-
 
 
 current_card = {}
@@ -45,19 +43,15 @@ window.title('Flashy')
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 flip_timer = window.after(3000, back_card)
 
-
-
 canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
 canvas_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/card_front.png'))
 canvas_image = canvas.create_image(400, 263, image=canvas_img)
 back_image = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/card_back.png'))
 
-
 # Canvas Text
 card_title = canvas.create_text(400, 150, text='', font=FONT1)
 card_word = canvas.create_text(400, 263, text='', font=FONT2)
 canvas.grid(column=0, row=0, columnspan=2)
-
 
 # Buttons
 wrong_button_img = ImageTk.PhotoImage(Image.open('Day 31/flash-card-project-start/images/wrong.png'))
@@ -69,5 +63,4 @@ right_button = Button(image=right_button_img, highlightthickness=0, bg=BACKGROUN
 right_button.grid(column=1, row=1)
 
 generate_card()
-
 window.mainloop()
