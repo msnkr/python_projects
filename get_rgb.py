@@ -2,11 +2,6 @@ import colorgram
 from colormap import rgb2hex
 
 
-# input('What is the exact image name? Add .png or .jpeg etc\n')
-image_name = "Untitled design.png"
-color_list = []
-
-
 def write_file(hex):
     with open("HexCodes.txt", "a")as file:
         file.write(f"{hex}\n")
@@ -22,4 +17,8 @@ def get_rgb(image_name):
         write_file(hex)
 
 
-get_rgb(image_name)
+try:
+    image_name = input("Enter the file name: ")
+    get_rgb(image_name)
+except FileNotFoundError:
+    print("File cannot be found. Enter the correct name and make sure image is in the same folder as program.")
