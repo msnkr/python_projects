@@ -3,7 +3,7 @@ from colormap import rgb2hex
 
 
 def write_file(hex):
-    with open("HexCodes.txt", "a")as file:
+    with open(file_name + ".txt", "a")as file:
         file.write(f"{hex}\n")
 
 
