@@ -3,12 +3,14 @@ from colormap import rgb2hex
 
 
 def write_file(hex):
-    with open(file_name + ".txt", "a")as file:
+    new_name = image_name.split(".")
+    name = new_name[0]
+    with open(name + "HexColorCodes.txt", "a")as file:
         file.write(f"{hex}\n")
 
 
 def get_rgb(image_name):
-    colors = colorgram.extract(image_name, 6)
+    colors = colorgram.extract(image_name, 8)
     for color in colors:
         r = color.rgb[0]
         g = color.rgb[1]
