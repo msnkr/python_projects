@@ -72,7 +72,7 @@
 # if age < 18:
 #   print('Free') etc
 
-# import random 
+# import random
 
 # # rand_int = random.randint(0, 5)
 # # print(rand_int)
@@ -124,7 +124,7 @@
 
 # lst = ['a', 'b', 'b', 'c', 'd', 'e', 'e', 'e', 'f', 'g']
 # letters = ''
-            
+
 # should_continue = True
 # while should_continue:
 #     for i in lst:
@@ -191,7 +191,7 @@
 #     print('prime')
 
 # alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-# # print(alphabet[(0+27) % len(alphabet)]) 
+# # print(alphabet[(0+27) % len(alphabet)])
 
 
 # def caesar(direction, text, shift):
@@ -226,18 +226,18 @@
 
 # Dictionaries
 # programming_dictionary = {
-#     "Bug": "An error in a program that prevents the program from running as expected.", 
+#     "Bug": "An error in a program that prevents the program from running as expected.",
 #     "Function": "A piece of code that you can easily call over and over again."
 #     }
 
-# Retrieving items in dictionary 
+# Retrieving items in dictionary
 # print(programming_dictionary['Function'])
 
 # Adding new item to dictionary
 # programming_dictionary['Loop'] = 'The action of doing something over and over again.'
 
 
-# Creating and wiping dictionary 
+# Creating and wiping dictionary
 # new_dictionary = {}
 
 # Edit existing or create a new item in dictionary
@@ -252,7 +252,7 @@
 #     This selects each key and value from dictionary
 
 
-# Nesting 
+# Nesting
 # capitals = {
 #     'France': 'Paris',
 #     'Germany': 'Berlin'
@@ -331,7 +331,7 @@
 # def format_name(f_name, l_name):
 #     # Docstring is to give your function an explanation of what it does.
 #     """
-#     Takes first name and last name input and returns title case. 
+#     Takes first name and last name input and returns title case.
 #     If no first or last name, return none
 #     """
 #     if f_name == '' and l_name == '':
@@ -339,7 +339,7 @@
 #         return 'Nothing was added'
 #     return f'{f_name.title()} {l_name.title()}'
 
-# Must use print statement else it won't return anything. 
+# Must use print statement else it won't return anything.
 # print(format_name(f_name, l_name))
 
 # lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -388,7 +388,6 @@
 # }
 
 
-
 # def calculate():
 #     num1 = int(input('What is the first number?: '))
 #     should_continue = True
@@ -431,13 +430,12 @@
 # lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 # for item in range(len(lst)):
-#     letter = lst[item]   
+#     letter = lst[item]
 #     if letter == 'c':
-#         lst[item] = 'changed'    
+#         lst[item] = 'changed'
 
 
 # print(lst)
-
 
 
 # def get_name():
@@ -480,32 +478,32 @@
 #             new_name = item
 #     print(f'The eldest is {new_name.capitalize()} at {new_age} ')
 
-# # empty dictionary 
+# # empty dictionary
 # my_dict = {}
 # should_contine = True
 # while should_contine:
 #     # input name and age
-#     name = input('What is the name: ') 
+#     name = input('What is the name: ')
 #     age = int(input('How old are they?: '))
 #     # save to dictionary
 #     my_dict[name] = age
-#     # ask if theres more names 
+#     # ask if theres more names
 #     go_again = input('Would you like to add another entry?: ')
 #     if go_again == 'n':
 #         calculate_age(my_dict)
 #         should_contine = False
-#     # if not then calculate the eldest 
+#     # if not then calculate the eldest
 
 
 # alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 # for letter in range(len(alphabet)):
-#     # returns individual numbers 
+#     # returns individual numbers
 #     item = alphabet[letter]
-#     # prints the actual letters of each number 
+#     # prints the actual letters of each number
 #     if item == 'd':
 #         alphabet[letter] = 'changed'
-#         # alphabet and number change  
+#         # alphabet and number change
 
 # print(alphabet)
 
@@ -516,10 +514,10 @@
 #     print(item, end=' ')
 #     End removes the escape character and replaces it with ' ' or /. You can put anything to replace the escape character
 
-# seperator replaces the escape character too 
+# seperator replaces the escape character too
 # print('19', '12', '1990', sep='/')
 
-# Merge Dictionaries 
+# Merge Dictionaries
 # name1 = {
 #     'kelly': 23,
 #     'Raju': 22,
@@ -545,13 +543,13 @@
 # month = calendar.month(2022, 8)
 # print(month)
 
-# Get Current time with python 
+# Get Current time with python
 # from datetime import datetime
 
 # time_now = datetime.now().strftime('%H:%M:%S')
 # print('The current time is ' + time_now)
 
-# Sort a list in descending order 
+# Sort a list in descending order
 # list = [2, 7, 5, 4, 3, 6, 1]
 # list.sort(reverse=True)
 # # You can't use the sort method to create a new object. Sort is strictly a list method
@@ -559,13 +557,13 @@
 # print(list)
 
 
-# Swapping variables 
+# Swapping variables
 # x, y = 20, 30
 # x, y = y, x
 # print(x, y)
 
 
-# Count how many items in a list 
+# Count how many items in a list
 # names = ['mikyle', 'kashia', 'lara', 'marcus', 'lara', 'simone', 'lara']
 
 # count = 0
@@ -585,8 +583,8 @@
 # user_cards = []
 # computer_cards = []
 
-# Hint 6: Create a function called calculate_score() that takes a List of cards as input 
-# and returns the score. 
+# Hint 6: Create a function called calculate_score() that takes a List of cards as input
+# and returns the score.
 # Look up the sum() function to help you do this.
 
 # Hint 7: Inside calculate_score() check for a blackjack (a hand with only 2 cards: ace + 10) and return 0 instead of the actual score. 0 will represent a blackjack in our game.
@@ -632,8 +630,8 @@
 #         return 'You lose. The computer drew higher than you.'
 
 
-# #Hint 6: Create a function called calculate_score() that takes a List of cards as input 
-# #and returns the score. 
+# #Hint 6: Create a function called calculate_score() that takes a List of cards as input
+# #and returns the score.
 # #Look up the sum() function to help you do this.
 # def calculate_score(cards):
 #     """Return sum of score if not blackjack or over 21"""
@@ -661,7 +659,6 @@
 #     for _ in range(2):
 #         user_cards.append(deal_card())
 #         computer_cards.append(deal_card())
-
 
 
 #     is_game_over = False
@@ -696,7 +693,6 @@
 #     play_game()
 
 
-
 # ###################################scope#######################################
 
 # enemies = 1
@@ -725,7 +721,6 @@
 #     else:
 #         print(turns)
 
-    
 
 # class Person:
 #     def __init__(self, name, age):
@@ -815,7 +810,7 @@
 
 
 # class CarBluePrint:
-    
+
 #     def __init__(self, make, color):
 #         self.make = make
 #         self.color = color
@@ -871,7 +866,7 @@
 #         self.following += 1
 #         username.followers += 1 # If it was self.followers then the user would follow themselves
 
-    
+
 #     def __str__(self):
 #         return f'{self.username} is following {self.following} users and being followed by {self.followers}'
 
@@ -1029,7 +1024,7 @@
 #     def __init__(self):
 #         super().__init__()
 
-    
+
 #     def breath(self):
 #         super().breath()
 #         print('Under water')
@@ -1058,7 +1053,7 @@
 # for row in pd['Tail twitches']:
 #     if row == True:
 #         s_id = pd['Primary Fur Color']
-        
+
 # for row in s_id:
 #     if row == 'Gray':
 #         gray += 1
@@ -1087,3 +1082,36 @@
 # print(state)
 # print(state_x)
 # print(state_y)
+
+############## TODO ####################
+
+from datetime import date
+current_date = date.today()
+
+print(current_date)
+flag = True
+user_list = []
+
+
+def delete_list_item(todo_list):
+    done_num = int(input("Which number is done? \n\n"))
+    for count, item in enumerate(todo_list):
+        if done_num == count:
+            todo_list.remove(item)
+
+
+def show_list_items(todo_list):
+    for count, item in enumerate(todo_list):
+        print(count, item)
+
+
+while flag:
+    user_input = input("Add a todo item: \n\n")
+    if user_input == "show":
+        show_list_items(user_list)
+    elif user_input == "done":
+        delete_list_item(user_list)
+    elif user_input == "exit":
+        flag = False
+    else:
+        user_list.append(user_input)

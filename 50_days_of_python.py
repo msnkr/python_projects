@@ -1,4 +1,4 @@
-# REDO 
+# REDO
 # Day 7 Extra Challenge
 ##############################################################################################
 ##############################################################################################
@@ -13,7 +13,7 @@
 
 # print(convert_add)
 # print(new_list)
-# print(sum(new_list)) 
+# print(sum(new_list))
 
 # Extra Challenge
 # Write a function that takes a list of names and returns the duplicates otherwise return no duplicates
@@ -41,7 +41,7 @@
 #     print('There are no duplicates')
 
 ##############################################################################################
-# Day 3. Write a a function that that takes a dictionary with student names and if they're in school. Must return the number of studetns in school. 
+# Day 3. Write a a function that that takes a dictionary with student names and if they're in school. Must return the number of studetns in school.
 
 # register = {'Michael':'yes','John': 'no', 'Peter':'yes', 'Mary': 'yes'}
 # COUNT = 0
@@ -77,7 +77,7 @@
 #     """Take two arguments. If they are not int, then they are floats. Return 1"""
 #     count = 0
 #     if a != int(a):
-#         count += 1  
+#         count += 1
 #     if b != int(b):
 #         count += 1
 #     return count
@@ -92,7 +92,7 @@
 
 # def words_index(words_list):
 #     """
-#     Loop over everyword in the list. If the word is longer than 4, count must plus 1. Return total of count. 
+#     Loop over everyword in the list. If the word is longer than 4, count must plus 1. Return total of count.
 #     """
 #     word_count = 0
 #     count = 0
@@ -139,7 +139,7 @@
 # print(student_count)
 
 ##############################################################################################
-# Day 6. Username generator. Write a function that asks for a email address and returns everything before the "a" symbol. 
+# Day 6. Username generator. Write a function that asks for a email address and returns everything before the "a" symbol.
 
 # def username_generator():
 #     """Ask for email. Split email into list items. Select first item on list"""
@@ -159,14 +159,14 @@
 #     """
 #     Replace first and last item with 0
 #     """
-#     a_list[0] = 0   
-#     a_list[-1] = 0  
+#     a_list[0] = 0
+#     a_list[-1] = 0
 #     print(a_list)
 
 # zeroed(a_list)
 
 ##############################################################################################
-#Day 7. String Range. Write a function that takes a single argument and returns a string range seperated by dots
+# Day 7. String Range. Write a function that takes a single argument and returns a string range seperated by dots
 
 # def string_range(i):
 #     """
@@ -191,7 +191,7 @@
 #         count += 1
 #         name_dict[name] = count
 
-    
+
 # print(name_dict)
 
 ##############################################################################################
@@ -213,7 +213,7 @@
 
 #     new_number = highest_even - lowest_ood
 #     print(new_number)
-    
+
 # odd_even(numbers)
 
 # Extra Challenge
@@ -284,10 +284,10 @@
 #     for i in range(len(password)):
 #         password_hash += '*'
 
-#     print(password_hash)   
+#     print(password_hash)
 #     print(len(password_hash))
 
 # hide_password()
 
 # Extra Challenge.
-# 
+#
