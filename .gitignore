@@ -21411,3 +21411,17 @@ requirments.txt
 .venv/lib/python3.10/site-packages/termcolor-2.2.0.dist-info/REQUESTED
 .venv/lib/python3.10/site-packages/termcolor-2.2.0.dist-info/WHEEL
 .venv/lib/python3.10/site-packages/termcolor-2.2.0.dist-info/licenses/COPYING.txt
+.venv/Lib/site-packages/prettytable/py.typed
+.venv/Lib/site-packages/prettytable-3.8.0.dist-info/INSTALLER
+.venv/Lib/site-packages/prettytable-3.8.0.dist-info/METADATA
+.venv/Lib/site-packages/prettytable-3.8.0.dist-info/RECORD
+.venv/Lib/site-packages/prettytable-3.8.0.dist-info/REQUESTED
+.venv/Lib/site-packages/prettytable-3.8.0.dist-info/WHEEL
+.venv/Lib/site-packages/prettytable-3.8.0.dist-info/licenses/LICENSE
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/INSTALLER
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/LICENSE
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/METADATA
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/RECORD
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/top_level.txt
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/WHEEL
+.venv/Lib/site-packages/wcwidth-0.2.6.dist-info/zip-safe

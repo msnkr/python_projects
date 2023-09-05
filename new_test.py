@@ -1086,7 +1086,12 @@
 ############## TODO ####################
 
 from datetime import date
+from prettytable import PrettyTable
+
 current_date = date.today()
+x = PrettyTable()
+x.field_names = ["Number", "Item"]
+
 
 print(current_date)
 flag = True
@@ -1102,7 +1107,8 @@ def delete_list_item(todo_list):
 
 def show_list_items(todo_list):
     for count, item in enumerate(todo_list):
-        print(count, item)
+        x.add_row([count, item])
+    print(x)
 
 
 while flag:
@@ -1115,3 +1121,4 @@ while flag:
         flag = False
     else:
         user_list.append(user_input)
+        show_list_items(user_list)
