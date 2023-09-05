@@ -1085,40 +1085,104 @@
 
 ############## TODO ####################
 
-from datetime import date
-from prettytable import PrettyTable
+# from datetime import date
+# from prettytable import PrettyTable
+# from termcolor import colored, cprint
 
-current_date = date.today()
-x = PrettyTable()
-x.field_names = ["Number", "Item"]
+# current_date = date.today()
+# x = PrettyTable()
+# x.field_names = ["Number", "Item"]
 
 
-print(current_date)
+# print(current_date)
+# flag = True
+# user_list = []
+
+
+# def delete_list_item(todo_list):
+#     done_num = int(input("Which number is done? \n\n"))
+#     for count, item in enumerate(todo_list):
+#         if done_num == count+1:
+#             print(f"{item} is deleted")
+#             todo_list.remove(item)
+
+
+# def show_list_items(todo_list):
+#     x.clear_rows()
+#     for count, item in enumerate(todo_list):
+#         x.add_row([colored(count+1, "green"), colored(item, "green")])
+#     print(x)
+
+
+# while flag:
+#     user_input = input("Add a todo item: \n\n")
+#     if user_input == "show":
+#         show_list_items(user_list)
+#     elif user_input == "done":
+#         delete_list_item(user_list)
+#     elif user_input == "exit":
+#         flag = False
+#     else:
+#         user_list.append(user_input)
+#         show_list_items(user_list)
+
+############## Calculator ####################
+
+
+# def add(num1, num2):
+#     return num1 + num2
+
+
+# def subtract(num1, num2):
+#     return num1 - num2
+
+
+# def multiply(num1, num2):
+#     return num1 * num2
+
+
+# def divide(num1, num2):
+#     return num1 / num2
+
+
+# question = input("What do you want to do? \n\n")
+
+
+# for letter in question:
+#     if letter == " ":
+#         pass
+#     else:
+#         num1 = int(question[0])
+#         num2 = int(question[-1])
+#         if letter == "+":
+#             print(add(num1, num2))
+#         elif letter == "-":
+#             print(subtract(num1, num2))
+#         elif letter == "*":
+#             print(multiply(num1, num2))
+#         elif letter == "/":
+#             print(divide(num1, num2))
+
+
+############## Guess the number ####################
+from random import randint
+
+tries = 10
+random_num = randint(0, 100)
 flag = True
-user_list = []
-
-
-def delete_list_item(todo_list):
-    done_num = int(input("Which number is done? \n\n"))
-    for count, item in enumerate(todo_list):
-        if done_num == count:
-            todo_list.remove(item)
-
-
-def show_list_items(todo_list):
-    for count, item in enumerate(todo_list):
-        x.add_row([count, item])
-    print(x)
-
 
 while flag:
-    user_input = input("Add a todo item: \n\n")
-    if user_input == "show":
-        show_list_items(user_list)
-    elif user_input == "done":
-        delete_list_item(user_list)
-    elif user_input == "exit":
+    guess = int(input("Guess the number between 0 and 100 \n"))
+    print(f"You have {tries} left")
+    if tries == 0:
         flag = False
     else:
-        user_list.append(user_input)
-        show_list_items(user_list)
+        if guess == random_num:
+            print("Just right")
+            flag = False
+        elif guess < random_num:
+            print("Too low")
+            tries -= 1
+        else:
+            print("too high")
+            tries -= 1
