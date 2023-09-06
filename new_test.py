@@ -1165,24 +1165,40 @@
 
 
 ############## Guess the number ####################
-from random import randint
+# from random import randint
 
-tries = 10
-random_num = randint(0, 100)
-flag = True
+# tries = 10
+# random_num = randint(0, 100)
+# flag = True
 
-while flag:
-    guess = int(input("Guess the number between 0 and 100 \n"))
-    print(f"You have {tries} left")
-    if tries == 0:
-        flag = False
-    else:
-        if guess == random_num:
-            print("Just right")
-            flag = False
-        elif guess < random_num:
-            print("Too low")
-            tries -= 1
-        else:
-            print("too high")
-            tries -= 1
+# while flag:
+#     guess = int(input("Guess the number between 0 and 100 \n"))
+#     print(f"You have {tries} left")
+#     if tries == 0:
+#         flag = False
+#     else:
+#         if guess == random_num:
+#             print("Just right")
+#             flag = False
+#         elif guess < random_num:
+#             print("Too low")
+#             tries -= 1
+#         else:
+#             print("too high")
+#             tries -= 1
+
+############## Password Generator ####################
+# import random
+
+# characters = list(
+#     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>?/\\`~")
+
+
+# random_pass = ""
+# get_digits = int(input("How many: "))
+# for letter in range(get_digits):
+#     random_letter = random.choice(characters)
+#     random_pass += random_letter
+
+
+# print(random_pass)
