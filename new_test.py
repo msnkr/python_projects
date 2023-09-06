@@ -1202,3 +1202,25 @@
 
 
 # print(random_pass)
+
+
+############## Expense Tracker ####################
+
+money_dict = {}
+flag = True
+total_money = 0
+
+income = int(input("How much do you get? R"))
+while flag:
+    # Get a list of all income
+    # get a list of all expenses
+    name_expense = input("Name of expense ")
+    if name_expense == "exit":
+        flag = False
+    else:
+        money_expense = int(input("What does it cost? "))
+        money_dict[name_expense] = money_expense
+        total_money += money_expense
+        income 
+    # Minues expenses from income
+    # Whats left over
