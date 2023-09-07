@@ -1206,21 +1206,23 @@
 
 ############## Expense Tracker ####################
 
-money_dict = {}
-flag = True
-total_money = 0
 
-income = int(input("How much do you get? R"))
+print("Welcome to Expense Tracker")
+print("Add income: {add}")
+print("List Items and money: {list}")
+print("Remaining Money: {remain}")
+print("Exit: {exit}")
+todo = input("What do you want to do? ")
+
+# Add income
+flag = True
 while flag:
-    # Get a list of all income
-    # get a list of all expenses
-    name_expense = input("Name of expense ")
-    if name_expense == "exit":
+    if todo == "exit":
         flag = False
-    else:
-        money_expense = int(input("What does it cost? "))
-        money_dict[name_expense] = money_expense
-        total_money += money_expense
-        income 
-    # Minues expenses from income
-    # Whats left over
+    elif todo == "add":
+        name_expense = input("What do you want to add?")
+        money_expense = int(input("How much"))
+    elif todo == "list":
+        pass
+# Add item and monies
+# Show left over monies and items
