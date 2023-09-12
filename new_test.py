@@ -1217,6 +1217,7 @@ print("Remaining money: {remain}")
 print("Save list: {save}")
 print("Delete list item: {delete}")
 print("Exit: {exit}")
+
 bills = {}
 total_expense = 0
 my_income = 0
@@ -1246,8 +1247,6 @@ while flag:
         income = int(input("Add income: "))
         my_income += income
     elif todo == "delete":
-        for count, item in enumerate(bills):
-            print(count+1, item)
         delete = input("What do you want to delete? ")
     elif todo == "add":
         name_expense = input("What do you want to add?: ")
