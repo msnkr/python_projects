@@ -1207,22 +1207,32 @@
 ############## Expense Tracker ####################
 
 
-# print("Welcome to Expense Tracker")
-# print("Add income: {add}")
-# print("List Items and money: {list}")
-# print("Remaining Money: {remain}")
-# print("Exit: {exit}")
-# todo = input("What do you want to do? ")
+print("Welcome to Expense Tracker")
+print("Add income: {add}")
+print("List Items and money: {list}")
+print("Remaining Money: {remain}")
+print("Exit: {exit}")
+bills = {}
+
+
+def list_bills(bills):
+    for bill_item in bills:
+        print(bill_item, bills[bill_item])
+
 
 # Add income
-# flag = True
-# while flag:
-#     if todo == "exit":
-#         flag = False
-#     elif todo == "add":
-#         name_expense = input("What do you want to add?")
-#         money_expense = int(input("How much"))
-#     elif todo == "list":
-#         pass
+flag = True
+while flag:
+    todo = input("What do you want to do? ")
+    if todo == "exit":
+        flag = False
+    elif todo == "add":
+        name_expense = input("What do you want to add?: ")
+        money_expense = int(input("How much?: "))
+        bills[name_expense] = money_expense
+    elif todo == "list":
+        list_bills(bills)
+
+
 # Add item and monies
 # Show left over monies and items
