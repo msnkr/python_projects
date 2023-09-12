@@ -1223,6 +1223,12 @@ total_expense = 0
 my_income = 0
 
 
+def delete_item(bills):
+    for count, item in enumerate(bills):
+        print(count, item)
+    delete = input("Which item do you want to delete?: ")
+
+
 def list_bills(bills):
     x.clear()
     x.field_names = ["Bill", "Money"]
@@ -1247,7 +1253,7 @@ while flag:
         income = int(input("Add income: "))
         my_income += income
     elif todo == "delete":
-        delete = input("What do you want to delete? ")
+        delete_item(bills)
     elif todo == "add":
         name_expense = input("What do you want to add?: ")
         money_expense = int(input("How much?: "))
