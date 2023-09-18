@@ -20,16 +20,37 @@
 
 
 import datetime as dt
+import random
+from smtplib import SMTP
+import os
 import pandas as pd
+
+
+USER_EMAIL = os.environ["email_user"]
+USER_PASS = os.environ["email_pass"]
 
 
 now = dt.datetime.now()
 today = now.day
+month = now.month
+
+csv_location = r"C:\Users\Digital\Documents\GitHub\python_projects\Day 32\Birthday wisher\birthdays.csv"
+df = pd.read_csv(csv_location)
 
 
-def read_csv_data(df):
-    csv_location = r"C:\Users\Digital\Documents\GitHub\python_projects\Day 32\Birthday wisher\birthdays.csv"
-    df = pd.read_csv(csv_location)
-    for column_name, column_item in df.iterrows():
-        day = column_item["day"]
-        month = column_item["month"]
+def get_random_letter(name):
+    random_number = random.randint(1, 3)
+    with open(fr"C:\Users\Digital\Documents\GitHub\python_projects\Day 32\Birthday wisher\letter_templates\letter_{random_number}.txt", "r+")as letter:
+        letter_contents = letter.read()
+        letter_and_name = letter_contents.replace("[NAME]", name)
+        return letter_and_name
+
+
+for column_name, column_item in df.iterrows():
+    birthday_day = column_item["day"]
+    birthday_month = column_item["month"]
+
+    if birthday_day == today and birthday_month == month:
+        name = column_item["name"]
+
+        letter = get_random_letter(name)
