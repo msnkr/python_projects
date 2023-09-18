@@ -54,3 +54,12 @@ for column_name, column_item in df.iterrows():
         name = column_item["name"]
 
         letter = get_random_letter(name)
+
+        with SMTP("smtp.gmail.com", 587)as connection:
+            connection.starttls()
+            connection.login(USER_EMAIL, USER_PASS)
+
+            connection.sendmail(
+                USER_EMAIL, USER_EMAIL, f"Subject: Happy Birthday\n\n{letter}")
+
+            print("email sent")
