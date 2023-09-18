@@ -1,7 +1,7 @@
-from smtplib import SMTP
-from os import environ
-import random
-import datetime as dt
+# from smtplib import SMTP
+# from os import environ
+# import random
+# import datetime as dt
 
 
 # now = dt.datetime.now()
@@ -34,20 +34,25 @@ import datetime as dt
 # Email random quote
 
 
-random_quotes = []
-now_date = dt.datetime.now()
-user_email = environ["email_user"]
-user_pass = environ["email_pass"]
+# random_quotes = []
+# now_date = dt.datetime.now()
+# user_email = environ["email_user"]
+# user_pass = environ["email_pass"]
 
 
-if now_date.isoweekday() == 7:
-    with open(r"C:\Users\mikyl\Documents\Git\python_projects\Day 32\quotes.txt")as quote:
-        all_quotes = quote.readlines()
-        random_quote = random.choice(all_quotes)
+# if now_date.isoweekday() == 7:
+#     with open(r"C:\Users\mikyl\Documents\Git\python_projects\Day 32\quotes.txt")as quote:
+#         all_quotes = quote.readlines()
+#         random_quote = random.choice(all_quotes)
 
-    with SMTP("smtp.gmail.com", 587)as server:
-        server.starttls()
+#     with SMTP("smtp.gmail.com", 587)as server:
+#         server.starttls()
 
-        server.login(user_email, user_pass)
-        server.sendmail(user_email, user_email,
-                        f"Subject:Quote of the day \n\n {random_quote}")
+#         server.login(user_email, user_pass)
+#         server.sendmail(user_email, user_email,
+#                         f"Subject:Quote of the day \n\n {random_quote}")
+
+
+import pandas as pd
+
+print(help(pd))
