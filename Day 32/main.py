@@ -64,16 +64,16 @@ import pandas as pd
 # print(s.mean())
 
 
-pandas_dict = {
-    "names": ["Mike", "John", "Fiona"],
-    "age": [25, 30, 19],
-}
+# pandas_dict = {
+#     "names": ["Mike", "John", "Fiona"],
+#     "age": [25, 30, 19],
+# }
 
-df = pd.DataFrame(pandas_dict)
+# df = pd.DataFrame(pandas_dict)
 
-df["city"] = ["new york", "chigaco", "Nebraska"]
+# df["city"] = ["new york", "chigaco", "Nebraska"]
 
-young_people = df[df["age"] < 30]
-summary_stats = df.describe()
+# young_people = df[df["age"] < 30]
+# summary_stats = df.describe()
 
-print(summary_stats)
+# print(summary_stats)
