@@ -55,4 +55,25 @@
 
 import pandas as pd
 
-print(help(pd))
+# data = [10, 20, 30, 40, 50, 60]
+# pdata = pd.Series(data, index=["A", "B", "C", "D", "E", "F"])
+
+# label_exists = "A" in pdata
+# s = pdata + 10
+
+# print(s.mean())
+
+
+pandas_dict = {
+    "names": ["Mike", "John", "Fiona"],
+    "age": [25, 30, 19],
+}
+
+df = pd.DataFrame(pandas_dict)
+
+df["city"] = ["new york", "chigaco", "Nebraska"]
+
+young_people = df[df["age"] < 30]
+summary_stats = df.describe()
+
+print(summary_stats)
