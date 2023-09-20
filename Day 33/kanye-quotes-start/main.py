@@ -6,6 +6,7 @@ import requests
 def get_quote():
     response = requests.get("https://api.kanye.rest")
     json_response = response.json()
+    return json_response["quote"]
 
 
 window = Tk()
@@ -17,7 +18,7 @@ canvas = Canvas(width=300, height=414)
 background_img = PhotoImage(
     file=r"C:\Users\Digital\Documents\GitHub\python_projects\Day 33\kanye-quotes-start\background.png")
 canvas.create_image(150, 207, image=background_img)
-quote_text = canvas.create_text(150, 207, text="Kanye Quote Goes HERE", width=250, font=(
+quote_text = canvas.create_text(150, 207, text=get_quote(), width=250, font=(
     "Arial", 30, "bold"), fill="white")
 canvas.grid(row=0, column=0)
 
