@@ -7,4 +7,5 @@ if response.ok:
     iss_position = data["iss_position"]
     position = {data: iss_position[data] for data in iss_position}
 
-    print(position)
+    print(position["longitude"])
+    print(position["latitude"])
