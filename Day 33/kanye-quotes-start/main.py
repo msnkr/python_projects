@@ -6,6 +6,7 @@ import requests
 def get_quote():
     response = requests.get("https://api.kanye.rest")
     json_response = response.json()
+    print(json_response["quote"])
     return json_response["quote"]
 
 
