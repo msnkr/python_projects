@@ -1298,30 +1298,58 @@
 
 # root.mainloop()
 
+# import tkinter as tk
+
+# window = tk.Tk()
+
+
+# def get_user_input():
+#     user_input = name_entry.get()
+#     label.config(text=user_input)
+
+
+# window.title("Testing")
+# window.config(background="black", padx=10, pady=10)
+# window.grid()
+
+# label = tk.Label(window, text="Enter your name: ")
+# label.grid(columnspan=2, row=0, padx=4, pady=4)
+# label.config(background="black", foreground="white")
+
+# name_entry = tk.Entry(window)
+# name_entry.grid(columnspan=2, row=1, padx=2, pady=2)
+
+# quit_btn = tk.Button(window, text="Quit", command=window.destroy)
+# quit_btn.grid(column=0, row=2, padx=4, pady=4)
+# submit_btn = tk.Button(window, text="Submit", command=get_user_input)
+# submit_btn.grid(column=1, row=2, padx=4, pady=4)
+
+# window.mainloop()
+
 import tkinter as tk
 
-window = tk.Tk()
+root = tk.Tk()
+root.title("SHITR|")
+
+root.config(width=200, height=200, padx=20, pady=20)
 
 
-def get_user_input():
-    user_input = name_entry.get()
-    label.config(text=user_input)
+def calculate():
+    num1 = int(number1.get())
+    num2 = int(number2.get())
+
+    label.config(text=num1+num2)
 
 
-window.title("Testing")
-window.config(background="black", padx=10, pady=10)
-window.grid()
+label = tk.Label(root, text="Test")
+label.pack()
 
-label = tk.Label(window, text="Enter your name: ")
-label.grid(columnspan=2, row=0, padx=4, pady=4)
-label.config(background="black", foreground="white")
+number1 = tk.Entry(root)
+number1.pack()
 
-name_entry = tk.Entry(window)
-name_entry.grid(columnspan=2, row=1, padx=2, pady=2)
+number2 = tk.Entry(root)
+number2.pack()
 
-quit_btn = tk.Button(window, text="Quit", command=window.destroy)
-quit_btn.grid(column=0, row=2, padx=4, pady=4)
-submit_btn = tk.Button(window, text="Submit", command=get_user_input)
-submit_btn.grid(column=1, row=2, padx=4, pady=4)
-
-window.mainloop()
+button = tk.Button(root, text="calculate", command=calculate)
+button.pack()
+root.mainloop()
