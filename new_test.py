@@ -1263,37 +1263,65 @@
 #         list_bills(bills)
 
 
+# import tkinter as tk
+
+# BACKGROUND_COLOR = "#445069"
+# BUTTON_COLOR = "#5B9A8B"
+# FOREGROUNF_COLOR = "#F7E987"
+
+# root = tk.Tk()
+# root.title("Hello")
+
+# root.configure(background=BACKGROUND_COLOR, width=300,
+#                height=400, padx=10, pady=10)
+
+
+# def say_hello():
+#     label.configure(text="Updated text")
+
+
+# label = tk.Label(root, text="Hello There")
+# label.grid(row=0, columnspan=3, pady=8)
+# label.config(bg=BACKGROUND_COLOR, fg=FOREGROUNF_COLOR)
+
+# quit_btn = tk.Button(
+#     root, text="Quit", command=root.destroy)
+# quit_btn.grid(row=1, column=1)
+# quit_btn.config(background=BUTTON_COLOR,
+#                 fg=FOREGROUNF_COLOR, highlightthickness=0)
+
+# function_btn = tk.Button(root, text="Click me",
+#                          command=say_hello)
+# function_btn.grid(row=1, column=2, padx=4)
+# function_btn.config(background=BUTTON_COLOR,
+#                     fg=FOREGROUNF_COLOR, highlightthickness=0)
+
+# root.mainloop()
+
 import tkinter as tk
 
-BACKGROUND_COLOR = "#445069"
-BUTTON_COLOR = "#5B9A8B"
-FOREGROUNF_COLOR = "#F7E987"
-
-root = tk.Tk()
-root.title("Hello")
-
-root.configure(background=BACKGROUND_COLOR, width=300,
-               height=400, padx=10, pady=10)
+window = tk.Tk()
 
 
-def say_hello():
-    label.configure(text="Updated text")
+def get_user_input():
+    user_input = name_entry.get()
+    label.config(text=user_input)
 
 
-label = tk.Label(root, text="Hello There")
-label.grid(row=0, columnspan=3, pady=8)
-label.config(bg=BACKGROUND_COLOR, fg=FOREGROUNF_COLOR)
+window.title("Testing")
+window.config(background="black", padx=10, pady=10)
+window.grid()
 
-quit_btn = tk.Button(
-    root, text="Quit", command=root.destroy)
-quit_btn.grid(row=1, column=1)
-quit_btn.config(background=BUTTON_COLOR,
-                fg=FOREGROUNF_COLOR, highlightthickness=0)
+label = tk.Label(window, text="Enter your name: ")
+label.grid(columnspan=2, row=0, padx=4, pady=4)
+label.config(background="black", foreground="white")
 
-function_btn = tk.Button(root, text="Click me",
-                         command=say_hello)
-function_btn.grid(row=1, column=2, padx=4)
-function_btn.config(background=BUTTON_COLOR,
-                    fg=FOREGROUNF_COLOR, highlightthickness=0)
+name_entry = tk.Entry(window)
+name_entry.grid(columnspan=2, row=1, padx=2, pady=2)
 
-root.mainloop()
+quit_btn = tk.Button(window, text="Quit", command=window.destroy)
+quit_btn.grid(column=0, row=2, padx=4, pady=4)
+submit_btn = tk.Button(window, text="Submit", command=get_user_input)
+submit_btn.grid(column=1, row=2, padx=4, pady=4)
+
+window.mainloop()
