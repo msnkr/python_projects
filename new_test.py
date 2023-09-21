@@ -1263,16 +1263,37 @@
 #         list_bills(bills)
 
 
-from tkinter import *
-from tkinter import ttk
+import tkinter as tk
 
-window = Tk()
-window.title("Testing")
+BACKGROUND_COLOR = "#445069"
+BUTTON_COLOR = "#5B9A8B"
+FOREGROUNF_COLOR = "#F7E987"
 
-frame = ttk.Frame(window, padding=10)
-frame.grid()
+root = tk.Tk()
+root.title("Hello")
 
-ttk.Label(frame, text="Hello There").grid(row=0, column=0)
-ttk.Button(frame, text="Quit", command=window.destroy).grid(row=1, column=0)
+root.configure(background=BACKGROUND_COLOR, width=300,
+               height=400, padx=10, pady=10)
 
-window.mainloop()
+
+def say_hello():
+    label.configure(text="Updated text")
+
+
+label = tk.Label(root, text="Hello There")
+label.grid(row=0, columnspan=3, pady=8)
+label.config(bg=BACKGROUND_COLOR, fg=FOREGROUNF_COLOR)
+
+quit_btn = tk.Button(
+    root, text="Quit", command=root.destroy)
+quit_btn.grid(row=1, column=1)
+quit_btn.config(background=BUTTON_COLOR,
+                fg=FOREGROUNF_COLOR, highlightthickness=0)
+
+function_btn = tk.Button(root, text="Click me",
+                         command=say_hello)
+function_btn.grid(row=1, column=2, padx=4)
+function_btn.config(background=BUTTON_COLOR,
+                    fg=FOREGROUNF_COLOR, highlightthickness=0)
+
+root.mainloop()
