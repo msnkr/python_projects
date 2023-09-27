@@ -1,5 +1,11 @@
 import requests
 from datetime import datetime
+from smtplib import SMTP
+import os
+
+
+MY_EMAIL = os.environ("email_user")
+MY_PASS = os.environ("email_pass")
 
 MY_LAT = -26.204103
 MY_LNG = 28.047304
@@ -36,7 +42,12 @@ sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
 time_now = datetime.now().hour
 if time_now > sunset and time_now < sunrise:
     if is_close(MY_LAT, MY_LNG, iss_latitude, iss_longitude):
-        print("It's here")
+        with SMTP("smtp.gmail.com")as server:
+
+            server.starttls()
+            server.connect(MY_EMAIL, MY_PASS)
+            server.sendmail(
+                MY_EMAIL, MY_EMAIL, msg="Subject: Look Up bro \n\n Look to the sky for the ISS satelite bro. ")
     else:
         print("Not here")
 else:
