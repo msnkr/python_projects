@@ -23,8 +23,6 @@ iss_longitude = float(data["iss_position"]["longitude"])
 def is_close(MY_LAT, MY_LNG, iss_latitude, iss_longitude):
     if MY_LAT == iss_latitude + 5 or MY_LAT == iss_latitude - 5 and MY_LNG == iss_longitude + 5 or MY_LNG == iss_longitude - 5:
         return True
-    else:
-        return False
 
 
 parameters = {
