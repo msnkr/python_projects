@@ -13,8 +13,11 @@ iss_longitude = float(data["iss_position"]["longitude"])
 
 
 # Your position is within +5 or -5 degrees of the ISS position.
-def is_close():
-    pass
+def is_close(MY_LAT, MY_LNG, iss_latitude, iss_longitude):
+    if MY_LAT == iss_latitude + 5 or MY_LAT == iss_latitude - 5 and MY_LNG == iss_longitude + 5 or MY_LNG == iss_longitude - 5:
+        return False
+    else:
+        return True
 
 
 parameters = {
@@ -30,8 +33,14 @@ data = response.json()
 sunrise = int(data["results"]["sunrise"].split("T")[1].split(":")[0])
 sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
 
-time_now = datetime.now()
-
+time_now = datetime.now().hour
+if time_now > sunset and time_now < sunrise:
+    if is_close(MY_LAT, MY_LNG, iss_latitude, iss_longitude):
+        print("It's here")
+    else:
+        print("Not here")
+else:
+    print("Not time")
 # If the ISS is close to my current position
 # and it is currently dark
 # Then send me an email to tell me to look up.
