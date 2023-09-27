@@ -34,4 +34,5 @@ if response.ok:
     sunrise_time = split_data(sunrise)
     sunset_time = split_data(sunset)
 
+
     print(sunrise_time)
