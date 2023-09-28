@@ -14,4 +14,7 @@ response = requests.get(link, params=params)
 if response.ok:
     data = response.json()["results"]
     for question in data:
-        question_data[question["question"]] = question["correct_answer"]
+        question_data["question"] = question["question"]
+        question_data["correct_answer"] = question["correct_answer"]
+
+print(question_data)
