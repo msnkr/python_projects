@@ -1421,12 +1421,13 @@ def main():
             library.list_books()
 
         elif choice == 3:
-            title = 
-            library.remove_book()
+            title = input("Enter the title: ")
+            library.remove_book(title)
 
         elif choice == 4:
             print("Goodbye")
             break
 
 
-if __name__ == "__
+if __name__ == "__main__":
+    main()
