@@ -44,7 +44,6 @@ class QuizInterface():
 
         self.window.mainloop()
 
-        def get_next_question(self):
-            q_text = self.quiz.next_question()
-            self.second_window.itemconfig(
-                self.q_text, text=question_text)
+    def get_next_question(self):
+        self.q_text = self.quiz.next_question()
+        self.second_window.itemconfig()
