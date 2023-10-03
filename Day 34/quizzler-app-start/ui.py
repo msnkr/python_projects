@@ -48,7 +48,7 @@ class QuizInterface():
             150, 125, text=q_text, fill=THEME_COLOR, font=("Arial", 16, "italic"), width=280)
 
     def check_answer_true(self):
-        self.quiz.check_answer(True)
+        pass
 
     def check_answser_false(self):
         pass
