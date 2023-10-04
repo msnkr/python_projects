@@ -26,4 +26,4 @@ def results():
     return magnet
 
 
-results()
+print(results())
