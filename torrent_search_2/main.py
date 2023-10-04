@@ -7,7 +7,7 @@ t = TPB('https://tpb.party')
 
 def results():
     search = input("What do you want to search for?: ")
-    torrents = t.search(
+    torrents = t.search( 
         f"{search}", category=CATEGORIES.VIDEO.MOVIES)
     results = {}
     magnet = ""
