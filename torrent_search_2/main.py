@@ -19,7 +19,7 @@ def show_options(results):
 
     for result in results:
         result_btn = Button(
-            canvas, text=results[result], command=lambda: stream(result_btn.cget("text")))
+            canvas, text=results[result].title, command=lambda: stream(result_btn.cget("text")))
         result_btn.config(highlightbackground="white",
                           highlightthickness=None, highlightcolor="white", background="white")
         result_btn.pack()
