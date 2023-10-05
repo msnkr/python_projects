@@ -9,8 +9,8 @@ magnet = ""
 
 
 def stream(title):
-    torrent = t.search(title)
-    print(torrent)
+    if title in results_dict:
+        print(True)
 
 
 def show_options(results):
