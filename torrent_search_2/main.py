@@ -8,12 +8,21 @@ results_dict = {}
 magnet = ""
 
 
+def stream(title):
+    torrent = t.search(title)
+    print(torrent)
+
+
 def show_options(results):
     canvas = Canvas(window, width=560, height=200, bg="white")
     canvas.pack()
 
-    for torrent in results:
-        pass
+    for result in results:
+        result_btn = Button(
+            canvas, text=results[result], command=lambda: stream(result_btn.cget("text")))
+        result_btn.config(highlightbackground="white",
+                          highlightthickness=None, highlightcolor="white", background="white")
+        result_btn.pack()
 
 
 def results():
@@ -38,7 +47,10 @@ search_entry = Entry(window)
 search_entry.pack()
 
 search_btn = Button(window, text="Search", command=results)
-search_btn.pack(padx=5, pady=5)
+search_btn.pack()
+
+quit_btn = Button(window, text="Quit", command=window.destroy)
+quit_btn.pack()
 
 
 window.mainloop()
