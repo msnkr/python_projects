@@ -8,9 +8,9 @@ results_dict = {}
 magnet = ""
 
 
-def stream(title):
-    if title in results_dict:
-        print(True)
+def stream(torrent):
+    subprocess.call(
+        [r"c:\Users\Digital\AppData\Roaming\npm\webtorrent.cmd", torrent.magnetlink, "--vlc"])
 
 
 def show_options(results):
@@ -19,7 +19,7 @@ def show_options(results):
 
     for result in results:
         result_btn = Button(
-            canvas, text=results[result].title, command=lambda: stream(result_btn.cget("text")))
+            canvas, text=results[result].title, command=lambda: stream(results[result]))
         result_btn.config(highlightbackground="white",
                           highlightthickness=None, highlightcolor="white", background="white")
         result_btn.pack()
