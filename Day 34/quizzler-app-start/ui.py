@@ -32,10 +32,10 @@ class QuizInterface():
             file=r"C:\Users\mikyl\Documents\Git\python_projects\Day 34\quizzler-app-start\images\false.png")
 
         self.true_btn = Button(
-            self.window, image=true_img, command=self.check_answer_true(), highlightthickness=0, highlightcolor=None)
+            self.window, image=true_img, command=self.check_answer_true, highlightthickness=0, highlightcolor=None)
         self.true_btn.grid(row=2, column=0)
         self.false_btn = Button(
-            self.window, image=false_img, command=self.check_answser_false(), highlightthickness=0, highlightcolor=None)
+            self.window, image=false_img, command=self.check_answser_false, highlightthickness=0, highlightcolor=None)
         self.false_btn.grid(row=2, column=1)
 
         self.get_next_question()
@@ -43,12 +43,25 @@ class QuizInterface():
         self.window.mainloop()
 
     def get_next_question(self):
-        q_text = self.quiz.next_question()
+        self.q_text = self.quiz.next_question()
+        self.second_window.config(bg="white")
         self.second_window.create_text(
-            150, 125, text=q_text, fill=THEME_COLOR, font=("Arial", 16, "italic"), width=280)
+            150, 125, text=self.q_text, fill=THEME_COLOR, font=("Arial", 16, "italic"), width=280)
 
     def check_answer_true(self):
-        pass
+        self.give_feedback(self.quiz.check_answer("True"))
 
     def check_answser_false(self):
-        pass
+        self.give_feedback(self.quiz.check_answer("False"))
+        self.second_window.config(bg="white")
+        self.quiz.next_question()
+
+    def give_feedback(self, is_right):
+        self.second_window.after(1000, self.change_color(is_right))
+        self.get_next_question()
+
+    def change_color(self, stat):
+        if stat == True:
+            self.second_window.config(bg="green")
+        elif stat == False:
+            self.second_window.config(bg="red")
