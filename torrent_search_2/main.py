@@ -3,6 +3,10 @@ import subprocess
 from tpblite import TPB, CATEGORIES
 
 
+BACKGROUND_COLOR = "#363535"
+TEXT_COLOR = "#D6D4D5"
+
+
 t = TPB('https://tpb.party')
 results_dict = {}
 magnet = ""
@@ -19,7 +23,7 @@ def show_options(results):
 
     for result in results:
         result_btn = Button(
-            canvas, text=results[result].title, command=lambda: stream(results[result]))
+            canvas, text=results[result].title, command=lambda: stream(results[result]), padx=5, pady=5)
         result_btn.config(highlightbackground="white",
                           highlightthickness=None, highlightcolor="white", background="white")
         result_btn.pack()
@@ -38,18 +42,23 @@ def results():
 
 window = Tk()
 window.title("Uggh")
-window.config(width=600, height=400, padx=20, pady=20)
+window.config(width=600, height=400, padx=20,
+              pady=20, background=BACKGROUND_COLOR)
 
-search_label = Label(window, text="Search")
+search_label = Label(window, text="Search", fg=TEXT_COLOR,
+                     background=BACKGROUND_COLOR, padx=5, pady=5)
 search_label.pack()
 
-search_entry = Entry(window)
+search_entry = Entry(window, fg=TEXT_COLOR,
+                     background=BACKGROUND_COLOR)
 search_entry.pack()
 
-search_btn = Button(window, text="Search", command=results)
+search_btn = Button(window, text="Search", command=results,
+                    fg=TEXT_COLOR, background=BACKGROUND_COLOR, padx=5, pady=5)
 search_btn.pack()
 
-quit_btn = Button(window, text="Quit", command=window.destroy)
+quit_btn = Button(window, text="Quit", command=window.destroy,
+                  fg=TEXT_COLOR, background=BACKGROUND_COLOR, padx=5, pady=5)
 quit_btn.pack()
 
 
