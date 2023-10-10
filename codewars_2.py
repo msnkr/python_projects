@@ -27,3 +27,22 @@
 # Solution
 # def feast(beast, dish):
 #     return beast[0]==dish[0] and dish[-1]==beast[-1]
+
+
+# def even_or_odd(number):
+#     return 'Odd' if number % 2 else 'Even'
+
+
+# print(even_or_odd(8))
+
+
+# def count_sheeps(array_of_sheep):
+#   count = 0
+#   for sheep in array_of_sheep:
+#       if sheep:
+#           count += 1
+#   return count
+
+# Solution
+def count_sheeps(arrayOfSheeps):
+    return arrayOfSheeps.count(True)
