@@ -1565,6 +1565,8 @@ def quiz(new_dict):
     count = 1
     score = 0
     os.system("cls")
+    another_dict = {}
+
     for word in new_dict:
         correct_word = input(
             f" {count}. What is the English word for {word}: ")
