@@ -65,14 +65,14 @@
 # print(spin_words("Hey fellow warriors"))
 
 
-data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+# data = [(14, 14), (48, 21), (54, 12), (72, 7)]
 
 
-def open_or_senior(data):
-    pass
+# def open_or_senior(data):
+#     return ["Senior" if age > 55 and handicap > 7 else "Open" for age, handicap in data]
 
 
-print(open_or_senior(data))
+# print(open_or_senior(data))
 
 # seq = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]
 
@@ -102,3 +102,12 @@ print(open_or_senior(data))
 
 
 # print(find_it(seq))
+
+sentence = "4of Fo1r pe6ople g3ood th5e the2"
+
+
+def order(sentence):
+    spit_sentence = sentence.split(" ")
+
+
+order(sentence)
