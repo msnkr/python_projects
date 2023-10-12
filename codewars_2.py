@@ -103,11 +103,20 @@
 
 # print(find_it(seq))
 
-sentence = "4of Fo1r pe6ople g3ood th5e the2"
+# sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
-def order(sentence):
-    spit_sentence = sentence.split(" ")
+# def order(sentence):
+#     spit_sentence = sentence.split(" ")
 
 
-order(sentence)
+# order(sentence)
+
+x = ["Ryan", "Kieran", "Mark",]
+
+
+def friend(x):
+    return [name for name in x if len(name) == 4]
+
+
+friend(x)
