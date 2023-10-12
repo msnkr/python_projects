@@ -65,13 +65,33 @@
 # print(spin_words("Hey fellow warriors"))
 
 
-data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+# data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 
 
-def open_or_senior(data):
-    for member in data:
-        if member[0] > 55 and member[1] > 7:
-            pass
+# def open_or_senior(data):
+#     for member in data:
+#         if member[0] > 55 and member[1] > 7:
+#             pass
 
 
-print(open_or_senior(data))
+# print(open_or_senior(data))
+
+seq = [1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]
+
+
+def find_it(seq):
+    highest_num = 0
+
+    for num in seq:
+        num_item = seq.count(num)
+
+        if num_item > highest_num:
+            highest_num = num_item
+
+    if highest_num % 2 == 0:
+        print("Even")
+    else:
+        print("odd")
+
+
+find_it(seq)
