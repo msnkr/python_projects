@@ -44,5 +44,34 @@
 #   return count
 
 # Solution
-def count_sheeps(arrayOfSheeps):
-    return arrayOfSheeps.count(True)
+# def count_sheeps(arrayOfSheeps):
+#     return arrayOfSheeps.count(True)
+
+
+# def spin_words(sentence):
+#     new_sentence = ""
+#     words = sentence.split(" ")
+#     if len(words) >= 1:
+#         for word in words:
+#             if len(word) >= 5:
+#                 new_sentence += word[::-1]
+#             else:
+#                 new_sentence += word
+#             new_sentence += " "
+
+#     return new_sentence.strip()
+
+
+# print(spin_words("Hey fellow warriors"))
+
+
+data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+
+
+def open_or_senior(data):
+    for member in data:
+        if member[0] > 55 and member[1] > 7:
+            pass
+
+
+print(open_or_senior(data))
