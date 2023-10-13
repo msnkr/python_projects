@@ -11,6 +11,10 @@
 import random
 
 
+def search_file():
+    pass
+
+
 def generate_name():
     random_name = ""
     alphabet = [chr(letter) for letter in range(97, 123)]
@@ -21,10 +25,9 @@ def generate_name():
 
 
 def add_user():
+    search_file()
     username = input("Enter your username: ")
     password = input("Enter your password: ")
-    file_name = generate_name()
-    print(f"Your file name will be called: {file_name}")
 
 
 def main():
