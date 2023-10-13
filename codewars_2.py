@@ -137,15 +137,24 @@
 
 # print(xo("ooOxx"))
 
-n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+# n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 
-def create_phone_number(n):
-    new_list = []
-    for number in n:
-        new_list.append(", ".join(str(number)))
+# def create_phone_number(n):
+#     new_list = []
+#     for number in n:
+#         new_list.append(", ".join(str(number)))
 
-    print(new_list)
+#     print(new_list)
 
 
-print(create_phone_number(n))
+# print(create_phone_number(n))
+
+text = "the_stealth_warrior"
+
+
+def to_camel_case(text):
+    pass
+
+
+to_camel_case(text)
