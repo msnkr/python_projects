@@ -112,11 +112,40 @@
 
 # order(sentence)
 
-x = ["Ryan", "Kieran", "Mark",]
+# x = ["Ryan", "Kieran", "Mark",]
 
 
-def friend(x):
-    return [name for name in x if len(name) == 4]
+# def friend(x):
+#     return [name for name in x if len(name) == 4]
 
 
-friend(x)
+# friend(x)
+
+# def get_middle(s):
+#     letters = len(s)
+#     if letters % 2 == 0:
+#         print(s)
+
+
+# get_middle("test")
+
+
+# def xo(s):
+#     s = s.lower()
+#     return True if s.count("x") == s.count("o") else False
+
+
+# print(xo("ooOxx"))
+
+n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+
+def create_phone_number(n):
+    new_list = []
+    for number in n:
+        new_list.append(", ".join(str(number)))
+
+    print(new_list)
+
+
+print(create_phone_number(n))
