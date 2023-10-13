@@ -154,7 +154,10 @@ text = "the_stealth_warrior"
 
 
 def to_camel_case(text):
-    pass
+    if "_" in text:
+        deimit = text.replace("_", " ")
+
+        print(deimit)
 
 
 to_camel_case(text)
