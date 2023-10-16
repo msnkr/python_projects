@@ -13,21 +13,35 @@ import json
 import random
 
 alphabet = [chr(letter) for letter in range(65, 91)] + [chr(letter) for letter in range(97, 123)]
-numbers = list(range(1, 101))
-special_characters = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
+numbers_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+special_characters_list = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
 
+def view_usernames_passwords():
+    pass
+
+def random_passord(number, the_list):
+    randomized_items = ""
+    for _ in range(number):
+        randomized_items += random.choice(the_list)
+
+    return randomized_items
 
 def create_password():
     letters = int(input("How many letters do you want to add? "))
+    letters = random_passord(letters, alphabet)
     numbers = int(input("How many numbers?: "))
+    numbers = random_passord(numbers, numbers_list)
     special_characters = int(input("How many special characters?: "))
-    randomized_password = ""
-    print("Your secure password is {}".format())
+    special_characters = random_passord(special_characters, special_characters_list)
 
-    add_passwd = input("Would you like to add it to your secrets file?: y/n")
-    if add_passwd == "y":
-        user = input("What username?: ")
-        write_files(user, randomized_password)
+    your_password = "{}{}{}".format(letters, numbers, special_characters)
+    print(f"Your password is: {your_password}")
+    choice = input("Do you want to save it and add a username?: y/n ")
+
+    if choice == "y":
+        username = input("What username do you want to add?: ")
+        write_files(username, your_password)
+        main()
 
 
 def create_file(user_dict):
@@ -65,6 +79,7 @@ def main():
     print("Hello User. Would you like to add a password or create a password? \n")
     print("1. Add a username and password: ")
     print("2. Create a password: ")
+    print("3. View username and passwords: ")
     choice = input("Enter your choice: ")
 
     if choice == "1":
