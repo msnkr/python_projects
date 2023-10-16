@@ -10,28 +10,72 @@
 # If they want to add a password, get the username and password
 
 import json
+import random
+
+alphabet = [chr(letter) for letter in range(65, 91)] + [chr(letter) for letter in range(97, 123)]
+numbers = list(range(1, 101))
+special_characters = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
+
+
+def create_password():
+    letters = int(input("How many letters do you want to add? "))
+    numbers = int(input("How many numbers?: "))
+    special_characters = int(input("How many special characters?: "))
+    randomized_password = ""
+    print("Your secure password is {}".format())
+
+    add_passwd = input("Would you like to add it to your secrets file?: y/n")
+    if add_passwd == "y":
+        user = input("What username?: ")
+        write_files(user, randomized_password)
+
+
+def create_file(user_dict):
+    with open("./secrets.json", "w")as file:
+        json.dump(user_dict, file)
+    print("File created successfully")
 
 
 def write_files(user, passwd):
-    name_pass_dict = {}
-    name_pass_dict[user] = passwd
+    user_dict = {}
+    user_dict[user] = passwd
+
+    try:
+        with open("./secrets.json", "r")as file:
+            data = json.load(file)
+
+            data[user] = passwd
+
+        with open("./secrets.json", "w")as file:
+            json.dump(data, file)
+
+        print("The file has been written \n")
+    except FileNotFoundError:
+     create_file(user_dict)
 
 
 def add_user():
     username = input("Enter your username: ")
     password = input("Enter your password: ")
     write_files(username, password)
+    main()
 
 
 def main():
-    print("Hello User. Would you like to add a password or create a password? /n")
+    print("Hello User. Would you like to add a password or create a password? \n")
     print("1. Add a username and password: ")
     print("2. Create a password: ")
-    print("3. Create a file: ")
     choice = input("Enter your choice: ")
 
     if choice == "1":
         add_user()
+
+    elif choice == "2":
+        create_password()        
+
+
+    main()
+
 
 if __name__ == "__main__":
     main()
