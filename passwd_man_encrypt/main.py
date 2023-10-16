@@ -17,7 +17,12 @@ numbers_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 special_characters_list = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
 
 def view_usernames_passwords():
-    pass
+    with open("./secrets.json", "r")as file:
+        json_data = json.load(file)
+
+    for userpass in json_data:
+        print(f"{userpass}: {json_data[userpass]}")
+
 
 def random_passord(number, the_list):
     randomized_items = ""
@@ -25,6 +30,7 @@ def random_passord(number, the_list):
         randomized_items += random.choice(the_list)
 
     return randomized_items
+
 
 def create_password():
     letters = int(input("How many letters do you want to add? "))
@@ -88,6 +94,8 @@ def main():
     elif choice == "2":
         create_password()        
 
+    elif choice == "3":
+        view_usernames_passwords()
 
     main()
 
