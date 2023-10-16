@@ -16,6 +16,20 @@ alphabet = [chr(letter) for letter in range(65, 91)] + [chr(letter) for letter i
 numbers_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 special_characters_list = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
 
+def delete_userpass():
+    new_list = {}
+
+    with open("./secrets.json", "r")as file:
+        json_data = json.load(file)
+
+    
+    for index, username in enumerate(json_data):
+        print("{}.{} ".format(index, username))
+
+    to_delete = input("Which one do you want to delete?: ")
+
+
+
 def view_usernames_passwords():
     with open("./secrets.json", "r")as file:
         json_data = json.load(file)
@@ -41,12 +55,15 @@ def create_password():
     special_characters = random_passord(special_characters, special_characters_list)
 
     your_password = "{}{}{}".format(letters, numbers, special_characters)
-    print(f"Your password is: {your_password}")
+    password_list = list(your_password)
+    random.shuffle(password_list)
+    your_new_password = "".join(password_list)
+    print(f"Your password is: {your_new_password}")
     choice = input("Do you want to save it and add a username?: y/n ")
 
     if choice == "y":
         username = input("What username do you want to add?: ")
-        write_files(username, your_password)
+        write_files(username, your_new_password)
         main()
 
 
@@ -86,6 +103,7 @@ def main():
     print("1. Add a username and password: ")
     print("2. Create a password: ")
     print("3. View username and passwords: ")
+    print("4. Delete a username and passwords: ")
     choice = input("Enter your choice: ")
 
     if choice == "1":
@@ -97,6 +115,8 @@ def main():
     elif choice == "3":
         view_usernames_passwords()
 
+    else:
+        delete_userpass()
     main()
 
 
