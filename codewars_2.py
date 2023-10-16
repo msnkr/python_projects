@@ -137,12 +137,16 @@
 
 # print(xo("ooOxx"))
 
-n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+# n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 
-def create_phone_number(n):
-    pass
+# def create_phone_number(n):
+#     pass
 
 
-print(create_phone_number(n)) 
+# print(create_phone_number(n)) 
 
+# def bool_to_word(boolean):
+#     return "Yes" if boolean else "No"
+
+# print(bool_to_word(False))
