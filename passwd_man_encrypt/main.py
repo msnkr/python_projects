@@ -5,6 +5,12 @@ alphabet = [chr(letter) for letter in range(65, 91)] + [chr(letter) for letter i
 numbers_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 special_characters_list = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
 
+def decrypt_json_data(json_data):
+    pass
+
+def encrypt_json_data(json_data):
+    pass
+
 def delete_userpass():
     try:
         with open("./secrets.json", "r")as file:
