@@ -1,14 +1,3 @@
-# Password manager
-
-
-# Store passwords and usernames
-# Create passwords with usernames
-# Encrypt all stored data
-
-# Ask user if they'd like to create  or add a password
-# if they want to create a password, add the username and ask the parameters of the password
-# If they want to add a password, get the username and password
-
 import json
 import random
 
@@ -17,17 +6,22 @@ numbers_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 special_characters_list = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "'", "\"", "<", ">", ",", ".", "?", "/", "`", "~", "^", "\\", "(", ")", "[", "]", "{", "}", "<", ">"]
 
 def delete_userpass():
-    new_list = {}
+    try:
+        with open("./secrets.json", "r")as file:
+            json_data = json.load(file)
+        
+        for username in json_data:
+            print(username)
+        to_delete = input("Which one do you want to delete?: ")
+        del json_data[to_delete]
 
-    with open("./secrets.json", "r")as file:
-        json_data = json.load(file)
+        with open("./secrets.json", "w")as file:
+            json.dump(json_data, file)
 
-    
-    for index, username in enumerate(json_data):
-        print("{}.{} ".format(index, username))
-
-    to_delete = input("Which one do you want to delete?: ")
-
+        print("Username deleted")
+    except FileNotFoundError as err:
+        print("Create a file first! ")
+        main()
 
 
 def view_usernames_passwords():
@@ -115,8 +109,12 @@ def main():
     elif choice == "3":
         view_usernames_passwords()
 
-    else:
+    elif choice ==  "4":
         delete_userpass()
+
+    else:
+        exit()
+
     main()
 
 
