@@ -121,13 +121,13 @@
 
 # friend(x)
 
-# def get_middle(s):
-#     letters = len(s)
-#     if letters % 2 == 0:
-#         print(s)
+def get_middle(s):
+    if len(s) %2 == 0:
+        text = s[len(s) // 2]
 
+    print(text)
 
-# get_middle("test")
+get_middle("test")
 
 
 # def xo(s):
@@ -141,12 +141,24 @@
 
 
 # def create_phone_number(n):
-#     pass
+#     new_n = ""
+#     for new in n:
+#         new_n += str(new)
 
+#     return "({}) {}-{}".format(new_n[:3], new_n[3:6], new_n[6:])
 
-# print(create_phone_number(n)) 
+# def create_phone_number(n):
+# 	return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+
+# print(create_phone_number(n))
 
 # def bool_to_word(boolean):
 #     return "Yes" if boolean else "No"
 
 # print(bool_to_word(False))
+
+# def tower_builder(n_floors):
+#     # build here
+
+
+# tower_builder(2)
