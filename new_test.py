@@ -1226,3 +1226,70 @@
 
 # tiger = Animal("tiger", 6, "dog")
 # tiger.print_animal()
+
+
+# import json
+# from cryptography import fernet
+
+# key = fernet.Fernet.generate_key()
+# cipher_suite = fernet.Fernet(key)
+
+# username = input("Username: ")
+# password = input("Password: ")
+
+# with open("./plaintext.txt", "wb")as file:
+#     data = "{} {}".format(username, password)
+#     file.write(data.encode())
+
+# with open("./plaintext.txt", "rb")as file:
+#     plaintext = file.read()
+
+
+# encrypted_data = cipher_suite.encrypt(plaintext)
+# with open("./encrypted_text.txt", "wb")as file:
+#     file.write(encrypted_data)
+
+
+# with open("./encrypted_text.txt", "rb")as file:
+#     decrypted_data = cipher_suite.decrypt(file.read().decode())
+
+
+# print("Encrypted data: {}".format(encrypted_data))
+# print("Dencrypted data: {}".format(decrypted_data))
+
+
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import rsa
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import padding
+
+# Generate a key pair
+private_key = rsa.generate_private_key(
+    public_exponent=65537,
+    key_size=2048,
+)
+public_key = private_key.public_key()
+
+message = b"Hello, Secure World!"
+
+# Encrypt with the public key
+ciphertext = public_key.encrypt(
+    message,
+    padding.OAEP(
+        mgf=padding.MGF1(algorithm=hashes.SHA256()),
+        algorithm=hashes.SHA256(),
+        label=None
+    )
+)
+
+# Decrypt with the private key
+decrypted_message = private_key.decrypt(
+    ciphertext,
+    padding.OAEP(
+        mgf=padding.MGF1(algorithm=hashes.SHA256()),
+        algorithm=hashes.SHA256(),
+        label=None
+    )
+)
+
+print("Decrypted Message:", decrypted_message.decode())
