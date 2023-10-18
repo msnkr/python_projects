@@ -121,13 +121,13 @@
 
 # friend(x)
 
-def get_middle(s):
-    if len(s) %2 == 0:
-        text = s[len(s) // 2]
+# def get_middle(s):
+#     if len(s) %2 == 0:
+#         text = s[len(s) // 2]
 
-    print(text)
+#     print(text)
 
-get_middle("test")
+# get_middle("test")
 
 
 # def xo(s):
@@ -162,3 +162,26 @@ get_middle("test")
 
 
 # tower_builder(2)
+
+# def find_missing_letter(chars):
+#     alphabet = [chr(letter) for letter in range(97, 123)]
+#     return 
+
+# print(find_missing_letter(['a','b','c','d','f']))
+
+
+def high_and_low(numbers):
+    numbers = numbers.split()
+    n = [int(num) for num in numbers]
+
+    highest = 0
+    lowest = 1
+    for num in n:
+        if num > highest:
+            highest = num
+        elif num <= lowest:
+            lowest = num
+
+    return "{} {}".format(highest, lowest)
+
+print(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
