@@ -103,14 +103,15 @@
 
 # print(find_it(seq))
 
-# sentence = "4of Fo1r pe6ople g3ood th5e the2"
+sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
-# def order(sentence):
-#     spit_sentence = sentence.split(" ")
+def order(sentence):
+    for number in range(len(sentence)):
+        number = str(number)
+        print(sentence.index(number))
 
-
-# order(sentence)
+order(sentence)
 
 # x = ["Ryan", "Kieran", "Mark",]
 
@@ -170,18 +171,18 @@
 # print(find_missing_letter(['a','b','c','d','f']))
 
 
-def high_and_low(numbers):
-    numbers = numbers.split()
-    n = [int(num) for num in numbers]
+# def high_and_low(numbers):
+#     numbers = numbers.split()
+#     n = [int(num) for num in numbers]
 
-    highest = 0
-    lowest = 1
-    for num in n:
-        if num > highest:
-            highest = num
-        elif num <= lowest:
-            lowest = num
+#     highest = 0
+#     lowest = 1
+#     for num in n:
+#         if num >= highest:
+#             highest = num
+#         elif num <= lowest:
+#             lowest = num
 
-    return "{} {}".format(highest, lowest)
+#     return "{} {}".format(highest, lowest)
 
-print(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+# print(high_and_low("-1 -1"))
