@@ -216,4 +216,5 @@
 def generate_hashtag(s):
     pass
 
-print(generate_hashtag('Codewars'))
+
+print(generate_hashtag('#codewars is nice'))
