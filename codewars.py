@@ -103,15 +103,15 @@
 
 # print(find_it(seq))
 
-sentence = "4of Fo1r pe6ople g3ood th5e the2"
+# sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
-def order(sentence):
-    for number in range(len(sentence)):
-        number = str(number)
-        print(sentence.index(number))
+# def order(sentence):
+#     for number in range(len(sentence)):
+#         number = str(number)
+#         print(sentence.index(number))
 
-order(sentence)
+# order(sentence)
 
 # x = ["Ryan", "Kieran", "Mark",]
 
@@ -123,12 +123,20 @@ order(sentence)
 # friend(x)
 
 # def get_middle(s):
-#     if len(s) %2 == 0:
-#         text = s[len(s) // 2]
+#     num = len(s)
+#     if num % 2 == 0:
+#         return "{}{}".format(s[num // 2 - 1],s[num // 2])
+#     else:
+#         return "{}".format(s[num  // 2])
 
-#     print(text)
+# print(get_middle("testing"))
 
-# get_middle("test")
+
+# def get_middle(s):
+#     num = len(s)
+#     return "{}{}".format(s[num // 2 - 1],s[num // 2]) if num % 2 == 0 else "{}".format(s[num  // 2])
+
+# print(get_middle("test"))
 
 
 # def xo(s):
@@ -172,17 +180,28 @@ order(sentence)
 
 
 # def high_and_low(numbers):
-#     numbers = numbers.split()
-#     n = [int(num) for num in numbers]
+#     nums = [int(num) for num in numbers.split()]
+#     return "{} {}".format(sorted(nums)[-1], sorted(nums)[0])
 
-#     highest = 0
-#     lowest = 1
-#     for num in n:
-#         if num >= highest:
-#             highest = num
-#         elif num <= lowest:
-#             lowest = num
+# print(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
 
-#     return "{} {}".format(highest, lowest)
 
-# print(high_and_low("-1 -1"))
+# def filter_list(l):
+#     'return a new list with the strings filtered out'
+#     return [i for i in l if type(i) == int]
+
+# print(filter_list([1, 2, 'a', 'b']))
+
+# def filter_list(l):
+#   'return a new list with the strings filtered out'
+#   return [x for x in l if type(x) is not str]
+
+# print(filter_list([1, 2, 'a', 'b']))
+
+# return masked string
+def maskify(cc):
+
+    return
+
+
+print(maskify("4556364607935616"))
