@@ -199,9 +199,21 @@
 # print(filter_list([1, 2, 'a', 'b']))
 
 # return masked string
-def maskify(cc):
+# def maskify(cc):
+#     if len(cc) >= 4:
+#         length = len(cc) - 4
+#         return "#" * length + cc[length:]
+#     else:
+#         return cc
 
-    return
+
+# def maskify(cc):
+#     return "#"*(len(cc)-4) + cc[-4:]
+
+# print(maskify("SF$SDfgsd2eA"))
 
 
-print(maskify("4556364607935616"))
+def generate_hashtag(s):
+    pass
+
+print(generate_hashtag('Codewars'))
