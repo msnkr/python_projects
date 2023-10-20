@@ -213,8 +213,26 @@
 # print(maskify("SF$SDfgsd2eA"))
 
 
-def generate_hashtag(s):
-    pass
+# def generate_hashtag(s):
+#    if len(s) > 140 or s == "":
+#       return False
+#    else:
+#         s = s.split()
+#         new_word = ""
+#         for word in s:
+#             new_word += word.capitalize()
+
+#         return "#{}".format(new_word)
 
 
-print(generate_hashtag('#codewars is nice'))
+# print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
+
+
+def to_camel_case(text):
+    text = text.replace("-", " ")
+    text = text.replace("_", " ")
+
+    words = text.split()
+    return words
+
+print(to_camel_case("the_Stealth-Warrior"))
