@@ -228,11 +228,22 @@
 # print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
 
 
-def to_camel_case(text):
-    text = text.replace("-", " ")
-    text = text.replace("_", " ")
+# ################################## DANG!
 
-    words = text.split()
-    return words
+# def to_camel_case(text):
+#     removed = text.replace("_", " ").replace("-", " ").split()
+#     if len(removed) == 0:
+#         return ""
+#     else:
+#         return removed[0] + "".join([x.capitalize() for x in removed[1:]])
 
-print(to_camel_case("the_Stealth-Warrior"))
+
+# print(to_camel_case("the_stealth-warrrior"))
+
+
+def solution(s):
+    pass
+
+
+
+solution('asdfadsf')
