@@ -103,15 +103,14 @@
 
 # print(find_it(seq))
 
-# sentence = "4of Fo1r pe6ople g3ood th5e the2"
+sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
-# def order(sentence):
-#     for number in range(len(sentence)):
-#         number = str(number)
-#         print(sentence.index(number))
+def order(sentence):
+    for number in range(len(sentence.split())):
+        print(sentence.split()[number])
 
-# order(sentence)
+order(sentence)
 
 # x = ["Ryan", "Kieran", "Mark",]
 
@@ -213,22 +212,22 @@
 # print(maskify("SF$SDfgsd2eA"))
 
 
-def generate_hashtag(s):
-   if len(s) > 140 or s == "":
-      return False
-   else:
-        s = s.split()
-        if len(s) != 1:
-            new_word = ""
-            for word in s:
-                new_word += word.capitalize()
+# def generate_hashtag(s):
+#    if len(s) > 140 or s == "":
+#       return False
+#    else:
+#         s = s.split()
+#         if len(s) != 1:
+#             new_word = ""
+#             for word in s:
+#                 new_word += word.capitalize()
 
-            return "#{}".format(new_word)
-        else:
-            return "#{}".format("".join(s))
+#             return "#{}".format(new_word)
+#         else:
+#             return "#{}".format("".join(s))
 
 
-print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
+# print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
 
 
 # ################################## DANG!
@@ -245,11 +244,14 @@ print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjK
 
 
 # def solution(s):
-#     pass
-
-
-
-# solution('asdfadsf')
+#     list_item = []
+#     if len(s) % 2 != 0:
+#         s += "_"
+#         print(s)
+#     else:
+#         pass
+        
+# solution('asdfads')
 
 
 # def capitals(word):
@@ -265,6 +267,37 @@ print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjK
 
 
 # def find_smallest_int(arr):
-#     pass
+#     return sorted(arr)[0]
 
-# find_smallest_int([78, 56, 232, 12, 11, 43])
+# print(find_smallest_int([34, -345, -1, 100]))
+
+
+# def likes(names):
+#     # your code here
+#     if len(names) >= 4:
+#         return "{}, {} and {} others like this".format(names[0], names[1], len(names[2:]))
+#     else:
+#         pass
+    
+
+# print(likes(['Alex', 'Jacob']))
+
+# def array_diff(a, b):
+#     result = [b.remove(letter) for letter in a if a in b]
+#     return result
+
+# print(array_diff([1,2,2], [2]))
+
+
+# def remove_url_anchor(url):
+#     # TODO: complete
+#     return url.split("#")[0]
+
+# print(remove_url_anchor("www.codewars.com#about"))
+
+
+# def gimme(input_array):
+#     # Implement this function
+#     return input_array.index(sorted(input_array)[1])
+
+# print(gimme([5, 10, 14]))
