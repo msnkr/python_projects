@@ -213,19 +213,22 @@
 # print(maskify("SF$SDfgsd2eA"))
 
 
-# def generate_hashtag(s):
-#    if len(s) > 140 or s == "":
-#       return False
-#    else:
-#         s = s.split()
-#         new_word = ""
-#         for word in s:
-#             new_word += word.capitalize()
+def generate_hashtag(s):
+   if len(s) > 140 or s == "":
+      return False
+   else:
+        s = s.split()
+        if len(s) != 1:
+            new_word = ""
+            for word in s:
+                new_word += word.capitalize()
 
-#         return "#{}".format(new_word)
+            return "#{}".format(new_word)
+        else:
+            return "#{}".format("".join(s))
 
 
-# print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
+print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
 
 
 # ################################## DANG!
@@ -241,9 +244,27 @@
 # print(to_camel_case("the_stealth-warrrior"))
 
 
-def solution(s):
-    pass
+# def solution(s):
+#     pass
 
 
 
-solution('asdfadsf')
+# solution('asdfadsf')
+
+
+# def capitals(word):
+    # for index, x in enumerate(word):
+    #     if x == x.upper():
+    #         new_list.append(index)
+
+    # return new_list
+    # return [index for index, x in enumerate(word)  if x == x.upper()]
+
+   
+# print(capitals("CodEWaRs"))
+
+
+# def find_smallest_int(arr):
+#     pass
+
+# find_smallest_int([78, 56, 232, 12, 11, 43])
