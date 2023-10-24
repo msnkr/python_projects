@@ -3,13 +3,16 @@ import math
 from plyer import notification
 
 
+def send_notification(seconds):
+    notification.notify(title="Your task has started", message=f"{task_name_entry.get()}. Your time is {math.floor(seconds / 60 )} minutes. ")
+
+
 def count_seconds(seconds):  
 
     task_seconds_label = Label(frame, text=f"{math.floor(seconds / 60)}:{seconds % 60}")
     task_seconds_label.grid(column=2, row=0, padx=20, pady=2)
     task_seconds_label.config(bg="white")
     seconds -= 1
-
     frame.after(1000, count_seconds, seconds)   
 
 
@@ -22,6 +25,8 @@ def add_task():
     add_task_label.config(bg="white")
     
     count_seconds(seconds)
+    send_notification(seconds)
+
 
 
 
