@@ -1,10 +1,11 @@
 from tkinter import *
+import math
 from plyer import notification
+
 
 def count_seconds(seconds):  
 
-    minutes, seconds = divmod(seconds, 60)
-    task_seconds_label = Label(frame, text=f"{minutes:02d}:{seconds:02d}")
+    task_seconds_label = Label(frame, text=f"{math.floor(seconds / 60)}:{seconds % 60}")
     task_seconds_label.grid(column=2, row=0, padx=20, pady=2)
     task_seconds_label.config(bg="white")
     seconds -= 1
@@ -20,7 +21,7 @@ def add_task():
     add_task_label.grid(column=0, columnspan=2, row=0, padx=20, pady=2)
     add_task_label.config(bg="white")
     
-    frame.after(1000, count_seconds, seconds)
+    count_seconds(seconds)
 
 
 
