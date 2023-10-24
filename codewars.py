@@ -275,10 +275,10 @@
 
 # print(likes(['Alex', 'Jacob']))
 
-def array_diff(a, b):
-    pass    
+# def array_diff(a, b):
+#     pass    
 
-print(array_diff([1,2,2], [2]))
+# print(array_diff([1,2,2], [2]))
 
 
 # def remove_url_anchor(url):
@@ -294,11 +294,12 @@ print(array_diff([1,2,2], [2]))
 
 # print(gimme([5, 10, 14]))
 
-# sentence = "4of Fo1r pe6ople g3ood th5e the2"
+sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
-# def order(sentence):
-#     for number in range(len(sentence.split())):
-#         print(sentence.split()[number])
+def order(sentence):
+    new_sentence = sentence.split()
+    for number in range(len(new_sentence)):
+        print(new_sentence[number])
 
-# order(sentence)
+order(sentence)
