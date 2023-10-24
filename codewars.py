@@ -103,14 +103,7 @@
 
 # print(find_it(seq))
 
-sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
-
-def order(sentence):
-    for number in range(len(sentence.split())):
-        print(sentence.split()[number])
-
-order(sentence)
 
 # x = ["Ryan", "Kieran", "Mark",]
 
@@ -282,11 +275,10 @@ order(sentence)
 
 # print(likes(['Alex', 'Jacob']))
 
-# def array_diff(a, b):
-#     result = [b.remove(letter) for letter in a if a in b]
-#     return result
+def array_diff(a, b):
+    pass    
 
-# print(array_diff([1,2,2], [2]))
+print(array_diff([1,2,2], [2]))
 
 
 # def remove_url_anchor(url):
@@ -301,3 +293,12 @@ order(sentence)
 #     return input_array.index(sorted(input_array)[1])
 
 # print(gimme([5, 10, 14]))
+
+# sentence = "4of Fo1r pe6ople g3ood th5e the2"
+
+
+# def order(sentence):
+#     for number in range(len(sentence.split())):
+#         print(sentence.split()[number])
+
+# order(sentence)
