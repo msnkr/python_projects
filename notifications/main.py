@@ -1,46 +1,55 @@
 from tkinter import *
-from datetime import datetime
 from plyer import notification
 
+def count_seconds(seconds):  
 
-def start():
+    minutes, seconds = divmod(seconds, 60)
+    task_seconds_label = Label(frame, text=f"{minutes:02d}:{seconds:02d}")
+    task_seconds_label.grid(column=2, row=0, padx=20, pady=2)
+    task_seconds_label.config(bg="white")
+    seconds -= 1
+
+    frame.after(1000, count_seconds, seconds)   
+
+
+def add_task():
     task = task_name_entry.get()
-    total_time = int(time_entry.get())
+    seconds = (int(time_entry.get()) * 60) * 60
 
-    seconds = (total_time * 60) * 60
+    add_task_label = Label(frame, text=task)
+    add_task_label.grid(column=0, columnspan=2, row=0, padx=20, pady=2)
+    add_task_label.config(bg="white")
     
+    frame.after(1000, count_seconds, seconds)
 
 
 
 window = Tk()
 window.title("Task Manager")
-window.config(width=400, height=400, padx=10, pady=10)
+window.config(padx=10, pady=10)
 
 task_name_label = Label(window, text="What task do you want to be notified for? ")
-task_name_label.grid(column=0, row=0)
+task_name_label.grid(column=0, columnspan=2, row=0, padx=2, pady=2)
 
 task_name_entry = Entry(window)
-task_name_entry.grid(column=0, row=1)
+task_name_entry.grid(column=0, columnspan=2, row=1, padx=2, pady=2)
 
 time_label = Label(window, text="How many hours? ")
-time_label.grid(column=0, row=2)
+time_label.grid(column=0, columnspan=2, row=2, padx=2, pady=2)
 
 time_entry = Entry(window)
-time_entry.grid(column=0, row=3)
+time_entry.grid(column=0, columnspan=2, row=3, padx=2, pady=2)
 
-start_btn = Button(window, text="Start", command=start)
-start_btn.grid(column=0, row=4)
+start_btn = Button(window, text="Start", command=add_task)
+start_btn.grid(column=0, row=4, padx=2, pady=2)
 
 quit_btn = Button(window, text="Quit", command=window.destroy)
-quit_btn.grid(column=1, row=4)
+quit_btn.grid(column=1, row=4, padx=2, pady=2)
+
+
+frame = Frame(background="white", padx=10, pady=10)
+frame.config(width=200, height=200, padx=2, pady=2)
+frame.grid(column=0, columnspan=2, row=5, padx=2, pady=2)
 
 
 window.mainloop()
-
-
-
-# title = "This is a title"
-# message = "This is a message"
-
-
-# notification.notify(title, message, toast=True, timeout=3)
