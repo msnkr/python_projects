@@ -27,8 +27,9 @@ language_codes = {
 }
 
 
+
 def get_language_code(language):
-    pass
+    return language
 
 
 def show_menu():
@@ -40,6 +41,10 @@ window.title("Translator")
 window.geometry("600x400")
 
 
+clicked = StringVar()
+clicked.set("English")
+
+
 language_label = Label(window, text="What language do you want to use?")
 language_label.grid(column=0, row=0)
 language_label.config(padx=10, pady=20, font=("Arial", 16, "bold"))
@@ -47,12 +52,21 @@ language_label.config(padx=10, pady=20, font=("Arial", 16, "bold"))
 
 menu = Menu(window, tearoff=0)
 for key in language_codes:
-    menu.add_command(label=key, command=None)
-
+    menu.add_command(label=key, command=lambda language = key: get_language_code(language))
 
 
 menu_btn = Button(window, text="Menu", command=show_menu)
 menu_btn.grid(column=1, row=0)
+
+
+text_label = Label(window, text="What do you want to translate?: ")
+text_label.grid(column=0, row=1)
+
+text_entry = Entry(window, width=50)
+text_entry.grid(column=0, row=2)
+
+translate_btn = Button(window, text="Translate", command=translate_machine)
+translate_btn.grid(column=0, row=3)
 
 
 window.mainloop()
