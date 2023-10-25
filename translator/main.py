@@ -2,26 +2,83 @@ from tkinter import *
 from translate import Translator
 
 
+language_codes = {
+    "English": "en",
+    "Spanish": "es",
+    "French": "fr",
+    "German": "de",
+    "Japanese": "ja",
+    "Arabic": "ar",
+    "Chinese (Simplified)": "zh-CN",
+    "Chinese (Traditional)": "zh-TW",
+    "Russian": "ru",
+    "Italian": "it",
+    "Dutch": "nl",
+    "Portuguese": "pt",
+    "Swedish": "sv",
+    "Korean": "ko",
+    "Greek": "el",
+    "Turkish": "tr",
+    "Hindi": "hi",
+    "Bengali": "bn",
+    "Vietnamese": "vi",
+    "Thai": "th",
+    "Polish": "pl",
+}
 
-# window = Tk()
-# window.title("Translator")
+
+def get_language_code(language):
+    pass
 
 
-# window.mainloop()
+def show_menu():
+    menu.post(menu_btn.winfo_rootx(), menu_btn.winfo_rooty() + menu_btn.winfo_height())
+
+
+window = Tk()
+window.title("Translator")
+window.geometry("600x400")
+
+
+language_label = Label(window, text="What language do you want to use?")
+language_label.grid(column=0, row=0)
+language_label.config(padx=10, pady=20, font=("Arial", 16, "bold"))
+
+
+menu = Menu(window, tearoff=0)
+for key in language_codes:
+    menu.add_command(label=key, command=None)
 
 
 
-# translator = Translator(to_lang="zh")
-# translation = translator.translate("This is a pen")
-
-# print(translation)
+menu_btn = Button(window, text="Menu", command=show_menu)
+menu_btn.grid(column=1, row=0)
 
 
-to_lang = input("Language Code?: ")
-text_to_translate = input("What do you want to translate?: ")
+window.mainloop()
 
 
-translator = Translator(to_lang=to_lang)
-translation = translator.translate(text_to_translate)
+# def translate_machine(code, text):
+#     translator = Translator(to_lang=code)
+#     translation = translator.translate(text)
 
-print(translation)
+#     return translation
+
+
+# def main():
+#     to_lang = input("What language do you want to use? ").capitalize()
+#     text_to_translate = input("What do you want to translate?: ")
+
+#     if to_lang in language_codes:
+#         value = language_codes[to_lang]
+
+#         translate_machine(value, text_to_translate)
+#     else:
+#         print("That language doesn't exist. Try again")
+#         main()
+
+
+
+# if __name__=="__main__":
+#     main()
+
