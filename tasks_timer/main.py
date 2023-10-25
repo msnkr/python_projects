@@ -2,9 +2,12 @@ from tkinter import *
 import math
 from plyer import notification
 
+def send_fifteen(seconds):
+    notification.notify(title=f"{task_name_entry.get()}", message="You have 15 minutes left")
+
 
 def send_notification(seconds):
-    notification.notify(title="Your task has started", message=f"{task_name_entry.get()}. Your time is {math.floor(seconds / 60 )} minutes. ")
+    notification.notify(title=f"{task_name_entry.get()}", message=f"Your time is {math.floor(seconds / 60 )} minutes. ")
 
 
 def count_seconds(seconds):  
@@ -14,6 +17,9 @@ def count_seconds(seconds):
     task_seconds_label.config(bg="white")
     seconds -= 1
     frame.after(1000, count_seconds, seconds)   
+
+    if seconds == 900:
+        send_fifteen(seconds)
 
 
 def add_task():
