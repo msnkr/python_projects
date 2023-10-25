@@ -298,8 +298,15 @@ sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
 def order(sentence):
+    numbers = range(1, len(sentence) + 1)
     new_sentence = sentence.split()
-    for number in range(len(new_sentence)):
-        print(new_sentence[number])
+    sentence = ""
 
-order(sentence)
+    for num in numbers:
+        for word in new_sentence:
+            if str(num) in word:
+                sentence += "{} ".format(word)
+
+    return sentence.strip()
+    
+print(order(sentence))
