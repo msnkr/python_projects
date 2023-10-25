@@ -3,7 +3,7 @@ import math
 from plyer import notification
 
 def send_fifteen(seconds):
-    notification.notify(title=f"{task_name_entry.get()}", message="You have 15 minutes left")
+    notification.notify(title=f"{task_name_entry.get()}", message=f"You have {math.floor(seconds / 60)} minutes left")
 
 
 def send_notification(seconds):
@@ -18,7 +18,7 @@ def count_seconds(seconds):
     seconds -= 1
     frame.after(1000, count_seconds, seconds)   
 
-    if seconds == 900:
+    if seconds % 900 == 0:
         send_fifteen(seconds)
 
 
@@ -60,7 +60,7 @@ quit_btn.grid(column=1, row=4, padx=2, pady=2)
 
 
 frame = Frame(background="white", padx=10, pady=10)
-frame.config(width=200, height=200, padx=2, pady=2)
+frame.config(width=200, height=50, padx=2, pady=2)
 frame.grid(column=0, columnspan=2, row=5, padx=2, pady=2)
 
 
