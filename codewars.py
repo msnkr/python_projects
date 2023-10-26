@@ -159,10 +159,10 @@
 # print(bool_to_word(False))
 
 # def tower_builder(n_floors):
-#     # build here
+#     pass
 
 
-# tower_builder(2)
+# tower_builder(6)
 
 # def find_missing_letter(chars):
 #     alphabet = [chr(letter) for letter in range(97, 123)]
@@ -221,15 +221,15 @@
 
 # print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'))
 
-def generate_hashtag(s):
-    output = "#"
-    for word in s.split():
-        output += word.capitalize()
+# def generate_hashtag(s):
+#     output = "#"
+#     for word in s.split():
+#         output += word.capitalize()
 
-    return False if (len(s) == 0 or len(output) > 140) else output
+#     return False if (len(s) == 0 or len(output) > 140) else output
 
 
-print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'))
+# print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'))
 
 # ################################## DANG!
 
@@ -268,15 +268,20 @@ print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooo
 # print(find_smallest_int([34, -345, -1, 100]))
 
 
-# def likes(names):
-#     # your code here
-#     if len(names) >= 4:
-#         return "{}, {} and {} others like this".format(names[0], names[1], len(names[2:]))
-#     else:
-#         pass
+def likes(names):
+    # your code here
+    output = ""
+    if len(names) >= 4:
+        return "{}, {} and {} others like this".format(names[0], names[1], len(names[2:]))
+    else:
+        for name in names:
+            output += name
+
+        end = "like this"
+        return output + end
     
 
-# print(likes(['Alex', 'Jacob']))
+print(likes(['Alex', 'Jacob']))
 
 # def array_diff(a, b):
 #     pass    
