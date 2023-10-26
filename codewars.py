@@ -206,21 +206,25 @@
 
 
 # def generate_hashtag(s):
-#    if len(s) > 140 or s == "":
-#       return False
-#    else:
-#         s = s.split()
-#         if len(s) != 1:
-#             new_word = ""
-#             for word in s:
-#                 new_word += word.capitalize()
+#     if s != "":
+#         sentence = ""
+#         for word in s.split():
+#             sentence += word.capitalize()
 
-#             return "#{}".format(new_word)
+#         if len(sentence) < 140 or "":
+#             return "#{}".format(sentence)
 #         else:
-#             return "#{}".format("".join(s))
+#             return False
+#     else:
+#         return False
 
 
-# print(generate_hashtag('ABbCccDdddEeeeeFfffffGggggggHhhhhhhhIiiiiiiiiJjjjjjjjjjKkkkkkkkkkkLlllllllllllMmmmmmmmmmmmmNnnnnnnnnnnnnnOooooooooooooooPpppppppppppppppQqqq'))
+# print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'))
+
+def generate_hashtag(s):
+    pass
+
+print(generate_hashtag('code is nice'))
 
 
 # ################################## DANG!
@@ -237,12 +241,7 @@
 
 
 # def solution(s):
-#     list_item = []
-#     if len(s) % 2 != 0:
-#         s += "_"
-#         print(s)
-#     else:
-#         pass
+#     pass
         
 # solution('asdfads')
 
@@ -294,19 +293,38 @@
 
 # print(gimme([5, 10, 14]))
 
-sentence = "4of Fo1r pe6ople g3ood th5e the2"
+# sentence = "4of Fo1r pe6ople g3ood th5e the2"
 
 
-def order(sentence):
-    numbers = range(1, len(sentence) + 1)
-    new_sentence = sentence.split()
-    sentence = ""
+# def order(sentence):
+#     numbers = range(1, len(sentence) + 1)
+#     new_sentence = sentence.split()
+#     sentence = ""
 
-    for num in numbers:
-        for word in new_sentence:
-            if str(num) in word:
-                sentence += "{} ".format(word)
+#     for num in numbers:
+#         for word in new_sentence:
+#             if str(num) in word:
+#                 sentence += "{} ".format(word)
 
-    return sentence.strip()
+#     return sentence.strip()
     
-print(order(sentence))
+# print(order(sentence))
+
+
+# sentence = "4of Fo1r pe6ople g3ood th5e the2"
+
+
+# def order(sentence):
+#     result = [word for num in range(1, len(sentence.split()) + 1) for word in sentence.split() if str(num) in word]
+#     return " ".join(result)
+
+# order(sentence)
+
+# def order(sentence):
+#   return " ".join(sorted(sentence.split(), key=min))
+
+
+
+# fruits = ["banana4", "3apple", "ora1nge", "mang4o", "gua2va"]
+
+# print(" ".join(sorted(fruits, key=min)))
