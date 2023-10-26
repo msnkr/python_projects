@@ -28,48 +28,48 @@ language_codes = {
 
 
 
-def get_language_code(language):
-    return language
+# def get_language_code(language):
+#     return language
 
 
-def show_menu():
-    menu.post(menu_btn.winfo_rootx(), menu_btn.winfo_rooty() + menu_btn.winfo_height())
+# def show_menu():
+#     menu.post(menu_btn.winfo_rootx(), menu_btn.winfo_rooty() + menu_btn.winfo_height())
 
 
-window = Tk()
-window.title("Translator")
-window.geometry("600x400")
+# window = Tk()
+# window.title("Translator")
+# window.geometry("600x400")
 
 
-clicked = StringVar()
-clicked.set("English")
+# clicked = StringVar()
+# clicked.set("English")
 
 
-language_label = Label(window, text="What language do you want to use?")
-language_label.grid(column=0, row=0)
-language_label.config(padx=10, pady=20, font=("Arial", 16, "bold"))
+# language_label = Label(window, text="What language do you want to use?")
+# language_label.grid(column=0, row=0)
+# language_label.config(padx=10, pady=20, font=("Arial", 16, "bold"))
 
 
-menu = Menu(window, tearoff=0)
-for key in language_codes:
-    menu.add_command(label=key, command=lambda language = key: get_language_code(language))
+# menu = Menu(window, tearoff=0)
+# for key in language_codes:
+#     menu.add_command(label=key, command=lambda language = key: get_language_code(language))
 
 
-menu_btn = Button(window, text="Menu", command=show_menu)
-menu_btn.grid(column=1, row=0)
+# menu_btn = Button(window, text="Menu", command=show_menu)
+# menu_btn.grid(column=1, row=0)
 
 
-text_label = Label(window, text="What do you want to translate?: ")
-text_label.grid(column=0, row=1)
+# text_label = Label(window, text="What do you want to translate?: ")
+# text_label.grid(column=0, row=1)
 
-text_entry = Entry(window, width=50)
-text_entry.grid(column=0, row=2)
+# text_entry = Entry(window, width=50)
+# text_entry.grid(column=0, row=2)
 
-translate_btn = Button(window, text="Translate", command=translate_machine)
-translate_btn.grid(column=0, row=3)
+# translate_btn = Button(window, text="Translate", command=translate_machine)
+# translate_btn.grid(column=0, row=3)
 
 
-window.mainloop()
+# window.mainloop()
 
 
 # def translate_machine(code, text):
@@ -96,3 +96,26 @@ window.mainloop()
 # if __name__=="__main__":
 #     main()
 
+def show_menu():
+    menu.post(menu_btn.winfo_rootx(), menu_btn.winfo_rooty() + menu_btn.winfo_height())
+
+
+window = Tk()
+
+window.title("Translator App")
+window.geometry("600x400")
+
+english_label = Label(window, text="English")
+english_label.pack()
+
+english_input = Entry(window)
+english_input.pack()
+
+menu = Menu(window, tearoff="0")
+for language in language_codes:
+    menu.add_command(label=language, command=None)
+
+menu_btn = Button(window, text="Language", command=show_menu)
+menu_btn.pack()
+
+window.mainloop()
