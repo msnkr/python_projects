@@ -1228,30 +1228,60 @@
 # tiger.print_animal()
 
 
-import json
-from cryptography import fernet
+# import json
+# from cryptography import fernet
 
-key = fernet.Fernet.generate_key()
-cipher_suite = fernet.Fernet(key)
-
-
-with open("./plaintext.txt", "wb")as file:
-    data = "{} {}".format("username", "password")
-    file.write(data.encode())
-
-with open("./plaintext.txt", "rb")as file:
-    plaintext = file.read()
+# key = fernet.Fernet.generate_key()
+# cipher_suite = fernet.Fernet(key)
 
 
-encrypted_data = cipher_suite.encrypt(plaintext)
-with open("./encrypted_text.txt", "wb")as file:
-    file.write(encrypted_data)
+# with open("./plaintext.txt", "wb")as file:
+#     data = "{} {}".format("username", "password")
+#     file.write(data.encode())
+
+# with open("./plaintext.txt", "rb")as file:
+#     plaintext = file.read()
 
 
-with open("./encrypted_text.txt", "rb")as file:
-    decrypted_data = cipher_suite.decrypt(file.read().decode())
+# encrypted_data = cipher_suite.encrypt(plaintext)
+# with open("./encrypted_text.txt", "wb")as file:
+#     file.write(encrypted_data)
 
 
-print("Encrypted data: {}".format(encrypted_data))
-print("Dencrypted data: {}".format(decrypted_data))
+# with open("./encrypted_text.txt", "rb")as file:
+#     decrypted_data = cipher_suite.decrypt(file.read().decode())
+
+
+# print("Encrypted data: {}".format(encrypted_data))
+# print("Dencrypted data: {}".format(decrypted_data))
+
+
+
+class CarRental():
+    def __init__(self, color, make, model, rental_rate, available):
+        self.color = color
+        self.make = make
+        self.model = model
+        self.rental_rate = rental_rate
+        self.available = available
+
+
+class Customer():
+    def __init__(self, name, license):
+        self.name = name
+        self.licence = license
+
+
+class RentalTransaction():
+    def __init__(self, car, customer):
+        self.car = car
+        self.customer = customer
+
+
+vw = CarRental("red", "vw", "rabbit", 20, True)
+mikyle = Customer("Mikyle", "2323232")
+
+car1 = RentalTransaction(vw, mikyle)
+
+
 
