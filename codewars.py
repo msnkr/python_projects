@@ -222,9 +222,14 @@
 # print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'))
 
 def generate_hashtag(s):
-    pass
-
-print(generate_hashtag('code is nice'))
+    output = "#"
+    
+    for word in s.split():
+        output += word.capitalize()
+    
+    return False if (len(s) == 0 or len(output) > 140) else output
+        
+print(generate_hashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'))
 
 
 # ################################## DANG!
