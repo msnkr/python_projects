@@ -96,26 +96,56 @@ language_codes = {
 # if __name__=="__main__":
 #     main()
 
+# Get text from english textbox, get option from languiage mene, when translate is cliked, put new text in language text
+
+def translate(language):
+    to_translate = english_text.get("1.0", "end-1c")
+
+    
+    translator = Translator(to_lang=language_codes[language])
+    translation = translator.translate(to_translate)
+
+    translated_text.insert("end", translation)
+
+
+
 def show_menu():
+    translated_text.delete("1.0", "end-1c")
     menu.post(menu_btn.winfo_rootx(), menu_btn.winfo_rooty() + menu_btn.winfo_height())
 
 
 window = Tk()
 
 window.title("Translator App")
+window.config(padx=20, pady=20)
 window.geometry("600x400")
 
-english_label = Label(window, text="English")
-english_label.pack()
+window.grid_rowconfigure(0, weight=1)
+window.grid_rowconfigure(1, weight=1)
+window.grid_columnconfigure(0, weight=1)
+window.grid_columnconfigure(2, weight=1)
 
-english_input = Entry(window)
-english_input.pack()
+english_label = Label(window, text="English")
+english_label.grid(column=0, row=0)
+english_label.config(font=("Arial", 22, "bold"))
+
+english_text = Text(window, width=30, height=10)
+english_text.grid(column=0, row=1)
+
 
 menu = Menu(window, tearoff="0")
 for language in language_codes:
-    menu.add_command(label=language, command=None)
+    menu.add_command(label=language, command=lambda key = language: translate(key))
 
-menu_btn = Button(window, text="Language", command=show_menu)
-menu_btn.pack()
+menu_btn = Button(window, text="English", command=show_menu)
+menu_btn.grid(column=2, row=0)
+menu_btn.config(font=("Arial", 22, "bold"))
+
+menu_item = StringVar()
+menu_item.set("English")
+
+translated_text = Text(window, width=30, height=10)
+translated_text.grid(column=2, row=1)
+
 
 window.mainloop()
