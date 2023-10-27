@@ -268,20 +268,32 @@
 # print(find_smallest_int([34, -345, -1, 100]))
 
 
-def likes(names):
-    # your code here
-    output = ""
-    if len(names) >= 4:
-        return "{}, {} and {} others like this".format(names[0], names[1], len(names[2:]))
-    else:
-        for name in names:
-            output += name
+# def likes(names):
+#     # your code here
+#     if len(names) >= 4:
+#         return "{}, {} and {} others like this".format(names[0], names[1], len(names[2:]))
+#     elif len(names) == 3:
+#         return "{}, {} and {} like this".format(*names)
+#     elif len(names) == 2:
+#         return "{} and {} like this".format(*names)
+#     elif len(names) == 1:
+#         return "{} likes this".format(*names)
+#     else:
+#         return "No one likes this"
 
-        end = "like this"
-        return output + end
-    
+# print(likes(['Alex']))
 
-print(likes(['Alex', 'Jacob']))
+# def likes(names):
+#     n = len(names)
+#     return {
+#         0: "no one like this",
+#         1: "{} like this",
+#         2: "{} and {} like this",
+#         3: "{}, {} and {} like this",
+#         4: "{}, {} and {} others like this"
+#     }[min(4, n)].format(*names[:3], others=n-2)
+
+# print(likes(["Jacob", "Mark", "Steve", "Lara"]))
 
 # def array_diff(a, b):
 #     pass    
@@ -337,3 +349,12 @@ print(likes(['Alex', 'Jacob']))
 # fruits = ["banana4", "3apple", "ora1nge", "mang4o", "gua2va"]
 
 # print(" ".join(sorted(fruits, key=min)))
+
+
+def duplicate_count(text):
+    # Your code goes here
+    #Lowercase everything.
+    #Return the highest count 
+    pass
+
+duplicate_count("abcdeaB")
