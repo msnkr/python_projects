@@ -352,10 +352,7 @@
 
 
 def duplicate_count(text):
-    # Your code goes here
     text = text.lower()
-    #Lowercase everything.
-    #Return the highest count 
-    pass
 
-duplicate_count("abcdeaB")
+
+duplicate_count("aabbcdef")
