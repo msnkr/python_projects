@@ -306,13 +306,10 @@
 # print(likes(["Jacob", "Mark", "Steve", "Lara"]))
 
 
-def array_diff(a, b):
-    for x in a:
-        if x in b:
-            a.remove(x)
-    print(a)
+# def array_diff(a, b):
+#     pass
 
-print(array_diff([1,2,2], [2]))
+# print(array_diff([1,2,2,2,3],[2]))
 
 
 # def remove_url_anchor(url):
