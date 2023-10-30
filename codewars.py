@@ -165,22 +165,21 @@
 # tower_builder(6)
 
 
+# def find_missing_letter(chars):
+#     alphabet = [chr(i) for i in range(ord('a'), ord('z') + 1)] + [chr(i) for i in range(ord('A'), ord('Z') + 1)]
+#     new_list = alphabet[alphabet.index(chars[0]): alphabet.index(chars[0]) + len(chars) + 1]
 
-def find_missing_letter(chars):
-    alphabet = [chr(i) for i in range(ord('a'), ord('z') + 1)] + [chr(i) for i in range(ord('A'), ord('Z') + 1)]
-    new_list = alphabet[alphabet.index(chars[0]): alphabet.index(chars[0]) + len(chars) + 1]
+#     x = [x for x in new_list if x not in chars]
+#     return "".join(x)
 
-    x = [x for x in new_list if x not in chars]
-    return "".join(x)
-
-print(find_missing_letter(['O','Q','R','S']))
+# print(find_missing_letter(['O','Q','R','S']))
 
 # ######################### SOLUTION
-def find_missing_letter(chars):
-    n = 0
-    while ord(chars[n]) == ord(chars[n+1]) - 1:
-        n += 1
-    return chr(1+ord(chars[n]))
+# def find_missing_letter(chars):
+#     n = 0
+#     while ord(chars[n]) == ord(chars[n+1]) - 1:
+#         n += 1
+#     return chr(1+ord(chars[n]))
 
 # def high_and_low(numbers):
 #     nums = [int(num) for num in numbers.split()]
@@ -306,10 +305,14 @@ def find_missing_letter(chars):
 
 # print(likes(["Jacob", "Mark", "Steve", "Lara"]))
 
-# def array_diff(a, b):
-#     pass    
 
-# print(array_diff([1,2,2], [2]))
+def array_diff(a, b):
+    for x in a:
+        if x in b:
+            a.remove(x)
+    print(a)
+
+print(array_diff([1,2,2], [2]))
 
 
 # def remove_url_anchor(url):
@@ -367,3 +370,17 @@ def find_missing_letter(chars):
 
 
 # duplicate_count("aabbcDef")
+
+# def explode(arr):  
+#     x = [x for x in arr if isinstance(x, int)]
+#     return ["Void!" if x == [] else [arr] * sum(x)]
+
+# print(explode(["a", 3]))
+
+
+# def explode(arr):  
+#     x = [x for x in arr if isinstance(x, int)]
+#     return [arr] * sum(x) if x else "Void!"
+
+
+# print(explode(["a", 3]))
