@@ -1257,31 +1257,29 @@
 
 
 
-class CarRental():
-    def __init__(self, color, make, model, rental_rate, available):
-        self.color = color
-        self.make = make
-        self.model = model
-        self.rental_rate = rental_rate
-        self.available = available
+# class CarRental():
+#     def __init__(self, color, make, model, rental_rate, available):
+#         self.color = color
+#         self.make = make
+#         self.model = model
+#         self.rental_rate = rental_rate
+#         self.available = available
 
 
-class Customer():
-    def __init__(self, name, license):
-        self.name = name
-        self.licence = license
+# class Customer():
+#     def __init__(self, name, license):
+#         self.name = name
+#         self.licence = license
 
 
-class RentalTransaction():
-    def __init__(self, car, customer):
-        self.car = car
-        self.customer = customer
+# class RentalTransaction():
+#     def __init__(self, car, customer):
+#         self.car = car
+#         self.customer = customer
 
 
-vw = CarRental("red", "vw", "rabbit", 20, True)
-mikyle = Customer("Mikyle", "2323232")
+# vw = CarRental("red", "vw", "rabbit", 20, True)
+# mikyle = Customer("Mikyle", "2323232")
 
-car1 = RentalTransaction(vw, mikyle)
-
-
+# car1 = RentalTransaction(vw, mikyle)
 

@@ -164,12 +164,23 @@
 
 # tower_builder(6)
 
-# def find_missing_letter(chars):
-#     alphabet = [chr(letter) for letter in range(97, 123)]
-#     return 
 
-# print(find_missing_letter(['a','b','c','d','f']))
 
+def find_missing_letter(chars):
+    alphabet = [chr(i) for i in range(ord('a'), ord('z') + 1)] + [chr(i) for i in range(ord('A'), ord('Z') + 1)]
+    new_list = alphabet[alphabet.index(chars[0]): alphabet.index(chars[0]) + len(chars) + 1]
+
+    x = [x for x in new_list if x not in chars]
+    return "".join(x)
+
+print(find_missing_letter(['O','Q','R','S']))
+
+# ######################### SOLUTION
+def find_missing_letter(chars):
+    n = 0
+    while ord(chars[n]) == ord(chars[n+1]) - 1:
+        n += 1
+    return chr(1+ord(chars[n]))
 
 # def high_and_low(numbers):
 #     nums = [int(num) for num in numbers.split()]
@@ -351,8 +362,8 @@
 # print(" ".join(sorted(fruits, key=min)))
 
 
-def duplicate_count(text):
-    text = text.lower()
+# def duplicate_count(text):
+#     text = text.lower()
 
 
-duplicate_count("aabbcdef")
+# duplicate_count("aabbcDef")
