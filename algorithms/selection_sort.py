@@ -12,19 +12,40 @@
 # selection_sort(arr)
 # print(arr)
 
-def selection_sort(arr):
-    # Traverse through all array elements
-    for i in range(len(arr)):
-        # Find the minimum element in remaining unsorted array
-        min_idx = i
-        for j in range(i+1, len(arr)):
-            if arr[min_idx] > arr[j]:
-                min_idx = j
+# def selection_sort(arr):
+#     # Traverse through all array elements
+#     for i in range(len(arr)):
+#         # Find the minimum element in remaining unsorted array
+#         min_idx = i
+#         for j in range(i+1, len(arr)):
+#             if arr[min_idx] > arr[j]:
+#                 min_idx = j
                 
-        # Swap the found minimum element with the first element of the 'unsorted' part of the array
-        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+#         # Swap the found minimum element with the first element of the 'unsorted' part of the array
+#         arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-# Test the function
-arr = [64, 25, 12, 22, 11]
-selection_sort(arr)
-print ("Sorted array is:", arr)
+# # Test the function
+# arr = [64, 25, 12, 22, 11]
+# selection_sort(arr)
+# print ("Sorted array is:", arr)
+
+
+
+# def selection_sort(arr):
+#     for i in range(len(arr)):
+#         idx = i
+#         for j in range(idx + 1, len(arr)):
+#             if arr[i] < arr[j]:
+#                 idx = j
+
+#         arr[idx], arr[j] = arr[j], arr[idx]
+
+
+# arr = [64, 25, 12, 22, 11]
+# selection_sort(arr)
+# print(arr)
+
+
+
+alphabet = ["v", "d", "e", "l", "e"]
+print(sorted(alphabet))
