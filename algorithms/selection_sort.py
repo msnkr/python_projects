@@ -34,18 +34,13 @@
 # def selection_sort(arr):
 #     for i in range(len(arr)):
 #         idx = i
-#         for j in range(idx + 1, len(arr)):
-#             if arr[i] < arr[j]:
+#         for j in range(i + 1, len(arr)):
+#             if arr[idx] > arr[j]:
 #                 idx = j
 
-#         arr[idx], arr[j] = arr[j], arr[idx]
+#         arr[i], arr[idx] = arr[idx], arr[i]
 
 
 # arr = [64, 25, 12, 22, 11]
 # selection_sort(arr)
 # print(arr)
-
-
-
-alphabet = ["v", "d", "e", "l", "e"]
-print(sorted(alphabet))

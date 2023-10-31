@@ -363,10 +363,12 @@
 
 
 # def duplicate_count(text):
-#     text = text.lower()
+#     for x in text.lower():
+#         letters = text.find(x)
 
+#     print(letters)
 
-# duplicate_count("aabbcDef")
+# duplicate_count("aabbccc")
 
 # def explode(arr):  
 #     x = [x for x in arr if isinstance(x, int)]
@@ -381,3 +383,9 @@
 
 
 # print(explode(["a", 3]))
+
+
+# def find_outlier(n):
+#     pass
+
+# find_outlier([2, 4, 0, 100, 4, 11, 2602, 36])
