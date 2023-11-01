@@ -44,3 +44,15 @@
 # arr = [64, 25, 12, 22, 11]
 # selection_sort(arr)
 # print(arr)
+
+# def insertion_sort(arr):
+#     for i in range(len(arr)):
+#         idx = i
+#         for j in range(i + 1, len(arr)):
+#             if arr[idx] > arr[j]:
+#                 arr[idx], arr[j] = arr[j], arr[idx]
+
+
+# arr = [64, 25, 12, 22, 11]
+# insertion_sort(arr)
+# print(arr)
