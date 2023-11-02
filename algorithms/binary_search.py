@@ -103,3 +103,28 @@
 # print(result)
 
 
+def binary_search(names, target):
+    left, right = 0, len(names) - 1
+
+    while left <= right:
+        guess = (left + right) // 2
+
+        if names[guess] == target:
+            return guess
+        
+        elif names[guess] < target:
+            left = guess + 1
+
+        else:
+            right = guess - 1
+
+    return -1 
+
+target = "adf"
+names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene"])
+
+result = binary_search(names, target)
+if result != -1:
+    print("{} found at index {}".format(target, result))
+else:
+    print("{} not found in the list.".format(target))
