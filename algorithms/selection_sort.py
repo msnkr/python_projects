@@ -73,3 +73,17 @@
 # selection_sort(names)
 
 # print("Sorted names:", names)
+
+
+def selection_sort(arr):
+    for i in range(0, len(arr) -1): # Start at 0 and end at the - 1
+        idx = i # Give a variable
+
+        for j in range(i + 1, len(arr)):
+            if arr[idx] > arr[j]:
+                arr[idx], arr[j] = arr[j], arr[idx]
+
+
+arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
+selection_sort(arr)
+print(arr)
