@@ -4,7 +4,7 @@
 #         for j in range(i + 1, len(arr)):
 #             if arr[j] < arr[idx]:
 #                 idx = j
-                
+
 #         arr[i], arr[idx] = arr[idx], arr[i]
 
 # arr = [2, 6, 5, 1, 4]
@@ -20,7 +20,7 @@
 #         for j in range(i+1, len(arr)):
 #             if arr[min_idx] > arr[j]:
 #                 min_idx = j
-                
+
 #         # Swap the found minimum element with the first element of the 'unsorted' part of the array
 #         arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
@@ -28,7 +28,6 @@
 # arr = [64, 25, 12, 22, 11]
 # selection_sort(arr)
 # print ("Sorted array is:", arr)
-
 
 
 # def selection_sort(arr):
@@ -65,7 +64,7 @@
 
 #         for j in range(i + 1, len(arr)):
 #             if arr[idx] > arr[j]:
-                
+
 #                 arr[idx], arr[j] = arr[j], arr[idx]
 
 
@@ -76,12 +75,14 @@
 
 
 def selection_sort(arr):
-    for i in range(0, len(arr) -1): # Iterate over each element in the list except the last one
-        idx = i # Initialize the index of the smallest element
+    for i in range(0, len(arr) - 1):  # Iterate over each element in the list except the last one
+        idx = i  # Initialize the index of the smallest element
 
-        for j in range(i + 1, len(arr)): # Iterate over the rest of the list starting from the next element
-            if arr[idx] > arr[j]: # If the current element is smaller than the smallest found so far
-                arr[idx], arr[j] = arr[j], arr[idx] # Swap them
+        # Iterate over the rest of the list starting from the next element
+        for j in range(i + 1, len(arr)):
+            if arr[idx] > arr[j]:  # If the current element is smaller than the smallest found so far
+                arr[idx], arr[j] = arr[j], arr[idx]  # Swap them
+
 
 arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
 selection_sort(arr)
