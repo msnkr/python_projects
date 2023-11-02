@@ -76,13 +76,12 @@
 
 
 def selection_sort(arr):
-    for i in range(0, len(arr) -1): # Start at 0 and end at the - 1
-        idx = i # Give a variable
+    for i in range(0, len(arr) -1): # Iterate over each element in the list except the last one
+        idx = i # Initialize the index of the smallest element
 
-        for j in range(i + 1, len(arr)):
-            if arr[idx] > arr[j]:
-                arr[idx], arr[j] = arr[j], arr[idx]
-
+        for j in range(i + 1, len(arr)): # Iterate over the rest of the list starting from the next element
+            if arr[idx] > arr[j]: # If the current element is smaller than the smallest found so far
+                arr[idx], arr[j] = arr[j], arr[idx] # Swap them
 
 arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
 selection_sort(arr)
