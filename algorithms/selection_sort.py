@@ -56,3 +56,20 @@
 # arr = [64, 25, 12, 22, 11]
 # insertion_sort(arr)
 # print(arr)
+
+
+# def selection_sort(arr):
+#     for i in range(len(arr) - 1):
+#         idx = i
+
+
+#         for j in range(i + 1, len(arr)):
+#             if arr[idx] > arr[j]:
+                
+#                 arr[idx], arr[j] = arr[j], arr[idx]
+
+
+# names = ["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene"]
+# selection_sort(names)
+
+# print("Sorted names:", names)
