@@ -53,24 +53,53 @@
 #     print(f"Element {target} is not present in the array")
 
 
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
+# def binary_search(arr, target):
+#     low = 0
+#     high = len(arr) - 1
 
-    while left <= right:
-        mid = left + (left - right) // 2
+#     while low <= high:
+#         mid = (low + high) // 2
+#         guess = arr[mid]
+#         if guess == target:
+#             return mid
+#         if guess > target:
+#             high = mid - 1
+#         else:
+#             low = mid + 1
+#     return None
 
-        if arr[mid] == target:
-            print("target found in between" + arr[left] and arr[right])
+# arr = list(range(11))
+# target = 7
 
-        elif arr[mid] < target:
-            left = mid + 1
-            
-        else:
-            right = mid - 1
+# result = binary_search(arr, target)
+# print(result)
 
 
+# def binary_search(arr, target):
+#     low = 0
+#     high = len(arr) - 1
 
-target = "g"
-arr = ["c", "d", "b", "e", "g", "i"]
+#     while low <= high:
+#         mid = (low + high) - 1 // 2
 
-binary_search(arr, target)
+#         if arr[mid] == target:
+#             return mid
+        
+#         elif arr[mid] > target:
+#             high = mid - 1
+
+#         elif arr[mid] < target:
+#             low = mid + 1
+
+#     return None
+
+
+
+# arr = list(range(11))
+# target = 4
+
+# result = binary_search(arr, target)
+
+# print(result)
+
+
