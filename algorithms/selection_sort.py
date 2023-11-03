@@ -74,16 +74,30 @@
 # print("Sorted names:", names)
 
 
-def selection_sort(arr):
-    for i in range(0, len(arr) - 1):  # Iterate over each element in the list except the last one
-        idx = i  # Initialize the index of the smallest element
+# def selection_sort(arr):
+#     for i in range(0, len(arr) - 1):  # Iterate over each element in the list except the last one
+#         idx = i  # Initialize the index of the smallest element
 
-        # Iterate over the rest of the list starting from the next element
-        for j in range(i + 1, len(arr)):
-            if arr[idx] > arr[j]:  # If the current element is smaller than the smallest found so far
-                arr[idx], arr[j] = arr[j], arr[idx]  # Swap them
+#         # Iterate over the rest of the list starting from the next element
+#         for j in range(i + 1, len(arr)):
+#             if arr[idx] > arr[j]:  # If the current element is smaller than the smallest found so far
+#                 arr[idx], arr[j] = arr[j], arr[idx]  # Swap them
 
 
-arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
-selection_sort(arr)
-print(arr)
+# arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
+# selection_sort(arr)
+# print(arr)
+
+
+# def selection_sort(arr):
+#     for i in range(0, len(arr) - 1):
+#         idx = i
+
+#         for j in range(idx + 1, len(arr)):
+#             if arr[idx] > arr[j]:
+#                 arr[idx], arr[j] = arr[j], arr[idx]
+
+
+# arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
+# selection_sort(arr)
+# print(arr)

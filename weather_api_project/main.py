@@ -9,6 +9,8 @@ window.title("Weather API")
 window.geometry("600x400")
 
 
+
+
 window.mainloop()
 
 # key = "888fc6acf8d5a7a7b9e51209de4178cc"

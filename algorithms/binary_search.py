@@ -29,10 +29,10 @@
 
 #     while left <= right:
 #         mid = left + (right - left) // 2
-        
+
 #         if arr[mid] == target:
 #             return target
-        
+
 #         elif arr[mid] < target:
 #             left = mid + 1
 
@@ -40,7 +40,6 @@
 #             right = mid - 1
 
 #     return -1
-
 
 
 # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -84,7 +83,7 @@
 
 #         if arr[mid] == target:
 #             return mid
-        
+
 #         elif arr[mid] > target:
 #             high = mid - 1
 
@@ -92,7 +91,6 @@
 #             low = mid + 1
 
 #     return None
-
 
 
 # arr = list(range(11))
@@ -111,14 +109,14 @@
 
 #         if names[guess] == target:
 #             return guess
-        
+
 #         elif names[guess] < target:
 #             left = guess + 1
 
 #         else:
 #             right = guess - 1
 
-#     return -1 
+#     return -1
 
 # target = "Tim"
 # names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene"])
@@ -138,7 +136,7 @@
 
 #         if names[m] == target:
 #             return m
-        
+
 #         elif names[m] < target:
 #             l = m + 1
 
@@ -158,27 +156,86 @@
 #     print("{} not found in the list.".format(target))
 
 
+# def binary_search(names, target):
+#     left, right = 0, len(names) - 1 # left is beginning, right is end working backwards
 
-def binary_search(names, target):
-    left, right = 0, len(names) - 1 # left is beginning, right is end working backwards
+#     while left <= right: # Left is smaller or equal to right
+#         middle = (left + right) // 2 # Get the middle index
 
-    while left <= right: # Left is smaller or equal to right
-        middle = (left + right) // 2 # Get the middle index
+#         if names[middle] == target:
+#             return middle
 
-        if names[middle] == target:
-            return middle 
-        
-        elif names[middle] < target: # Smaller than target
-            left = middle + 1 # Pickup left by 1
+#         elif names[middle] < target: # Smaller than target
+#             left = middle + 1 # Pickup left by 1
 
-        elif names[middle] > target: # greater than the target
-            right = middle - 1 # Minus right by 1
+#         elif names[middle] > target: # greater than the target
+#             right = middle - 1 # Minus right by 1
 
-    return -1 # If nothing. Return - 1
+#     return -1 # If nothing. Return - 1
 
-target = "Kashia"
-names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene", "Mikyle", "Kashia", "Fourie"]) # Must be a sorted list
+# target = "Kashia"
+# names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene", "Mikyle", "Kashia", "Fourie"]) # Must be a sorted list
 
+# result = binary_search(names, target)
+# if result != -1:
+#     print("{} found at index {}".format(target, result))
+# else:
+#     print("{} not found in the list.".format(target))
+
+
+# def binary_search(arr, target):
+#     left, right = 0, len(arr) - 1
+
+#     while left <= right:
+#         mid = (left + right) // 2
+
+#         if arr[mid] == target:
+#             return mid
+
+#         elif arr[mid] < target:
+#             left = mid + 1
+
+#         elif arr[mid] > target:
+#             right = mid - 1
+
+#     return -1
+
+
+# target = "Kashia"
+# names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene",
+#                "Mikyle", "Kashia", "Fourie"])  # Must be a sorted list
+
+# print(names)
+# result = binary_search(names, target)
+# if result != -1:
+#     print("{} found at index {}".format(target, result))
+# else:
+#     print("{} not found in the list.".format(target))
+
+
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if arr[mid] == target:
+            return mid
+
+        elif arr[mid] < target:
+            left = mid + 1
+
+        elif arr[mid] > target:
+            right = mid - 1
+
+    return -1
+
+
+target = "Mikyle"
+names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene",
+               "Mikyle", "Kashia", "Fourie"])  # Must be a sorted list
+
+print(names)
 result = binary_search(names, target)
 if result != -1:
     print("{} found at index {}".format(target, result))
