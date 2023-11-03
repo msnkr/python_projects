@@ -13,15 +13,13 @@ if req.ok:
 
     temp, weather_description = math.floor(
         response["main"]["temp"] / 10), response["weather"][0]["main"]
-    icon_bitmap = response['weather'][0]['icon']
-    icon = f"https://openweathermap.org/img/wn/{icon_bitmap}@2x.png"
 
 
 window = Tk()
 window.config(padx=10, pady=30)
 
 window.title("Weather API")
-window.geometry("600x400")
+window.geometry("600x200")
 
 
 country_label = Label(window, text="Weather for Johannesburg")
@@ -36,6 +34,5 @@ weather_label.config(font=("Arial", 22, "bold"))
 description_label = Label(window, text=weather_description)
 description_label.pack()
 description_label.config(font=("Arial", 22, "bold"))
-
 
 window.mainloop()
