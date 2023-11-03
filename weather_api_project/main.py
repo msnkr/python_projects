@@ -12,10 +12,8 @@ if req.ok:
 
     temp, weather_description = math.floor(
         response["main"]["temp"] / 10), response["weather"][0]["main"]
-
     icon_bitmap = response['weather'][0]['icon']
-
-    icon = f"https://openweathermap.org/img/wn/{icon_bitmap}.png"
+    icon = f"https://openweathermap.org/img/wn/{icon_bitmap}@2x.png"
 
 
 window = Tk()
@@ -24,7 +22,6 @@ window = Tk()
 window.title("Weather API")
 window.geometry("600x400")
 
-window.iconbitmap(icon)
 
 country_label = Label(window, text="Weather for Johannesburg")
 country_label.pack()
@@ -39,5 +36,8 @@ description_label.pack()
 
 canvas = Canvas(window, width=300, height=200, background="white")
 canvas.pack()
+
+image = PhotoImage(icon)
+canvas.create_image(100, 100, image)
 
 window.mainloop()
