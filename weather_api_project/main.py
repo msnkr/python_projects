@@ -37,7 +37,5 @@ description_label.pack()
 canvas = Canvas(window, width=300, height=200, background="white")
 canvas.pack()
 
-image = PhotoImage(icon)
-canvas.create_image(100, 100, image)
 
 window.mainloop()
