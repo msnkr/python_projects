@@ -1,7 +1,8 @@
 import math
 from tkinter import *
 import requests
-
+from PIL import Image, ImageTk
+from io import BytesIO
 
 key = "888fc6acf8d5a7a7b9e51209de4178cc"
 req = requests.get(
@@ -17,7 +18,7 @@ if req.ok:
 
 
 window = Tk()
-
+window.config(padx=10, pady=30)
 
 window.title("Weather API")
 window.geometry("600x400")
@@ -30,12 +31,11 @@ country_label.config(font=("Arial", 22, "bold"))
 
 weather_label = Label(window, text="{}C".format(temp))
 weather_label.pack()
+weather_label.config(font=("Arial", 22, "bold"))
 
 description_label = Label(window, text=weather_description)
 description_label.pack()
-
-canvas = Canvas(window, width=300, height=200, background="white")
-canvas.pack()
+description_label.config(font=("Arial", 22, "bold"))
 
 
 window.mainloop()
