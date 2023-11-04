@@ -1,12 +1,19 @@
-import keyboard
+from tkinter import *
 import faker
 
-# Display a list of random words
-# Get user input
-# compare the two
-# Find a way to calculate words per minute
 
 fake = faker.Faker()
-word_lst = " ".join([fake.word().lower() for _ in range(20)])
 
-print(word_lst)
+def word_list():
+    return " ".join([fake.word().lower() for _ in range(20)])
+
+
+
+
+
+# Create app using tkinter
+# When click start
+# Show words on left, your typing on right
+# Countdown timer for 30 seconds
+# When 30 secodns are up, count all the correct words and compare.
+# Find out how to get words per minute
