@@ -9,6 +9,12 @@ def get_text():
     words = text_to_copy
     typed_words = canvas_type.get("1.0", "end")
 
+    total_chars = 0
+    for word in words.split():
+        for typed_word in typed_words.split():
+            if word == typed_word:
+                total_chars += len(typed_word)
+
 
 def countdown_timer(count):
     count -= 1
@@ -17,6 +23,7 @@ def countdown_timer(count):
 
     if count == 0:
         window.after_cancel(timer_seconds)
+        canvas_type.configure(state=DISABLED)
         get_text()
 
 
@@ -61,6 +68,7 @@ canvas_type.grid(row=1, column=2)
 canvas_type = Text(canvas_type, width=40, height=10, padx=20, pady=20)
 canvas_type.grid(row=1, column=0)
 canvas_type.insert(END, "")
+
 
 window.mainloop()
 
