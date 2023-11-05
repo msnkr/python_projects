@@ -1256,7 +1256,6 @@
 # print("Dencrypted data: {}".format(decrypted_data))
 
 
-
 # class CarRental():
 #     def __init__(self, color, make, model, rental_rate, available):
 #         self.color = color
@@ -1283,3 +1282,28 @@
 
 # car1 = RentalTransaction(vw, mikyle)
 
+from tkinter import *
+
+
+window = Tk()
+
+
+def timer(seconds):
+    seconds -= 1
+    window.after(1000, timer, seconds)
+
+    print(seconds)
+
+
+def start():
+    timer(30)
+
+
+text = Label(window, text="test")
+text.pack()
+
+button = Button(window, text="Start", command=start)
+button.pack()
+
+
+window.mainloop()
