@@ -101,3 +101,17 @@
 # arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
 # selection_sort(arr)
 # print(arr)
+
+
+# def selection_sort(arr):
+#     for i in range(0, len(arr) - 1):
+#         idx = i
+
+#         for j in range(i + 1, len(arr)):
+#             if arr[j] < arr[idx]:
+#                 arr[idx], arr[j] = arr[j], arr[idx]
+
+
+# arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
+# selection_sort(arr)
+# print(arr)
