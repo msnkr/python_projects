@@ -1,4 +1,5 @@
 from tkinter import *
+import math
 import faker
 
 
@@ -15,6 +16,8 @@ def get_text():
             if word == typed_word:
                 total_chars += len(typed_word)
 
+    wpm_text.config(text=math.floor(total_chars / 5))
+
 
 def countdown_timer(count):
     count -= 1
@@ -29,7 +32,7 @@ def countdown_timer(count):
 
 def start():
     canvas_text.insert(END, text_to_copy)
-    countdown_timer(10)
+    countdown_timer(30)
 
 
 def word_list():
@@ -69,8 +72,9 @@ canvas_type = Text(canvas_type, width=40, height=10, padx=20, pady=20)
 canvas_type.grid(row=1, column=0)
 canvas_type.insert(END, "")
 
+wpm_text = Label(window, text=0)
+wpm_text.grid(row=2, column=1)
+wpm_text.config(bg="darkgrey", font=("Arial", 22, "bold"))
+
 
 window.mainloop()
-
-
-# Press start button should start the timer, should bring up the text to type also
