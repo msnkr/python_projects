@@ -390,8 +390,13 @@
 
 def high(x):
     # Code here
-    alphabet = [n for n in range(1, 27)]
-    pass
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+    score = 0
+    total_score = 0
+    for word in x.split():
+        for letter in word:
+            score += alphabet.index(letter) + 1
 
 
 high("man i need a taxi up to ubud")
