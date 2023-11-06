@@ -392,11 +392,19 @@ def high(x):
     # Code here
     alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    score = 0
-    total_score = 0
+    score, total_score = 0, 0
+    largest_word = ""
     for word in x.split():
         for letter in word:
             score += alphabet.index(letter) + 1
+
+        if score > total_score:
+            total_score = score
+            largest_word = word
+
+        score = 0
+
+    return largest_word
 
 
 high("man i need a taxi up to ubud")
