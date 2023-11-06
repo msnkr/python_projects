@@ -104,7 +104,6 @@
 # print(find_it(seq))
 
 
-
 # x = ["Ryan", "Kieran", "Mark",]
 
 
@@ -256,19 +255,19 @@
 
 # def solution(s):
 #     pass
-        
+
 # solution('asdfads')
 
 
 # def capitals(word):
-    # for index, x in enumerate(word):
-    #     if x == x.upper():
-    #         new_list.append(index)
+# for index, x in enumerate(word):
+#     if x == x.upper():
+#         new_list.append(index)
 
-    # return new_list
-    # return [index for index, x in enumerate(word)  if x == x.upper()]
+# return new_list
+# return [index for index, x in enumerate(word)  if x == x.upper()]
 
-   
+
 # print(capitals("CodEWaRs"))
 
 
@@ -339,7 +338,7 @@
 #                 sentence += "{} ".format(word)
 
 #     return sentence.strip()
-    
+
 # print(order(sentence))
 
 
@@ -356,7 +355,6 @@
 #   return " ".join(sorted(sentence.split(), key=min))
 
 
-
 # fruits = ["banana4", "3apple", "ora1nge", "mang4o", "gua2va"]
 
 # print(" ".join(sorted(fruits, key=min)))
@@ -370,14 +368,14 @@
 
 # duplicate_count("aabbccc")
 
-# def explode(arr):  
+# def explode(arr):
 #     x = [x for x in arr if isinstance(x, int)]
 #     return ["Void!" if x == [] else [arr] * sum(x)]
 
 # print(explode(["a", 3]))
 
 
-# def explode(arr):  
+# def explode(arr):
 #     x = [x for x in arr if isinstance(x, int)]
 #     return [arr] * sum(x) if x else "Void!"
 
@@ -389,3 +387,11 @@
 #     pass
 
 # find_outlier([2, 4, 0, 100, 4, 11, 2602, 36])
+
+def high(x):
+    # Code here
+    alphabet = [n for n in range(1, 27)]
+    pass
+
+
+high("man i need a taxi up to ubud")
