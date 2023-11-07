@@ -449,8 +449,18 @@
 # print(monkey_count(5))
 
 
-def stray(arr):
-    pass
+# def stray(arr):
+#     return [num for num in arr if arr.count(num) == 1][0]
 
 
-print(stray([1, 1, 1, 1, 1, 1, 2]))
+# print(stray([1, 1, 1, 1, 1, 1, 2]))
+
+
+def duplicate_name(arr):
+    for name in arr:
+        if arr.count(name) == 1:
+            return name
+
+
+print(duplicate_name(["mikyle", "mikyle", "mikyle",
+      "mikyle", "mikyle", "mikyle", "Lara"]))
