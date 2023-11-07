@@ -456,11 +456,19 @@
 # print(stray([1, 1, 1, 1, 1, 1, 2]))
 
 
-def duplicate_name(arr):
-    for name in arr:
-        if arr.count(name) == 1:
-            return name
+# def duplicate_name(arr):
+#     for name in arr:
+#         if arr.count(name) == 1:
+#             return name
 
 
-print(duplicate_name(["mikyle", "mikyle", "mikyle",
-      "mikyle", "mikyle", "mikyle", "Lara"]))
+# print(duplicate_name(["mikyle", "mikyle", "mikyle",
+#       "mikyle", "mikyle", "mikyle", "Lara"]))
+
+
+def accum(s):
+    # your code
+    pass
+
+
+print(accum("abcd"))
