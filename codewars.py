@@ -416,20 +416,41 @@
 
 # print(litres(1787))
 
-def unique_in_order(sequence):
-    i = 0
-    j = 1
-    k = []
+# def unique_in_order(sequence):
+#     i = 0
+#     j = 1
+#     k = []
 
-    if len(sequence) > 1:
-        while j < len(sequence):
-            if sequence[i] != sequence[j]:
-                k.append(sequence[i])
-            i += 1
-            j += 1
+#     if len(sequence) > 1:
+#         while j < len(sequence):
+#             if sequence[i] != sequence[j]:
+#                 k.append(sequence[i])
+#             i += 1
+#             j += 1
 
-        k.append(sequence[j - 1])
-    return k
+#         k.append(sequence[j - 1])
+#     return k
 
 
-print(unique_in_order('ABBCcAD'))
+# print(unique_in_order('ABBCcAD'))
+
+
+# def reverse_words(s):
+#     return "".join([word for word in s.split()[::-1]])
+
+
+# print(reverse_words("The greatest victory is that which requires no battle"))
+
+# def monkey_count(n):
+#     # your code here
+#     return list(range(1, n + 1))
+
+
+# print(monkey_count(5))
+
+
+def stray(arr):
+    pass
+
+
+print(stray([1, 1, 1, 1, 1, 1, 2]))
