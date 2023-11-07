@@ -388,23 +388,47 @@
 
 # find_outlier([2, 4, 0, 100, 4, 11, 2602, 36])
 
-def high(x):
-    # Code here
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+# def high(x):
+#     # Code here
+#     alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    score, total_score = 0, 0
-    largest_word = ""
-    for word in x.split():
-        for letter in word:
-            score += alphabet.index(letter) + 1
+#     score, total_score = 0, 0
+#     largest_word = ""
+#     for word in x.split():
+#         for letter in word:
+#             score += alphabet.index(letter) + 1
 
-        if score > total_score:
-            total_score = score
-            largest_word = word
+#         if score > total_score:
+#             total_score = score
+#             largest_word = word
 
-        score = 0
+#         score = 0
 
-    return largest_word
+#     return largest_word
 
 
-high("man i need a taxi up to ubud")
+# high("man i need a taxi up to ubud")
+
+
+# def litres(time):
+#     return time // 2
+
+
+# print(litres(1787))
+
+def unique_in_order(sequence):
+    i = 0
+    j = 1
+    k = []
+
+    if len(sequence) > 1:
+        while j != len(sequence):
+            if sequence[i] != sequence[j]:
+                k.append(sequence[i])
+            i += 1
+            j += 1
+
+    return k
+
+
+print(unique_in_order('ABBCcAD'))
