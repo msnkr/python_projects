@@ -422,12 +422,13 @@ def unique_in_order(sequence):
     k = []
 
     if len(sequence) > 1:
-        while j != len(sequence):
+        while j < len(sequence):
             if sequence[i] != sequence[j]:
                 k.append(sequence[i])
             i += 1
             j += 1
 
+        k.append(sequence[j - 1])
     return k
 
 
