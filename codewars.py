@@ -479,8 +479,15 @@
 
 ######################## Solution #####################
 
-def accum(s):
-    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
+# def accum(s):
+#     return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
 
 
-print(accum("abcd"))
+# print(accum("abcd"))
+
+
+def find_short(s):
+    print(len(s.split()))
+
+
+print(find_short("bitcoin take over the world maybe who knows perhaps"))
