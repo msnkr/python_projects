@@ -1282,28 +1282,38 @@
 
 # car1 = RentalTransaction(vw, mikyle)
 
-from tkinter import *
+# from tkinter import *
 
 
-window = Tk()
+# window = Tk()
 
 
-def timer(seconds):
-    seconds -= 1
-    window.after(1000, timer, seconds)
+# def timer(seconds):
+#     seconds -= 1
+#     window.after(1000, timer, seconds)
 
-    print(seconds)
-
-
-def start():
-    timer(30)
+#     print(seconds)
 
 
-text = Label(window, text="test")
-text.pack()
-
-button = Button(window, text="Start", command=start)
-button.pack()
+# def start():
+#     timer(30)
 
 
-window.mainloop()
+# text = Label(window, text="test")
+# text.pack()
+
+# button = Button(window, text="Start", command=start)
+# button.pack()
+
+
+# window.mainloop()
+
+
+# def find_one(arr):
+#     for x in arr:
+#         if arr.count(x) == 1:
+#             print(x)
+
+
+# arr = [1, 1, 2, 3, 3, 4, 4, 8, 8]
+# find_one(arr)
