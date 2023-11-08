@@ -466,9 +466,21 @@
 #       "mikyle", "mikyle", "mikyle", "Lara"]))
 
 
+# def accum(s):
+#     accu = 0
+#     results = ""
+#     for x in s:
+#         accu += 1
+#         result = "{}-".format(x *
+#                               accu) if accu < len(s) else "{}".format(x * accu)
+#         results += result.capitalize()
+
+#     return results
+
+######################## Solution #####################
+
 def accum(s):
-    # your code
-    pass
+    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
 
 
 print(accum("abcd"))
