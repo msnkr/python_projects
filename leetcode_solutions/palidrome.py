@@ -24,24 +24,22 @@
 # print(isPalindrome(23423423423423423))
 
 
-# def palindromeCheck(x):
+def palindrome(x):
 
-#     if x < 0:
-#         return False
-#     if x == 0:
-#         return True
+    if x < 0:
+        return False
 
-#     x = str(x)
+    str_x = str(x)
+    left, right = 0, len(str_x) - 1
 
-#     left, right = 0, len(x) - 1
-#     while left < right:
-#         if x[left] != x[right]:
-#             return False
+    while left < right:
+        if str_x[left] != str_x[right]:
+            return False
 
-#         left += 1
-#         right -= 1
+        left += 1
+        right -= 1
 
-#     return True
+    return True
 
 
-# print(palindromeCheck(121))
+print(palindrome(23232323231))
