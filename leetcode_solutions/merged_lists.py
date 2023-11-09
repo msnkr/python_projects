@@ -47,3 +47,22 @@
 # list1, list2 = [1, 2, 4], [1, 3, 4]
 # results = merged_lists(list1, list2)
 # print(results)
+
+
+def merged_lists(arr1, arr2):
+    merged_list = []
+
+    while arr1 and arr2:
+        if arr1[0] < arr2[0]:
+            merged_list.append(arr1.pop(0))
+        else:
+            merged_list.append(arr2.pop(0))
+
+    merged_list.extend(arr1 if arr1 else arr2)
+
+    return merged_list
+
+
+list1, list2 = [1, 2, 4], [1, 3, 4]
+results = merged_lists(list1, list2)
+print(results)
