@@ -47,3 +47,24 @@
 # nums = [3, 1, 1, 3, 4, 1, 1, 2, 4]
 # result = majorityElement(nums)
 # print("The majority element is:", result)
+
+
+# def majorityElement(arr):
+#     count = 1
+#     majority_element = arr[0]
+
+#     for x in range(1, len(arr)):
+#         if count == 0:
+#             majority_element = arr[x]
+#             count = 1
+#         elif majority_element == arr[x]:
+#             count += 1
+#         else:
+#             count -= 1
+
+#     return majority_element
+
+
+# nums = [3, 1, 1, 3, 4, 1, 1, 2, 4]
+# result = majorityElement(nums)
+# print("The majority element is:", result)
