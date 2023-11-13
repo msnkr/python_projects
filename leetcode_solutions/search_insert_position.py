@@ -3,7 +3,7 @@
 def search_position(arr, target):
     left, right = 0, len(arr) - 1
 
-    while left <= right: # Don't forget the 
+    while left <= right:  # Don't forget the = sign to make sure it goes to the end in case the index is right in front
         mid = (left + right) // 2
 
         if arr[mid] == target:
