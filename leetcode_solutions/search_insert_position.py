@@ -3,19 +3,19 @@
 def search_position(arr, target):
     left, right = 0, len(arr) - 1
 
-    for x in arr:
-        idx = arr[target]
+    while left < right:
+        mid = (left + right) // 2
 
-        if arr[idx] == target:
-            return arr[idx]
+        if arr[mid] == target:
+            return mid
 
-        elif arr[idx] < target:
-            left = arr[target] + 1
+        elif arr[mid] < target:
+            left = mid + 1
 
         else:
-            right = arr[target] - 1
+            right = mid - 1
 
-    return 1
+    return -1
 
 
 arr, target = [1, 3, 5, 6], 5
