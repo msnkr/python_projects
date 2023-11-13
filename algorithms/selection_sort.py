@@ -115,3 +115,12 @@
 # arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
 # selection_sort(arr)
 # print(arr)
+
+
+def selection_sort(arr):
+    pass
+
+
+arr = [5, 6, 1, 4, 2, 9, 0, 3, 8, 7]
+selection_sort(arr)
+print(arr)
