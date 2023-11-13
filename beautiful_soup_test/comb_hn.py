@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+from termcolor import colored
 
 
 def comb_hn(url):
@@ -23,8 +24,8 @@ def comb_hn(url):
             links = text[count].a["href"]
 
             if int_current_score > 200:
-                print("{} with {} points: {}".format(
-                    current_text, int_current_score, links))
+                print("{} {} points: {}".format(
+                    current_text, colored(int_current_score, "green"), links))
 
             count += 1
 
