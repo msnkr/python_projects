@@ -3,7 +3,7 @@
 def search_position(arr, target):
     left, right = 0, len(arr) - 1
 
-    while left < right:
+    while left <= right: # Don't forget the 
         mid = (left + right) // 2
 
         if arr[mid] == target:
@@ -15,9 +15,15 @@ def search_position(arr, target):
         else:
             right = mid - 1
 
-    return -1
+    return None
 
 
-arr, target = [1, 3, 5, 6], 5
+arr = sorted(["test", "test", "test", "test", "name", "test", "test"])
+target = "name"
+
 result = search_position(arr, target)
-print(result)
+
+if result != None:
+    print(result)
+else:
+    print("Target not found")
