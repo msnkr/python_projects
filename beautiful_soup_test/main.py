@@ -1,27 +1,37 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = "https://news.ycombinator.com/"
-res = requests.get(url)
 
-hacker_dict = {}
+def comb_hn(url):
+    res = requests.get(url)
 
-if res.ok:
-    url_response = res.text
+    if res.ok:
+        url_response = res.text
 
-    soup = BeautifulSoup(url_response, "html.parser")
+        soup = BeautifulSoup(url_response, "html.parser")
 
-    text = soup.find_all(class_="titleline")
-    score = soup.find_all(class_="score")
+        text = soup.find_all(class_="titleline")
+        score = soup.find_all(class_="score")
 
-    count = 0
+        count = 0
 
-    for x in range(len(score)):
-        current_text = text[count].a.text
-        str_current_score = score[count].text
-        int_current_score = int(str_current_score.split(" ")[0])
+        for x in range(len(score)):
+            current_text = text[count].a.text
+            str_current_score = score[count].text
+            int_current_score = int(str_current_score.split(" ")[0])
 
-        if int_current_score > 50:
-            print("{} with {} points".format(current_text, int_current_score))
+            links = text[count].a["href"]
 
-        count += 1
+            if int_current_score > 200:
+                print("{} with {} points: {}".format(
+                    current_text, int_current_score, links))
+
+            count += 1
+
+
+page = 1
+
+while page < 10:
+    url = "https://news.ycombinator.com/?p={}".format(page)
+    comb_hn(url)
+    page += 1
