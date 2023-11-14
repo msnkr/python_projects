@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-# from termcolor import colored
+from termcolor import colored
 
 
 url = requests.get("https://www.gumtree.co.za/s-all-the-ads/v1b0p1?q=python")
@@ -19,4 +19,5 @@ if url.ok:
             "div", class_="description")
 
         for description in job_description_text:
+            print(colored(job_title, "green"))
             print(description.text)
