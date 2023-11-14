@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from termcolor import colored
+# from termcolor import colored
 
 
 url = requests.get("https://www.gumtree.co.za/s-all-the-ads/v1b0p1?q=python")
@@ -19,8 +19,4 @@ if url.ok:
             "div", class_="description")
 
         for description in job_description_text:
-            job_description_text_1 = soup.find("span")
-
-            job_description_text_2 = soup.find("p")
-
-            print(job_description_text_2.text)
+            print(description.text)
