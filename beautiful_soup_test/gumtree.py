@@ -3,21 +3,29 @@ from bs4 import BeautifulSoup
 from termcolor import colored
 
 
-url = requests.get("https://www.gumtree.co.za/s-all-the-ads/v1b0p1?q=python")
+description = input("What job you looking for?: ")
+
+url = requests.get(
+    "https://www.gumtree.co.za/s-jobs/full+time/v1c8a1jtp1?q={}".format(description.replace(" ", "+")))
+
 if url.ok:
     soup = BeautifulSoup(url.content, "html.parser")
-    job_url = soup.find_all("a", class_="related-ad-title")
+    job_urls = soup.find_all("a", class_="related-ad-title")
 
-    for url in job_url:
-        job_title = url.text
-        job_href = soup.find("a", class_="related-ad-title").get("href")
+    for job_url in job_urls:
+        job_title = job_url.text
+        job_href = job_url.get("href")
 
         new_url = requests.get("https://www.gumtree.co.za{}".format(job_href))
-        job_description = BeautifulSoup(new_url.content, "html.parser")
-
-        job_description_text = job_description.find_all(
+        job_description_soup = BeautifulSoup(new_url.content, "html.parser")
+        job_description = job_description_soup.find(
             "div", class_="description")
 
-        for description in job_description_text:
+        try:
             print(colored(job_title, "green"))
-            print(description.text)
+            print(colored("https://www.gumtree.co.za{}".format(job_href), "light_cyan"))
+            print(job_description.text)
+            print("="*50)
+        except AttributeError as err:
+            print(colored("No description available", "red"))
+            print("="*50)
