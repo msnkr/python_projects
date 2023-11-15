@@ -7,6 +7,7 @@ def climbStairs(n):
     # We create a list 'ways' of size 'n+1' to store the number of ways to reach each step.
     # The index 'i' in the list represents the 'i-th' step.
     ways = [0] * (n+1)
+    print(ways)
 
     # There is only one way to reach the first step (by taking one step), so we set ways[0] = 1.
     ways[0] = 1
@@ -24,5 +25,5 @@ def climbStairs(n):
     return ways[n]
 
 
-result = climbStairs(5)
+result = climbStairs(3)
 print(result)

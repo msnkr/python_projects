@@ -1319,34 +1319,44 @@
 # find_one(arr)
 
 
-class Employee:
+# class Employee:
 
-    num_of_employees = 0
-    raise_amount = 1.04
+#     num_of_employees = 0
+#     raise_amount = 1.04
 
-    def __init__(self, first, last):
-        self.first = first
-        self.last = last
-        self.pay = 1000000
-        self.email = "{}{}@company.com".format(self.first, self.last)
+#     def __init__(self, first, last):
+#         self.first = first
+#         self.last = last
+#         self.pay = 1000000
+#         self.email = "{}{}@company.com".format(self.first, self.last)
 
-        Employee.num_of_employees += 1
+#         Employee.num_of_employees += 1
 
-    def fullname(self):
-        return "{} {}".format(self.first, self.last)
+#     def fullname(self):
+#         return "{} {}".format(self.first, self.last)
 
-    def apply_raise(self):
-        self.pay = int(self.pay * self.raise_amount)
+#     def apply_raise(self):
+#         self.pay = int(self.pay * self.raise_amount)
 
-    @classmethod
-    def set_raise_amount(cls, amount):
-        cls.raise_amount = amount
+#     @classmethod
+#     def set_raise_amount(cls, amount):
+#         cls.raise_amount = amount
 
 
-Employee.set_raise_amount(1.05)
+# Employee.set_raise_amount(1.05)
 
-emp_1 = Employee("Mikyle", "Kruger")
-emp_2 = Employee("Test", "User")
+# emp_1 = Employee("Mikyle", "Kruger")
+# emp_2 = Employee("Test", "User")
 
-print(emp_1.raise_amount)
-print(emp_2.raise_amount)
+# print(emp_1.raise_amount)
+# print(emp_2.raise_amount)
+
+
+# XOR
+
+a = 5
+b = 3
+
+result = a ^ b
+
+print(result)
