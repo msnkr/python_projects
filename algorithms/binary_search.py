@@ -270,29 +270,38 @@
 # else:
 #     print("{} not found in the list.".format(target))
 
+# target = "Mikyle"
+# names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene",
+#                "Mikyle", "Kashia", "Fourie"])  # Must be a sorted list
 
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
-
-    while left <= right:
-        mid = (left + right) // 2
-
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] > target:
-            right = mid - 1
-        else:
-            left = mid + 1
-
-    return -1
+# result = binary_search(names, target)
+# if result != -1:
+#     print("{} found at index {}".format(target, result))
+# else:
+#     print("{} not found in the list.".format(target))
 
 
-target = "Mikyle"
-names = sorted(["Tim", "John", "Snow", "KD", "Lara", "Mo", "Selene",
-               "Mikyle", "Kashia", "Fourie"])  # Must be a sorted list
+# def binary_search(arr, target):
+#     left, right = 0, len(arr) - 1
 
-result = binary_search(names, target)
-if result != -1:
-    print("{} found at index {}".format(target, result))
-else:
-    print("{} not found in the list.".format(target))
+#     while left <= right:
+#         mid = (left + right) // 2
+
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             left = mid + 1
+#         else:
+#             right = mid - 1
+
+#     return - 1
+
+
+# target = 5
+# arr = [1, 3, 4, 5, 5, 6, 7, 8, 9, 9]  # Must be a sorted list
+
+# result = binary_search(arr, target)
+# if result != -1:
+#     print("{} found at index {}".format(target, result))
+# else:
+#     print("{} not found in the list.".format(target))
