@@ -306,9 +306,13 @@
 
 
 # def array_diff(a, b):
-#     pass
+#     if len(a) and len(b):
+#         return [x for x in a if x != b[0]]
+#     return []
 
-# print(array_diff([1,2,2,2,3],[2]))
+
+# results = array_diff([1, 2], [])
+# print(results)
 
 
 # def remove_url_anchor(url):
@@ -360,26 +364,26 @@
 # print(" ".join(sorted(fruits, key=min)))
 
 
-def duplicate_count(text):
-    text = text.lower()
-    count = 0
+# def duplicate_count(text):
+#     text = text.lower()
+#     count = 0
 
-    if len(text) > 1:
-        i = 0
-        j = 1
+#     if len(text) > 1:
+#         i = 0
+#         j = 1
 
-        while j != len(text):
-            if text[i] == text[j]:
-                count += 1
+#         while j != len(text):
+#             if text[i] == text[j]:
+#                 count += 1
 
-            j += 1
-            i += 1
+#             j += 1
+#             i += 1
 
-    return count
+#     return count
 
 
-result = duplicate_count("Indivisibilities")
-print(result)
+# result = duplicate_count("Indivisibilities")
+# print(result)
 
 # def explode(arr):
 #     x = [x for x in arr if isinstance(x, int)]
