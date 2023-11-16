@@ -360,13 +360,26 @@
 # print(" ".join(sorted(fruits, key=min)))
 
 
-# def duplicate_count(text):
-#     for x in text.lower():
-#         letters = text.find(x)
+def duplicate_count(text):
+    text = text.lower()
+    count = 0
 
-#     print(letters)
+    if len(text) > 1:
+        i = 0
+        j = 1
 
-# duplicate_count("aabbccc")
+        while j != len(text):
+            if text[i] == text[j]:
+                count += 1
+
+            j += 1
+            i += 1
+
+    return count
+
+
+result = duplicate_count("Indivisibilities")
+print(result)
 
 # def explode(arr):
 #     x = [x for x in arr if isinstance(x, int)]
@@ -416,23 +429,23 @@
 
 # print(litres(1787))
 
-def unique_in_order(sequence):
-    i = 0
-    j = 1
-    k = []
+# def unique_in_order(sequence):
+#     i = 0
+#     j = 1
+#     k = []
 
-    if len(sequence) >= 1:
-        while j < len(sequence):
-            if sequence[i] != sequence[j]:
-                k.append(sequence[i])
-            i += 1
-            j += 1
+#     if len(sequence) >= 1:
+#         while j < len(sequence):
+#             if sequence[i] != sequence[j]:
+#                 k.append(sequence[i])
+#             i += 1
+#             j += 1
 
-        k.append(sequence[j - 1])
-    return k
+#         k.append(sequence[j - 1])
+#     return k
 
 
-print(unique_in_order('ABBCcAD'))
+# print(unique_in_order('ABBCcAD'))
 
 
 # def reverse_words(s):
