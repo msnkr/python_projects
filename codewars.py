@@ -305,14 +305,23 @@
 # print(likes(["Jacob", "Mark", "Steve", "Lara"]))
 
 
-# def array_diff(a, b):
-#     if len(a) and len(b):
-#         return [x for x in a if x != b[0]]
-#     return []
+def array_diff(a, b):
+    if len(b):
+        for x in b:
+            a.remove(x) 
+        return a
+    return a
 
 
-# results = array_diff([1, 2], [])
-# print(results)
+results = array_diff([1, 2, 2, 3], [2])
+print(results)
+
+# loop through list b, remove items from list a?
+
+
+# Need to remove all items if they appear in list b from list a
+# Points
+# Get better
 
 
 # def remove_url_anchor(url):
