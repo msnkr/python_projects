@@ -305,18 +305,25 @@
 # print(likes(["Jacob", "Mark", "Steve", "Lara"]))
 
 
-def array_diff(a, b):
-    if len(b):
-        for x in b:
-            a.remove(x) 
-        return a
-    return a
+# def array_diff(a, b):
+#     if len(b):
+#         return [a[x] for x in range(len(a)) if a[x] not in b]
+#     return a
 
 
-results = array_diff([1, 2, 2, 3], [2])
-print(results)
+# BETTER SOLUTION
+
+# def array_diff(a, b):
+#     return [x for x in a if x not in b]
+
+
+# results = array_diff([], [1, 2])
+# print(results)
+
+#
 
 # loop through list b, remove items from list a?
+# Index of all 2 items, pop at index?
 
 
 # Need to remove all items if they appear in list b from list a
