@@ -527,16 +527,7 @@
 
 
 def highest_rank(arr):
-    highest = []
-    count = 0
-    for x in arr:
-        count_x = arr.count(x)
-
-        if count_x >= count:
-            count = count_x
-            highest.append(x)
-
-    return highest
+    pass
 
 
 results = highest_rank([12, 10, 8, 12, 7, 6, 4, 10, 10])
