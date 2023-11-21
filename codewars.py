@@ -524,3 +524,24 @@
 
 
 # print(find_short("bitcoin take over the world maybe who knows perhaps"))
+
+
+def highest_rank(arr):
+    highest = []
+    count = 0
+    for x in arr:
+        count_x = arr.count(x)
+
+        if count_x >= count:
+            count = count_x
+            highest.append(x)
+
+    return highest
+
+
+results = highest_rank([12, 10, 8, 12, 7, 6, 4, 10, 10])
+print(results)
+
+
+# Return the most frequent numbers
+# If there is a tie, return the highest number
