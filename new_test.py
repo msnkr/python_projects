@@ -1367,3 +1367,7 @@ import sys
 import time
 
 
+for x in itertools.cycle(["--", "//", "||", "\\"]):
+    sys.stdout.write("\r" + x)
+    sys.stdout.flush()
+    time.sleep(0.1)
