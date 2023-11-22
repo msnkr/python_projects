@@ -1354,9 +1354,16 @@
 
 # XOR
 
-a = 5
-b = 3
+# a = 5
+# b = 3
 
-result = a ^ b
+# result = a ^ b
 
-print(result)
+# print(result)
+
+
+import itertools
+import sys
+import time
+
+

@@ -1,11 +1,18 @@
 import requests
 import json
 import sys
-import itertools
 import time
-import os
+import itertools
 from termcolor import colored
 
+
+def animation():
+    while not response_recieved.is_set():
+        for x in itertools.cycle(["--", "//", "||", "\\"]):
+            sys.stdout.write("\r" + x)
+            sys.stdout.flush()
+            time.sleep(0.1)
+    
 
 def get_key():
     with open("simple_chatgpt\key.json")as json_data:
@@ -37,7 +44,6 @@ def main():
         print(response_data["answer"])
         print(colored("=" * 200, "red"))
         print("")
-
         main()
 
 
