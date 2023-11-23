@@ -8,6 +8,7 @@ def get_data():
 
 turns = 3
 while turns != 0:
+    print("You have {} turns".format(turns))
     answer = input("Do you want to draw a card?: Y/N \n")
     if answer == 'y':
         print(get_data())
