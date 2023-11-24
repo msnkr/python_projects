@@ -1,5 +1,5 @@
-import json
 import speedtest
+from win10toast import ToastNotifier
 
 servers = []
 # If you want to test against a specific server
@@ -18,4 +18,11 @@ s.results.share()
 
 results_dict = s.results.dict()
 
+download_speed = "Download Speed"
+upload_speed = "Upload speed"
 
+
+toast = ToastNotifier()
+toast.show_toast("Test notification", "Test", duration=5)
+
+# Show download speed in wintoast, and upload speed
