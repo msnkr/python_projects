@@ -1,5 +1,20 @@
 import speedtest
-from win10toast import ToastNotifier
+from plyer import notification
+
+
+def senf_notification(download, upload):
+    bits = 8
+    mbs_conversion = 1 / 1_000_000
+
+    new_download = download * bits * mbs_conversion
+    new_upload = upload * bits * mbs_conversion
+
+    notification.notify(
+        title="Your speeds",
+        message=f"Download: {new_download:.2f}\nUpload: {new_upload:.2f}",
+        timeout=5
+    )
+
 
 servers = []
 # If you want to test against a specific server
@@ -17,12 +32,4 @@ s.upload(threads=threads)
 s.results.share()
 
 results_dict = s.results.dict()
-
-download_speed = "Download Speed"
-upload_speed = "Upload speed"
-
-
-toast = ToastNotifier()
-toast.show_toast("Test notification", "Test", duration=5)
-
-# Show download speed in wintoast, and upload speed
+senf_notification(results_dict["download"], results_dict["upload"])
