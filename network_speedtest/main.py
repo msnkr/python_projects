@@ -1,3 +1,4 @@
+import json
 import speedtest
 
 servers = []
@@ -16,4 +17,5 @@ s.upload(threads=threads)
 s.results.share()
 
 results_dict = s.results.dict()
-print(results_dict)
+
+
