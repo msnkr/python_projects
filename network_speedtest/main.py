@@ -3,15 +3,14 @@ from plyer import notification
 
 
 def senf_notification(download, upload):
-    bits = 8
-    mbs_conversion = 1 / 1_000_000
 
-    new_download = download * bits * mbs_conversion
-    new_upload = upload * bits * mbs_conversion
+    new_download = download * 8 / 10 ** 6
+    new_upload = upload * 8 / 10 ** 6
 
     notification.notify(
         title="Your speeds",
-        message=f"Download: {new_download:.2f}\nUpload: {new_upload:.2f}",
+        message="Download: {:.2f}mbs\nUpload: {:.2f}mbps".format(
+            new_download, new_upload),
         timeout=5
     )
 

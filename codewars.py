@@ -528,7 +528,7 @@
 
 def highest_rank(arr):
     pass
-
+ 
 
 results = highest_rank([12, 10, 8, 12, 7, 6, 4, 10, 10])
 print(results)
