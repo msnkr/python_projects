@@ -526,13 +526,31 @@
 # print(find_short("bitcoin take over the world maybe who knows perhaps"))
 
 
-def highest_rank(arr):
-    pass
+# def highest_rank(arr):
+#     pass
 
 
-results = highest_rank([12, 10, 8, 12, 7, 6, 4, 10, 10])
-print(results)
+# results = highest_rank([12, 10, 8, 12, 7, 6, 4, 10, 10])
+# print(results)
 
 
 # Return the most frequent numbers
 # If there is a tie, return the highest number
+
+
+def cakes(recipe, available):
+    pass
+
+
+result = cakes({"flour": 500, "sugar": 200, "eggs": 1}, {
+    "flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200})
+
+# print(result)
+
+
+# Get available items and put into a variable
+# Compare variable against recipe.
+# re variable from whats remaining from the recipe
+# Count how many times it can do it without going into minus
+
+#

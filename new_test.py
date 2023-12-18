@@ -1365,9 +1365,44 @@
 import itertools
 import sys
 import time
+import threading
+
+event_end = threading.Event()
+done = False
 
 
-for x in itertools.cycle(["--", "//", "||", "\\"]):
-    sys.stdout.write("\r" + x)
-    sys.stdout.flush()
-    time.sleep(0.1)
+def animate(event_end):
+    while not event_end.is_set():
+        for x in itertools.cycle(["--", "//", "||", "\\"]):
+            sys.stdout.write("\r" + x)
+            sys.stdout.flush()
+            time.sleep(0.1)
+
+            if done:
+                break
+
+
+def thread_test(event_end):
+    while not event_end.is_set():
+        time.sleep(10)
+        sys.stdout.write("\r")
+        sys.stdout.flush()
+        print("Random quote")
+
+
+animate_thread = threading.Thread(target=animate, args=(event_end, ))
+my_thread = threading.Thread(target=thread_test, args=(event_end, ))
+
+animate_thread.start()
+my_thread.start()
+
+time.sleep(5)
+
+event_end.set()
+done = True
+
+my_thread.join()
+animate_thread.join()
+
+
+print("Print continues")
