@@ -18,6 +18,7 @@ def change_name():
     if quit_pro == " ":
         quit()
 
+
 def get_random():
     random_num = random.randint(6, 20)
 
@@ -28,5 +29,5 @@ def get_random():
     return "{}.png".format(letters)
 
 
-directory = os.chdir(r"C:\Users\mikyl\Downloads\AI")
+os.chdir(os.getcwd())
 change_name()
