@@ -13,11 +13,6 @@ def change_name():
             os.rename(x, get_random())
             count += 1
 
-    print("Renamed {} items".format(count))
-    quit_pro = input("Press enter to quit: ")
-    if quit_pro == " ":
-        quit()
-
 
 def get_random():
     random_num = random.randint(6, 20)
