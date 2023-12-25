@@ -1,5 +1,6 @@
 import os
 import random
+import time
 
 
 alphabet = [chr(i) for i in range(ord('a'), ord('z') + 1)] + \
@@ -12,6 +13,8 @@ def change_name():
         if ".png" in x:
             os.rename(x, get_random())
             count += 1
+
+    print("renamed {} files. \nBye-bye..".format(count).capitalize())
 
 
 def get_random():
@@ -26,3 +29,4 @@ def get_random():
 
 os.chdir(os.getcwd())
 change_name()
+time.sleep(3)
