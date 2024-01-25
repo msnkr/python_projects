@@ -2,4 +2,4 @@ imageAI/inception_v3_google-1a9a5a14.pth
 imageAI/resnet50-19c8e357.pth
 imageAI/tiny-yolov3.pt
 simple_chatgpt/key.json
-ML/data/
+ML/data/fraud_detection.csv
