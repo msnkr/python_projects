@@ -3,3 +3,4 @@ imageAI/resnet50-19c8e357.pth
 imageAI/tiny-yolov3.pt
 simple_chatgpt/key.json
 ML/data/
+.venv/
