@@ -6,7 +6,7 @@ sg.theme('DarkGrey2')
 area_code = '+27'
 # operator_num = ['84', '78', '76', '71', '73', '74', '64', '62', '81', '61', '82', '72', '79', '63', '60', '83', '65', '66']
 
-operator_num = 72
+operator_num = "72"
 random_numbers = []
 
 
