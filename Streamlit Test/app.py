@@ -25,10 +25,3 @@ import streamlit as st
 import pandas as pd
 from sklearn.datasets import load_iris
 iris = load_iris()
-
-st.sidebar.write("""
-                 Iris Dataset
-                 """)
-                 
-
-df = pd.DataFrame()
