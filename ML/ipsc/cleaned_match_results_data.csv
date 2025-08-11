@@ -1,828 +1,902 @@
 date,name,division,place,match_points,match_percentage
-2025-07-02,"Plein, Aubrey",Classic,1,150.0000,100.0000%
-2025-07-02,"Da Cruz, David",PCC Optics,1,150.0000,100.0000%
-2025-07-02,"Rabie, Theo",PCC Optics,2,131.9755,87.9837%
-2025-07-02,"Morris, Bevan",PCC Optics,3,120.3118,80.2079%
-2025-07-02,"Hepton, Harry",PCC Optics,4,83.1587,55.4391%
-2025-07-02,"Rowe, Connor",PCC Optics,5,79.9095,53.2730%
-2025-07-02,"Wei, Darren",PCC Optics,6,68.6525,45.7683%
-2025-07-02,"De Gouveia, Roberto (P)",Production,1,150.0000,100.0000%
-2025-07-02,"Plein, Noah",Production,2,136.1306,90.7537%
-2025-07-02,"Moolman, Adrian",Production,3,133.5529,89.0353%
-2025-07-02,"Gxagxa, Muzi",Production,4,101.8383,67.8922%
-2025-07-02,"Coetzee, Desmond",Production,5,87.9879,58.6586%
-2025-07-02,"Da Silva, Alexia",Production,6,82.9570,55.3047%
-2025-07-02,"Docrat, Mohammed",Production,7,80.5151,53.6767%
-2025-07-02,"Knox, Nobby",Production,8,79.4268,52.9512%
-2025-07-02,"Dineka, Vuyisile",Production,9,71.5374,47.6916%
-2025-07-02,"Khumalo, Sabelo",Production,10,65.8778,43.9185%
-2025-07-02,"Chemaly, Daniel",Production,11,52.6817,35.1211%
-2025-07-02,"Levinrad, Dayne",Production,12,38.1415,25.4277%
-2025-07-02,"Jones, Nicholas",Production,13,22.7314,15.1543%
-2025-07-02,"Hartzenberg, Byron",Production,14,20.8679,13.9119%
-2025-07-02,"Wood, Jonathan",Production,15,19.1471,12.7647%
-2025-07-02,"Rahman, Aqeel",Production,16,18.3732,12.2488%
-2025-07-02,"Msibi, Jabulani...",Production,17,17.6334,11.7556%
-2025-07-02,"Dodge, Dave",Production,18,17.4171,11.6114%
-2025-07-02,"Mabaso, Siphiwe",Production,19,16.4891,10.9927%
-2025-07-02,"Tshabalala, Dumisani Alexius",Production,20,13.6231,9.0821%
-2025-07-02,"X, Ghost",Production,21,13.3947,8.9298%
-2025-07-02,"Dodge, Dave 2",Production,22,12.7214,8.4809%
-2025-07-02,"Rabie, Theo",Production Optics,1,150.0000,100.0000%
-2025-07-02,"De Gouveia, Roberto 2",Production Optics,2,142.8023,95.2015%
-2025-07-02,"X, Leehleza",Production Optics,3,136.9861,91.3241%
-2025-07-02,"Bishop, Mark",Production Optics,4,131.7593,87.8395%
-2025-07-02,"De Gouveia, Roberto",Production Optics,5,129.5992,86.3995%
-2025-07-02,"Du Plooy, Dewald",Production Optics,6,110.1558,73.4372%
-2025-07-02,"Smith, Sheldon",Production Optics,7,89.6582,59.7721%
-2025-07-02,"Bardenhorst, Jeandre",Production Optics,8,37.4134,24.9423%
-2025-07-02,"Naidoo, Saven",Standard,1,150.0000,100.0000%
-2025-07-02,"Veysel, Karan",Standard,2,143.1970,95.4647%
-2025-07-02,"Naidoo, Saven 2",Standard,3,139.7562,93.1708%
-2025-07-02,"Dias-Chamont, Talia",Standard,4,103.5518,69.0345%
-2025-07-02,"Martins, Jorge",Standard,5,82.0298,54.6865%
-2025-07-02,"Chamont, Brad",Standard,6,77.5873,51.7249%
-2025-07-02,"Da Cruz, David",Combined,1,145.8489,100.0000%
-2025-07-02,"De Gouveia, Roberto 2",Combined,2,129.5289,88.8103%
-2025-07-02,"Da Silva, Alexia 2",Combined,3,129.4051,88.7255%
-2025-07-02,"Rabie, Theo",Combined,4,128.1063,87.8349%
-2025-07-02,"X, Ghost",Combined,5,122.2566,83.8241%
-2025-07-02,"Morris, Bevan",Combined,6,117.0237,80.2363%
-2025-07-02,"De Gouveia, Roberto",Combined,7,109.9886,75.4127%
-2025-07-02,"Plein, Noah 2",Combined,8,97.7828,67.0439%
-2025-07-02,"De Gouveia, Roberto (P)",Combined,9,95.5944,65.5434%
-2025-07-02,"Plein, Aubrey",Combined,10,90.8617,62.2985%
-2025-07-02,"Gillespie, Josh 3",Combined,11,90.5700,62.0985%
-2025-07-02,"Gillespie, Josh",Combined,12,89.7908,61.5643%
-2025-07-02,"Gillespie, Josh 2",Combined,13,89.4333,61.3191%
-2025-07-02,"Plein, Noah",Combined,14,86.2794,59.1567%
-2025-07-02,"Moolman, Adrian",Combined,15,84.5048,57.9400%
-2025-07-02,"Hepton, Harry",Combined,16,80.9329,55.4909%
-2025-07-02,"Bishop, Mark",Combined,17,79.7620,54.6881%
-2025-07-02,"Gxagxa, Muzi 2",Combined,18,78.1648,53.5930%
-2025-07-02,"Rowe, Connor",Combined,19,78.0775,53.5331%
-2025-07-02,"Naidoo, Saven",Combined,20,69.6148,47.7308%
-2025-07-02,"Wei, Darren",Combined,21,66.6395,45.6908%
-2025-07-02,"Gxagxa, Muzi",Combined,22,65.0908,44.6289%
-2025-07-02,"Dodge, Dave 2",Combined,23,61.7823,42.3605%
-2025-07-02,"Du Plooy, Dewald",Combined,24,56.8689,38.9917%
-2025-07-02,"Rabie, Theo",Combined,25,56.7227,38.8914%
-2025-07-02,"Coetzee, Desmond",Combined,26,56.2122,38.5414%
-2025-07-02,"Smith, Sheldon",Combined,27,56.1430,38.4939%
-2025-07-02,"Docrat, Mohammed",Combined,28,53.1068,36.4122%
-2025-07-02,"Da Silva, Alexia",Combined,29,52.8306,36.2228%
-2025-07-02,"Knox, Nobby",Combined,30,51.4231,35.2578%
-2025-07-02,"Naidoo, Saven 2",Combined,31,50.8622,34.8732%
-2025-07-02,"Dineka, Vuyisile",Combined,32,46.7487,32.0528%
-2025-07-02,"Dineka, Vuyisile 2",Combined,33,41.4858,28.4444%
-2025-07-02,"Khumalo, Sabelo",Combined,34,41.3568,28.3559%
-2025-07-02,"Chemaly, Daniel",Combined,35,35.1775,24.1191%
-2025-07-02,"Levinrad, Dayne 2",Combined,36,34.1073,23.3854%
-2025-07-02,"Bardenhorst, Jeandre",Combined,37,27.6568,18.9626%
-2025-07-02,"Levinrad, Dayne",Combined,38,24.8455,17.0351%
-2025-07-02,"Veysel, Karan",Combined,39,16.5043,11.3160%
-2025-07-02,"Hartzenberg, Byron",Combined,40,13.5807,9.3115%
-2025-07-02,"Jones, Nicholas",Combined,41,13.3914,9.1817%
-2025-07-02,"Wood, Jonathan",Combined,42,12.7508,8.7425%
-2025-07-02,"Rahman, Aqeel",Combined,43,11.0696,7.5898%
-2025-07-02,"Msibi, Jabulani",Combined,44,9.7931,6.7146%
-2025-07-02,"Dodge, Dave",Combined,45,8.7948,6.0301%
-2025-07-02,"Mabaso, Siphiwe",Combined,46,8.7648,6.0095%
-2025-07-02,"Tshabalala, Dumisani Alexius",Combined,47,5.2444,3.5958%
-2025-07-02,"Docrat, Mohammed",Combined,48,0.0000,0.0000%
-2025-06-11,"Chamont, Brad",Standard,1,115.0000,100.00%
-2025-06-11,"Naidoo, Saven",Standard,2,111.7117,97.14%
-2025-06-11,"Naidoo, Saven 2",Standard,3,107.6590,93.62%
-2025-06-11,"Dias-Chamont, Talia",Standard,4,78.8568,68.57%
-2025-06-11,"Martins, Jorge",Standard,5,59.4356,51.68%
-2025-06-11,"Veysel, Karan",Standard,6,52.9545,46.05%
-2025-06-11,"De Gouveia, Roberto 2",Combined,1,115.0000,100.00%
-2025-06-11,"De Gouveia, Roberto",Combined,2,112.7213,98.02%
-2025-06-11,"De Gouveia, Roberto 4",Combined,3,112.2263,97.59%
-2025-06-11,"De Gouveia, Roberto 3",Combined,4,109.6904,95.38%
-2025-06-11,"Moolman, Adrian 2",Combined,5,109.1379,94.90%
-2025-06-11,"Moolman, Adrian",Combined,6,106.4254,92.54%
-2025-06-11,"Plein, Noah",Combined,7,103.3170,89.84%
-2025-06-11,"Gillespie, Josh 2",Combined,8,94.3303,82.03%
-2025-06-11,"Ferreira, Johan 2",Combined,9,85.2684,74.15%
-2025-06-11,"Gillespie, Josh",Combined,10,82.9963,72.17%
-2025-06-11,"Dias, Vic",Combined,11,81.1688,70.58%
-2025-06-11,"Dias, Vic",Combined,12,81.1688,70.58%
-2025-06-11,"Du Plooy, Dewald",Combined,13,76.5369,66.55%
-2025-06-11,"X, Ghost",Combined,14,75.0537,65.27%
-2025-06-11,"Plein, Aubrey",Combined,15,73.1950,63.66%
-2025-06-11,"Msibi, Jabulani 2",Combined,16,68.9567,59.96%
-2025-06-11,"Naidoo, Saven",Combined,17,68.6186,59.67%
-2025-06-11,"Ngcobo, Thabo",Combined,18,66.1957,57.56%
-2025-06-11,"Rabie, Theo",Combined,19,65.8674,57.28%
-2025-06-11,"Bishop, Mark",Combined,20,65.4956,56.95%
-2025-06-11,"Blignaut, Calvin",Combined,21,64.7001,56.27%
-2025-06-11,"Smith, Sheldon",Combined,22,62.6394,54.47%
-2025-06-11,"Msibi, Jabulani",Combined,23,59.9771,52.15%
-2025-06-11,"Ferreira, Johan",Combined,24,59.4356,51.68%
-2025-06-11,"Dodge, Dave",Combined,25,58.8252,51.15%
-2025-06-11,"X, Zuluboy",Combined,26,57.7303,50.21%
-2025-06-11,"Ditsela, Richard",Combined,27,57.0674,49.64%
-2025-06-11,"Gerin, Pino",Combined,28,54.4533,47.35%
-2025-06-11,"Dodge, Dave 2",Combined,29,52.9545,46.05%
-2025-06-11,"Sukazi, Lindelihle",Combined,30,52.9304,46.03%
-2025-06-11,"Martins, Jorge",Combined,31,52.1287,45.34%
-2025-06-11,"Coetzee, Desmond",Combined,32,49.8804,43.40%
-2025-06-11,"Gxagxa, Muzi",Combined,33,49.6104,43.17%
-2025-06-11,"Benecke, Sheldon",Combined,34,49.0354,42.67%
-2025-06-11,"Bishop, Steven",Combined,35,47.8821,41.67%
-2025-06-11,"Knox, Nobby",Combined,36,46.9152,40.83%
-2025-06-11,"Naidoo, Saven 2",Combined,37,45.0298,39.24%
-2025-06-11,"Khumalo, Sabelo",Combined,38,44.5772,38.84%
-2025-06-11,"Chamont, Brad",Combined,39,43.9168,38.27%
-2025-06-11,"Gxagxa, Canik",Combined,40,43.2563,37.70%
-2025-06-11,"Martins, Jorge 2",Combined,41,40.5284,35.24%
-2025-06-11,"Diaz-Chamont, Talia",Combined,42,39.3208,34.19%
-2025-06-11,"Maxwell, Kyle",Combined,43,36.5574,31.79%
-2025-06-11,"Motloung, Sanele",Combined,44,35.3444,30.74%
-2025-06-11,"Berman, Daniel",Combined,45,34.6978,30.18%
-2025-06-11,"Chemaly, Daniel",Combined,46,31.2589,27.18%
-2025-06-11,"Khan, Mahomad",Combined,47,30.2224,26.28%
-2025-06-11,"Eleshmawi, Faris",Combined,48,27.2028,23.65%
-2025-06-11,"Ngcobo, Thabo",Production Optics,1,204.3644,100.0000%
-2025-06-11,"De Gouveia, Roberto 2",Production Optics,2,203.8860,99.7669%
-2025-06-11,"De Gouveia, Roberto",Production Optics,3,197.8093,96.7937%
-2025-06-11,"Goncalves, Francisco",Production Optics,4,196.5367,96.1793%
-2025-06-11,"De Gouveia, Roberto 3",Production Optics,5,189.9806,92.9626%
-2025-06-11,"Ngcobo, Thabo",Production Optics,6,168.4086,82.4077%
-2025-06-11,"Knox, Nobby",Production,7,156.5768,76.6180%
-2025-06-11,"Moolman, Adrian",Production,8,148.4582,72.6468%
-2025-06-11,"Moolman, Adrian 2",Production,9,142.6675,69.8105%
-2025-06-11,"Bishop, Steven",Production,10,140.6976,68.8413%
-2025-06-11,"Plein, Noah",Production,11,139.7562,68.3847%
-2025-06-11,"Benecke, Sheldon",Production,12,135.0877,66.0022%
-2025-06-11,"Plein, Noah 2",Production,13,132.5846,64.7735%
-2025-06-11,"Coetzee, Desmond",Production,14,130.8781,63.9372%
-2025-06-11,"Gxagxa, Muzi",Production,15,127.3204,62.1932%
-2025-06-11,"Msibi, Jabulani",Production,16,120.3323,58.8829%
-2025-06-11,"Ditsela, Richard",Production,17,118.8108,58.1362%
-2025-06-11,"Dodge, Dave",Production,18,118.0673,57.7725%
-2025-06-11,"X, Zuluboy",Production,19,109.8000,53.7275%
-2025-06-11,"Khumalo, Sabelo",Production,20,109.0917,53.3804%
-2025-06-11,"Martins, Jorge",Production,21,107.0279,52.3725%
-2025-06-11,"Dodge, Dave 2",Production,22,106.6713,52.2045%
-2025-06-11,"Gxagxa, Canik",Production,23,103.5518,50.6712%
-2025-06-11,"Khan, Mahomad",Production,24,42.5036,18.9861%
-2025-06-11,"Bvuma, Tshepo",Production,25,41.5905,18.5783%
-2025-06-11,"Eleshmawi, Faris",Production,26,40.8218,18.2349%
-2025-06-11,"Ntuli, Sibusiso",Production,27,40.1554,17.9332%
-2025-06-11,"Maduna, Thabiso",Production,28,35.9949,16.0888%
-2025-06-11,"Tshabalala, Dumisani Alexius",Production,29,35.7722,15.9897%
-2025-06-11,"Mqaise, Rudy",Production,30,28.6672,12.8122%
-2025-06-11,"Bvuma, Tshepo",Production,31,14.2279,12.37%
-2025-06-11,"Mqaise, Rudy",Production,32,0.0000,0.00%
-2025-06-11,"Rahman, Ismaaeel",Production,33,0.0000,0.00%
-2025-06-11,"Martins, Jorge",Standard,1,115.0000,100.00%
-2025-06-11,"Naidoo, Saven",Standard,2,110.0000,95.65%
-2025-06-11,"Naidoo, Saven 2",Standard,3,105.0000,91.30%
-2025-06-04,"Plein, Aubrey",Classic,1,110.0000,100.00%
-2025-06-04,"Basson, Melanie",Open,1,110.0000,100.00%
-2025-06-04,"Da Cruz, David",PCC Optics,1,110.0000,100.00%
-2025-06-04,"Goncalves, Rory",PCC Optics,2,74.6660,67.88%
-2025-06-04,"Plein, Noah",Production,1,110.0000,100.00%
-2025-06-04,"Moolman, Adrian 2",Production,2,103.5135,94.10%
-2025-06-04,"Gxagxa, Muzi 2",Production,3,85.2903,77.54%
-2025-06-04,"Knox, Nobby",Production,4,73.8997,67.18%
-2025-06-04,"Seeger, Michael",Production,5,69.3082,63.01%
-2025-06-04,"Smith, Gert",Production,6,68.4972,62.27%
-2025-06-04,"Truter, Bernard",Production,7,61.0839,55.53%
-2025-06-04,"Bishop, Steven",Production,8,60.1619,54.69%
-2025-06-04,"Saks, Eli",Production,9,51.7975,47.09%
-2025-06-04,"Benecke, Sheldon",Production,10,48.7462,44.31%
-2025-06-04,"Moolman, Adrian",Production,11,45.6310,41.48%
-2025-06-04,"Titizana, Zanemvula",Production,12,45.4285,41.30%
-2025-06-04,"Knoetze, Luan",Production,13,44.2057,40.19%
-2025-06-04,"Levinrad, Dayne",Production,14,40.1384,36.49%
-2025-06-04,"Hartzenberg, Byron",Production,15,39.0189,35.47%
-2025-06-04,"Coetzee, Desmond",Production,16,36.5746,33.25%
-2025-06-04,"Msibi, Jabulani",Production,17,35.0312,31.85%
-2025-06-04,"Gxagxa, Canik",Production,18,29.9701,27.25%
-2025-06-04,"Dineka, Vuyisile",Production,19,21.3675,19.42%
-2025-06-04,"Gittins, Ashley",Production,20,20.8775,18.98%
-2025-06-04,"Titizana, Zanemvula 2",Production Optics,1,110.0000,100.00%
-2025-06-04,"X, Leehleza",Production Optics,2,99.6366,90.58%
-2025-06-04,"De Gouveia, Roberto 2",Production Optics,3,98.6797,89.71%
-2025-06-04,"Goncalves, Francisco",Production Optics,4,96.8906,88.08%
-2025-06-04,"Naidoo, Saven 2",Standard,5,91.5790,83.25%
-2025-06-04,"De Gouveia, Michael",Production Optics,6,88.1948,80.18%
-2025-06-04,"Ngcobo, Thabo",Production Optics,7,85.1979,77.45%
-2025-06-04,"Naidoo, Saven",Standard,1,110.0000,100.00%
-2025-06-04,"Chamont, Brad",Standard,2,98.7490,89.77%
-2025-06-04,"Veysel, Karan",Standard,3,70.5097,64.10%
-2025-06-04,"Dias-Chamont, Talia",Standard,4,61.9459,56.31%
-2025-06-04,"Smith, Gert",Production,27,40.2332,36.58%
-2025-06-04,"Titizana, Zanemvula",Production,28,39.7397,36.13%
-2025-06-04,"Benecke, Sheldon",Production,29,39.2766,35.71%
-2025-06-04,"Truter, Bernard",Production,30,37.4984,34.09%
-2025-06-04,"Moolman, Adrian",Production,31,34.0049,30.91%
-2025-06-04,"Knoetze, Luan",Production,32,32.4939,29.54%
-2025-06-04,"Hartzenberg, Byron",Production,33,26.5186,24.11%
-2025-06-04,"Dineka, Vuyisile",Production,34,21.3675,19.42%
-2025-06-04,"Gittins, Ashley",Production,35,20.8775,18.98%
-2025-06-04,"Dercksen, Deon",Production,36,19.0069,17.28%
-2025-06-04,"Bishop, Steven",Production,37,18.0673,16.42%
-2025-06-04,"Gxagxa, Muzi",Production,38,13.3947,12.18%
-2025-06-04,"Plein, Noah",Combined,1,213.7291,100.0000%
-2025-06-04,"De Gouveia, Roberto (P)",Combined,2,203.5968,95.2635%
-2025-06-04,"Moolman, Adrian",Combined,3,197.8093,92.5599%
-2025-06-04,"Plein, Aubrey",Combined,4,196.5465,91.9507%
-2025-06-04,"Da Cruz, David",Combined,5,186.5438,87.2891%
-2025-06-04,"De Gouveia, Michael",Combined,6,174.0505,81.4344%
-2025-06-04,"Ngcobo, Thabo",Combined,7,168.4086,78.7952%
-2025-06-04,"Gxagxa, Muzi",Combined,8,136.3238,63.7820%
-2025-06-04,"Bishop, Steven",Combined,9,120.3323,56.3093%
-2025-06-04,"Truter, Bernard",Combined,10,117.6921,55.0601%
-2025-06-04,"Benecke, Sheldon",Combined,11,113.8860,53.2842%
-2025-06-04,"Titizana, Zanemvula",Combined,12,110.1558,51.5498%
-2025-06-04,"Knoetze, Luan",Combined,13,109.8000,51.3813%
-2025-06-04,"Hartzenberg, Byron",Combined,14,99.8496,46.7188%
-2025-06-04,"Levinrad, Dayne",Combined,15,96.4862,45.1444%
-2025-06-04,"Coetzee, Desmond",Combined,16,95.8450,44.8456%
-2025-06-04,"Msibi, Jabulani",Combined,17,94.1788,44.0664%
-2025-06-04,"Dineka, Vuyisile",Combined,18,90.4789,42.3338%
-2025-06-04,"Goncalves, Rory",Combined,19,83.2244,38.9482%
-2025-06-04,"Gittins, Ashley",Combined,20,76.8399,35.9515%
-2025-06-04,"Dercksen, Deon",Combined,21,73.7815,34.5298%
-2025-06-04,"Morris, Bevan",Open,1,230.0000,100.0000%
-2025-05-28,"De Gouveia, Roberto",Combined,1,230.0000,100.0000%
-2025-05-28,"Plein, Noah",Combined,2,225.5229,98.0534%
-2025-05-28,"Goncalves, Francisco",Combined,3,218.2286,94.8820%
-2025-05-28,"De Gouveia, Roberto (P)",Combined,4,180.6650,78.5500%
-2025-05-28,"Moolman, Adrian",Combined,5,173.7252,75.5327%
-2025-05-28,"Ngcobo, Thabo",Combined,6,173.1522,75.2836%
-2025-05-28,"Plein, Aubrey",Combined,7,157.4866,68.4724%
-2025-05-28,"Bishop, Mark",Combined,8,148.0664,64.3767%
-2025-05-28,"Mthembu, Jacob",Combined,9,143.0151,62.1805%
-2025-05-28,"Smith, Sheldon",Combined,10,141.5422,61.5401%
-2025-05-28,"Naidoo, Saven",Combined,11,139.0243,60.4453%
-2025-05-28,"Goncalves, Rory",Combined,12,135.4517,58.8920%
-2025-05-28,"Morris, Bevan",Combined,13,129.2608,56.2003%
-2025-05-28,"Chamont, Brad",Combined,14,124.3933,54.0840%
-2025-05-28,"Bishop, Steven",Combined,15,122.9712,53.4657%
-2025-05-28,"Bolton, Dayne",Combined,16,121.6158,52.8764%
-2025-05-28,"Ferreira, Johan",Combined,17,115.1451,50.0631%
-2025-05-28,"Mj, Mj",Combined,18,112.8129,49.0491%
-2025-05-28,"Ditsela, Richard",Combined,19,105.4717,45.8573%
-2025-05-28,"Sukazi, Lindelihle",Combined,20,102.8565,44.7202%
-2025-05-28,"Bolton, Blake",Combined,21,100.6055,43.7415%
-2025-05-28,"Dodge, Dave",Combined,22,98.2443,42.7149%
-2025-05-28,"X, Zuluboy",Combined,23,97.1099,42.2217%
-2025-05-28,"Gerin, Pino",Combined,24,97.0305,42.1872%
-2025-05-28,"Msibi, Jabulani",Combined,25,93.9295,40.8389%
-2025-05-28,"Goncalves, Rory",Combined,26,90.7532,39.4579%
-2025-05-28,"Benecke, Sheldon",Combined,27,84.6616,36.8094%
-2025-05-28,"Phaedi, Tiiso",Combined,28,83.9189,36.4886%
-2025-05-28,"Coetzee, Desmond",Combined,29,82.7233,35.9667%
-2025-05-28,"Nxumalo, Mpumelelo",Combined,30,80.7011,35.0874%
-2025-05-28,"Dias-Chamont, Talia",Combined,31,79.8821,34.7337%
-2025-05-28,"Veysel, Karan",Combined,32,77.2620,33.5922%
-2025-05-28,"Maduna, Thabiso",Combined,33,76.8399,33.4108%
-2025-05-28,"Berman, Daniel",Combined,34,76.1433,33.1058%
-2025-05-28,"Khumalo, Sabelo",Combined,35,72.6552,31.5892%
-2025-05-28,"Khan, Mahomad",Combined,36,70.5791,30.6866%
-2025-05-28,"Levinrad, Dayne",Combined,37,68.1726,29.6403%
-2025-05-28,"X, Unknown",Combined,38,65.0908,28.2995%
-2025-05-28,"Tshabalala, Dumisani Alexius",Combined,39,64.1404,27.8871%
-2025-05-28,"Hartzenberg, Byron",Combined,40,63.4775,27.6006%
-2025-05-28,"Nkosi, Sihle",Combined,41,60.9032,26.4796%
-2025-05-28,"Nxumalo, Sifiso",Combined,42,59.8754,26.0328%
-2025-05-28,"Dineka, Vuyisile",Combined,43,59.2008,25.7410%
-2025-05-28,"Jones, Nicholas",Combined,44,58.0542,25.2409%
-2025-05-28,"Wood, Jonathan",Combined,45,56.7209,24.6644%
-2025-05-28,"Rahman, Aqeel",Combined,46,54.4533,23.6753%
-2025-05-28,"Mqaise, Rudy",Combined,47,53.5820,23.2917%
-2025-05-28,"Alho, Gabz",Combined,48,52.8822,22.9860%
-2025-05-28,"Maluleka, Nkateko",Combined,49,51.6625,22.4590%
-2025-05-28,"X, Z",Combined,50,50.8622,22.1122%
-2025-05-28,"Ntuli, Sibusiso",Combined,51,49.6104,21.5697%
-2025-05-28,"Goncalves, Cayla",Combined,52,47.2633,20.5492%
-2025-05-28,"Eleshmawi, Faris",Combined,53,46.0118,20.0051%
-2025-05-28,"Tshabalala, Dumisani Alexius 2",Combined,54,42.5036,18.4798%
-2025-05-28,"Masike, Tebogo",Combined,55,41.4992,18.0494%
-2025-05-28,"Gillespie, Josh",Combined,56,40.5284,17.6225%
-2025-05-28,"Gillespie, Josh 2",Combined,57,39.3208,17.1003%
-2025-05-28,"Ntuli, Sibusiso2",Combined,58,38.9323,16.9298%
-2025-05-28,"Mabaso, Siphiwe",Combined,59,38.2215,16.6212%
-2025-05-28,"Mabaso, Siphiwe 2",Combined,60,37.4134,16.2735%
-2025-05-28,"Hume, Sarah",Combined,61,35.9949,15.6500%
-2025-05-28,"Bvuma, Tshepo",Combined,62,34.4273,14.9700%
-2025-05-28,"Mofokeng, Tshepo",Combined,63,33.5885,14.6062%
-2025-05-28,"Mlambo, Sandile",Combined,64,30.2224,13.1402%
-2025-05-28,"Mofokeng, Tshepo 2",Combined,65,28.6672,12.4640%
-2025-05-28,"Alho, Gabz",Combined,66,28.5791,12.4253%
-2025-05-28,"Maluleka, Nkateko",Combined,67,4.6020,2.0009%
-2025-05-28,"De Gouveia, Roberto",Combined,1,217.1531,100.0000%
-2025-05-28,"Plein, Noah 2",Combined,2,212.7814,97.9868%
-2025-05-28,"Plein, Noah",Combined,3,212.7645,97.9790%
-2025-05-28,"De Gouveia, Roberto 3",Combined,4,208.4704,96.0016%
-2025-05-28,"Goncalves, Francisco",Combined,5,205.8530,94.7963%
-2025-05-28,"De Gouveia, Roberto 4",Combined,6,203.6772,93.7943%
-2025-05-28,"De Gouveia, Roberto 2",Combined,7,198.9539,91.6192%
-2025-05-28,"Goncalves, Francisco2",Combined,8,195.7936,90.1639%
-2025-05-28,"Moolman, Adrian 2",Combined,9,189.3308,87.1877%
-2025-05-28,"Moolman, Adrian 3",Combined,10,174.4132,80.3181%
-2025-05-28,"De Gouveia, Roberto (P)",Combined,11,170.2726,78.4113%
-2025-05-28,"Moolman, Adrian",Combined,12,164.2627,75.6437%
-2025-05-28,"Ngcobo, Thabo",Combined,13,163.6497,75.3614%
-2025-05-28,"Ngcobo, Thabo 2",Combined,14,160.8733,74.0829%
-2025-05-28,"Moolman, Adrian 4",Combined,15,160.5715,73.9439%
-2025-05-28,"Plein, Aubrey",Combined,16,148.1307,68.2149%
-2025-05-28,"Bishop, Mark",Combined,17,139.2509,64.1257%
-2025-05-28,"Chamont, Brad 2",Combined,18,135.8260,62.5485%
-2025-05-28,"Mthembu, Jacob",Combined,19,135.2356,62.2766%
-2025-05-28,"Sukazi, Lindelihle 2",Combined,20,132.5846,61.0558%
-2025-05-28,"Smith, Sheldon",Combined,21,132.5086,61.0208%
-2025-05-28,"Naidoo, Saven",Combined,22,130.8781,60.2700%
-2025-05-28,"Naidoo, Saven 2",Combined,23,128.9940,59.4023%
-2025-05-28,"Goncalves, Rory",Combined,24,126.6054,58.3024%
-2025-05-28,"Mqaise, Rudy",Combined,25,125.7384,57.9023%
-2025-05-28,"Ditsela, Richard",Combined,26,124.3933,57.2801%
-2025-05-28,"Mthembu, Jacob 2",Combined,27,122.9712,56.6214%
-2025-05-28,"X, Ghost",Combined,28,122.2566,56.2917%
-2025-05-28,"Mthembu, Jacob 3",Combined,29,121.6158,55.9961%
-2025-05-28,"Coetzee, Desmond",Combined,30,121.5714,55.9757%
-2025-05-28,"X, Zuluboy",Combined,31,118.8108,54.7126%
-2025-05-28,"Dodge, Dave 2",Combined,32,117.0237,53.8893%
-2025-05-28,"Sukazi, Lindelihle",Combined,33,116.5945,53.6937%
-2025-05-28,"Gxagxa, Muzi 2",Combined,34,115.1451,53.0240%
-2025-05-28,"Msibi, Jabulani",Combined,35,112.8129,51.9599%
-2025-05-28,"Dodge, Dave",Combined,36,109.8000,50.5630%
-2025-05-28,"Gxagxa, Muzi",Combined,37,107.0279,49.2882%
-2025-05-28,"Gerin, Pino",Combined,38,105.4717,48.5633%
-2025-05-28,"Msibi, Jabulani",Combined,39,88.6802,40.8376%
-2025-05-28,"Goncalves, Rory",Combined,40,87.2965,40.2004%
-2025-05-28,"Benecke, Sheldon",Combined,41,81.7147,37.6322%
-2025-05-28,"Rabie, Theo",Combined,42,79.8821,36.7865%
-2025-05-28,"Jones, Nicholas",Combined,43,58.0542,26.7346%
-2025-05-28,"Wood, Jonathan",Combined,44,56.7209,26.1246%
-2025-05-28,"Tshabalala, Dumisani Alexius",Combined,45,42.5036,19.5732%
-2025-05-28,"Mabaso, Siphiwe",Combined,46,38.2215,17.5927%
-2025-05-28,"Plein, Aubrey",Classic,1,220.0000,100.0000%
-2025-05-28,"Phaedi, Tiiso",Open,1,220.0000,100.0000%
-2025-05-28,"Da Cruz, David",PCC Optics,1,220.0000,100.0000%
-2025-05-28,"Rabie, Theo",PCC Optics,2,196.5465,89.3393%
-2025-05-28,"Morris, Bevan",PCC Optics,3,191.5607,87.0730%
-2025-05-28,"Goncalves, Rory",PCC Optics,4,186.5438,84.7926%
-2025-05-28,"Hepton, Harry",PCC Optics,5,168.4086,76.5494%
-2025-05-28,"Wei, Darren",PCC Optics,6,134.0576,60.9353%
-2025-05-28,"De Gouveia, Roberto (P)",Production,1,220.0000,100.0000%
-2025-05-28,"Plein, Noah",Production,2,213.7291,97.1496%
-2025-05-28,"Moolman, Adrian",Production,3,197.8093,89.9133%
-2025-05-28,"Gxagxa, Muzi",Production,4,173.1522,78.7055%
-2025-05-28,"Knox, Nobby",Production,5,170.2726,77.3966%
-2025-05-28,"Coetzee, Desmond",Production,6,163.6497,74.3862%
-2025-05-28,"Msibi, Jabulani",Production,7,148.0664,67.3029%
-2025-05-28,"Ditsela, Richard",Production,8,124.3933,56.5424%
-2025-05-28,"Dodge, Dave",Production,9,118.8108,54.0049%
-2025-05-28,"X, Zuluboy",Production,10,117.0237,53.1926%
-2025-05-28,"Gxagxa, Canik",Production,11,103.5518,47.0690%
-2025-05-28,"Mthembu, Jacob",Production,12,102.8565,46.7492%
-2025-05-28,"Levinrad, Dayne",Production,13,99.8496,45.3862%
-2025-05-28,"Berman, Daniel",Production,14,96.4862,43.8574%
-2025-05-28,"Jones, Nicholas",Production,15,95.8450,43.5659%
-2025-05-28,"Wood, Jonathan",Production,16,94.1788,42.8085%
-2025-05-28,"Rahman, Aqeel",Production,17,90.4789,41.1268%
-2025-05-28,"Hartzenberg, Byron",Production,18,86.4090,39.2768%
-2025-05-28,"Khumalo, Sabelo",Production,19,83.2244,37.8293%
-2025-05-28,"Dineka, Vuyisile",Production,20,72.6552,33.0251%
-2025-05-28,"Tshabalala, Dumisani Alexius",Production,21,68.1726,30.9875%
-2025-05-28,"Mabaso, Siphiwe",Production,22,41.4992,18.8633%
-2025-05-28,"Goncalves, Cayla",Production,23,11.8797,5.3999%
-2025-05-28,"De Gouveia, Roberto",Production Optics,1,220.0000,100.0000%
-2025-05-28,"X, Leehleza",Production Optics,2,192.5757,87.5344%
-2025-05-28,"Da Silva, Alexia",Production Optics,3,191.5607,87.0730%
-2025-05-28,"Mshove, Mbali",Production Optics,4,190.6401,86.6500%
-2025-05-28,"X, Ghost",Production Optics,5,188.8093,85.8224%
-2025-05-28,"Bishop, Mark",Production Optics,6,186.5438,84.7926%
-2025-05-28,"Ngcobo, Thabo",Production Optics,7,168.4086,76.5494%
-2025-05-28,"Sukazi, Lindelihle",Production Optics,8,134.0576,60.9353%
-2025-05-28,"Du Plooy, Dewald",Production Optics,9,113.0674,51.3943%
-2025-05-28,"Smith, Sheldon",Production Optics,10,109.5879,49.8127%
-2025-05-28,"Gerin, Pino",Production Optics,11,107.7484,48.9765%
-2025-05-28,"Titizana, Zanemvula",Production Optics,12,99.8496,45.3862%
-2025-05-28,"Naidoo, Saven",Standard,1,220.0000,100.0000%
-2025-05-28,"Naidoo, Saven 2",Standard,2,196.5465,89.3393%
-2025-05-28,"Veysel, Karan",Standard,3,176.3075,80.1398%
-2025-05-28,"Dias-Chamont, Talia",Standard,4,158.2953,71.9524%
-2025-05-28,"Chamont, Brad",Standard,5,157.3415,71.5189%
-2025-06-18,"Da Cruz, David",Combined,1,220.0000,100.0000%
-2025-06-18,"Plein, Noah",Combined,2,204.2833,92.8560%
-2025-06-18,"De Gouveia, Roberto 2",Combined,3,201.4425,91.5648%
-2025-06-18,"Moolman, Adrian 2",Combined,4,194.2181,88.2810%
-2025-06-18,"De Gouveia, Roberto",Combined,5,177.7201,80.7819%
-2025-06-18,"Moolman, Adrian",Combined,6,177.6968,80.7713%
-2025-06-18,"Mshove, Mbali",Combined,7,176.3075,80.1398%
-2025-06-18,"Da Silva, Alexia",Combined,8,176.2429,80.1104%
-2025-06-18,"X, Ghost",Combined,9,172.7903,78.5410%
-2025-06-18,"Gillespie, Josh 2",Combined,10,169.4551,77.0250%
-2025-06-18,"Ngcobo, Thabo",Combined,11,164.1140,74.5973%
-2025-06-18,"Rabie, Theo",Combined,12,158.2953,71.9524%
-2025-06-18,"Gillespie, Josh",Combined,13,157.7112,71.6869%
-2025-06-18,"Ngcobo, Thabo 2",Combined,14,157.3415,71.5189%
-2025-06-18,"Gxagxa, Muzi 2",Combined,15,152.1481,69.1582%
-2025-06-18,"Ferreira, Johan 2",Combined,16,151.9898,69.0863%
-2025-06-18,"Plein, Aubrey",Combined,17,149.8492,68.1133%
-2025-06-18,"Naidoo, Saven",Combined,18,143.8888,65.4040%
-2025-06-18,"Gxagxa, Canik",Combined,19,126.2958,57.4072%
-2025-06-18,"Ferreira, Johan",Combined,20,121.8467,55.3849%
-2025-06-18,"Morris, Bevan",Combined,21,113.0674,51.3943%
-2025-06-18,"Naidoo, Saven 2",Combined,22,109.5879,49.8127%
-2025-06-18,"Sukazi, Lindelihle 2",Combined,23,107.7484,48.9765%
-2025-06-18,"Gxagxa, Muzi",Combined,24,107.2566,48.7530%
-2025-06-18,"Goncalves, Rory",Combined,25,106.2106,48.2775%
-2025-06-18,"Coetzee, Desmond",Combined,26,103.8433,47.2015%
-2025-06-18,"Phaedi, Tiiso",Combined,27,100.7958,45.8163%
-2025-06-18,"Du Plooy, Dewald",Combined,28,100.6420,45.7464%
-2025-06-18,"Sukazi, Lindelihle",Combined,29,99.8496,45.3862%
-2025-06-18,"Bishop, Steven",Combined,30,95.8450,43.5659%
-2025-06-18,"Bishop, Mark",Combined,31,94.1788,42.8085%
-2025-06-18,"Castegnaro, Giorgio",Combined,32,90.4789,41.1268%
-2025-06-18,"Benecke, Sheldon",Combined,33,86.4090,39.2768%
-2025-06-18,"Nkosi, Sihle",Combined,34,83.2244,37.8293%
-2025-06-18,"Knox, Nobby",Combined,35,83.0574,37.7534%
-2025-06-18,"Sukazi, Lindelihle 3",Combined,36,81.2626,36.9375%
-2025-06-18,"Veysel, Karan",Combined,37,77.2620,35.1191%
-2025-06-18,"Ntuli, Sibusiso2",Combined,38,76.8399,34.9272%
-2025-06-18,"Levinrad, Dayne",Combined,39,76.1433,34.6106%
-2025-06-18,"Nkosi, Sihle",Combined,40,72.6552,33.0251%
-2025-06-18,"Ntuli, Sibusiso",Combined,41,68.1726,30.9875%
-2025-06-18,"Masike, Tebogo",Combined,42,41.4992,18.8633%
-2025-06-18,"Goncalves, Cayla",Combined,43,11.8797,5.3999%
-2025-06-18,"Plein, Aubrey",Classic,1,220.0000,100.0000%
-2025-06-18,"Phaedi, Tiiso",Open,1,220.0000,100.0000%
-2025-06-18,"Da Cruz, David",PCC Optics,1,220.0000,100.0000%
-2025-06-18,"Rabie, Theo",PCC Optics,2,196.5465,89.3393%
-2025-06-18,"Morris, Bevan",PCC Optics,3,191.5607,87.0730%
-2025-06-18,"Goncalves, Rory",PCC Optics,4,186.5438,84.7926%
-2025-06-18,"Hepton, Harry",PCC Optics,5,168.4086,76.5494%
-2025-06-18,"Wei, Darren",PCC Optics,6,134.0576,60.9353%
-2025-06-18,"De Gouveia, Roberto (P)",Production,1,220.0000,100.0000%
-2025-06-18,"Plein, Noah",Production,2,213.7291,97.1496%
-2025-06-18,"Moolman, Adrian",Production,3,197.8093,89.9133%
-2025-06-18,"Gxagxa, Muzi",Production,4,173.1522,78.7055%
-2025-06-18,"Knox, Nobby",Production,5,170.2726,77.3966%
-2025-06-18,"Coetzee, Desmond",Production,6,163.6497,74.3862%
-2025-06-18,"Msibi, Jabulani",Production,7,148.0664,67.3029%
-2025-06-18,"Ditsela, Richard",Production,8,124.3933,56.5424%
-2025-06-18,"Dodge, Dave",Production,9,118.8108,54.0049%
-2025-06-18,"X, Zuluboy",Production,10,117.0237,53.1926%
-2025-06-18,"Gxagxa, Canik",Production,11,103.5518,47.0690%
-2025-06-18,"Mthembu, Jacob",Production,12,102.8565,46.7492%
-2025-06-18,"Levinrad, Dayne",Production,13,99.8496,45.3862%
-2025-06-18,"Berman, Daniel",Production,14,96.4862,43.8574%
-2025-06-18,"Jones, Nicholas",Production,15,95.8450,43.5659%
-2025-06-18,"Wood, Jonathan",Production,16,94.1788,42.8085%
-2025-06-18,"Rahman, Aqeel",Production,17,90.4789,41.1268%
-2025-06-18,"Hartzenberg, Byron",Production,18,86.4090,39.2768%
-2025-06-18,"Khumalo, Sabelo",Production,19,83.2244,37.8293%
-2025-06-18,"Dineka, Vuyisile",Production,20,72.6552,33.0251%
-2025-06-18,"Tshabalala, Dumisani Alexius",Production,21,68.1726,30.9875%
-2025-06-18,"Mabaso, Siphiwe",Production,22,41.4992,18.8633%
-2025-06-18,"Goncalves, Cayla",Production,23,11.8797,5.3999%
-2025-06-18,"De Gouveia, Roberto",Production Optics,1,220.0000,100.0000%
-2025-06-18,"X, Leehleza",Production Optics,2,192.5757,87.5344%
-2025-06-18,"Da Silva, Alexia",Production Optics,3,191.5607,87.0730%
-2025-06-18,"Mshove, Mbali",Production Optics,4,190.6401,86.6500%
-2025-06-18,"X, Ghost",Production Optics,5,188.8093,85.8224%
-2025-06-18,"Bishop, Mark",Production Optics,6,186.5438,84.7926%
-2025-06-18,"Ngcobo, Thabo",Production Optics,7,168.4086,76.5494%
-2025-06-18,"Sukazi, Lindelihle",Production Optics,8,134.0576,60.9353%
-2025-06-18,"Du Plooy, Dewald",Production Optics,9,113.0674,51.3943%
-2025-06-18,"Smith, Sheldon",Production Optics,10,109.5879,49.8127%
-2025-06-18,"Gerin, Pino",Production Optics,11,107.7484,48.9765%
-2025-06-18,"Titizana, Zanemvula",Production Optics,12,99.8496,45.3862%
-2025-06-18,"Naidoo, Saven",Standard,1,220.0000,100.0000%
-2025-06-18,"Naidoo, Saven 2",Standard,2,196.5465,89.3393%
-2025-06-18,"Veysel, Karan",Standard,3,176.3075,80.1398%
-2025-06-18,"Dias-Chamont, Talia",Standard,4,158.2953,71.9524%
-2025-06-18,"Chamont, Brad",Standard,5,157.3415,71.5189%
-2025-07-09,"Plein, Aubrey",1,Classic,180.0000,100.0000%
-2025-07-09,"De Gouveia, Roberto (P) 2",1,Production,179.6139,100.0000%
-2025-07-09,"Moolman, Adrian 4",2,Production,172.9687,96.3003%
-2025-07-09,"Moolman, Adrian 3",3,Production,171.7963,95.6476%
-2025-07-09,"Moolman, Adrian 2",4,Production,167.2265,93.1033%
-2025-07-09,"De Gouveia, Roberto (P)",5,Production,163.4060,90.9763%
-2025-07-09,"Moolman, Adrian",6,Production,150.3793,83.7236%
-2025-07-09,"Plein, Noah 2",7,Production,148.1371,82.4753%
-2025-07-09,"Plein, Noah",8,Production,140.6696,78.3178%
-2025-07-09,"Mj, Mj",9,Production,137.9877,76.8246%
-2025-07-09,"Gxagxa, Muzi",10,Production,135.2737,75.3136%
-2025-07-09,"X, Zuluboy",11,Production,131.4455,73.1823%
-2025-07-09,"Gillespie, Josh",12,Production,119.1098,66.3144%
-2025-07-09,"Plein, Aubrey 2",13,Production,114.8345,63.9341%
-2025-07-09,"Bishop, Steven",14,Production,110.2060,61.3572%
-2025-07-09,"Benecke, Sheldon",15,Production,107.3597,59.7725%
-2025-07-09,"Grobblaar, Mj",16,Production,107.1067,59.6316%
-2025-07-09,"Horton, Mike 3",17,Production,105.1622,58.5490%
-2025-07-09,"Merredew, Sebastian",18,Production,104.4516,58.1534%
-2025-07-09,"Vrey, Wian",19,Production,100.8955,56.1735%
-2025-07-09,"Horton, Mike 2",20,Production,100.3250,55.8559%
-2025-07-09,"Horton, Mike",21,Production,98.9960,55.1160%
-2025-07-09,"Coetzee, Desmond",22,Production,98.8005,55.0072%
-2025-07-09,"Levinrad, Dayne 2",23,Production,90.4256,50.3444%
-2025-07-09,"Mqaise, Rudy",24,Production,89.8560,50.0273%
-2025-07-09,"Dineka, Vuyisile",25,Production,80.0528,44.5694%
-2025-07-09,"Dodge, Dave",26,Production,77.0684,42.9078%
-2025-07-09,"Subotzky, Ryan",27,Production,72.2323,40.2153%
-2025-07-09,"Faurie, Zander 2",28,Production,71.3908,39.7468%
-2025-07-09,"Gillespie, Graham 3",29,Production,70.8534,39.4476%
-2025-07-09,"Sedibe, Mpho",30,Production,69.6876,38.7986%
-2025-07-09,"Levinrad, Dayne",31,Production,64.3731,35.8397%
-2025-07-09,"Faurie, Zander 3",32,Production,60.3479,33.5987%
-2025-07-09,"Faurie, Zander",33,Production,55.4966,30.8977%
-2025-07-09,"Gillespie, Graham",34,Production,44.4170,24.7292%
-2025-07-09,"Dineka, Vuyisile 2",35,Production,43.4328,24.1812%
-2025-07-09,"Gillespie, Graham 2",36,Production,35.4457,19.7344%
-2025-07-09,"De Gouveia, Roberto 2",1,Production Optics,180.0000,100.0000%
-2025-07-09,"De Gouveia, Roberto",2,Production Optics,165.9135,92.1742%
-2025-07-09,"Janse Van Rensburg, Johan 3",3,Production Optics,144.7377,80.4098%
-2025-07-09,"Gillespie, Josh",4,Production Optics,140.2709,77.9283%
-2025-07-09,"Janse Van Rensburg, Johan 2",5,Production Optics,138.3623,76.8679%
-2025-07-09,"Janse Van Rensburg, Johan",6,Production Optics,136.2516,75.6953%
-2025-07-09,"Smith, Sheldon",7,Production Optics,133.7163,74.2868%
-2025-07-09,"Gillespie, Josh 2",8,Production Optics,132.1498,73.4166%
-2025-07-09,"Du Plooy, Dewald",9,Production Optics,104.4399,58.0222%
-2025-07-09,"Goncalves, Rory",10,Production Optics,18.3923,10.2179%
-2025-07-09,"Docrat, Mohammed",1,Standard,180.0000,100.0000%
-2025-07-09,"Merredew, Henry",2,Standard,134.0093,74.4496%
-2025-07-23,"Plein, Aubrey",1,Classic,220.0000,100.0000%
-2025-07-23,"Horton, Mike 2",1,PCC Optics,220.0000,100.0000%
-2025-07-23,"Horton, Mike",2,PCC Optics,205.9782,93.6265%
-2025-07-23,"Moolman, Adrian",1,Production,217.9943,100.0000%
-2025-07-23,"Moolman, Adrian 3",2,Production,217.6608,99.8470%
-2025-07-23,"Moolman, Adrian (EDC)",3,Production,190.6988,87.4788%
-2025-07-23,"Plein, Noah",4,Production,181.6245,83.3162%
-2025-07-23,"Moolman, Adrian 4",5,Production,179.7124,82.4390%
-2025-07-23,"Gillespie, Josh",6,Production,167.1972,76.6980%
-2025-07-23,"Gxagxa, Muzi",7,Production,151.2795,69.3961%
-2025-07-23,"Grobblaar, Mj",8,Production,150.8841,69.2147%
-2025-07-23,"Modjadji Mm, Mfana",9,Production,131.6107,60.3735%
-2025-07-23,"Mtshwene, Siphiwe",10,Production,129.8376,59.5601%
-2025-07-23,"Coetzee, Desmond",11,Production,125.3990,57.5240%
-2025-07-23,"Msibi, Jabulani",12,Production,123.6498,56.7216%
-2025-07-23,"Dodge, Dave",13,Production,115.5931,53.0257%
-2025-07-23,"Radebe, Xolani 2",14,Production,107.1127,49.1356%
-2025-07-23,"Bishop, Steven",15,Production,105.6791,48.4779%
-2025-07-23,"Ditsela, Richard 2",16,Production,102.7461,47.1325%
-2025-07-23,"Ditsela, Richard",17,Production,101.8968,46.7429%
-2025-07-23,"Sukazi, Lindelihle 2",18,Production,100.2560,45.9902%
-2025-07-23,"Faurie, Zander",19,Production,96.8469,44.4263%
-2025-07-23,"Vrey, Wian",20,Production,93.2205,42.7628%
-2025-07-23,"Radebe, Xolani",21,Production,91.6192,42.0283%
-2025-07-23,"Lodge, Athelio",22,Production,77.9097,35.7393%
-2025-07-23,"Faurie, Zander 2",23,Production,76.6031,35.1400%
-2025-07-23,"Rahman, Aqeel",24,Production,69.7243,31.9845%
-2025-07-23,"Dineka, Vuyisile",25,Production,68.0720,31.2265%
-2025-07-23,"Faurie, Zander 3",26,Production,59.1709,27.1433%
-2025-07-23,"Khan, Mahomad",27,Production,52.6374,24.1462%
-2025-07-23,"Levinrad, Dayne",28,Production,51.9036,23.8096%
-2025-07-23,"Nevhutalu, Godfrey",29,Production,39.5452,18.1405%
-2025-07-23,"Duvenhge, Lorinda 2",30,Production,18.0565,8.2830%
-2025-07-23,"Duvenhge, Lorinda",31,Production,17.2571,7.9163%
-2025-07-23,"Nhlakanipho, Mthabela",32,Production,10.7203,4.9177%
-2025-07-23,"De Gouveia, Roberto 2",1,Production Optics,217.9465,100.0000%
-2025-07-23,"X, Ghost",2,Production Optics,217.6108,99.8460%
-2025-07-23,"De Gouveia, Roberto",3,Production Optics,214.8312,98.5706%
-2025-07-23,"De Gouveia, Roberto",4,Production Optics,190.9615,87.6185%
-2025-07-23,"Gillespie, Josh 2",5,Production Optics,181.3729,83.2190%
-2025-07-23,"De Gouveia, Roberto (EDC)",6,Production Optics,173.9077,79.7938%
-2025-07-23,"Bishop, Mark",7,Production Optics,145.7461,66.8724%
-2025-07-23,"Smith, Sheldon",8,Production Optics,135.1536,62.0123%
-2025-07-23,"Dias J, Vic",9,Production Optics,133.3480,61.1838%
-2025-07-23,"Dias J, Vic 2",10,Production Optics,131.4314,60.3044%
-2025-07-23,"Sukazi, Lindelihle 3",11,Production Optics,120.9730,55.5058%
-2025-07-23,"Dias, Talia 2",12,Production Optics,106.6236,48.9219%
-2025-07-23,"Titizana, Zanemvula 2",13,Production Optics,101.6421,46.6363%
-2025-07-23,"Mshove, Mbali",14,Production Optics,101.0684,46.3730%
-2025-07-23,"Titizana, Zanemvula",15,Production Optics,95.1410,43.6534%
-2025-07-23,"Phaedi, Tiiso",16,Production Optics,93.9532,43.1084%
-2025-07-23,"Sukazi, Lindelihle",17,Production Optics,91.9912,42.2082%
-2025-07-23,"Cornelius, Michaela",18,Production Optics,26.1622,12.0040%
-2025-07-23,"Naidoo, Saven",1,Standard,220.0000,100.0000%
-2025-07-23,"Chamont, Brad",2,Standard,199.7021,90.7737%
-2025-07-23,"Naidoo, Saven 2",3,Standard,197.9624,89.9829%
-2025-07-23,"Dias, Vic 2",4,Standard,165.8808,75.4004%
-2025-07-23,"Dias, Talia",5,Standard,164.3021,74.6828%
-2025-07-23,"Veysel, Karan",6,Standard,161.8946,73.5885%
-2025-07-23,"Dias, Vic (Senior)",7,Standard,155.6205,70.7366%
-2025-07-23,"Moolman, Adrian",1,Combined,212.1894,100.0000%
-2025-07-23,"De Gouveia, Roberto",2,Combined,201.3984,94.9144%
-2025-07-23,"Gillespie, Josh",3,Combined,191.8967,90.4365%
-2025-07-23,"Moolman, Adrian (EDC)",4,Combined,186.4503,87.8698%
-2025-07-23,"De Gouveia, Roberto (EDC)",5,Combined,184.5771,86.9870%
-2025-07-23,"Plein, Noah",6,Combined,176.7992,83.3214%
-2025-07-23,"Gillespie, Josh",7,Combined,162.3473,76.5106%
-2025-07-23,"Bishop, Mark",8,Combined,155.1239,73.1063%
-2025-07-23,"Naidoo, Saven",9,Combined,152.7989,72.0106%
-2025-07-23,"Horton, Mike",10,Combined,150.6066,70.9774%
-2025-07-23,"Gxagxa, Muzi",11,Combined,147.3475,69.4415%
-2025-07-23,"Grobblaar, Mj",12,Combined,146.9643,69.2609%
-2025-07-23,"Smith, Sheldon",13,Combined,143.6254,67.6874%
-2025-07-23,"Dias J, Vic",14,Combined,142.0521,66.9459%
-2025-07-23,"Chamont, Brad",15,Combined,138.8330,65.4288%
-2025-07-23,"Plein, Aubrey",16,Combined,137.3936,64.7505%
-2025-07-23,"Modjadji Mm, Mfana",17,Combined,128.3761,60.5007%
-2025-07-23,"Mtshwene, Siphiwe",18,Combined,125.8704,59.3198%
-2025-07-23,"Coetzee, Desmond",19,Combined,121.7127,57.3604%
-2025-07-23,"Msibi, Jabulani",20,Combined,120.4970,56.7875%
-2025-07-23,"Dias, Talia",21,Combined,114.1524,53.7974%
-2025-07-23,"Dodge, Dave",22,Combined,112.7422,53.1328%
-2025-07-23,"Veysel, Karan",23,Combined,112.4636,53.0015%
-2025-07-23,"Dias, Vic (Senior)",24,Combined,108.0111,50.9032%
-2025-07-23,"Mshove, Mbali",25,Combined,105.8716,49.8949%
-2025-07-23,"Bishop, Steven",26,Combined,102.0033,48.0718%
-2025-07-23,"Titizana, Zanemvula",27,Combined,100.3689,47.3016%
-2025-07-23,"Ditsela, Richard",28,Combined,99.6766,46.9753%
-2025-07-23,"Phaedi, Tiiso",29,Combined,98.8703,46.5953%
-2025-07-23,"Sukazi, Lindelihle",30,Combined,96.1819,45.3283%
-2025-07-23,"Faurie, Zander",31,Combined,94.1524,44.3719%
-2025-07-23,"Vrey, Wian",32,Combined,91.0338,42.9021%
-2025-07-23,"Radebe, Xolani",33,Combined,89.4950,42.1769%
-2025-07-23,"Lodge, Athelio",34,Combined,76.1593,35.8921%
-2025-07-23,"Rahman, Aqeel",35,Combined,68.3462,32.2100%
-2025-07-23,"Dineka, Vuyisile",36,Combined,66.7162,31.4418%
-2025-07-23,"Khan, Mahomad",37,Combined,51.4192,24.2327%
-2025-07-23,"Levinrad, Dayne",38,Combined,51.0405,24.0542%
-2025-07-23,"Nevhutalu, Godfrey",39,Combined,39.5613,18.6443%
-2025-07-23,"Cornelius, Michaela",40,Combined,27.7553,13.0804%
-2025-07-23,"Duvenhge, Lorinda",41,Combined,17.2642,8.1362%
-2025-07-23,"Nhlakanipho, Mthabela",42,Combined,10.1503,4.7836%
-2025-07-23,"Plein, Aubrey",1,Classic,220.0000,100.0000%
-2025-07-23,"Horton, Mike",1,PCC Optics,220.0000,100.0000%
-2025-07-23,"Moolman, Adrian",1,Production,218.0382,100.0000%
-2025-07-23,"Moolman, Adrian (EDC)",2,Production,190.7435,87.4817%
-2025-07-23,"Plein, Noah",3,Production,181.6611,83.3162%
-2025-07-23,"Gillespie, Josh",4,Production,167.2278,76.6966%
-2025-07-23,"Gxagxa, Muzi",5,Production,151.3107,69.3964%
-2025-07-23,"Grobblaar, Mj",6,Production,150.9152,69.2150%
-2025-07-23,"Modjadji Mm, Mfana",7,Production,131.6393,60.3744%
-2025-07-23,"Mtshwene, Siphiwe",8,Production,129.8599,59.5583%
-2025-07-23,"Coetzee, Desmond",9,Production,125.4216,57.5228%
-2025-07-23,"Msibi, Jabulani",10,Production,123.6758,56.7221%
-2025-07-23,"Dodge, Dave",11,Production,115.6180,53.0265%
-2025-07-23,"Bishop, Steven",12,Production,105.6938,48.4749%
-2025-07-23,"Ditsela, Richard",13,Production,101.9210,46.7446%
-2025-07-23,"Faurie, Zander",14,Production,96.8655,44.4259%
-2025-07-23,"Vrey, Wian",15,Production,93.2415,42.7638%
-2025-07-23,"Radebe, Xolani",16,Production,91.6401,42.0294%
-2025-07-23,"Lodge, Athelio",17,Production,77.9278,35.7404%
-2025-07-23,"Rahman, Aqeel",18,Production,69.7419,31.9861%
-2025-07-23,"Dineka, Vuyisile",19,Production,68.0892,31.2281%
-2025-07-23,"Khan, Mahomad",20,Production,52.6494,24.1469%
-2025-07-23,"Levinrad, Dayne",21,Production,51.9180,23.8114%
-2025-07-23,"Nevhutalu, Godfrey",22,Production,39.5613,18.1442%
-2025-07-23,"Duvenhge, Lorinda",23,Production,17.2642,7.9180%
-2025-07-23,"Nhlakanipho, Mthabela",24,Production,10.7203,4.9167%
-2025-07-23,"De Gouveia, Roberto",1,Production Optics,210.5042,100.0000%
-2025-07-23,"Gillespie, Josh",2,Production Optics,201.4231,95.6860%
-2025-07-23,"De Gouveia, Roberto (EDC)",3,Production Optics,194.5432,92.4177%
-2025-07-23,"Bishop, Mark",4,Production Optics,164.1028,77.9570%
-2025-07-23,"Smith, Sheldon",5,Production Optics,151.6290,72.0313%
-2025-07-23,"Dias J, Vic",6,Production Optics,150.4455,71.4691%
-2025-07-23,"Mshove, Mbali",7,Production Optics,109.6556,52.0919%
-2025-07-23,"Titizana, Zanemvula",8,Production Optics,104.9457,49.8544%
-2025-07-23,"Phaedi, Tiiso",9,Production Optics,103.0375,48.9480%
-2025-07-23,"Sukazi, Lindelihle",10,Production Optics,99.3655,47.2036%
-2025-07-23,"Cornelius, Michaela",11,Production Optics,29.2373,13.8892%
-2025-07-23,"Naidoo, Saven",1,Standard,220.0000,100.0000%
-2025-07-23,"Chamont, Brad",2,Standard,199.7021,90.7737%
-2025-07-23,"Dias, Talia",3,Standard,164.3021,74.6828%
-2025-07-23,"Veysel, Karan",4,Standard,161.8946,73.5885%
-2025-07-23,"Dias, Vic (Senior)",5,Standard,155.6205,70.7366%
-2025-07-16,"Da Silva, Alexia 2",1,Combined,186.2663,100.0000%
-2025-07-16,"Da Silva, Alexia",2,Combined,182.1929,97.8131%
-2025-07-16,"De Gouveia, Roberto 2",3,Combined,181.7852,97.5943%
-2025-07-16,"Sandiego, Carmen",4,Combined,176.5507,94.7840%
-2025-07-16,"X, Ghost",5,Combined,169.4298,90.9611%
-2025-07-16,"De Gouveia, Roberto",6,Combined,167.3019,89.8187%
-2025-07-16,"Moolman, Adrian",7,Combined,160.1287,85.9676%
-2025-07-16,"De Gouveia, Roberto (EDC)",8,Combined,159.7227,85.7496%
-2025-07-16,"Moolman, Adrian (EDC)",9,Combined,151.5861,81.3814%
-2025-07-16,"Gillespie, Josh",10,Combined,149.1304,80.0630%
-2025-07-16,"De Gouveia, Roberto (EDC)",11,Combined,147.8058,79.3519%
-2025-07-16,"Moolman, Adrian (EDC)",12,Combined,145.3475,78.0321%
-2025-07-16,"Sniper, Recon",13,Combined,140.9712,75.6826%
-2025-07-16,"Bishop, Mark",14,Combined,136.9982,73.5496%
-2025-07-16,"Knox, Nobby",15,Combined,133.7720,71.8176%
-2025-07-16,"Moolman, Adrian 7",16,Combined,133.3452,71.5885%
-2025-07-16,"Gillespie, Josh 2",17,Combined,131.6023,70.6528%
-2025-07-16,"Plein, Aubrey",18,Combined,131.3818,70.5344%
-2025-07-16,"Naidoo, Saven",19,Combined,131.3137,70.4978%
-2025-07-16,"Plein, Noah",20,Combined,126.1380,67.7192%
-2025-07-16,"Gxagxa, Muzi",21,Combined,124.0615,66.6044%
-2025-07-16,"Gxagxa, Muzi 2",22,Combined,120.7696,64.8371%
-2025-07-16,"Bishop, Steven",23,Combined,117.6720,63.1741%
-2025-07-16,"Mshove, Mbali",24,Combined,110.3961,59.2679%
-2025-07-16,"Smith, Sheldon",25,Combined,110.2400,59.1841%
-2025-07-16,"Coetzee, Desmond",26,Combined,109.2901,58.6741%
-2025-07-16,"Naidoo, Saven 2",27,Combined,108.5885,58.2974%
-2025-07-16,"Merredew, Sebastian",28,Combined,106.0439,56.9313%
-2025-07-16,"Mshove, Mbali 2",29,Combined,105.2003,56.4784%
-2025-07-16,"Chamont, Brad",30,Combined,104.6952,56.2073%
-2025-07-16,"Sukazi, Lindelihle",31,Combined,97.1181,52.1394%
-2025-07-16,"Du Plooy, Dewald",32,Combined,96.9111,52.0283%
-2025-07-16,"Dias, Vic Senior",33,Combined,93.9663,50.4473%
-2025-07-16,"Ditsela, Richard",34,Combined,91.7565,49.2609%
-2025-07-16,"Horton, Mike 3",35,Combined,90.6347,48.6587%
-2025-07-16,"Gillespie, Josh",36,Combined,90.5373,48.6064%
-2025-07-16,"Dias-Chamont, Talia",37,Combined,89.1845,47.8801%
-2025-07-16,"Horton, Mike 2",38,Combined,88.1146,47.3057%
-2025-07-16,"Dias, Vic Senior 2",39,Combined,84.4465,45.3364%
-2025-07-16,"Masike, Tebogo",40,Combined,84.1102,45.1559%
-2025-07-16,"Horton, Mike",41,Combined,83.5727,44.8673%
-2025-07-16,"Sukazi, Lindelihle 2",42,Combined,80.5936,43.2679%
-2025-07-16,"Castegnaro, Giorgio",43,Combined,79.5590,42.7125%
-2025-07-16,"Merredew, Henry",44,Combined,78.0025,41.8769%
-2025-07-16,"Veysel, Karan",45,Combined,74.1506,39.8089%
-2025-07-16,"Nkosi, Sihle 2",46,Combined,72.6977,39.0289%
-2025-07-16,"Lodge, Athelio",47,Combined,67.9829,36.4977%
-2025-07-16,"Grobblaar, Mj",48,Combined,66.4746,35.6879%
-2025-07-16,"Appelgryn, Wesley",49,Combined,65.0127,34.9031%
-2025-07-16,"Lodge, Athelio 2",50,Combined,62.9976,33.8213%
-2025-07-16,"Nkosi, Sihle",51,Combined,61.0090,32.7536%
-2025-07-16,"Vrey, Wian",52,Combined,60.9956,32.7464%
-2025-07-16,"Goncalves, Rory",53,Combined,56.0611,30.0973%
-2025-07-16,"Goncalves, Cayla",54,Combined,44.9084,24.1098%
-2025-07-16,"Hume, Sarah",55,Combined,41.3620,22.2058%
-2025-07-16,"Qwabe, Lihle",56,Combined,37.9601,20.3795%
-2025-07-16,"Appelgryn, Wesley 2",57,Combined,37.6240,20.1990%
-2025-07-16,"Cornelius, Michaela",58,Combined,11.3548,6.0960%
-2025-07-16,"Rambau, Monty",59,Combined,2.1027,1.1289%
-2025-07-16,"Plein, Aubrey",1,Classic,190.0000,100.0000%
-2025-07-16,"Sandiego, Carmen",1,Production,190.0000,100.0000%
-2025-07-16,"Moolman, Adrian",2,Production,171.6925,90.3645%
-2025-07-16,"Moolman, Adrian (EDC)",3,Production,163.2804,85.9371%
-2025-07-16,"Moolman, Adrian (EDC)",4,Production,156.7324,82.4907%
-2025-07-16,"Sniper, Recon",5,Production,151.3016,79.6324%
-2025-07-16,"Knox, Nobby",6,Production,144.3083,75.9517%
-2025-07-16,"Moolman, Adrian 7",7,Production,143.8600,75.7158%
-2025-07-16,"Plein, Noah",8,Production,136.7302,71.9633%
-2025-07-16,"Gxagxa, Muzi",9,Production,133.1944,70.1023%
-2025-07-16,"Gxagxa, Muzi 2",10,Production,129.5124,68.1644%
-2025-07-16,"Bishop, Steven",11,Production,126.2891,66.4679%
-2025-07-16,"Coetzee, Desmond",12,Production,117.7775,61.9882%
-2025-07-16,"Merredew, Sebastian",13,Production,115.4038,60.7388%
-2025-07-16,"Gillespie, Josh",14,Production,99.0662,52.1401%
-2025-07-16,"Ditsela, Richard",15,Production,98.8389,52.0205%
-2025-07-16,"Horton, Mike 3",16,Production,98.0442,51.6022%
-2025-07-16,"Horton, Mike 2",17,Production,95.3498,50.1841%
-2025-07-16,"Masike, Tebogo",18,Production,90.9362,47.8612%
-2025-07-16,"Horton, Mike",19,Production,90.4111,47.5848%
-2025-07-16,"Castegnaro, Giorgio",20,Production,85.4889,44.9942%
-2025-07-16,"Grobblaar, Mj",21,Production,75.3443,39.6549%
-2025-07-16,"Nkosi, Sihle 2",22,Production,75.1302,39.5422%
-2025-07-16,"Lodge, Athelio",23,Production,71.9677,37.8777%
-2025-07-16,"Appelgryn, Wesley",24,Production,71.0646,37.4024%
-2025-07-16,"Lodge, Athelio 2",25,Production,70.2482,36.9727%
-2025-07-16,"Vrey, Wian",26,Production,65.6603,34.5581%
-2025-07-16,"Goncalves, Cayla",27,Production,49.1327,25.8593%
-2025-07-16,"Qwabe, Lihle",28,Production,41.0884,21.6255%
-2025-07-16,"Appelgryn, Wesley 2",29,Production,40.5480,21.3411%
-2025-07-16,"Cornelius, Michaela",30,Production,11.7541,6.1864%
-2025-07-16,"Rambau, Monty",31,Production,2.4022,1.2643%
-2025-07-16,"Da Silva, Alexia 2",1,Production Optics,186.2663,100.0000%
-2025-07-16,"Da Silva, Alexia",2,Production Optics,182.1929,97.8131%
-2025-07-16,"De Gouveia, Roberto 2",3,Production Optics,181.7852,97.5943%
-2025-07-16,"X, Ghost",4,Production Optics,169.4298,90.9611%
-2025-07-16,"De Gouveia, Roberto",5,Production Optics,167.3019,89.8187%
-2025-07-16,"De Gouveia, Roberto (EDC)",6,Production Optics,159.7227,85.7496%
-2025-07-16,"Gillespie, Josh",7,Production Optics,149.1304,80.0630%
-2025-07-16,"De Gouveia, Roberto (EDC)",8,Production Optics,147.8058,79.3519%
-2025-07-16,"Bishop, Mark",9,Production Optics,136.9982,73.5496%
-2025-07-16,"Gillespie, Josh 2",10,Production Optics,131.6023,70.6528%
-2025-07-16,"Mshove, Mbali",11,Production Optics,110.3961,59.2679%
-2025-07-16,"Smith, Sheldon",12,Production Optics,110.2400,59.1841%
-2025-07-16,"Mshove, Mbali 2",13,Production Optics,105.2003,56.4784%
-2025-07-16,"Sukazi, Lindelihle",14,Production Optics,97.1181,52.1394%
-2025-07-16,"Du Plooy, Dewald",15,Production Optics,96.9111,52.0283%
-2025-07-16,"Sukazi, Lindelihle 2",16,Production Optics,80.5936,43.2679%
-2025-07-16,"Goncalves, Rory",17,Production Optics,56.0611,30.0973%
-2025-07-16,"Hume, Sarah",18,Production Optics,41.3620,22.2058%
-2025-07-16,"Naidoo, Saven",1,Standard,190.0000,100.0000%
-2025-07-16,"Naidoo, Saven 2",2,Standard,157.6121,82.9537%
-2025-07-16,"Chamont, Brad",3,Standard,151.7530,79.8700%
-2025-07-16,"Dias, Vic Senior",4,Standard,136.6341,71.9127%
-2025-07-16,"Dias-Chamont, Talia",5,Standard,129.0853,67.9396%
-2025-07-16,"Dias, Vic Senior 2",6,Standard,122.1046,64.2656%
-2025-07-16,"Merredew, Henry",7,Standard,113.1722,59.5643%
-2025-07-16,"Veysel, Karan",8,Standard,106.6956,56.1556%
-2025-07-16,"Nkosi, Sihle",9,Standard,87.3803,45.9896%
-2025-07-16,"De Gouveia, Roberto",1,Combined,188.3792,100.0000%
-2025-07-16,"Moolman, Adrian",2,Combined,179.5401,95.3078%
-2025-07-16,"Gillespie, Josh",3,Combined,167.9183,89.1385%
-2025-07-16,"De Gouveia, Roberto (EDC)",4,Combined,167.6610,89.0019%
-2025-07-16,"Moolman, Adrian (EDC)",5,Combined,163.9837,87.0498%
-2025-07-16,"Bishop, Mark",6,Combined,155.3453,82.4641%
-2025-07-16,"Knox, Nobby",7,Combined,150.9905,80.1524%
-2025-07-16,"Naidoo, Saven",8,Combined,148.6047,78.8859%
-2025-07-16,"Plein, Aubrey",9,Combined,147.9614,78.5444%
-2025-07-16,"Plein, Noah",10,Combined,143.1259,75.9775%
-2025-07-16,"Gxagxa, Muzi",11,Combined,139.2995,73.9463%
-2025-07-16,"Bishop, Steven",12,Combined,132.0733,70.1103%
-2025-07-16,"Smith, Sheldon",13,Combined,124.6126,66.1499%
-2025-07-16,"Coetzee, Desmond",14,Combined,123.2194,65.4103%
+2025-07-02,"Plein, Aubrey",Classic,1,150.0,100.0
+2025-07-02,"Da Cruz, David",PCC Optics,1,150.0,100.0
+2025-07-02,"Rabie, Theo",PCC Optics,2,131.9755,87.9837
+2025-07-02,"Morris, Bevan",PCC Optics,3,120.3118,80.2079
+2025-07-02,"Hepton, Harry",PCC Optics,4,83.1587,55.4391
+2025-07-02,"Rowe, Connor",PCC Optics,5,79.9095,53.273
+2025-07-02,"Wei, Darren",PCC Optics,6,68.6525,45.7683
+2025-07-02,"De Gouveia, Roberto (P)",Production,1,150.0,100.0
+2025-07-02,"Plein, Noah",Production,2,136.1306,90.7537
+2025-07-02,"Moolman, Adrian",Production,3,133.5529,89.0353
+2025-07-02,"Gxagxa, Muzi",Production,4,101.8383,67.8922
+2025-07-02,"Coetzee, Desmond",Production,5,87.9879,58.6586
+2025-07-02,"Da Silva, Alexia",Production,6,82.957,55.3047
+2025-07-02,"Docrat, Mohammed",Production,7,80.5151,53.6767
+2025-07-02,"Knox, Nobby",Production,8,79.4268,52.9512
+2025-07-02,"Dineka, Vuyisile",Production,9,71.5374,47.6916
+2025-07-02,"Khumalo, Sabelo",Production,10,65.8778,43.9185
+2025-07-02,"Chemaly, Daniel",Production,11,52.6817,35.1211
+2025-07-02,"Levinrad, Dayne",Production,12,38.1415,25.4277
+2025-07-02,"Jones, Nicholas",Production,13,22.7314,15.1543
+2025-07-02,"Hartzenberg, Byron",Production,14,20.8679,13.9119
+2025-07-02,"Wood, Jonathan",Production,15,19.1471,12.7647
+2025-07-02,"Rahman, Aqeel",Production,16,18.3732,12.2488
+2025-07-02,"Msibi, Jabulani...",Production,17,17.6334,11.7556
+2025-07-02,"Dodge, Dave",Production,18,17.4171,11.6114
+2025-07-02,"Mabaso, Siphiwe",Production,19,16.4891,10.9927
+2025-07-02,"Tshabalala, Dumisani Alexius",Production,20,13.6231,9.0821
+2025-07-02,"X, Ghost",Production,21,13.3947,8.9298
+2025-07-02,"Dodge, Dave 2",Production,22,12.7214,8.4809
+2025-07-02,"Rabie, Theo",Production Optics,1,150.0,100.0
+2025-07-02,"De Gouveia, Roberto 2",Production Optics,2,142.8023,95.2015
+2025-07-02,"X, Leehleza",Production Optics,3,136.9861,91.3241
+2025-07-02,"Bishop, Mark",Production Optics,4,131.7593,87.8395
+2025-07-02,"De Gouveia, Roberto",Production Optics,5,129.5992,86.3995
+2025-07-02,"Du Plooy, Dewald",Production Optics,6,110.1558,73.4372
+2025-07-02,"Smith, Sheldon",Production Optics,7,89.6582,59.7721
+2025-07-02,"Bardenhorst, Jeandre",Production Optics,8,37.4134,24.9423
+2025-07-02,"Naidoo, Saven",Standard,1,150.0,100.0
+2025-07-02,"Veysel, Karan",Standard,2,143.197,95.4647
+2025-07-02,"Naidoo, Saven 2",Standard,3,139.7562,93.1708
+2025-07-02,"Dias-Chamont, Talia",Standard,4,103.5518,69.0345
+2025-07-02,"Martins, Jorge",Standard,5,82.0298,54.6865
+2025-07-02,"Chamont, Brad",Standard,6,77.5873,51.7249
+2025-07-02,"Da Cruz, David",Combined,1,145.8489,100.0
+2025-07-02,"De Gouveia, Roberto 2",Combined,2,129.5289,88.8103
+2025-07-02,"Da Silva, Alexia 2",Combined,3,129.4051,88.7255
+2025-07-02,"Rabie, Theo",Combined,4,128.1063,87.8349
+2025-07-02,"X, Ghost",Combined,5,122.2566,83.8241
+2025-07-02,"Morris, Bevan",Combined,6,117.0237,80.2363
+2025-07-02,"De Gouveia, Roberto",Combined,7,109.9886,75.4127
+2025-07-02,"Plein, Noah 2",Combined,8,97.7828,67.0439
+2025-07-02,"De Gouveia, Roberto (P)",Combined,9,95.5944,65.5434
+2025-07-02,"Plein, Aubrey",Combined,10,90.8617,62.2985
+2025-07-02,"Gillespie, Josh 3",Combined,11,90.57,62.0985
+2025-07-02,"Gillespie, Josh",Combined,12,89.7908,61.5643
+2025-07-02,"Gillespie, Josh 2",Combined,13,89.4333,61.3191
+2025-07-02,"Plein, Noah",Combined,14,86.2794,59.1567
+2025-07-02,"Moolman, Adrian",Combined,15,84.5048,57.94
+2025-07-02,"Hepton, Harry",Combined,16,80.9329,55.4909
+2025-07-02,"Bishop, Mark",Combined,17,79.762,54.6881
+2025-07-02,"Gxagxa, Muzi 2",Combined,18,78.1648,53.593
+2025-07-02,"Rowe, Connor",Combined,19,78.0775,53.5331
+2025-07-02,"Naidoo, Saven",Combined,20,69.6148,47.7308
+2025-07-02,"Wei, Darren",Combined,21,66.6395,45.6908
+2025-07-02,"Gxagxa, Muzi",Combined,22,65.0908,44.6289
+2025-07-02,"Dodge, Dave 2",Combined,23,61.7823,42.3605
+2025-07-02,"Du Plooy, Dewald",Combined,24,56.8689,38.9917
+2025-07-02,"Rabie, Theo",Combined,25,56.7227,38.8914
+2025-07-02,"Coetzee, Desmond",Combined,26,56.2122,38.5414
+2025-07-02,"Smith, Sheldon",Combined,27,56.143,38.4939
+2025-07-02,"Docrat, Mohammed",Combined,28,53.1068,36.4122
+2025-07-02,"Da Silva, Alexia",Combined,29,52.8306,36.2228
+2025-07-02,"Knox, Nobby",Combined,30,51.4231,35.2578
+2025-07-02,"Naidoo, Saven 2",Combined,31,50.8622,34.8732
+2025-07-02,"Dineka, Vuyisile",Combined,32,46.7487,32.0528
+2025-07-02,"Dineka, Vuyisile 2",Combined,33,41.4858,28.4444
+2025-07-02,"Khumalo, Sabelo",Combined,34,41.3568,28.3559
+2025-07-02,"Chemaly, Daniel",Combined,35,35.1775,24.1191
+2025-07-02,"Levinrad, Dayne 2",Combined,36,34.1073,23.3854
+2025-07-02,"Bardenhorst, Jeandre",Combined,37,27.6568,18.9626
+2025-07-02,"Levinrad, Dayne",Combined,38,24.8455,17.0351
+2025-07-02,"Veysel, Karan",Combined,39,16.5043,11.316
+2025-07-02,"Hartzenberg, Byron",Combined,40,13.5807,9.3115
+2025-07-02,"Jones, Nicholas",Combined,41,13.3914,9.1817
+2025-07-02,"Wood, Jonathan",Combined,42,12.7508,8.7425
+2025-07-02,"Rahman, Aqeel",Combined,43,11.0696,7.5898
+2025-07-02,"Msibi, Jabulani",Combined,44,9.7931,6.7146
+2025-07-02,"Dodge, Dave",Combined,45,8.7948,6.0301
+2025-07-02,"Mabaso, Siphiwe",Combined,46,8.7648,6.0095
+2025-07-02,"Tshabalala, Dumisani Alexius",Combined,47,5.2444,3.5958
+2025-07-02,"Docrat, Mohammed",Combined,48,0.0,0.0
+2025-06-11,"Chamont, Brad",Standard,1,115.0,100.0
+2025-06-11,"Naidoo, Saven",Standard,2,111.7117,97.14
+2025-06-11,"Naidoo, Saven 2",Standard,3,107.659,93.62
+2025-06-11,"Dias-Chamont, Talia",Standard,4,78.8568,68.57
+2025-06-11,"Martins, Jorge",Standard,5,59.4356,51.68
+2025-06-11,"Veysel, Karan",Standard,6,52.9545,46.05
+2025-06-11,"De Gouveia, Roberto 2",Combined,1,115.0,100.0
+2025-06-11,"De Gouveia, Roberto",Combined,2,112.7213,98.02
+2025-06-11,"De Gouveia, Roberto 4",Combined,3,112.2263,97.59
+2025-06-11,"De Gouveia, Roberto 3",Combined,4,109.6904,95.38
+2025-06-11,"Moolman, Adrian 2",Combined,5,109.1379,94.9
+2025-06-11,"Moolman, Adrian",Combined,6,106.4254,92.54
+2025-06-11,"Plein, Noah",Combined,7,103.317,89.84
+2025-06-11,"Gillespie, Josh 2",Combined,8,94.3303,82.03
+2025-06-11,"Ferreira, Johan 2",Combined,9,85.2684,74.15
+2025-06-11,"Gillespie, Josh",Combined,10,82.9963,72.17
+2025-06-11,"Dias, Vic",Combined,11,81.1688,70.58
+2025-06-11,"Dias, Vic",Combined,12,81.1688,70.58
+2025-06-11,"Du Plooy, Dewald",Combined,13,76.5369,66.55
+2025-06-11,"X, Ghost",Combined,14,75.0537,65.27
+2025-06-11,"Plein, Aubrey",Combined,15,73.195,63.66
+2025-06-11,"Msibi, Jabulani 2",Combined,16,68.9567,59.96
+2025-06-11,"Naidoo, Saven",Combined,17,68.6186,59.67
+2025-06-11,"Ngcobo, Thabo",Combined,18,66.1957,57.56
+2025-06-11,"Rabie, Theo",Combined,19,65.8674,57.28
+2025-06-11,"Bishop, Mark",Combined,20,65.4956,56.95
+2025-06-11,"Blignaut, Calvin",Combined,21,64.7001,56.27
+2025-06-11,"Smith, Sheldon",Combined,22,62.6394,54.47
+2025-06-11,"Msibi, Jabulani",Combined,23,59.9771,52.15
+2025-06-11,"Ferreira, Johan",Combined,24,59.4356,51.68
+2025-06-11,"Dodge, Dave",Combined,25,58.8252,51.15
+2025-06-11,"X, Zuluboy",Combined,26,57.7303,50.21
+2025-06-11,"Ditsela, Richard",Combined,27,57.0674,49.64
+2025-06-11,"Gerin, Pino",Combined,28,54.4533,47.35
+2025-06-11,"Dodge, Dave 2",Combined,29,52.9545,46.05
+2025-06-11,"Sukazi, Lindelihle",Combined,30,52.9304,46.03
+2025-06-11,"Martins, Jorge",Combined,31,52.1287,45.34
+2025-06-11,"Coetzee, Desmond",Combined,32,49.8804,43.4
+2025-06-11,"Gxagxa, Muzi",Combined,33,49.6104,43.17
+2025-06-11,"Benecke, Sheldon",Combined,34,49.0354,42.67
+2025-06-11,"Bishop, Steven",Combined,35,47.8821,41.67
+2025-06-11,"Knox, Nobby",Combined,36,46.9152,40.83
+2025-06-11,"Naidoo, Saven 2",Combined,37,45.0298,39.24
+2025-06-11,"Khumalo, Sabelo",Combined,38,44.5772,38.84
+2025-06-11,"Chamont, Brad",Combined,39,43.9168,38.27
+2025-06-11,"Gxagxa, Canik",Combined,40,43.2563,37.7
+2025-06-11,"Martins, Jorge 2",Combined,41,40.5284,35.24
+2025-06-11,"Diaz-Chamont, Talia",Combined,42,39.3208,34.19
+2025-06-11,"Maxwell, Kyle",Combined,43,36.5574,31.79
+2025-06-11,"Motloung, Sanele",Combined,44,35.3444,30.74
+2025-06-11,"Berman, Daniel",Combined,45,34.6978,30.18
+2025-06-11,"Chemaly, Daniel",Combined,46,31.2589,27.18
+2025-06-11,"Khan, Mahomad",Combined,47,30.2224,26.28
+2025-06-11,"Eleshmawi, Faris",Combined,48,27.2028,23.65
+2025-06-11,"Ngcobo, Thabo",Production Optics,1,204.3644,100.0
+2025-06-11,"De Gouveia, Roberto 2",Production Optics,2,203.886,99.7669
+2025-06-11,"De Gouveia, Roberto",Production Optics,3,197.8093,96.7937
+2025-06-11,"Goncalves, Francisco",Production Optics,4,196.5367,96.1793
+2025-06-11,"De Gouveia, Roberto 3",Production Optics,5,189.9806,92.9626
+2025-06-11,"Ngcobo, Thabo",Production Optics,6,168.4086,82.4077
+2025-06-11,"Knox, Nobby",Production,7,156.5768,76.618
+2025-06-11,"Moolman, Adrian",Production,8,148.4582,72.6468
+2025-06-11,"Moolman, Adrian 2",Production,9,142.6675,69.8105
+2025-06-11,"Bishop, Steven",Production,10,140.6976,68.8413
+2025-06-11,"Plein, Noah",Production,11,139.7562,68.3847
+2025-06-11,"Benecke, Sheldon",Production,12,135.0877,66.0022
+2025-06-11,"Plein, Noah 2",Production,13,132.5846,64.7735
+2025-06-11,"Coetzee, Desmond",Production,14,130.8781,63.9372
+2025-06-11,"Gxagxa, Muzi",Production,15,127.3204,62.1932
+2025-06-11,"Msibi, Jabulani",Production,16,120.3323,58.8829
+2025-06-11,"Ditsela, Richard",Production,17,118.8108,58.1362
+2025-06-11,"Dodge, Dave",Production,18,118.0673,57.7725
+2025-06-11,"X, Zuluboy",Production,19,109.8,53.7275
+2025-06-11,"Khumalo, Sabelo",Production,20,109.0917,53.3804
+2025-06-11,"Martins, Jorge",Production,21,107.0279,52.3725
+2025-06-11,"Dodge, Dave 2",Production,22,106.6713,52.2045
+2025-06-11,"Gxagxa, Canik",Production,23,103.5518,50.6712
+2025-06-11,"Khan, Mahomad",Production,24,42.5036,18.9861
+2025-06-11,"Bvuma, Tshepo",Production,25,41.5905,18.5783
+2025-06-11,"Eleshmawi, Faris",Production,26,40.8218,18.2349
+2025-06-11,"Ntuli, Sibusiso",Production,27,40.1554,17.9332
+2025-06-11,"Maduna, Thabiso",Production,28,35.9949,16.0888
+2025-06-11,"Tshabalala, Dumisani Alexius",Production,29,35.7722,15.9897
+2025-06-11,"Mqaise, Rudy",Production,30,28.6672,12.8122
+2025-06-11,"Bvuma, Tshepo",Production,31,14.2279,12.37
+2025-06-11,"Mqaise, Rudy",Production,32,0.0,0.0
+2025-06-11,"Rahman, Ismaaeel",Production,33,0.0,0.0
+2025-06-11,"Martins, Jorge",Standard,1,115.0,100.0
+2025-06-11,"Naidoo, Saven",Standard,2,110.0,95.65
+2025-06-11,"Naidoo, Saven 2",Standard,3,105.0,91.3
+2025-06-04,"Plein, Aubrey",Classic,1,110.0,100.0
+2025-06-04,"Basson, Melanie",Open,1,110.0,100.0
+2025-06-04,"Da Cruz, David",PCC Optics,1,110.0,100.0
+2025-06-04,"Goncalves, Rory",PCC Optics,2,74.666,67.88
+2025-06-04,"Plein, Noah",Production,1,110.0,100.0
+2025-06-04,"Moolman, Adrian 2",Production,2,103.5135,94.1
+2025-06-04,"Gxagxa, Muzi 2",Production,3,85.2903,77.54
+2025-06-04,"Knox, Nobby",Production,4,73.8997,67.18
+2025-06-04,"Seeger, Michael",Production,5,69.3082,63.01
+2025-06-04,"Smith, Gert",Production,6,68.4972,62.27
+2025-06-04,"Truter, Bernard",Production,7,61.0839,55.53
+2025-06-04,"Bishop, Steven",Production,8,60.1619,54.69
+2025-06-04,"Saks, Eli",Production,9,51.7975,47.09
+2025-06-04,"Benecke, Sheldon",Production,10,48.7462,44.31
+2025-06-04,"Moolman, Adrian",Production,11,45.631,41.48
+2025-06-04,"Titizana, Zanemvula",Production,12,45.4285,41.3
+2025-06-04,"Knoetze, Luan",Production,13,44.2057,40.19
+2025-06-04,"Levinrad, Dayne",Production,14,40.1384,36.49
+2025-06-04,"Hartzenberg, Byron",Production,15,39.0189,35.47
+2025-06-04,"Coetzee, Desmond",Production,16,36.5746,33.25
+2025-06-04,"Msibi, Jabulani",Production,17,35.0312,31.85
+2025-06-04,"Gxagxa, Canik",Production,18,29.9701,27.25
+2025-06-04,"Dineka, Vuyisile",Production,19,21.3675,19.42
+2025-06-04,"Gittins, Ashley",Production,20,20.8775,18.98
+2025-06-04,"Titizana, Zanemvula 2",Production Optics,1,110.0,100.0
+2025-06-04,"X, Leehleza",Production Optics,2,99.6366,90.58
+2025-06-04,"De Gouveia, Roberto 2",Production Optics,3,98.6797,89.71
+2025-06-04,"Goncalves, Francisco",Production Optics,4,96.8906,88.08
+2025-06-04,"Naidoo, Saven 2",Standard,5,91.579,83.25
+2025-06-04,"De Gouveia, Michael",Production Optics,6,88.1948,80.18
+2025-06-04,"Ngcobo, Thabo",Production Optics,7,85.1979,77.45
+2025-06-04,"Naidoo, Saven",Standard,1,110.0,100.0
+2025-06-04,"Chamont, Brad",Standard,2,98.749,89.77
+2025-06-04,"Veysel, Karan",Standard,3,70.5097,64.1
+2025-06-04,"Dias-Chamont, Talia",Standard,4,61.9459,56.31
+2025-06-04,"Smith, Gert",Production,27,40.2332,36.58
+2025-06-04,"Titizana, Zanemvula",Production,28,39.7397,36.13
+2025-06-04,"Benecke, Sheldon",Production,29,39.2766,35.71
+2025-06-04,"Truter, Bernard",Production,30,37.4984,34.09
+2025-06-04,"Moolman, Adrian",Production,31,34.0049,30.91
+2025-06-04,"Knoetze, Luan",Production,32,32.4939,29.54
+2025-06-04,"Hartzenberg, Byron",Production,33,26.5186,24.11
+2025-06-04,"Dineka, Vuyisile",Production,34,21.3675,19.42
+2025-06-04,"Gittins, Ashley",Production,35,20.8775,18.98
+2025-06-04,"Dercksen, Deon",Production,36,19.0069,17.28
+2025-06-04,"Bishop, Steven",Production,37,18.0673,16.42
+2025-06-04,"Gxagxa, Muzi",Production,38,13.3947,12.18
+2025-06-04,"Plein, Noah",Combined,1,213.7291,100.0
+2025-06-04,"De Gouveia, Roberto (P)",Combined,2,203.5968,95.2635
+2025-06-04,"Moolman, Adrian",Combined,3,197.8093,92.5599
+2025-06-04,"Plein, Aubrey",Combined,4,196.5465,91.9507
+2025-06-04,"Da Cruz, David",Combined,5,186.5438,87.2891
+2025-06-04,"De Gouveia, Michael",Combined,6,174.0505,81.4344
+2025-06-04,"Ngcobo, Thabo",Combined,7,168.4086,78.7952
+2025-06-04,"Gxagxa, Muzi",Combined,8,136.3238,63.782
+2025-06-04,"Bishop, Steven",Combined,9,120.3323,56.3093
+2025-06-04,"Truter, Bernard",Combined,10,117.6921,55.0601
+2025-06-04,"Benecke, Sheldon",Combined,11,113.886,53.2842
+2025-06-04,"Titizana, Zanemvula",Combined,12,110.1558,51.5498
+2025-06-04,"Knoetze, Luan",Combined,13,109.8,51.3813
+2025-06-04,"Hartzenberg, Byron",Combined,14,99.8496,46.7188
+2025-06-04,"Levinrad, Dayne",Combined,15,96.4862,45.1444
+2025-06-04,"Coetzee, Desmond",Combined,16,95.845,44.8456
+2025-06-04,"Msibi, Jabulani",Combined,17,94.1788,44.0664
+2025-06-04,"Dineka, Vuyisile",Combined,18,90.4789,42.3338
+2025-06-04,"Goncalves, Rory",Combined,19,83.2244,38.9482
+2025-06-04,"Gittins, Ashley",Combined,20,76.8399,35.9515
+2025-06-04,"Dercksen, Deon",Combined,21,73.7815,34.5298
+2025-06-04,"Morris, Bevan",Open,1,230.0,100.0
+2025-05-28,"De Gouveia, Roberto",Combined,1,230.0,100.0
+2025-05-28,"Plein, Noah",Combined,2,225.5229,98.0534
+2025-05-28,"Goncalves, Francisco",Combined,3,218.2286,94.882
+2025-05-28,"De Gouveia, Roberto (P)",Combined,4,180.665,78.55
+2025-05-28,"Moolman, Adrian",Combined,5,173.7252,75.5327
+2025-05-28,"Ngcobo, Thabo",Combined,6,173.1522,75.2836
+2025-05-28,"Plein, Aubrey",Combined,7,157.4866,68.4724
+2025-05-28,"Bishop, Mark",Combined,8,148.0664,64.3767
+2025-05-28,"Mthembu, Jacob",Combined,9,143.0151,62.1805
+2025-05-28,"Smith, Sheldon",Combined,10,141.5422,61.5401
+2025-05-28,"Naidoo, Saven",Combined,11,139.0243,60.4453
+2025-05-28,"Goncalves, Rory",Combined,12,135.4517,58.892
+2025-05-28,"Morris, Bevan",Combined,13,129.2608,56.2003
+2025-05-28,"Chamont, Brad",Combined,14,124.3933,54.084
+2025-05-28,"Bishop, Steven",Combined,15,122.9712,53.4657
+2025-05-28,"Bolton, Dayne",Combined,16,121.6158,52.8764
+2025-05-28,"Ferreira, Johan",Combined,17,115.1451,50.0631
+2025-05-28,"Mj, Mj",Combined,18,112.8129,49.0491
+2025-05-28,"Ditsela, Richard",Combined,19,105.4717,45.8573
+2025-05-28,"Sukazi, Lindelihle",Combined,20,102.8565,44.7202
+2025-05-28,"Bolton, Blake",Combined,21,100.6055,43.7415
+2025-05-28,"Dodge, Dave",Combined,22,98.2443,42.7149
+2025-05-28,"X, Zuluboy",Combined,23,97.1099,42.2217
+2025-05-28,"Gerin, Pino",Combined,24,97.0305,42.1872
+2025-05-28,"Msibi, Jabulani",Combined,25,93.9295,40.8389
+2025-05-28,"Goncalves, Rory",Combined,26,90.7532,39.4579
+2025-05-28,"Benecke, Sheldon",Combined,27,84.6616,36.8094
+2025-05-28,"Phaedi, Tiiso",Combined,28,83.9189,36.4886
+2025-05-28,"Coetzee, Desmond",Combined,29,82.7233,35.9667
+2025-05-28,"Nxumalo, Mpumelelo",Combined,30,80.7011,35.0874
+2025-05-28,"Dias-Chamont, Talia",Combined,31,79.8821,34.7337
+2025-05-28,"Veysel, Karan",Combined,32,77.262,33.5922
+2025-05-28,"Maduna, Thabiso",Combined,33,76.8399,33.4108
+2025-05-28,"Berman, Daniel",Combined,34,76.1433,33.1058
+2025-05-28,"Khumalo, Sabelo",Combined,35,72.6552,31.5892
+2025-05-28,"Khan, Mahomad",Combined,36,70.5791,30.6866
+2025-05-28,"Levinrad, Dayne",Combined,37,68.1726,29.6403
+2025-05-28,"X, Unknown",Combined,38,65.0908,28.2995
+2025-05-28,"Tshabalala, Dumisani Alexius",Combined,39,64.1404,27.8871
+2025-05-28,"Hartzenberg, Byron",Combined,40,63.4775,27.6006
+2025-05-28,"Nkosi, Sihle",Combined,41,60.9032,26.4796
+2025-05-28,"Nxumalo, Sifiso",Combined,42,59.8754,26.0328
+2025-05-28,"Dineka, Vuyisile",Combined,43,59.2008,25.741
+2025-05-28,"Jones, Nicholas",Combined,44,58.0542,25.2409
+2025-05-28,"Wood, Jonathan",Combined,45,56.7209,24.6644
+2025-05-28,"Rahman, Aqeel",Combined,46,54.4533,23.6753
+2025-05-28,"Mqaise, Rudy",Combined,47,53.582,23.2917
+2025-05-28,"Alho, Gabz",Combined,48,52.8822,22.986
+2025-05-28,"Maluleka, Nkateko",Combined,49,51.6625,22.459
+2025-05-28,"X, Z",Combined,50,50.8622,22.1122
+2025-05-28,"Ntuli, Sibusiso",Combined,51,49.6104,21.5697
+2025-05-28,"Goncalves, Cayla",Combined,52,47.2633,20.5492
+2025-05-28,"Eleshmawi, Faris",Combined,53,46.0118,20.0051
+2025-05-28,"Tshabalala, Dumisani Alexius 2",Combined,54,42.5036,18.4798
+2025-05-28,"Masike, Tebogo",Combined,55,41.4992,18.0494
+2025-05-28,"Gillespie, Josh",Combined,56,40.5284,17.6225
+2025-05-28,"Gillespie, Josh 2",Combined,57,39.3208,17.1003
+2025-05-28,"Ntuli, Sibusiso2",Combined,58,38.9323,16.9298
+2025-05-28,"Mabaso, Siphiwe",Combined,59,38.2215,16.6212
+2025-05-28,"Mabaso, Siphiwe 2",Combined,60,37.4134,16.2735
+2025-05-28,"Hume, Sarah",Combined,61,35.9949,15.65
+2025-05-28,"Bvuma, Tshepo",Combined,62,34.4273,14.97
+2025-05-28,"Mofokeng, Tshepo",Combined,63,33.5885,14.6062
+2025-05-28,"Mlambo, Sandile",Combined,64,30.2224,13.1402
+2025-05-28,"Mofokeng, Tshepo 2",Combined,65,28.6672,12.464
+2025-05-28,"Alho, Gabz",Combined,66,28.5791,12.4253
+2025-05-28,"Maluleka, Nkateko",Combined,67,4.602,2.0009
+2025-05-28,"De Gouveia, Roberto",Combined,1,217.1531,100.0
+2025-05-28,"Plein, Noah 2",Combined,2,212.7814,97.9868
+2025-05-28,"Plein, Noah",Combined,3,212.7645,97.979
+2025-05-28,"De Gouveia, Roberto 3",Combined,4,208.4704,96.0016
+2025-05-28,"Goncalves, Francisco",Combined,5,205.853,94.7963
+2025-05-28,"De Gouveia, Roberto 4",Combined,6,203.6772,93.7943
+2025-05-28,"De Gouveia, Roberto 2",Combined,7,198.9539,91.6192
+2025-05-28,"Goncalves, Francisco2",Combined,8,195.7936,90.1639
+2025-05-28,"Moolman, Adrian 2",Combined,9,189.3308,87.1877
+2025-05-28,"Moolman, Adrian 3",Combined,10,174.4132,80.3181
+2025-05-28,"De Gouveia, Roberto (P)",Combined,11,170.2726,78.4113
+2025-05-28,"Moolman, Adrian",Combined,12,164.2627,75.6437
+2025-05-28,"Ngcobo, Thabo",Combined,13,163.6497,75.3614
+2025-05-28,"Ngcobo, Thabo 2",Combined,14,160.8733,74.0829
+2025-05-28,"Moolman, Adrian 4",Combined,15,160.5715,73.9439
+2025-05-28,"Plein, Aubrey",Combined,16,148.1307,68.2149
+2025-05-28,"Bishop, Mark",Combined,17,139.2509,64.1257
+2025-05-28,"Chamont, Brad 2",Combined,18,135.826,62.5485
+2025-05-28,"Mthembu, Jacob",Combined,19,135.2356,62.2766
+2025-05-28,"Sukazi, Lindelihle 2",Combined,20,132.5846,61.0558
+2025-05-28,"Smith, Sheldon",Combined,21,132.5086,61.0208
+2025-05-28,"Naidoo, Saven",Combined,22,130.8781,60.27
+2025-05-28,"Naidoo, Saven 2",Combined,23,128.994,59.4023
+2025-05-28,"Goncalves, Rory",Combined,24,126.6054,58.3024
+2025-05-28,"Mqaise, Rudy",Combined,25,125.7384,57.9023
+2025-05-28,"Ditsela, Richard",Combined,26,124.3933,57.2801
+2025-05-28,"Mthembu, Jacob 2",Combined,27,122.9712,56.6214
+2025-05-28,"X, Ghost",Combined,28,122.2566,56.2917
+2025-05-28,"Mthembu, Jacob 3",Combined,29,121.6158,55.9961
+2025-05-28,"Coetzee, Desmond",Combined,30,121.5714,55.9757
+2025-05-28,"X, Zuluboy",Combined,31,118.8108,54.7126
+2025-05-28,"Dodge, Dave 2",Combined,32,117.0237,53.8893
+2025-05-28,"Sukazi, Lindelihle",Combined,33,116.5945,53.6937
+2025-05-28,"Gxagxa, Muzi 2",Combined,34,115.1451,53.024
+2025-05-28,"Msibi, Jabulani",Combined,35,112.8129,51.9599
+2025-05-28,"Dodge, Dave",Combined,36,109.8,50.563
+2025-05-28,"Gxagxa, Muzi",Combined,37,107.0279,49.2882
+2025-05-28,"Gerin, Pino",Combined,38,105.4717,48.5633
+2025-05-28,"Msibi, Jabulani",Combined,39,88.6802,40.8376
+2025-05-28,"Goncalves, Rory",Combined,40,87.2965,40.2004
+2025-05-28,"Benecke, Sheldon",Combined,41,81.7147,37.6322
+2025-05-28,"Rabie, Theo",Combined,42,79.8821,36.7865
+2025-05-28,"Jones, Nicholas",Combined,43,58.0542,26.7346
+2025-05-28,"Wood, Jonathan",Combined,44,56.7209,26.1246
+2025-05-28,"Tshabalala, Dumisani Alexius",Combined,45,42.5036,19.5732
+2025-05-28,"Mabaso, Siphiwe",Combined,46,38.2215,17.5927
+2025-05-28,"Plein, Aubrey",Classic,1,220.0,100.0
+2025-05-28,"Phaedi, Tiiso",Open,1,220.0,100.0
+2025-05-28,"Da Cruz, David",PCC Optics,1,220.0,100.0
+2025-05-28,"Rabie, Theo",PCC Optics,2,196.5465,89.3393
+2025-05-28,"Morris, Bevan",PCC Optics,3,191.5607,87.073
+2025-05-28,"Goncalves, Rory",PCC Optics,4,186.5438,84.7926
+2025-05-28,"Hepton, Harry",PCC Optics,5,168.4086,76.5494
+2025-05-28,"Wei, Darren",PCC Optics,6,134.0576,60.9353
+2025-05-28,"De Gouveia, Roberto (P)",Production,1,220.0,100.0
+2025-05-28,"Plein, Noah",Production,2,213.7291,97.1496
+2025-05-28,"Moolman, Adrian",Production,3,197.8093,89.9133
+2025-05-28,"Gxagxa, Muzi",Production,4,173.1522,78.7055
+2025-05-28,"Knox, Nobby",Production,5,170.2726,77.3966
+2025-05-28,"Coetzee, Desmond",Production,6,163.6497,74.3862
+2025-05-28,"Msibi, Jabulani",Production,7,148.0664,67.3029
+2025-05-28,"Ditsela, Richard",Production,8,124.3933,56.5424
+2025-05-28,"Dodge, Dave",Production,9,118.8108,54.0049
+2025-05-28,"X, Zuluboy",Production,10,117.0237,53.1926
+2025-05-28,"Gxagxa, Canik",Production,11,103.5518,47.069
+2025-05-28,"Mthembu, Jacob",Production,12,102.8565,46.7492
+2025-05-28,"Levinrad, Dayne",Production,13,99.8496,45.3862
+2025-05-28,"Berman, Daniel",Production,14,96.4862,43.8574
+2025-05-28,"Jones, Nicholas",Production,15,95.845,43.5659
+2025-05-28,"Wood, Jonathan",Production,16,94.1788,42.8085
+2025-05-28,"Rahman, Aqeel",Production,17,90.4789,41.1268
+2025-05-28,"Hartzenberg, Byron",Production,18,86.409,39.2768
+2025-05-28,"Khumalo, Sabelo",Production,19,83.2244,37.8293
+2025-05-28,"Dineka, Vuyisile",Production,20,72.6552,33.0251
+2025-05-28,"Tshabalala, Dumisani Alexius",Production,21,68.1726,30.9875
+2025-05-28,"Mabaso, Siphiwe",Production,22,41.4992,18.8633
+2025-05-28,"Goncalves, Cayla",Production,23,11.8797,5.3999
+2025-05-28,"De Gouveia, Roberto",Production Optics,1,220.0,100.0
+2025-05-28,"X, Leehleza",Production Optics,2,192.5757,87.5344
+2025-05-28,"Da Silva, Alexia",Production Optics,3,191.5607,87.073
+2025-05-28,"Mshove, Mbali",Production Optics,4,190.6401,86.65
+2025-05-28,"X, Ghost",Production Optics,5,188.8093,85.8224
+2025-05-28,"Bishop, Mark",Production Optics,6,186.5438,84.7926
+2025-05-28,"Ngcobo, Thabo",Production Optics,7,168.4086,76.5494
+2025-05-28,"Sukazi, Lindelihle",Production Optics,8,134.0576,60.9353
+2025-05-28,"Du Plooy, Dewald",Production Optics,9,113.0674,51.3943
+2025-05-28,"Smith, Sheldon",Production Optics,10,109.5879,49.8127
+2025-05-28,"Gerin, Pino",Production Optics,11,107.7484,48.9765
+2025-05-28,"Titizana, Zanemvula",Production Optics,12,99.8496,45.3862
+2025-05-28,"Naidoo, Saven",Standard,1,220.0,100.0
+2025-05-28,"Naidoo, Saven 2",Standard,2,196.5465,89.3393
+2025-05-28,"Veysel, Karan",Standard,3,176.3075,80.1398
+2025-05-28,"Dias-Chamont, Talia",Standard,4,158.2953,71.9524
+2025-05-28,"Chamont, Brad",Standard,5,157.3415,71.5189
+2025-06-18,"Da Cruz, David",Combined,1,220.0,100.0
+2025-06-18,"Plein, Noah",Combined,2,204.2833,92.856
+2025-06-18,"De Gouveia, Roberto 2",Combined,3,201.4425,91.5648
+2025-06-18,"Moolman, Adrian 2",Combined,4,194.2181,88.281
+2025-06-18,"De Gouveia, Roberto",Combined,5,177.7201,80.7819
+2025-06-18,"Moolman, Adrian",Combined,6,177.6968,80.7713
+2025-06-18,"Mshove, Mbali",Combined,7,176.3075,80.1398
+2025-06-18,"Da Silva, Alexia",Combined,8,176.2429,80.1104
+2025-06-18,"X, Ghost",Combined,9,172.7903,78.541
+2025-06-18,"Gillespie, Josh 2",Combined,10,169.4551,77.025
+2025-06-18,"Ngcobo, Thabo",Combined,11,164.114,74.5973
+2025-06-18,"Rabie, Theo",Combined,12,158.2953,71.9524
+2025-06-18,"Gillespie, Josh",Combined,13,157.7112,71.6869
+2025-06-18,"Ngcobo, Thabo 2",Combined,14,157.3415,71.5189
+2025-06-18,"Gxagxa, Muzi 2",Combined,15,152.1481,69.1582
+2025-06-18,"Ferreira, Johan 2",Combined,16,151.9898,69.0863
+2025-06-18,"Plein, Aubrey",Combined,17,149.8492,68.1133
+2025-06-18,"Naidoo, Saven",Combined,18,143.8888,65.404
+2025-06-18,"Gxagxa, Canik",Combined,19,126.2958,57.4072
+2025-06-18,"Ferreira, Johan",Combined,20,121.8467,55.3849
+2025-06-18,"Morris, Bevan",Combined,21,113.0674,51.3943
+2025-06-18,"Naidoo, Saven 2",Combined,22,109.5879,49.8127
+2025-06-18,"Sukazi, Lindelihle 2",Combined,23,107.7484,48.9765
+2025-06-18,"Gxagxa, Muzi",Combined,24,107.2566,48.753
+2025-06-18,"Goncalves, Rory",Combined,25,106.2106,48.2775
+2025-06-18,"Coetzee, Desmond",Combined,26,103.8433,47.2015
+2025-06-18,"Phaedi, Tiiso",Combined,27,100.7958,45.8163
+2025-06-18,"Du Plooy, Dewald",Combined,28,100.642,45.7464
+2025-06-18,"Sukazi, Lindelihle",Combined,29,99.8496,45.3862
+2025-06-18,"Bishop, Steven",Combined,30,95.845,43.5659
+2025-06-18,"Bishop, Mark",Combined,31,94.1788,42.8085
+2025-06-18,"Castegnaro, Giorgio",Combined,32,90.4789,41.1268
+2025-06-18,"Benecke, Sheldon",Combined,33,86.409,39.2768
+2025-06-18,"Nkosi, Sihle",Combined,34,83.2244,37.8293
+2025-06-18,"Knox, Nobby",Combined,35,83.0574,37.7534
+2025-06-18,"Sukazi, Lindelihle 3",Combined,36,81.2626,36.9375
+2025-06-18,"Veysel, Karan",Combined,37,77.262,35.1191
+2025-06-18,"Ntuli, Sibusiso2",Combined,38,76.8399,34.9272
+2025-06-18,"Levinrad, Dayne",Combined,39,76.1433,34.6106
+2025-06-18,"Nkosi, Sihle",Combined,40,72.6552,33.0251
+2025-06-18,"Ntuli, Sibusiso",Combined,41,68.1726,30.9875
+2025-06-18,"Masike, Tebogo",Combined,42,41.4992,18.8633
+2025-06-18,"Goncalves, Cayla",Combined,43,11.8797,5.3999
+2025-06-18,"Plein, Aubrey",Classic,1,220.0,100.0
+2025-06-18,"Phaedi, Tiiso",Open,1,220.0,100.0
+2025-06-18,"Da Cruz, David",PCC Optics,1,220.0,100.0
+2025-06-18,"Rabie, Theo",PCC Optics,2,196.5465,89.3393
+2025-06-18,"Morris, Bevan",PCC Optics,3,191.5607,87.073
+2025-06-18,"Goncalves, Rory",PCC Optics,4,186.5438,84.7926
+2025-06-18,"Hepton, Harry",PCC Optics,5,168.4086,76.5494
+2025-06-18,"Wei, Darren",PCC Optics,6,134.0576,60.9353
+2025-06-18,"De Gouveia, Roberto (P)",Production,1,220.0,100.0
+2025-06-18,"Plein, Noah",Production,2,213.7291,97.1496
+2025-06-18,"Moolman, Adrian",Production,3,197.8093,89.9133
+2025-06-18,"Gxagxa, Muzi",Production,4,173.1522,78.7055
+2025-06-18,"Knox, Nobby",Production,5,170.2726,77.3966
+2025-06-18,"Coetzee, Desmond",Production,6,163.6497,74.3862
+2025-06-18,"Msibi, Jabulani",Production,7,148.0664,67.3029
+2025-06-18,"Ditsela, Richard",Production,8,124.3933,56.5424
+2025-06-18,"Dodge, Dave",Production,9,118.8108,54.0049
+2025-06-18,"X, Zuluboy",Production,10,117.0237,53.1926
+2025-06-18,"Gxagxa, Canik",Production,11,103.5518,47.069
+2025-06-18,"Mthembu, Jacob",Production,12,102.8565,46.7492
+2025-06-18,"Levinrad, Dayne",Production,13,99.8496,45.3862
+2025-06-18,"Berman, Daniel",Production,14,96.4862,43.8574
+2025-06-18,"Jones, Nicholas",Production,15,95.845,43.5659
+2025-06-18,"Wood, Jonathan",Production,16,94.1788,42.8085
+2025-06-18,"Rahman, Aqeel",Production,17,90.4789,41.1268
+2025-06-18,"Hartzenberg, Byron",Production,18,86.409,39.2768
+2025-06-18,"Khumalo, Sabelo",Production,19,83.2244,37.8293
+2025-06-18,"Dineka, Vuyisile",Production,20,72.6552,33.0251
+2025-06-18,"Tshabalala, Dumisani Alexius",Production,21,68.1726,30.9875
+2025-06-18,"Mabaso, Siphiwe",Production,22,41.4992,18.8633
+2025-06-18,"Goncalves, Cayla",Production,23,11.8797,5.3999
+2025-06-18,"De Gouveia, Roberto",Production Optics,1,220.0,100.0
+2025-06-18,"X, Leehleza",Production Optics,2,192.5757,87.5344
+2025-06-18,"Da Silva, Alexia",Production Optics,3,191.5607,87.073
+2025-06-18,"Mshove, Mbali",Production Optics,4,190.6401,86.65
+2025-06-18,"X, Ghost",Production Optics,5,188.8093,85.8224
+2025-06-18,"Bishop, Mark",Production Optics,6,186.5438,84.7926
+2025-06-18,"Ngcobo, Thabo",Production Optics,7,168.4086,76.5494
+2025-06-18,"Sukazi, Lindelihle",Production Optics,8,134.0576,60.9353
+2025-06-18,"Du Plooy, Dewald",Production Optics,9,113.0674,51.3943
+2025-06-18,"Smith, Sheldon",Production Optics,10,109.5879,49.8127
+2025-06-18,"Gerin, Pino",Production Optics,11,107.7484,48.9765
+2025-06-18,"Titizana, Zanemvula",Production Optics,12,99.8496,45.3862
+2025-06-18,"Naidoo, Saven",Standard,1,220.0,100.0
+2025-06-18,"Naidoo, Saven 2",Standard,2,196.5465,89.3393
+2025-06-18,"Veysel, Karan",Standard,3,176.3075,80.1398
+2025-06-18,"Dias-Chamont, Talia",Standard,4,158.2953,71.9524
+2025-06-18,"Chamont, Brad",Standard,5,157.3415,71.5189
+2025-07-09,"Plein, Aubrey",1,Classic,180.0,100.0
+2025-07-09,"De Gouveia, Roberto (P) 2",1,Production,179.6139,100.0
+2025-07-09,"Moolman, Adrian 4",2,Production,172.9687,96.3003
+2025-07-09,"Moolman, Adrian 3",3,Production,171.7963,95.6476
+2025-07-09,"Moolman, Adrian 2",4,Production,167.2265,93.1033
+2025-07-09,"De Gouveia, Roberto (P)",5,Production,163.406,90.9763
+2025-07-09,"Moolman, Adrian",6,Production,150.3793,83.7236
+2025-07-09,"Plein, Noah 2",7,Production,148.1371,82.4753
+2025-07-09,"Plein, Noah",8,Production,140.6696,78.3178
+2025-07-09,"Mj, Mj",9,Production,137.9877,76.8246
+2025-07-09,"Gxagxa, Muzi",10,Production,135.2737,75.3136
+2025-07-09,"X, Zuluboy",11,Production,131.4455,73.1823
+2025-07-09,"Gillespie, Josh",12,Production,119.1098,66.3144
+2025-07-09,"Plein, Aubrey 2",13,Production,114.8345,63.9341
+2025-07-09,"Bishop, Steven",14,Production,110.206,61.3572
+2025-07-09,"Benecke, Sheldon",15,Production,107.3597,59.7725
+2025-07-09,"Grobblaar, Mj",16,Production,107.1067,59.6316
+2025-07-09,"Horton, Mike 3",17,Production,105.1622,58.549
+2025-07-09,"Merredew, Sebastian",18,Production,104.4516,58.1534
+2025-07-09,"Vrey, Wian",19,Production,100.8955,56.1735
+2025-07-09,"Horton, Mike 2",20,Production,100.325,55.8559
+2025-07-09,"Horton, Mike",21,Production,98.996,55.116
+2025-07-09,"Coetzee, Desmond",22,Production,98.8005,55.0072
+2025-07-09,"Levinrad, Dayne 2",23,Production,90.4256,50.3444
+2025-07-09,"Mqaise, Rudy",24,Production,89.856,50.0273
+2025-07-09,"Dineka, Vuyisile",25,Production,80.0528,44.5694
+2025-07-09,"Dodge, Dave",26,Production,77.0684,42.9078
+2025-07-09,"Subotzky, Ryan",27,Production,72.2323,40.2153
+2025-07-09,"Faurie, Zander 2",28,Production,71.3908,39.7468
+2025-07-09,"Gillespie, Graham 3",29,Production,70.8534,39.4476
+2025-07-09,"Sedibe, Mpho",30,Production,69.6876,38.7986
+2025-07-09,"Levinrad, Dayne",31,Production,64.3731,35.8397
+2025-07-09,"Faurie, Zander 3",32,Production,60.3479,33.5987
+2025-07-09,"Faurie, Zander",33,Production,55.4966,30.8977
+2025-07-09,"Gillespie, Graham",34,Production,44.417,24.7292
+2025-07-09,"Dineka, Vuyisile 2",35,Production,43.4328,24.1812
+2025-07-09,"Gillespie, Graham 2",36,Production,35.4457,19.7344
+2025-07-09,"De Gouveia, Roberto 2",1,Production Optics,180.0,100.0
+2025-07-09,"De Gouveia, Roberto",2,Production Optics,165.9135,92.1742
+2025-07-09,"Janse Van Rensburg, Johan 3",3,Production Optics,144.7377,80.4098
+2025-07-09,"Gillespie, Josh",4,Production Optics,140.2709,77.9283
+2025-07-09,"Janse Van Rensburg, Johan 2",5,Production Optics,138.3623,76.8679
+2025-07-09,"Janse Van Rensburg, Johan",6,Production Optics,136.2516,75.6953
+2025-07-09,"Smith, Sheldon",7,Production Optics,133.7163,74.2868
+2025-07-09,"Gillespie, Josh 2",8,Production Optics,132.1498,73.4166
+2025-07-09,"Du Plooy, Dewald",9,Production Optics,104.4399,58.0222
+2025-07-09,"Goncalves, Rory",10,Production Optics,18.3923,10.2179
+2025-07-09,"Docrat, Mohammed",1,Standard,180.0,100.0
+2025-07-09,"Merredew, Henry",2,Standard,134.0093,74.4496
+2025-07-23,"Plein, Aubrey",1,Classic,220.0,100.0
+2025-07-23,"Horton, Mike 2",1,PCC Optics,220.0,100.0
+2025-07-23,"Horton, Mike",2,PCC Optics,205.9782,93.6265
+2025-07-23,"Moolman, Adrian",1,Production,217.9943,100.0
+2025-07-23,"Moolman, Adrian 3",2,Production,217.6608,99.847
+2025-07-23,"Moolman, Adrian (EDC)",3,Production,190.6988,87.4788
+2025-07-23,"Plein, Noah",4,Production,181.6245,83.3162
+2025-07-23,"Moolman, Adrian 4",5,Production,179.7124,82.439
+2025-07-23,"Gillespie, Josh",6,Production,167.1972,76.698
+2025-07-23,"Gxagxa, Muzi",7,Production,151.2795,69.3961
+2025-07-23,"Grobblaar, Mj",8,Production,150.8841,69.2147
+2025-07-23,"Modjadji Mm, Mfana",9,Production,131.6107,60.3735
+2025-07-23,"Mtshwene, Siphiwe",10,Production,129.8376,59.5601
+2025-07-23,"Coetzee, Desmond",11,Production,125.399,57.524
+2025-07-23,"Msibi, Jabulani",12,Production,123.6498,56.7216
+2025-07-23,"Dodge, Dave",13,Production,115.5931,53.0257
+2025-07-23,"Radebe, Xolani 2",14,Production,107.1127,49.1356
+2025-07-23,"Bishop, Steven",15,Production,105.6791,48.4779
+2025-07-23,"Ditsela, Richard 2",16,Production,102.7461,47.1325
+2025-07-23,"Ditsela, Richard",17,Production,101.8968,46.7429
+2025-07-23,"Sukazi, Lindelihle 2",18,Production,100.256,45.9902
+2025-07-23,"Faurie, Zander",19,Production,96.8469,44.4263
+2025-07-23,"Vrey, Wian",20,Production,93.2205,42.7628
+2025-07-23,"Radebe, Xolani",21,Production,91.6192,42.0283
+2025-07-23,"Lodge, Athelio",22,Production,77.9097,35.7393
+2025-07-23,"Faurie, Zander 2",23,Production,76.6031,35.14
+2025-07-23,"Rahman, Aqeel",24,Production,69.7243,31.9845
+2025-07-23,"Dineka, Vuyisile",25,Production,68.072,31.2265
+2025-07-23,"Faurie, Zander 3",26,Production,59.1709,27.1433
+2025-07-23,"Khan, Mahomad",27,Production,52.6374,24.1462
+2025-07-23,"Levinrad, Dayne",28,Production,51.9036,23.8096
+2025-07-23,"Nevhutalu, Godfrey",29,Production,39.5452,18.1405
+2025-07-23,"Duvenhge, Lorinda 2",30,Production,18.0565,8.283
+2025-07-23,"Duvenhge, Lorinda",31,Production,17.2571,7.9163
+2025-07-23,"Nhlakanipho, Mthabela",32,Production,10.7203,4.9177
+2025-07-23,"De Gouveia, Roberto 2",1,Production Optics,217.9465,100.0
+2025-07-23,"X, Ghost",2,Production Optics,217.6108,99.846
+2025-07-23,"De Gouveia, Roberto",3,Production Optics,214.8312,98.5706
+2025-07-23,"De Gouveia, Roberto",4,Production Optics,190.9615,87.6185
+2025-07-23,"Gillespie, Josh 2",5,Production Optics,181.3729,83.219
+2025-07-23,"De Gouveia, Roberto (EDC)",6,Production Optics,173.9077,79.7938
+2025-07-23,"Bishop, Mark",7,Production Optics,145.7461,66.8724
+2025-07-23,"Smith, Sheldon",8,Production Optics,135.1536,62.0123
+2025-07-23,"Dias J, Vic",9,Production Optics,133.348,61.1838
+2025-07-23,"Dias J, Vic 2",10,Production Optics,131.4314,60.3044
+2025-07-23,"Sukazi, Lindelihle 3",11,Production Optics,120.973,55.5058
+2025-07-23,"Dias, Talia 2",12,Production Optics,106.6236,48.9219
+2025-07-23,"Titizana, Zanemvula 2",13,Production Optics,101.6421,46.6363
+2025-07-23,"Mshove, Mbali",14,Production Optics,101.0684,46.373
+2025-07-23,"Titizana, Zanemvula",15,Production Optics,95.141,43.6534
+2025-07-23,"Phaedi, Tiiso",16,Production Optics,93.9532,43.1084
+2025-07-23,"Sukazi, Lindelihle",17,Production Optics,91.9912,42.2082
+2025-07-23,"Cornelius, Michaela",18,Production Optics,26.1622,12.004
+2025-07-23,"Naidoo, Saven",1,Standard,220.0,100.0
+2025-07-23,"Chamont, Brad",2,Standard,199.7021,90.7737
+2025-07-23,"Naidoo, Saven 2",3,Standard,197.9624,89.9829
+2025-07-23,"Dias, Vic 2",4,Standard,165.8808,75.4004
+2025-07-23,"Dias, Talia",5,Standard,164.3021,74.6828
+2025-07-23,"Veysel, Karan",6,Standard,161.8946,73.5885
+2025-07-23,"Dias, Vic (Senior)",7,Standard,155.6205,70.7366
+2025-07-23,"Moolman, Adrian",1,Combined,212.1894,100.0
+2025-07-23,"De Gouveia, Roberto",2,Combined,201.3984,94.9144
+2025-07-23,"Gillespie, Josh",3,Combined,191.8967,90.4365
+2025-07-23,"Moolman, Adrian (EDC)",4,Combined,186.4503,87.8698
+2025-07-23,"De Gouveia, Roberto (EDC)",5,Combined,184.5771,86.987
+2025-07-23,"Plein, Noah",6,Combined,176.7992,83.3214
+2025-07-23,"Gillespie, Josh",7,Combined,162.3473,76.5106
+2025-07-23,"Bishop, Mark",8,Combined,155.1239,73.1063
+2025-07-23,"Naidoo, Saven",9,Combined,152.7989,72.0106
+2025-07-23,"Horton, Mike",10,Combined,150.6066,70.9774
+2025-07-23,"Gxagxa, Muzi",11,Combined,147.3475,69.4415
+2025-07-23,"Grobblaar, Mj",12,Combined,146.9643,69.2609
+2025-07-23,"Smith, Sheldon",13,Combined,143.6254,67.6874
+2025-07-23,"Dias J, Vic",14,Combined,142.0521,66.9459
+2025-07-23,"Chamont, Brad",15,Combined,138.833,65.4288
+2025-07-23,"Plein, Aubrey",16,Combined,137.3936,64.7505
+2025-07-23,"Modjadji Mm, Mfana",17,Combined,128.3761,60.5007
+2025-07-23,"Mtshwene, Siphiwe",18,Combined,125.8704,59.3198
+2025-07-23,"Coetzee, Desmond",19,Combined,121.7127,57.3604
+2025-07-23,"Msibi, Jabulani",20,Combined,120.497,56.7875
+2025-07-23,"Dias, Talia",21,Combined,114.1524,53.7974
+2025-07-23,"Dodge, Dave",22,Combined,112.7422,53.1328
+2025-07-23,"Veysel, Karan",23,Combined,112.4636,53.0015
+2025-07-23,"Dias, Vic (Senior)",24,Combined,108.0111,50.9032
+2025-07-23,"Mshove, Mbali",25,Combined,105.8716,49.8949
+2025-07-23,"Bishop, Steven",26,Combined,102.0033,48.0718
+2025-07-23,"Titizana, Zanemvula",27,Combined,100.3689,47.3016
+2025-07-23,"Ditsela, Richard",28,Combined,99.6766,46.9753
+2025-07-23,"Phaedi, Tiiso",29,Combined,98.8703,46.5953
+2025-07-23,"Sukazi, Lindelihle",30,Combined,96.1819,45.3283
+2025-07-23,"Faurie, Zander",31,Combined,94.1524,44.3719
+2025-07-23,"Vrey, Wian",32,Combined,91.0338,42.9021
+2025-07-23,"Radebe, Xolani",33,Combined,89.495,42.1769
+2025-07-23,"Lodge, Athelio",34,Combined,76.1593,35.8921
+2025-07-23,"Rahman, Aqeel",35,Combined,68.3462,32.21
+2025-07-23,"Dineka, Vuyisile",36,Combined,66.7162,31.4418
+2025-07-23,"Khan, Mahomad",37,Combined,51.4192,24.2327
+2025-07-23,"Levinrad, Dayne",38,Combined,51.0405,24.0542
+2025-07-23,"Nevhutalu, Godfrey",39,Combined,39.5613,18.6443
+2025-07-23,"Cornelius, Michaela",40,Combined,27.7553,13.0804
+2025-07-23,"Duvenhge, Lorinda",41,Combined,17.2642,8.1362
+2025-07-23,"Nhlakanipho, Mthabela",42,Combined,10.1503,4.7836
+2025-07-23,"Plein, Aubrey",1,Classic,220.0,100.0
+2025-07-23,"Horton, Mike",1,PCC Optics,220.0,100.0
+2025-07-23,"Moolman, Adrian",1,Production,218.0382,100.0
+2025-07-23,"Moolman, Adrian (EDC)",2,Production,190.7435,87.4817
+2025-07-23,"Plein, Noah",3,Production,181.6611,83.3162
+2025-07-23,"Gillespie, Josh",4,Production,167.2278,76.6966
+2025-07-23,"Gxagxa, Muzi",5,Production,151.3107,69.3964
+2025-07-23,"Grobblaar, Mj",6,Production,150.9152,69.215
+2025-07-23,"Modjadji Mm, Mfana",7,Production,131.6393,60.3744
+2025-07-23,"Mtshwene, Siphiwe",8,Production,129.8599,59.5583
+2025-07-23,"Coetzee, Desmond",9,Production,125.4216,57.5228
+2025-07-23,"Msibi, Jabulani",10,Production,123.6758,56.7221
+2025-07-23,"Dodge, Dave",11,Production,115.618,53.0265
+2025-07-23,"Bishop, Steven",12,Production,105.6938,48.4749
+2025-07-23,"Ditsela, Richard",13,Production,101.921,46.7446
+2025-07-23,"Faurie, Zander",14,Production,96.8655,44.4259
+2025-07-23,"Vrey, Wian",15,Production,93.2415,42.7638
+2025-07-23,"Radebe, Xolani",16,Production,91.6401,42.0294
+2025-07-23,"Lodge, Athelio",17,Production,77.9278,35.7404
+2025-07-23,"Rahman, Aqeel",18,Production,69.7419,31.9861
+2025-07-23,"Dineka, Vuyisile",19,Production,68.0892,31.2281
+2025-07-23,"Khan, Mahomad",20,Production,52.6494,24.1469
+2025-07-23,"Levinrad, Dayne",21,Production,51.918,23.8114
+2025-07-23,"Nevhutalu, Godfrey",22,Production,39.5613,18.1442
+2025-07-23,"Duvenhge, Lorinda",23,Production,17.2642,7.918
+2025-07-23,"Nhlakanipho, Mthabela",24,Production,10.7203,4.9167
+2025-07-23,"De Gouveia, Roberto",1,Production Optics,210.5042,100.0
+2025-07-23,"Gillespie, Josh",2,Production Optics,201.4231,95.686
+2025-07-23,"De Gouveia, Roberto (EDC)",3,Production Optics,194.5432,92.4177
+2025-07-23,"Bishop, Mark",4,Production Optics,164.1028,77.957
+2025-07-23,"Smith, Sheldon",5,Production Optics,151.629,72.0313
+2025-07-23,"Dias J, Vic",6,Production Optics,150.4455,71.4691
+2025-07-23,"Mshove, Mbali",7,Production Optics,109.6556,52.0919
+2025-07-23,"Titizana, Zanemvula",8,Production Optics,104.9457,49.8544
+2025-07-23,"Phaedi, Tiiso",9,Production Optics,103.0375,48.948
+2025-07-23,"Sukazi, Lindelihle",10,Production Optics,99.3655,47.2036
+2025-07-23,"Cornelius, Michaela",11,Production Optics,29.2373,13.8892
+2025-07-23,"Naidoo, Saven",1,Standard,220.0,100.0
+2025-07-23,"Chamont, Brad",2,Standard,199.7021,90.7737
+2025-07-23,"Dias, Talia",3,Standard,164.3021,74.6828
+2025-07-23,"Veysel, Karan",4,Standard,161.8946,73.5885
+2025-07-23,"Dias, Vic (Senior)",5,Standard,155.6205,70.7366
+2025-07-16,"Da Silva, Alexia 2",1,Combined,186.2663,100.0
+2025-07-16,"Da Silva, Alexia",2,Combined,182.1929,97.8131
+2025-07-16,"De Gouveia, Roberto 2",3,Combined,181.7852,97.5943
+2025-07-16,"Sandiego, Carmen",4,Combined,176.5507,94.784
+2025-07-16,"X, Ghost",5,Combined,169.4298,90.9611
+2025-07-16,"De Gouveia, Roberto",6,Combined,167.3019,89.8187
+2025-07-16,"Moolman, Adrian",7,Combined,160.1287,85.9676
+2025-07-16,"De Gouveia, Roberto (EDC)",8,Combined,159.7227,85.7496
+2025-07-16,"Moolman, Adrian (EDC)",9,Combined,151.5861,81.3814
+2025-07-16,"Gillespie, Josh",10,Combined,149.1304,80.063
+2025-07-16,"De Gouveia, Roberto (EDC)",11,Combined,147.8058,79.3519
+2025-07-16,"Moolman, Adrian (EDC)",12,Combined,145.3475,78.0321
+2025-07-16,"Sniper, Recon",13,Combined,140.9712,75.6826
+2025-07-16,"Bishop, Mark",14,Combined,136.9982,73.5496
+2025-07-16,"Knox, Nobby",15,Combined,133.772,71.8176
+2025-07-16,"Moolman, Adrian 7",16,Combined,133.3452,71.5885
+2025-07-16,"Gillespie, Josh 2",17,Combined,131.6023,70.6528
+2025-07-16,"Plein, Aubrey",18,Combined,131.3818,70.5344
+2025-07-16,"Naidoo, Saven",19,Combined,131.3137,70.4978
+2025-07-16,"Plein, Noah",20,Combined,126.138,67.7192
+2025-07-16,"Gxagxa, Muzi",21,Combined,124.0615,66.6044
+2025-07-16,"Gxagxa, Muzi 2",22,Combined,120.7696,64.8371
+2025-07-16,"Bishop, Steven",23,Combined,117.672,63.1741
+2025-07-16,"Mshove, Mbali",24,Combined,110.3961,59.2679
+2025-07-16,"Smith, Sheldon",25,Combined,110.24,59.1841
+2025-07-16,"Coetzee, Desmond",26,Combined,109.2901,58.6741
+2025-07-16,"Naidoo, Saven 2",27,Combined,108.5885,58.2974
+2025-07-16,"Merredew, Sebastian",28,Combined,106.0439,56.9313
+2025-07-16,"Mshove, Mbali 2",29,Combined,105.2003,56.4784
+2025-07-16,"Chamont, Brad",30,Combined,104.6952,56.2073
+2025-07-16,"Sukazi, Lindelihle",31,Combined,97.1181,52.1394
+2025-07-16,"Du Plooy, Dewald",32,Combined,96.9111,52.0283
+2025-07-16,"Dias, Vic Senior",33,Combined,93.9663,50.4473
+2025-07-16,"Ditsela, Richard",34,Combined,91.7565,49.2609
+2025-07-16,"Horton, Mike 3",35,Combined,90.6347,48.6587
+2025-07-16,"Gillespie, Josh",36,Combined,90.5373,48.6064
+2025-07-16,"Dias-Chamont, Talia",37,Combined,89.1845,47.8801
+2025-07-16,"Horton, Mike 2",38,Combined,88.1146,47.3057
+2025-07-16,"Dias, Vic Senior 2",39,Combined,84.4465,45.3364
+2025-07-16,"Masike, Tebogo",40,Combined,84.1102,45.1559
+2025-07-16,"Horton, Mike",41,Combined,83.5727,44.8673
+2025-07-16,"Sukazi, Lindelihle 2",42,Combined,80.5936,43.2679
+2025-07-16,"Castegnaro, Giorgio",43,Combined,79.559,42.7125
+2025-07-16,"Merredew, Henry",44,Combined,78.0025,41.8769
+2025-07-16,"Veysel, Karan",45,Combined,74.1506,39.8089
+2025-07-16,"Nkosi, Sihle 2",46,Combined,72.6977,39.0289
+2025-07-16,"Lodge, Athelio",47,Combined,67.9829,36.4977
+2025-07-16,"Grobblaar, Mj",48,Combined,66.4746,35.6879
+2025-07-16,"Appelgryn, Wesley",49,Combined,65.0127,34.9031
+2025-07-16,"Lodge, Athelio 2",50,Combined,62.9976,33.8213
+2025-07-16,"Nkosi, Sihle",51,Combined,61.009,32.7536
+2025-07-16,"Vrey, Wian",52,Combined,60.9956,32.7464
+2025-07-16,"Goncalves, Rory",53,Combined,56.0611,30.0973
+2025-07-16,"Goncalves, Cayla",54,Combined,44.9084,24.1098
+2025-07-16,"Hume, Sarah",55,Combined,41.362,22.2058
+2025-07-16,"Qwabe, Lihle",56,Combined,37.9601,20.3795
+2025-07-16,"Appelgryn, Wesley 2",57,Combined,37.624,20.199
+2025-07-16,"Cornelius, Michaela",58,Combined,11.3548,6.096
+2025-07-16,"Rambau, Monty",59,Combined,2.1027,1.1289
+2025-07-16,"Plein, Aubrey",1,Classic,190.0,100.0
+2025-07-16,"Sandiego, Carmen",1,Production,190.0,100.0
+2025-07-16,"Moolman, Adrian",2,Production,171.6925,90.3645
+2025-07-16,"Moolman, Adrian (EDC)",3,Production,163.2804,85.9371
+2025-07-16,"Moolman, Adrian (EDC)",4,Production,156.7324,82.4907
+2025-07-16,"Sniper, Recon",5,Production,151.3016,79.6324
+2025-07-16,"Knox, Nobby",6,Production,144.3083,75.9517
+2025-07-16,"Moolman, Adrian 7",7,Production,143.86,75.7158
+2025-07-16,"Plein, Noah",8,Production,136.7302,71.9633
+2025-07-16,"Gxagxa, Muzi",9,Production,133.1944,70.1023
+2025-07-16,"Gxagxa, Muzi 2",10,Production,129.5124,68.1644
+2025-07-16,"Bishop, Steven",11,Production,126.2891,66.4679
+2025-07-16,"Coetzee, Desmond",12,Production,117.7775,61.9882
+2025-07-16,"Merredew, Sebastian",13,Production,115.4038,60.7388
+2025-07-16,"Gillespie, Josh",14,Production,99.0662,52.1401
+2025-07-16,"Ditsela, Richard",15,Production,98.8389,52.0205
+2025-07-16,"Horton, Mike 3",16,Production,98.0442,51.6022
+2025-07-16,"Horton, Mike 2",17,Production,95.3498,50.1841
+2025-07-16,"Masike, Tebogo",18,Production,90.9362,47.8612
+2025-07-16,"Horton, Mike",19,Production,90.4111,47.5848
+2025-07-16,"Castegnaro, Giorgio",20,Production,85.4889,44.9942
+2025-07-16,"Grobblaar, Mj",21,Production,75.3443,39.6549
+2025-07-16,"Nkosi, Sihle 2",22,Production,75.1302,39.5422
+2025-07-16,"Lodge, Athelio",23,Production,71.9677,37.8777
+2025-07-16,"Appelgryn, Wesley",24,Production,71.0646,37.4024
+2025-07-16,"Lodge, Athelio 2",25,Production,70.2482,36.9727
+2025-07-16,"Vrey, Wian",26,Production,65.6603,34.5581
+2025-07-16,"Goncalves, Cayla",27,Production,49.1327,25.8593
+2025-07-16,"Qwabe, Lihle",28,Production,41.0884,21.6255
+2025-07-16,"Appelgryn, Wesley 2",29,Production,40.548,21.3411
+2025-07-16,"Cornelius, Michaela",30,Production,11.7541,6.1864
+2025-07-16,"Rambau, Monty",31,Production,2.4022,1.2643
+2025-07-16,"Da Silva, Alexia 2",1,Production Optics,186.2663,100.0
+2025-07-16,"Da Silva, Alexia",2,Production Optics,182.1929,97.8131
+2025-07-16,"De Gouveia, Roberto 2",3,Production Optics,181.7852,97.5943
+2025-07-16,"X, Ghost",4,Production Optics,169.4298,90.9611
+2025-07-16,"De Gouveia, Roberto",5,Production Optics,167.3019,89.8187
+2025-07-16,"De Gouveia, Roberto (EDC)",6,Production Optics,159.7227,85.7496
+2025-07-16,"Gillespie, Josh",7,Production Optics,149.1304,80.063
+2025-07-16,"De Gouveia, Roberto (EDC)",8,Production Optics,147.8058,79.3519
+2025-07-16,"Bishop, Mark",9,Production Optics,136.9982,73.5496
+2025-07-16,"Gillespie, Josh 2",10,Production Optics,131.6023,70.6528
+2025-07-16,"Mshove, Mbali",11,Production Optics,110.3961,59.2679
+2025-07-16,"Smith, Sheldon",12,Production Optics,110.24,59.1841
+2025-07-16,"Mshove, Mbali 2",13,Production Optics,105.2003,56.4784
+2025-07-16,"Sukazi, Lindelihle",14,Production Optics,97.1181,52.1394
+2025-07-16,"Du Plooy, Dewald",15,Production Optics,96.9111,52.0283
+2025-07-16,"Sukazi, Lindelihle 2",16,Production Optics,80.5936,43.2679
+2025-07-16,"Goncalves, Rory",17,Production Optics,56.0611,30.0973
+2025-07-16,"Hume, Sarah",18,Production Optics,41.362,22.2058
+2025-07-16,"Naidoo, Saven",1,Standard,190.0,100.0
+2025-07-16,"Naidoo, Saven 2",2,Standard,157.6121,82.9537
+2025-07-16,"Chamont, Brad",3,Standard,151.753,79.87
+2025-07-16,"Dias, Vic Senior",4,Standard,136.6341,71.9127
+2025-07-16,"Dias-Chamont, Talia",5,Standard,129.0853,67.9396
+2025-07-16,"Dias, Vic Senior 2",6,Standard,122.1046,64.2656
+2025-07-16,"Merredew, Henry",7,Standard,113.1722,59.5643
+2025-07-16,"Veysel, Karan",8,Standard,106.6956,56.1556
+2025-07-16,"Nkosi, Sihle",9,Standard,87.3803,45.9896
+2025-07-16,"De Gouveia, Roberto",1,Combined,188.3792,100.0
+2025-07-16,"Moolman, Adrian",2,Combined,179.5401,95.3078
+2025-07-16,"Gillespie, Josh",3,Combined,167.9183,89.1385
+2025-07-16,"De Gouveia, Roberto (EDC)",4,Combined,167.661,89.0019
+2025-07-16,"Moolman, Adrian (EDC)",5,Combined,163.9837,87.0498
+2025-07-16,"Bishop, Mark",6,Combined,155.3453,82.4641
+2025-07-16,"Knox, Nobby",7,Combined,150.9905,80.1524
+2025-07-16,"Naidoo, Saven",8,Combined,148.6047,78.8859
+2025-07-16,"Plein, Aubrey",9,Combined,147.9614,78.5444
+2025-07-16,"Plein, Noah",10,Combined,143.1259,75.9775
+2025-07-16,"Gxagxa, Muzi",11,Combined,139.2995,73.9463
+2025-07-16,"Bishop, Steven",12,Combined,132.0733,70.1103
+2025-07-16,"Smith, Sheldon",13,Combined,124.6126,66.1499
+2025-07-16,"Coetzee, Desmond",14,Combined,123.2194,65.4103
+2025-08-06,"Janse Van Rensburg, Johan PCC 1",PCC Optics,1,185.0000,100.0000%
+2025-08-06,"Goncalves, Rory",PCC Optics,2,68.3522,36.9471%
+2025-08-06,"Goncalves, Cayla",PCC Optics,3,62.2870,33.6686%
+2025-08-06,"Moolman, Adrian",Production,1,185.0000,100.0000%
+2025-08-06,"Mtshwene, Siphiwe",Production,2,135.8708,73.4437%
+2025-08-06,"Stiller, Ari",Production,3,133.3144,72.0618%
+2025-08-06,"Coetzee, Desmond",Production,4,116.7266,63.0955%
+2025-08-06,"Blignaut, Dewald",Production,5,110.6368,59.8037%
+2025-08-06,"Khumalo, Sabelo",Production,6,82.6312,44.6655%
+2025-08-06,"Rahman, Aqeel",Production,7,72.0939,38.9697%
+2025-08-06,"Benecke, Sheldon",Production,8,66.4741,35.9319%
+2025-08-06,"Garber, Jarrod",Production,9,66.2139,35.7913%
+2025-08-06,"Cohen, Liron",Production,10,66.0618,35.7091%
+2025-08-06,"Lodge, Athelio",Production,11,60.2580,32.5719%
+2025-08-06,"Vrey, Wian",Production,12,54.1801,29.2865%
+2025-08-06,"Khan, Mahomad",Production,13,39.5018,21.3523%
+2025-08-06,"Grobbelaar, Antonie",Production,14,38.1834,20.6397%
+2025-08-06,"Grobblaar, Mj",Production,15,34.8047,18.8134%
+2025-08-06,"Van Schoor, Floyd",Production,16,33.9574,18.3554%
+2025-08-06,"Subotzky, Ryan",Production,17,32.2890,17.4535%
+2025-08-06,"Masike, Tebogo",Production,18,30.6396,16.5619%
+2025-08-06,"Roux, Cyra",Production,19,27.6461,14.9438%
+2025-08-06,"Blignaut, Nicole",Production,20,21.9117,11.8442%
+2025-08-06,"De Gouveia, Roberto",Production Optics,1,185.0000,100.0000%
+2025-08-06,"Janse Van Rensburg, Johan",Production Optics,2,151.5669,81.9281%
+2025-08-06,"Smith, Sheldon",Production Optics,3,105.5791,57.0698%
+2025-08-06,"Ngcobo, Thabo",Production Optics,4,98.8747,53.4458%
+2025-08-06,"Gillespie, Josh",Production Optics,5,78.8635,42.6289%
+2025-08-06,"Bishop, Mark",Production Optics,6,78.1870,42.2632%
+2025-08-06,"Sukazi, Lindelihle",Production Optics,7,77.7370,42.0200%
+2025-08-06,"Gerin, Pino",Production Optics,8,70.8553,38.3002%
+2025-08-06,"Phaedi, Tiiso",Production Optics,9,40.9816,22.1522%
+2025-08-06,"Naidoo, Saven",Standard,1,170.8232,100.0000%
+2025-08-06,"Dias, Vic",Standard,2,147.8841,86.5714%
+2025-08-06,"Dias, Talia",Standard,3,120.0259,70.2632%
+2025-08-06,"Veysel, Karan",Standard,4,86.5061,50.6407%
+2025-08-06,"Merredew, Henry",Standard,5,63.1837,36.9878%
+2025-08-06,"De Gouveia, Roberto",Combined,1,185.0000,100.0000%
+2025-08-06,"Janse Van Rensburg, Johan PCC 1",Combined,2,164.2202,88.7677%
+2025-08-06,"Janse Van Rensburg, Johan",Combined,3,151.5669,81.9281%
+2025-08-06,"Moolman, Adrian",Combined,4,148.0511,80.0276%
+2025-08-06,"Smith, Sheldon",Combined,5,105.5791,57.0698%
+2025-08-06,"Stiller, Ari",Combined,6,104.8408,56.6707%
+2025-08-06,"Mtshwene, Siphiwe",Combined,7,104.5621,56.5201%
+2025-08-06,"Ngcobo, Thabo",Combined,8,98.8747,53.4458%
+2025-08-06,"Coetzee, Desmond",Combined,9,92.8031,50.1638%
+2025-08-06,"Naidoo, Saven",Combined,10,87.8818,47.5037%
+2025-08-06,"Blignaut, Dewald",Combined,11,87.6669,47.3875%
+2025-08-06,"Dias, Vic",Combined,12,83.8813,45.3412%
+2025-08-06,"Gillespie, Josh",Combined,13,78.8635,42.6289%
+2025-08-06,"Bishop, Mark",Combined,14,78.1870,42.2632%
+2025-08-06,"Sukazi, Lindelihle",Combined,15,77.7370,42.0200%
+2025-08-06,"Gerin, Pino",Combined,16,70.8553,38.3002%
+2025-08-06,"Khumalo, Sabelo",Combined,17,69.2145,37.4132%
+2025-08-06,"Dias, Talia",Combined,18,63.1410,34.1303%
+2025-08-06,"Goncalves, Rory",Combined,19,59.2091,32.0049%
+2025-08-06,"Rahman, Aqeel",Combined,20,58.0748,31.3918%
+2025-08-06,"Benecke, Sheldon",Combined,21,56.0758,30.3112%
+2025-08-06,"Garber, Jarrod",Combined,22,54.8095,29.6268%
+2025-08-06,"Cohen, Liron",Combined,23,54.6477,29.5393%
+2025-08-06,"Goncalves, Cayla",Combined,24,54.2190,29.3076%
+2025-08-06,"Lodge, Athelio",Combined,25,52.1709,28.2005%
+2025-08-06,"Vrey, Wian",Combined,26,45.2271,24.4471%
+2025-08-06,"Veysel, Karan",Combined,27,42.8937,23.1858%
+2025-08-06,"Merredew, Henry",Combined,28,42.3476,22.8906%
+2025-08-06,"Phaedi, Tiiso",Combined,29,40.9816,22.1522%
+2025-08-06,"Grobbelaar, Antonie",Combined,30,33.3571,18.0309%
+2025-08-06,"Grobblaar, Mj",Combined,31,31.0207,16.7679%
+2025-08-06,"Subotzky, Ryan",Combined,32,29.6104,16.0056%
+2025-08-06,"Van Schoor, Floyd",Combined,33,28.2106,15.2490%
+2025-08-06,"Masike, Tebogo",Combined,34,28.0979,15.1881%
+2025-08-06,"Khan, Mahomad",Combined,35,27.2426,14.7257%
+2025-08-06,"Roux, Cyra",Combined,36,20.4753,11.0677%
+2025-08-06,"Blignaut, Nicole",Combined,37,20.0940,10.8616%
